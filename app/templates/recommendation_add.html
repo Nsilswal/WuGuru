@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Add A Recommendation</h1>
+
+{% if not current_user.is_authenticated %}
+<p><a href="{{ url_for('users.login') }}">Log in</a> to before making a recommendation!</p>
+{% endif %}
+
+<form action="" method="post">
+  {{ form.hidden_tag() }}
+  <p>
+    {{ form.title.label }}<br/>
+    {{ form.title(size=32) }}<br/>
+    {% for error in form.title.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+  </p>
+  <p>
+    {{ form.description.label }}<br/>
+    {{ form.description(size=32) }}<br/>
+    {% for error in form.description.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+  </p>
+  <p>{{ form.submit() }}</p>
+</form>
+
+{% endblock %}
