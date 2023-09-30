@@ -20,12 +20,15 @@ def recommendations():
 def recommendation_add():
     form = RecommendationForm()
     if form.validate_on_submit():
-        user_id = current_user.id
-        current_time = datetime.now()
-        formatted_time = current_time.strftime('%Y-%m-%d %H:%M:%S')
-        init_pop = 0
-        if Recommendation.register(user_id, form.title.data, form.description.data, formatted_time, init_pop):
-            return redirect(url_for('recommendations.recommendations'))
+        if current_user.is_authenticated:
+            user_id = current_user.id
+            current_time = datetime.now()
+            formatted_time = current_time.strftime('%Y-%m-%d %H:%M:%S')
+            init_pop = 0
+            if Recommendation.register(user_id, form.title.data, form.description.data, formatted_time, init_pop):
+                return redirect(url_for('recommendations.recommendations'))
+        else:
+            flash('Please authenticate before creating a recommendation!')
     return render_template('recommendation_add.html', title='Add A Recommendation', form=form)
 
 
