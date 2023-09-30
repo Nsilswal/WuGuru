@@ -27,11 +27,12 @@ class Recommendation:
             RETURNING id
             """,
             user_id=user_id,
-            title=tile,
+            title=title,
             description=description,
             time_submitted=time_submitted,
             popularity=popularity)
             id = rows[0][0]
+            return Recommendation.get(id)
         except Exception as e:
             # Print error
             print(str(e))

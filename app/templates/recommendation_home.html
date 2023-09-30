@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br><br>
+
+<h2>Existing Recommendations:</h2>
+<table class='table table-hover table-bordered container'>
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Time</th>
+      <th scope="col">Popularity</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for rec in avail_recs%}
+      <tr>
+        <th scope="row">{{rec.title}}</th>
+        <td>{{rec.description}}</td>
+        <td>{{rec.time_submitted}}</td>
+        <td>{{rec.popularity}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<form action="{{ url_for('recommendations.recommendation_add')}}" method="POST">
+  <input type ="submit" value="Add New">
+</form>
+
+{% endblock %}
