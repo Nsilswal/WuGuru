@@ -13,7 +13,16 @@
   <p>Time Posted: {{rec.time_submitted}}</p>
   <p>Popularity: {{rec.popularity}}</p>
   <p>Description: {{rec.description}}</p>
+  <div class="photo-gallery">
+    {% for photo in photos %}
+        <div class="photo">
+            <img src="{{ url_for('recommendations.get_photo', filename=photo.filename) }}" alt="{{ photo.filename }}">
+        </div>
+    {% endfor %}
+</div>
 </body>
+
+
 
 <form action="{{ url_for('recommendations.recommendations_upvote', rec_id=rec.id) }}" method="POST">
   <input type ="submit" value="I like this!">
