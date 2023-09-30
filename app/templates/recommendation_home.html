@@ -9,7 +9,6 @@
   <thead class="thead-dark">
     <tr>
       <th scope="col">Title</th>
-      <th scope="col">Description</th>
       <th scope="col">Time</th>
       <th scope="col">Popularity</th>
     </tr>
@@ -17,8 +16,7 @@
   <tbody>
     {% for rec in avail_recs%}
       <tr>
-        <th scope="row">{{rec.title}}</th>
-        <td>{{rec.description}}</td>
+        <th scope="row"><a href="{{ url_for('recommendations.recommendations_view', rec_id=rec.id) }}">{{rec.title}}</a></th>
         <td>{{rec.time_submitted}}</td>
         <td>{{rec.popularity}}</td>
       </tr>

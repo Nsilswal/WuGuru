@@ -27,10 +27,11 @@ def recommendation_add():
             init_pop = 0
             if Recommendation.register(user_id, form.title.data, form.description.data, formatted_time, init_pop):
                 return redirect(url_for('recommendations.recommendations'))
-        else:
-            flash('Please authenticate before creating a recommendation!')
     return render_template('recommendation_add.html', title='Add A Recommendation', form=form)
 
+@bp.route('/recommendations/view/<int:rec_id>', methods=['GET'])
+def recommendations_view(rec_id):
+    return render_template('recommendation_view.html', title="View Recommendation", rec=Recommendation.get(rec_id))
 
 class RecommendationForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
