@@ -39,9 +39,37 @@ class Recommendation:
             return None
     
     @staticmethod
-    def get_all():
-        rows = app.db.execute('''
-        SELECT *
-        FROM Recommendations
-        ''')
+    def get_all(attribute=2, ordering=0):
+        # Attribute: 0 - title, 1 - time_submitted, 2 - popularity
+        # Ordering: 0 - DESC, 1 - ASC
+        attribute_list = ['title', 'time_submitted', 'popularity']
+        ordering_list = ['DESC', 'ASC']
+
+        if(0 <= attribute <= 2 and 0 <= ordering <= 1):
+            query = f"""SELECT *
+                        FROM Recommendations
+                        ORDER BY {attribute_list[attribute]} {ordering_list[ordering]}"""
+        else:
+            query = """SELECT *
+                        FROM Recommendations
+                        ORDER BY popularity DESC"""
+
+        rows = app.db.execute(query)
+
+        # rows = app.db.execute('''
+        # SELECT *
+        # FROM Recommendations
+        # ORDER BY :attribute :ordering
+        # ''',attribute=attribute, ordering=ordering)
+        
         return [Recommendation(*row) for row in rows]
+    
+    @staticmethod
+    def change_popularity(id, amount):
+        target = Recommendation.get(id)
+        new_popularity = target.popularity + amount
+        app.db.execute('''
+            UPDATE Recommendations
+            SET popularity = :popularity
+            WHERE id = :id
+            ''', popularity=new_popularity,id=id)

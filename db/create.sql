@@ -31,3 +31,9 @@ CREATE TABLE Recommendations (
     time_submitted timestamp without time zone NOT NULL DEFAULT (current_timestamp AT TIME ZONE 'UTC'),
     popularity INT NOT NULL
 );
+
+CREATE TABLE RecPhotos (
+    rec_id INT NOT NULL REFERENCES Recommendations(id),
+    filename VARCHAR(100)  NOT NULL,
+    PRIMARY KEY(rec_id, filename)
+);

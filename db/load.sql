@@ -18,3 +18,5 @@ SELECT pg_catalog.setval('public.purchases_id_seq',
 SELECT pg_catalog.setval('public.recommendations_id_seq',
                             (SELECT MAX(id)+1 FROM Recommendations),
                             false);
+                            
+\COPY RecPhotos FROM 'RecPhotos.csv' WITH DELIMITER ',' NULL '' CSV
