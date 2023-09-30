@@ -13,7 +13,11 @@ bp = Blueprint('recommendations', __name__)
 @bp.route('/recommendations')
 def recommendations():
     recommendations = Recommendation.get_all()
-    # return jsonify([item.__dict__ for item in recommendations])
+    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
+
+@bp.route('/recommendations/filter/<int:attribute>/<int:ordering>', methods=['GET'])
+def recommendations_filter(attribute, ordering):
+    recommendations = Recommendation.get_all(attribute, ordering)
     return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
 
 @bp.route('/recommendations/add', methods=['POST'])
@@ -33,7 +37,13 @@ def recommendation_add():
 def recommendations_view(rec_id):
     return render_template('recommendation_view.html', title="View Recommendation", rec=Recommendation.get(rec_id))
 
+@bp.route('/recommendations/upvote/<int:rec_id>', methods=['POST'])
+def recommendations_upvote(rec_id):
+    Recommendation.change_popularity(rec_id, 1)
+    return recommendations_view(rec_id)
+
 class RecommendationForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
     description = StringField('Description', validators=[DataRequired()])
     submit = SubmitField('Register')
+
