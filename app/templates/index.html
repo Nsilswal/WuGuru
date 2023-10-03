@@ -4,7 +4,7 @@
 
 <br><br>
 
-<h2>Products for sale:</h2>
+<h2>Published Reccomendations:</h2>
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
     <tr>
@@ -14,11 +14,11 @@
     </tr>
   </thead>
   <tbody>
-    {% for product in avail_products%}
+    {% for rec in Recommendation_history%}
       <tr>
-        <th scope="row">{{product.id}}</th>
-        <td>{{product.name}}</td>
-        <td>{{product.price}}</td>
+        <th scope="row">{{rec.id}}</th>
+        <td>{{rec.name}}</td>
+        <td>{{rec.price}}</td>
       </tr>
     {% endfor %}
   </tbody>
@@ -36,7 +36,7 @@
     </tr>
   </thead>
   <tbody>
-    {% for purchase in purchase_history%}
+    {% for purchase in all_purch%}
       <tr>
         <th scope="row">{{purchase.id}}</th>
         <td>{{purchase.pid}}</td>
