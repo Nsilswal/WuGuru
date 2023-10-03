@@ -3,23 +3,34 @@
 {% block content %}
  
 <h2>Menu Items:</h2>
+
+<form action="{{ url_for('fooditems.fooditems_filter', attribute=5, ordering=1)}}" method="GET">
+  <input type ="submit" value="Sort by price: low to high">
+</form>
+<form action="{{ url_for('fooditems.fooditems_filter', attribute=5, ordering=0)}}" method="GET">
+  <input type ="submit" value="Sort by price: high to low">
+</form>
+
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
     <tr>
       <th scope="col">Name</th>
+      <th scope="col">Price</th>
       <th scope="col">Protein</th>
       <th scope="col">Sugars</th>
       <th scope="col">Fats</th>
-      <th scope="col">Price</th>
       <th scope="col">Allergens</th>
     </tr>
   </thead>
   <tbody>
-    {% for food_items in avail_fi%}
+    {% for fooditems in avail_fi%}
       <tr>
-        <th scope="row">{{food_items.id}}</th>
-        <td>{{food_items.name}}</td>
-        <td>{{food_items.price}}</td>
+        <th scope="row">{{fooditems.name}}</th>
+        <td>{{fooditems.price}}</td>
+        <td>{{fooditems.protein}}</td>
+        <td>{{fooditems.sugars}}</td>
+        <td>{{fooditems.fats}}</td>
+        <td>{{fooditems.allergens}}</td>
       </tr>
     {% endfor %}
   </tbody>
