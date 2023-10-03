@@ -45,5 +45,5 @@ CREATE TABLE fooditems (
     sugars FLOAT NOT NULL,
     fats FLOAT NOT NULL,
     price FLOAT NOT NULL,
-    allergens VARCHAR(50)
+    allergens VARCHAR(50) NOT NULL
 );

@@ -45,7 +45,7 @@ class Fooditem:
 
     @staticmethod
     def get_all(attribute=2, ordering=0):
-        attribute_list= ['name','protein','sugars','fats','price','allergen']
+        attribute_list= ['name','protein','sugars','fats','price','allergens']
         #ordering_list= ['DESC','ASC']
 
         query = f"""SELECT *
