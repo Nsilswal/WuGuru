@@ -24,4 +24,7 @@ def create_app():
     from .recommendations import bp as rec_bp
     app.register_blueprint(rec_bp)
 
+    from .fooditems import bp as fi_bp
+    app.register_blueprint(fi_bp)
+    
     return app

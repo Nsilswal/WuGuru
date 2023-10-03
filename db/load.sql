@@ -20,3 +20,7 @@ SELECT pg_catalog.setval('public.recommendations_id_seq',
                             false);
                             
 \COPY RecPhotos FROM 'RecPhotos.csv' WITH DELIMITER ',' NULL '' CSV
+\COPY fooditems FROM 'FoodItem.csv' WITH DELIMITER ',' NULL '' CSV
+SELECT pg_catalog.setval('public.fooditems_id_seq',
+                         (SELECT MAX(id)+1 FROM fooditems),
+                         false);
