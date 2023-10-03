@@ -44,13 +44,18 @@ class Fooditem:
             return None
 
     @staticmethod
-    def get_all(attribute=2, ordering=0):
-        attribute_list= ['name','protein','sugars','fats','price','allergen']
-        #ordering_list= ['DESC','ASC']
+    def get_all(attribute=6, ordering=0):
+        attribute_list= ['id','name','protein','sugars','fats','price','allergens']
+        ordering_list= ['DESC','ASC']
 
-        query = f"""SELECT *
-                    FROM fooditems""" 
-
+        if(0 <= attribute <= 6 and 0 <= ordering <= 1):
+            query = f"""SELECT *
+                        FROM fooditems
+                        ORDER BY {attribute_list[attribute]} {ordering_list[ordering]}""" 
+        else:
+            query = """SELECT *
+                        FROM fooditems
+                        ORDER BY name DESC"""
         # if(0 <= attribute <= 2 and 0 <= ordering <= 1):
         #     query = f"""SELECT *
         #                 FROM fooditems

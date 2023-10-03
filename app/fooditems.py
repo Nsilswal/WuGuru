@@ -12,12 +12,18 @@ from .models.fooditem import Fooditem
 bp = Blueprint('fooditems',__name__)
 
 @bp.route('/fooditems')
-def food_items():
+def fooditems():
         form = SearchForm()
-        food_items = Fooditem.get_all()
+        fooditems = Fooditem.get_all()
         return render_template('fooditem_home.html', title = "Food Item Home",
-        avail_fi = food_items, form = form)
+        avail_fi = fooditems, form = form)
         #return 'Hello World'
+
+@bp.route('/fooditems/filter/<int:attribute>/<int:ordering>', methods=['GET'])
+def fooditems_filter(attribute, ordering):
+    fooditems = Fooditem.get_all(attribute, ordering)
+    return render_template('fooditem_home.html', title="Food Item Home", avail_fi = fooditems)
+
 
 class SearchForm(FlaskForm):
         title = StringField('Food Item name',validators=[DataRequired()])
