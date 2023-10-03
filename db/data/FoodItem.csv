@@ -1,0 +1,21 @@
+ID,Name,Protein (g),Sugars (g),Fats (g),Price ($),Allergens
+1,Chicken Breast,30,0,3,5.99,None
+2,Salmon Fillet,25,0,12,8.49,Fish
+3,Tofu,8,1,4,3.99,Soy
+4,Rice,2,0,0.5,1.99,None
+5,Spinach,2,0,0.3,2.49,None
+6,Banana,1,14,0.3,0.59,None
+7,Almonds,21,4,49,6.99,Tree Nuts
+8,Milk,8,12,8,2.29,Dairy
+9,Eggs,6,0,5,3.99,Eggs
+10,Broccoli,3,2,0.4,2.99,None
+11,Chocolate Bar,2,25,12,1.49,Milk, Soy
+12,Apple,0,19,0.5,0.79,None
+13,Shrimp,24,0,1.5,9.99,Shellfish
+14,Avocado,2,0.2,14,1.99,None
+15,Peanut Butter,25,3,50,4.99,Peanuts
+16,Pizza,12,2,15,12.99,Dairy, Wheat
+17,Carrots,1,5,0.2,1.49,None
+18,Blueberries,1,9,0.4,3.99,None
+19,Hamburger,15,1,20,6.49,Dairy, Soy, Wheat
+20,Watermelon,1,9,0.2,2.99,None
