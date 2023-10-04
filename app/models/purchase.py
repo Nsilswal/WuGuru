@@ -19,14 +19,13 @@ WHERE id = :id
         return Purchase(*(rows[0])) if rows else None
 
     @staticmethod
-    def get_all_by_uid_since(uid, since):
+    def get_all_by_uid_since(u, s):
         rows = app.db.execute('''
-SELECT id, uid, pid, time_purchased
+SELECT *
 FROM Purchases
-WHERE uid = :uid
+WHERE user_id = :uid
 AND time_purchased >= :since
-ORDER BY time_purchased DESC
 ''',
-                              uid=uid,
-                              since=since)
+                              uid=u,
+                              since=s)
         return [Purchase(*row) for row in rows]
