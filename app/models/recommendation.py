@@ -81,4 +81,4 @@ class Recommendation:
                 FROM Recommendations
                 WHERE id = :uid and time_submitted > :date
                 ''', uid=uid, date = date)
-            return Recommendation(*(rows[0])) if rows else None
+            return [Recommendation(*row) for row in rows]
