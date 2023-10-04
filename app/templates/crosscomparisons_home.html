@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Restaurant Comparison</h1>
+
+    <section class="mb-4">
+        <h2>Restaurant and Food Selection</h2>
+        <div class="form-group">
+            <label for="restaurant1">Select Restaurant 1:</label>
+            <select class="form-control" id="restaurant1">
+                <option value="restaurantA">Restaurant A</option>
+                <option value="restaurantB">Restaurant B</option>
+                <option value="restaurantC">Restaurant C</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="food1">Select Food Item 1:</label>
+            <select class="form-control" id="food1">
+                <option value="foodA">Food A</option>
+                <option value="foodB">Food B</option>
+                <option value="foodC">Food C</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="restaurant2">Select Restaurant 2:</label>
+            <select class="form-control" id="restaurant2">
+                <option value="restaurantA">Restaurant A</option>
+                <option value="restaurantB">Restaurant B</option>
+                <option value="restaurantC">Restaurant C</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="food2">Select Food Item 2:</label>
+            <select class="form-control" id="food2">
+                <option value="foodA">Food A</option>
+                <option value="foodB">Food B</option>
+                <option value="foodC">Food C</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="mb-4">
+        <h2>Comparison Criteria</h2>
+        <div class="form-group">
+            <label for="category">Select Comparison Category:</label>
+            <select class="form-control" id="category">
+                <option value="price">Price</option>
+                <option value="taste">Taste</option>
+                <option value="service">Service</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comparison">Select Comparison Type:</label>
+            <select class="form-control" id="comparison">
+                <option value="greater">Greater Than</option>
+                <option value="less">Less Than</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="mb-4">
+        <h2>Submit Request</h2>
+        <button class="btn btn-primary" onclick="compare()">Compare</button>
+        <p class="mt-2">Results:</p>
+        <textarea class="form-control" id="results" rows="10" cols="50" readonly></textarea>
+    </section>
+</div>
+
+{% endblock %}

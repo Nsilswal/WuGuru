@@ -29,5 +29,8 @@ def create_app():
 
     from .reviews import bp as review_bp
     app.register_blueprint(review_bp)
+
+    from .crosscomparisons import bp as crossComp_bp
+    app.register_blueprint(crossComp_bp)
     
     return app
