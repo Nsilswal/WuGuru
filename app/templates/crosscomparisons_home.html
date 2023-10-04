@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Food Comparisons</h1>
+
+    <form method="post" action="{{ url_for('crosscomparisons.compare') }}">
+        <section class="mb-4">
+            <h2>Food Selection</h2>
+            <div class="form-group">
+                <label for="food1">Enter Food Item 1:</label>
+                <input type="text" class="form-control" id="food1" name="food1" placeholder="Food Item 1">
+            </div>
+            <div class="form-group">
+                <label for="food2">Enter Food Item 2:</label>
+                <input type="text" class="form-control" id="food2" name="food2" placeholder="Food Item 2">
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h2>Comparison Criteria</h2>
+            <div class="form-group">
+                <label for="category">Select Comparison Category:</label>
+                <select class="form-control" id="category" name="category">
+                    <option value="price">Price</option>
+                    <option value="protein">Protein</option>
+                    <option value="sugars">Sugar</option>
+                    <option value="fats">Fats</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comparison">Select Comparison Type:</label>
+                <select class="form-control" id="comparison" name="comparison">
+                    <option value="most">Most</option>
+                    <option value="least">Least</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h2>Submit Request</h2>
+            <button type="submit" class="btn btn-primary">Compare</button>
+        </section>
+    </form>
+
+    <section class="mb-4">
+        <h2>Results:</h2>
+        <div class="form-group">
+            <textarea class="form-control" rows="5" readonly>{{ comparison_result }}</textarea>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
