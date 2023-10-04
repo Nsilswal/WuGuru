@@ -14,37 +14,37 @@
     </tr>
   </thead>
   <tbody>
-    {% for product in avail_products%}
-    <tr>
-      <th scope="row">{{product.id}}</th>
-      <td>{{product.name}}</td>
-      <td>{{product.price}}</td>
-    </tr>
+    {% for rec in Recommendation_history%}
+      <tr>
+        <th scope="row">{{rec.title}}</th>
+        <td>{{rec.description}}</td>
+        <td>{{rec.popularity}}</td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>
 
 <br><br>
 {% if current_user.is_authenticated %}
+<!--
 <h2>Your recent purchases:</h2>
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
     <tr>
       <th scope="col">Purchase ID</th>
-      <th scope="col">Product Name</th>
       <th scope="col">Price</th>
     </tr>
   </thead>
   <tbody>
-    {% for purchase in purchase_history%}
-    <tr>
-      <th scope="row">{{purchase.id}}</th>
-      <td>{{purchase.pid}}</td>
-      <td>{{purchase.time_purchased}}</td>
-    </tr>
+    {% for purchase in all_purch%}
+      <tr>
+        <th scope="row">{{purchase.pid}}</th>
+        <td>{{purchase.time_purchased}}</td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>
+-->
 {% else %}
 <p><a href="{{ url_for('users.login') }}">Log in</a> to see your purchase history!</p>
 <p><a href="{{ url_for('fooditems.fooditems') }}">Click here</a> to see the menu items!</p>
