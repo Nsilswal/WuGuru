@@ -75,10 +75,10 @@ class Recommendation:
             ''', popularity=new_popularity,id=id)
 
     @staticmethod
-    def get_all_by_uid_since(uid, date):
+    def get_all_by_uid_since(u, d):
             rows = app.db.execute('''
-                SELECT id, user_id, title, description, time_submitted, popularity
+                SELECT *
                 FROM Recommendations
-                WHERE id = :uid and time_submitted > :date
-                ''', uid=uid, date = date)
+                WHERE user_id = :uid and time_submitted > :date
+                ''', uid=u, date = d)
             return [Recommendation(*row) for row in rows]
