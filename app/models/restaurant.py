@@ -63,7 +63,7 @@ class Restaurants:
         
         return [Restaurants(*row) for row in rows]
     
-
+  
     @staticmethod
     def get_menu(id):
         rows = app.db.execute('''
@@ -85,3 +85,5 @@ class Restaurants:
             ''',
                               id=id)
         return [Restaurants(*row) for row in rows]
+ 
+   
