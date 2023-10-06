@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br><br>
+
+<h2>Reviews:</h2>
+
+<form action="{{ url_for('reviews.reviews_filter', attribute=1, ordering=1)}}" method="GET">
+  <input type ="submit" value="Sort by rating: low to high">
+</form>
+<form action="{{ url_for('reviews.reviews_filter', attribute=1, ordering=0)}}" method="GET">
+  <input type ="submit" value="Sort by rating: high to low">
+</form>
+<form action="{{ url_for('reviews.reviews_filter', attribute=0, ordering=1)}}" method="GET">
+  <input type ="submit" value="Sort by date: oldest to newest">
+</form>
+<form action="{{ url_for('reviews.reviews_filter', attribute=0, ordering=0)}}" method="GET">
+  <input type ="submit" value="Sort by date: newest to oldest">
+</form>
+
+<br><br>
+
+<table class='table table-hover table-bordered container'>
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Reviewer</th>
+      <th scope="col">Date</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for review in avail_reviews%}
+      <tr>
+        <th scope="row">{{review.firstname}} {{review.lastname}}</th>
+        <td>{{humanize_time(review.date)}}</td>
+        <td>{{review.rating}} / 5</td>
+        <td>{{review.description}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<br><br>
+
+{% endblock %}

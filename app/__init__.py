@@ -26,5 +26,11 @@ def create_app():
 
     from .fooditems import bp as fi_bp
     app.register_blueprint(fi_bp)
+
+    from .reviews import bp as review_bp
+    app.register_blueprint(review_bp)
+
+    from .crosscomparisons import bp as crossComp_bp
+    app.register_blueprint(crossComp_bp)
     
     return app
