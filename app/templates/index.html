@@ -4,13 +4,13 @@
 
 <br><br>
 
-<h2>Products for sale:</h2>
+<h2>Published Reccomendations:</h2>
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
     <tr>
-      <th scope="col">Product ID</th>
-      <th scope="col">Product Name</th>
-      <th scope="col">Price</th>
+      <th scope="col">Reccomendation Title</th>
+      <th scope="col">Reccomendation Description</th>
+      <th scope="col">Reccomendation Score</th>
     </tr>
   </thead>
   <tbody>
@@ -49,7 +49,6 @@
 <p><a href="{{ url_for('users.login') }}">Log in</a> to see your purchase history!</p>
 <p><a href="{{ url_for('fooditems.fooditems') }}">Click here</a> to see the menu items!</p>
 {% endif %}
-<p><a href="{{ url_for('reviews.reviews') }}">Click here</a> to see restaurant reviews!</p>
 <p><a href="{{ url_for('recommendations.recommendations') }}">Go to recommendations</a></p>
-<p><a href="{{ url_for('crosscomparisons.cross_comparisons') }}">Go to Cross Comparisons!</a></p>
 {% endblock %}
+
