@@ -1,4 +1,4 @@
-# Skeleton Code for CompSci 316 Standard Course Project.
+# Skeleton Code for CompSci 316 Open Course Project.
 
 Originally created by [Rickard
 Stureborg](http://www.rickard.stureborg.com) and [Yihao
@@ -76,10 +76,7 @@ get back to the normal container shell.
 
 ## Working with the Database
 
-Your Flask server interacts with a PostgreSQL database called `amazon`
-behind the scene.  As part of the installation procedure above, this
-database has been created automatically for you.  You can access the
-database directly by running the command `psql amazon` in your VM.
+Your Flask server interacts with a PostgreSQL database 
 
 For debugging, you can access the database while the Flask server is
 running.  We recommend you open a second container shell to run `psql
