@@ -29,3 +29,8 @@ SELECT pg_catalog.setval('public.fooditems_id_seq',
 SELECT pg_catalog.setval('public.reviews_id_seq',
                          (SELECT MAX(id)+1 FROM Reviews),
                          false);                      
+
+\COPY Restaurants FROM 'Restaurants.csv' WITH DELIMITER ',' NULL '' CSV
+SELECT pg_catalog.setval('public.restaurants_id_seq',
+                         (SELECT MAX(id)+1 FROM Restaurants),
+                         false);

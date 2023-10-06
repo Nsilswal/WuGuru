@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+ 
+<h2>WU Restaurants</h2>
+
+<form action="{{ url_for('restaurants.restaurants', attribute=1, ordering=0)}}" method="GET">
+  <input type ="submit" value="Sort by Restaurant Name">
+</form>
+<form action="{{ url_for('restaurants.restaurants_filter', attribute=2, ordering=0)}}" method="GET">
+  <input type ="submit" value="Sort by Floor Level">
+</form>
+<form action="{{ url_for('restaurants.restaurants_filter', attribute=3, ordering=1)}}" method="GET">
+  <input type ="submit" value="Allowed to Mobile Order">
+</form>
+<table class='table table-hover table-bordered container'>
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Floor</th>
+      <th scope="col">Opens</th>
+      <th scope="col">Closes</th>
+      <th scope="col">Mobile Order Available</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for rest in avail_rests%}
+      <tr>
+        <th scope="row">{{rest.name}}</th>
+        <td>{{rest.floor}}</td>
+        <td>{{rest.OpeningTime}}</td>
+        <td>{{rest.ClosingTime}}</td>
+        <td>{{rest.MobileOrder}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

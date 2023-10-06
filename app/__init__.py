@@ -33,4 +33,6 @@ def create_app():
     from .crosscomparisons import bp as crossComp_bp
     app.register_blueprint(crossComp_bp)
     
+    from .restaurants import bp as rest_bp
+    app.register_blueprint(rest_bp)
     return app
