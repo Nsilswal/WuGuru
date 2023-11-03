@@ -39,28 +39,27 @@ class Recommendation:
             return None
     
     @staticmethod
-    def get_all(attribute=2, ordering=0):
-        # Attribute: 0 - title, 1 - time_submitted, 2 - popularity
-        # Ordering: 0 - DESC, 1 - ASC
-        attribute_list = ['title', 'time_submitted', 'popularity']
-        ordering_list = ['DESC', 'ASC']
+    def get_all(attribute='title', ordering='ASC'):
+        attribute_dict = {
+            "Title": "title",
+            "Recent Posts": "time_submitted",
+            "Trending" : "popularity"
+        }
+        ordering_dict = {
+            "Ascending": "ASC",
+            "Descending" : "DESC"
+        }
 
-        if(0 <= attribute <= 2 and 0 <= ordering <= 1):
+        if(attribute in attribute_dict and ordering in ordering_dict):
             query = f"""SELECT *
                         FROM Recommendations
-                        ORDER BY {attribute_list[attribute]} {ordering_list[ordering]}"""
+                        ORDER BY {attribute_dict[attribute]} {ordering_dict[ordering]}"""
         else:
             query = """SELECT *
                         FROM Recommendations
                         ORDER BY popularity DESC"""
 
         rows = app.db.execute(query)
-
-        # rows = app.db.execute('''
-        # SELECT *
-        # FROM Recommendations
-        # ORDER BY :attribute :ordering
-        # ''',attribute=attribute, ordering=ordering)
         
         return [Recommendation(*row) for row in rows]
     

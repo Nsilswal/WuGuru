@@ -17,9 +17,11 @@ def recommendations():
     recommendations = Recommendation.get_all()
     return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
 
-@bp.route('/recommendations/filter/<int:attribute>/<int:ordering>', methods=['GET'])
-def recommendations_filter(attribute, ordering):
-    recommendations = Recommendation.get_all(attribute, ordering)
+@bp.route('/recommendations/filter', methods=['POST'])
+def recommendations_filter():
+    attr = request.form['Attribute']
+    order = request.form['Ordering']
+    recommendations = Recommendation.get_all(attr, order)
     return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
 
 @bp.route('/recommendations/add', methods=['POST'])
