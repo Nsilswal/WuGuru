@@ -9,6 +9,7 @@ from datetime import datetime
  
 from .models.recommendation import Recommendation
 from .models.rec_photo import Rec_Photo
+from .models.user import User
 
 bp = Blueprint('recommendations', __name__)
 
@@ -27,7 +28,7 @@ def recommendations_filter():
 @bp.route('/recommendations/search', methods=['GET'])
 def recommendations_search():
     keyword = request.args.get('query')
-    recommendations = Recommendation.search_by_title(keyword)
+    recommendations = Recommendation.search_by_keyword(keyword)
     return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
 
 @bp.route('/recommendations/add', methods=['POST'])
@@ -47,8 +48,10 @@ def recommendation_add():
 
 @bp.route('/recommendations/view/<int:rec_id>', methods=['GET'])
 def recommendations_view(rec_id):
+    rec_info = Recommendation.get(rec_id)
     rec_photos = Rec_Photo.get_all(rec_id)
-    return render_template('recommendation_view.html', title="View Recommendation", rec=Recommendation.get(rec_id), photos=rec_photos)
+    user_creator = User.get(rec_info.user_id)
+    return render_template('recommendation_view.html', title="View Recommendation", rec=rec_info, photos=rec_photos, user=user_creator)
 
 @bp.route('/recommendations/upvote/<int:rec_id>', methods=['POST'])
 def recommendations_upvote(rec_id):
