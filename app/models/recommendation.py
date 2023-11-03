@@ -19,6 +19,16 @@ class Recommendation:
         return Recommendation(*(rows[0])) if rows else None
 
     @staticmethod
+    def search_by_title(keyword):
+        modified_keyword = f'%{keyword}%'
+        rows = app.db.execute('''
+            SELECT id, user_id, title, description, time_submitted, popularity
+            FROM Recommendations
+            WHERE title LIKE :modified_keyword
+            ''', modified_keyword=modified_keyword)
+        return [Recommendation(*row) for row in rows]  
+      
+    @staticmethod
     def register(user_id, title, description, time_submitted, popularity):
         try:
             rows = app.db.execute("""

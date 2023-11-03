@@ -24,6 +24,12 @@ def recommendations_filter():
     recommendations = Recommendation.get_all(attr, order)
     return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
 
+@bp.route('/recommendations/search', methods=['GET'])
+def recommendations_search():
+    keyword = request.args.get('query')
+    recommendations = Recommendation.search_by_title(keyword)
+    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
+
 @bp.route('/recommendations/add', methods=['POST'])
 def recommendation_add():
     form = RecommendationForm()
