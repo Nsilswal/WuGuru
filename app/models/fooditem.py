@@ -9,25 +9,26 @@ class Fooditem:
         self.fats = fats
         self.price = price
         self.allergens = allergens
+        self.restaurantID = restaurantID
 
     @staticmethod
     def get(id):
         rows = app.db.execute('''
         SELECT id, name, protein, 
-        sugars, fats, price,allergens
+        sugars, fats, price,allergens,restaurantID
         FROM fooditems
         WHERE id = :id
         ''', id=id)
         return Fooditem(*(rows[0])) if rows else None
 
     @staticmethod
-    def register(id,name,protein,sugars,fats,price,allergens):
+    def register(id,name,protein,sugars,fats,price,allergens,restaurantID):
         try:
             rows = app.db.execute("""
             INSERT INTO fooditems
             (id,name,protein,sugars,
-            fats,price, allergen))
-            VALUES(:id,:title,:protein,:sugars,:fats,:price,:allergens)
+            fats,price, allergens, restaurantID))
+            VALUES(:id,:title,:protein,:sugars,:fats,:price,:allergens,:restaurantID)
             RETURNING id
             """,
             id = id,
@@ -36,7 +37,8 @@ class Fooditem:
             sugars = sugars,
             fats = fats,
             price = price,
-            allergens = allergens)
+            allergens = allergens,
+            restaurantID = restaurantID)
             id = rows[0][0]
             return Fooditem.get(id)
         except Exception as e:
