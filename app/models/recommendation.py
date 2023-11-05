@@ -91,3 +91,13 @@ class Recommendation:
                 WHERE user_id = :uid and time_submitted > :date
                 ''', uid=u, date = d)
             return [Recommendation(*row) for row in rows]
+    
+    @staticmethod
+    def get_all_for_tag(tag_name):
+        rows = app.db.execute("""SELECT Recommendations.id, user_id, title, description, time_submitted, popularity
+                              FROM Recommendations,RecTags
+                              WHERE RecTags.tag_name = :tag_name AND id = rec_id""",
+                              tag_name=tag_name)
+        if rows == None:
+            return []
+        return [Recommendation(*row) for row in rows]

@@ -43,8 +43,13 @@ CREATE TABLE Recommendations (
 
 CREATE TABLE RecPhotos (
     rec_id INT NOT NULL REFERENCES Recommendations(id),
-    filename VARCHAR(100)  NOT NULL,
+    filename VARCHAR(100) NOT NULL,
     PRIMARY KEY(rec_id, filename)
+);
+
+CREATE TABLE RecTags (
+    rec_id INT NOT NULL REFERENCES Recommendations(id),
+    tag_name VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE fooditems (

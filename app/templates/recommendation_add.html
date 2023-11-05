@@ -31,15 +31,14 @@
     <span style="color: red;">[{{ error }}]</span>
     {% endfor %}
   </p>
-  <!-- <p>
-    <label for="selected_items">Select Items:</label>
-    <select name="selected_items[]" multiple>
-      <option value="item1">Item 1</option>
-      <option value="item2">Item 2</option>
-      <option value="item3">Item 3</option>
-      <option value="item4">Item 4</option>
+  <p>
+    {{ form.selected_items.label }}<br/>
+    <select name="selected_items" multiple>
+      {% for choice in form.selected_items.choices %}
+        <option value="{{ choice[0] }}">{{ choice[1] }}</option>
+      {% endfor %}
     </select>
-  </p> -->
+  </p>
   <p>{{ form.submit() }}</p>
 </form>
 

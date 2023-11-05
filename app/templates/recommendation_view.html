@@ -9,18 +9,24 @@
 </form>
 
 <h2>{{rec.title}}</h2>
+
 <body>
   <p>Created By: {{user.firstname}} {{user.lastname}}</p>
   <p>Time Posted: {{rec.time_submitted}}</p>
   <p>Popularity: {{rec.popularity}}</p>
   <p>Description: {{rec.description}}</p>
+  <p>Tags: 
+    {% for tag in tags %}
+        #{{ tag.tag_name }}{% if not loop.last %}, {% endif %}
+    {% endfor %}
+</p>
   <div class="photo-gallery">
     {% for photo in photos %}
         <div class="photo">
             <img src="{{ url_for('recommendations.get_photo', filename=photo.filename) }}" alt="{{ photo.filename }}">
         </div>
     {% endfor %}
-</div>
+  </div>
 </body>
 
 
