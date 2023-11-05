@@ -1,7 +1,7 @@
 from flask import current_app as app
 
 class Fooditem:
-    def __init__(self,id,name,protein,sugars,fats,price,allergens):
+    def __init__(self,id,name,price,protein,sugars,fats,calories, allergens, restaurantID):
         self.id=id
         self.name = name
         self.protein = protein
@@ -10,25 +10,26 @@ class Fooditem:
         self.price = price
         self.allergens = allergens
         self.restaurantID = restaurantID
+        self.calories = calories
 
     @staticmethod
     def get(id):
         rows = app.db.execute('''
         SELECT id, name, protein, 
-        sugars, fats, price,allergens,restaurantID
+        sugars, fats, price,allergens,calories,restaurantID
         FROM fooditems
         WHERE id = :id
         ''', id=id)
         return Fooditem(*(rows[0])) if rows else None
 
     @staticmethod
-    def register(id,name,protein,sugars,fats,price,allergens,restaurantID):
+    def register(id,name,price,protein,sugars,fats,calories, allergens, restaurantID):
         try:
             rows = app.db.execute("""
             INSERT INTO fooditems
             (id,name,protein,sugars,
             fats,price, allergens, restaurantID))
-            VALUES(:id,:title,:protein,:sugars,:fats,:price,:allergens,:restaurantID)
+            VALUES(:id,:title,:protein,:sugars,:fats,:price,:allergens,:calories,:restaurantID)
             RETURNING id
             """,
             id = id,
@@ -37,6 +38,7 @@ class Fooditem:
             sugars = sugars,
             fats = fats,
             price = price,
+            calories = calories,
             allergens = allergens,
             restaurantID = restaurantID)
             id = rows[0][0]
@@ -47,7 +49,7 @@ class Fooditem:
 
     @staticmethod
     def get_all(attribute=6, ordering=0):
-        attribute_list= ['id','name','protein','sugars','fats','price','allergens']
+        attribute_list= ['id','name','protein','sugars','fats','price','allergens','calories','restaurantID']
         ordering_list= ['DESC','ASC']
 
         if(0 <= attribute <= 6 and 0 <= ordering <= 1):

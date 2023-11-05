@@ -1,810 +1,809 @@
-
-Margherita Pizza,15.99,12,2,10,450,Dairy,2
-Spaghetti Bolognese,14.49,18,7,10,580,Gluten,2
-Caprese Salad,10.99,8,5,12,320,Dairy,2
-Chicken Alfredo,17.99,22,3,20,680,Dairy,2
-Tiramisu,6.99,5,15,10,340,Dairy,2
-Pepperoni Pizza,16.49,15,3,14,520,Dairy, Gluten,2
-Garlic Knots,6.99,3,2,6,280,Dairy, Gluten,2
-Pizza Margherita,14.99,12,2,10,420,Dairy, Gluten,2
-Fettuccine Alfredo,16.99,14,6,22,620,Dairy,2
-Pesto Pasta,12.99,10,3,15,460,Nuts,2
-Spinach and Artichoke Dip,8.99,6,4,9,350,Dairy,2
-Mushroom Risotto,11.99,7,3,10,400,None,2
-Bruschetta,7.49,2,3,7,280,None,2
-Caesar Salad,10.49,6,4,12,340,Dairy,2
-Caprese Panini,9.99,12,5,10,420,Dairy, Gluten,2
-Lemon Sorbet,5.99,0,20,0,200,None,2
-Lasagna,17.99,18,8,14,580,Dairy,2
-Tuna Melt,13.99,15,4,10,460,Dairy, Gluten,2
-Gelato,6.99,2,20,8,320,Dairy,2
-Meatball Sub,14.99,20,6,12,540,Gluten,2
-Ricotta Stuffed Shells,12.99,8,6,10,400,Dairy,2
-Antipasto Platter,10.99,10,4,16,480,None,2
-Olive Tapenade,7.99,1,2,10,260,None,2
-Gnocchi,11.99,4,4,6,380,Dairy, Gluten,2
-Eggplant Parmesan,14.99,6,8,10,480,Dairy,2
-Calzone,13.49,16,2,12,520,Dairy, Gluten,2
-Breaded Chicken Cutlet,15.99,24,4,10,560,Dairy, Gluten,2
-Margherita Flatbread,10.99,9,3,7,360,Dairy, Gluten,2
-Lobster Ravioli,18.99,16,4,12,620,Dairy,2
-Mozzarella Sticks,9.99,10,2,12,400,Dairy, Gluten,2
-Tortellini Alfredo,12.99,12,4,14,460,Dairy,2
-Vegetable Lasagna,11.99,10,6,12,440,Dairy,2
-Pepperoncini,5.99,0,3,0,100,None,2
-Garlic Cheese Bread,8.99,5,2,10,320,Dairy, Gluten,2
-Cannoli,7.49,2,18,8,340,Dairy,2
-Mediterranean Salad,9.99,6,4,14,360,None,2
-Margherita Calzone,13.99,10,6,12,480,Dairy, Gluten,2
-Veal Parmesan,17.99,28,3,14,640,Dairy,2
-Fried Calamari,12.99,18,3,8,430,None,2
-Linguine with Clams,15.99,20,3,10,520,Shellfish,2
-Tortellini Primavera,11.99,10,4,8,420,Dairy,2
-Olive Oil Dipping Sauce,5.99,0,0,14,120,None,2
-Spaghetti Carbonara,15.49,16,5,14,500,Egg, Gluten,2
-Garlic Aioli,6.99,1,1,9,280,Egg,2
-Burrata Salad,10.99,8,5,12,340,Dairy,2
-Lemon Gelato,7.99,0,20,2,260,Dairy,2
-Italian Wedding Soup,8.99,5,3,6,320,Dairy,2
-Gnocchi with Pesto,9.99,6,3,14,370,Nuts,2
-Grilled Salmon,18.99,25,2,12,420,Fish,1
-Caesar Salad,12.49,8,4,15,330,Dairy,1
-Beef Burger,14.99,20,3,18,480,Gluten,1
-Vegetable Stir-Fry,16.99,10,8,6,390,Soy,1
-Chocolate Cake,7.99,4,30,15,580,Dairy,1
-Spicy Tuna Roll,9.99,12,5,6,340,Fish,1
-Shrimp Scampi,19.99,22,3,16,550,Shellfish,1
-French Onion Soup,8.49,6,8,9,320,Dairy,1
-Chicken Caesar Wrap,11.99,18,4,14,420,Dairy,1
-Key Lime Pie,6.99,3,20,12,380,Gluten,1
-Lobster Bisque,14.99,10,5,10,420,Shellfish,1
-Grilled Vegetable Platter,15.99,5,10,9,330,None,1
-Chicken Parmesan,17.99,25,4,12,510,Dairy,1
-Mushroom Risotto,12.99,7,3,10,370,None,1
-Cannoli,5.99,2,18,8,300,Dairy,1
-BBQ Ribs,21.99,30,8,18,650,None,1
-Lemon Meringue Pie,7.49,2,25,10,400,Dairy,1
-Stuffed Bell Peppers,16.49,15,7,10,460,None,1
-Pumpkin Soup,9.99,5,10,6,290,Dairy,1
-Shrimp and Grits,19.99,20,4,14,530,Shellfish,1
-Grilled Portobello Mushroom,11.99,6,5,7,360,None,1
-Tofu Stir-Fry,13.99,15,7,8,410,Soy,1
-Breaded Fish Fillet,14.49,18,2,14,420,Fish,1
-Mixed Berry Parfait,6.99,4,20,6,350,Dairy,1
-Eggplant Parmesan,16.99,8,6,14,480,Dairy,1
-Ribeye Steak,24.99,30,0,20,590,None,1
-Baked Potato,8.99,2,3,0,250,None,1
-Grilled Chicken,14.99,25,1,8,360,None,1
-Chicken Caesar Salad,10.49,6,4,12,310,Dairy,1
-Apple Pie,7.99,2,20,10,380,Gluten,1
-Creamy Clam Chowder,11.99,8,3,5,340,Shellfish,1
-Roasted Garlic Shrimp,17.49,20,2,12,490,Shellfish,1
-Crab Cakes,18.99,15,1,10,440,Shellfish,1
-Grilled Swordfish,21.99,30,0,12,530,None,1
-Key Lime Pie,8.99,3,25,12,400,Gluten,1
-Margarita Pizza,14.99,12,2,10,380,Dairy, Gluten,1
-Pepperoni Pizza,16.49,15,3,14,450,Dairy, Gluten,1
-Garlic Knots,6.99,3,2,6,260,Dairy, Gluten,1
-Caprese Salad,11.99,8,5,12,330,Dairy,1
-Tiramisu,7.99,5,15,10,380,Dairy,1
-Pad Thai,12.99,15,10,8,460,Peanuts,1
-Green Curry,14.49,10,6,12,420,Coconut,1
-Tom Yum Soup,8.99,5,3,3,290,Shrimp,1
-Mango Sticky Rice,7.99,2,20,4,360,Dairy,1
-Spring Rolls,9.99,4,5,10,320,Shrimp,1
-Quinoa Salad,10.99,8,4,6,370,None,1
-Avocado Toast,9.49,5,2,15,330,Gluten,1
-Spinach Salad,8.99,6,4,7,280,None,1
-Lentil Soup,7.99,10,2,4,320,None,1
-Vegan Brownie,5.99,3,12,10,280,None,1
-Sashimi Platter,22.99,30,0,8,390,Fish,3
-California Roll,12.99,15,7,5,320,Imitation Crab,3
-Miso Soup,4.99,3,2,1,45,Soy,3
-Tempura Shrimp,16.99,15,4,14,330,Shellfish,3
-Green Tea Ice Cream,5.99,2,15,8,180,Dairy,3
-Sushi Sashimi Combo,23.99,28,3,9,420,Fish,3
-Seaweed Salad,8.49,2,3,5,90,Soy,3
-Spicy Tuna Roll,14.99,12,5,6,310,Fish,3
-Shrimp Tempura Roll,13.49,16,7,8,350,Shellfish,3
-Teriyaki Chicken,17.99,22,8,12,400,Soy,3
-Edamame,4.99,8,2,2,120,Soy,3
-Unagi Nigiri,7.99,10,5,6,190,Fish,3
-Salmon Nigiri,6.49,11,2,4,150,Fish,3
-Yellowtail Nigiri,8.99,13,3,5,170,Fish,3
-Tofu Miso Ramen,15.99,12,7,10,340,Soy,3
-Dragon Roll,18.99,19,8,15,400,Imitation Crab,3
-Soft Shell Crab Roll,16.49,22,4,12,360,Shellfish,3
-Avocado Cucumber Roll,9.99,2,3,6,160,None,3
-Eel Avocado Roll,11.99,4,12,8,210,Fish,3
-Wasabi,2.99,0,0,0,10,None,3
-Sake Nigiri,7.49,14,1,3,140,Fish,3
-Soy Sauce,1.49,2,0,0,15,Soy,3
-Scallop Nigiri,8.49,10,2,5,170,Shellfish,3
-Spicy Salmon Roll,12.99,13,8,10,280,Fish,3
-Octopus Nigiri,9.99,15,3,6,220,None,3
-Cucumber Salad,5.99,1,5,3,70,None,3
-Tuna Tartare,18.49,20,2,8,330,Fish,3
-Sesame Seared Tuna,19.99,26,2,10,370,Fish,3
-Soy-Ginger Glazed Salmon,17.99,28,8,14,400,Fish,3
-Veggie Tempura,13.99,4,5,12,280,Gluten,3
-Udon Noodles,10.99,8,4,2,220,Gluten,3
-Sushi Rice,3.99,2,0,0,50,None,3
-Rainbow Roll,20.99,23,9,16,420,Fish,3
-Wasabi Mayo,4.49,1,2,4,60,Gluten,3
-Inari Sushi,6.99,5,10,2,140,None,3
-Hibachi Chicken,16.99,24,8,10,360,Soy,3
-Seared Yellowtail Nigiri,9.49,16,4,5,200,Fish,3
-Avocado Roll,8.99,3,2,5,170,None,3
-Chirashi Bowl,15.49,18,6,14,330,Fish,3
-Sesame Seared Salmon,18.99,24,6,12,370,Fish,3
-Spicy Edamame,6.49,6,2,4,90,Soy,3
-Veggie Spring Rolls,7.99,2,3,4,110,None,3
-Sushi Sashimi Boat,29.99,36,5,15,510,Fish,3
-Soy Wasabi Glaze,5.49,0,2,0,30,Soy,3
-Spicy Yellowtail Roll,13.99,15,7,9,290,Fish,3
-Avocado Sushi,6.99,2,2,5,120,None,3
-Tofu Teriyaki,14.49,20,9,8,320,Soy,3
-Miso-Glazed Cod,21.99,32,4,16,420,Fish,3
-Shrimp Nigiri,8.99,12,3,6,220,Shellfish,3
-Scallop Nigiri,8.49,10,2,5,170,Shellfish,3
-Octopus Nigiri,9.99,15,3,6,220,None,3
-Eel Nigiri,10.99,20,5,10,280,Fish,3
-Mango Sticky Rice,7.99,2,20,4,300,Dairy,3
-Miso-Glazed Eggplant,10.49,2,7,6,140,Soy,3
-Green Tea,2.99,1,0,0,0,None,3
-Soy Sauce,1.49,2,0,0,15,Soy,3
-Yuzu Sorbet,5.99,0,22,0,120,None,3
-Tacos (Beef),10.99,15,2,12,280,Gluten,4
-Quesadilla,13.49,10,4,18,340,Dairy,4
-Guacamole,7.99,2,5,10,180,None,4
-Enchiladas,14.99,12,6,14,310,Dairy,4
-Churros,5.99,3,20,8,240,Egg,4
-Salsa Verde,3.49,0,3,0,15,None,4
-Chili Rellenos,16.99,8,10,12,330,Gluten,4
-Chicken Fajitas,15.99,20,5,12,290,None,4
-Tres Leches Cake,6.99,4,30,15,280,Dairy,4
-Sopapillas,8.49,2,6,10,190,None,4
-Ceviche,12.99,14,6,6,250,Fish,4
-Tamales,11.99,10,4,8,220,Gluten,4
-Refried Beans,4.99,5,1,4,110,Gluten,4
-Mexican Rice,4.99,2,3,1,90,Gluten,4
-Fried Ice Cream,7.99,4,15,10,260,Dairy,4
-Fish Tacos,14.99,20,3,12,320,Gluten,4
-Pozole,9.49,12,3,10,240,Gluten,4
-Margarita,7.49,0,10,0,200,None,4
-Burrito (Chicken),12.99,18,6,10,300,Dairy,4
-Burrito (Vegetarian),11.99,8,7,8,270,None,4
-Horchata,3.99,2,20,4,170,Dairy,4
-Chimichanga,13.99,15,5,16,340,Gluten,4
-Salsa Roja,3.49,0,2,0,15,None,4
-Carne Asada,16.99,25,2,18,370,Gluten,4
-Taco Salad,10.99,12,4,8,250,Dairy,4
-Taco (Al Pastor),9.99,10,2,6,220,None,4
-Mole Poblano,14.49,8,7,12,300,Dairy,4
-Sopes,8.99,6,4,10,210,Gluten,4
-Mexican Street Corn,6.99,3,6,10,180,Dairy,4
-Agua Fresca,3.99,1,18,0,110,None,4
-Nachos,12.99,10,5,14,280,Dairy,4
-Flan,6.49,5,24,10,270,Dairy,4
-Taco (Carnitas),9.99,12,3,8,230,None,4
-Chiles Rellenos,14.99,10,8,12,310,Gluten,4
-Salsa Pico de Gallo,3.49,1,2,0,15,None,4
-Taco (Barbacoa),11.99,15,2,10,260,None,4
-Fajita Burrito,13.99,20,6,14,330,Dairy,4
-Mexican Wedding Cookies,5.99,2,10,8,190,Nuts,4
-Birria,12.99,15,5,10,290,Gluten,4
-Salsa Ranchera,3.49,0,1,0,10,None,4
-Chimichurri,6.99,0,2,8,130,None,4
-Taco (Lengua),9.99,18,2,6,220,None,4
-Mole Verde,14.49,6,8,12,290,Gluten,4
-Chile Verde,13.99,10,6,14,310,Gluten,4
-Salsa Habanero,3.49,0,5,0,20,None,4
-Chile Colorado,16.99,20,5,16,340,Gluten,4
-Mangonada,5.99,1,30,0,200,None,4
-Taco (Chorizo),11.99,12,2,10,260,None,4
-Salsa Chipotle,3.49,0,4,0,20,None,4
-Chorizo con Papas,12.99,15,4,12,280,None,4
-Salsa Taquera,3.49,0,3,0,15,None,4
-Molletes,8.99,10,3,8,230,Gluten,4
-Huevos Rancheros,9.99,12,3,10,240,Gluten,4
-Cochinita Pibil,14.49,18,5,14,320,Gluten,4
-Salsa Guacamole,4.49,0,3,6,50,None,4
-Chorizo Tacos,10.99,12,3,10,260,None,4
-Salsa Tamarindo,4.49,1,20,0,160,None,4
-Chiles en Nogada,16.99,10,12,14,350,Dairy,4
-Salsa Molcajete,4.49,1,4,6,70,None,4
-Salsa Chile Morita,4.49,0,2,4,40,None,4
-Chile Relleno Tacos,12.99,8,6,12,290,Gluten,4
-Bistec a la Mexicana,14.49,18,3,14,320,Gluten,4
-Salsa Ranchera,3.49,1,2,2,40,None,4
-Salsa de Torear,3.49,0,5,0,20,None,4
-Kung Pao Chicken,12.99,25,5,15,340,Peanuts,5
-Hot and Sour Soup,4.99,5,3,3,120,Egg,5
-General Tso's Chicken,13.49,22,10,18,360,Egg,5
-Egg Fried Rice,8.99,10,2,10,250,Egg,5
-Dumplings,9.99,15,2,10,280,Soy,5
-Peking Duck,19.99,30,3,20,450,None,5
-Sweet and Sour Pork,11.99,18,20,12,320,None,5
-Spring Rolls,6.99,5,3,8,180,Shrimp,5
-Lo Mein,10.49,12,8,14,300,Egg,5
-Dim Sum Platter,14.99,20,10,16,380,None,5
-Mongolian Beef,12.99,26,4,14,350,Gluten,5
-Chow Mein,8.49,8,3,10,220,None,5
-Hot Pot,16.99,25,5,18,400,Shellfish,5
-Ma Po Tofu,10.99,15,3,10,280,Soy,5
-Scallion Pancakes,7.49,4,2,6,160,Egg,5
-Fried Wontons,9.99,6,5,12,240,Shrimp,5
-Black Bean Sauce Noodles,11.99,10,4,14,320,None,5
-Szechuan Shrimp,14.49,20,6,12,350,Shellfish,5
-General Tso's Tofu,12.99,15,10,16,330,Gluten,5
-Beef and Broccoli,13.99,24,8,12,340,None,5
-Sesame Chicken,12.99,20,15,16,350,None,5
-Cantonese Congee,7.99,5,1,4,150,None,5
-Honey Walnut Shrimp,15.99,18,20,18,380,Tree Nuts,5
-Soy Sauce Chicken,13.49,22,3,14,360,Soy,5
-Mapo Eggplant,10.99,8,5,10,260,Soy,5
-Jiaozi (Potstickers),9.99,15,3,10,280,Soy,5
-Xiaolongbao (Soup Dumplings),11.49,10,3,10,290,Soy,5
-Chow Fun,12.99,18,8,14,340,Soy,5
-Salt and Pepper Shrimp,16.49,22,4,20,400,Shellfish,5
-Sweet and Sour Chicken,11.99,15,18,12,310,None,5
-Kung Pao Tofu,12.49,20,6,14,330,Peanuts,5
-Sichuan Noodles,11.99,12,10,16,320,Peanuts,5
-Wonton Soup,6.99,6,3,2,140,Shrimp,5
-Crispy Pork Belly,14.99,22,0,28,450,None,5
-Scallion Beef Rolls,13.49,18,3,20,360,Gluten,5
-Char Siu Bao (BBQ Pork Buns),8.99,8,15,6,230,Tree Nuts,5
-Kung Pao Shrimp,14.99,20,10,18,380,Peanuts,5
-Sticky Rice Dumplings,11.49,12,5,10,300,Tree Nuts,5
-Black Bean Tofu,9.99,15,4,12,270,Soy,5
-Five-Spice Spare Ribs,15.99,25,8,22,420,None,5
-Cumin Lamb,14.49,28,5,18,370,None,5
-Vegetable Spring Rolls,7.99,3,5,6,170,None,5
-Hunan Chicken,12.99,22,6,16,340,None,5
-Fried Rice with Shrimp,13.49,15,4,14,350,Shrimp,5
-Ginger Scallion Lobster,16.99,30,5,22,400,None,5
-Twice-Cooked Pork,11.99,18,4,12,310,None,5
-Dan Dan Noodles,10.99,12,6,10,290,Peanuts,5
-Zongzi (Sticky Rice Dumplings),8.49,6,5,8,200,None,5
-Lion's Head Meatballs,14.99,20,4,18,380,Gluten,5
-Szechuan Eggplant,12.99,10,6,14,330,Soy,5
-Cantonese Egg Tart,6.99,3,15,6,180,Dairy,5
-Garlic Pork,13.99,20,4,16,350,None,5
-Stir-Fried Snow Peas,8.99,4,6,2,120,None,5
-Szechuan Fish,15.49,26,6,20,400,Shellfish,5
-Shrimp Toast,11.49,10,5,14,320,Shrimp,5
-Chinese Broccoli with Oyster Sauce,10.99,4,4,12,270,None,5
-Sesame Balls,6.99,3,15,10,240,None,5
-Sizzling Rice Soup,9.99,5,5,8,180,None,5
-Shrimp Dumplings (Har Gow),7.99,8,4,6,160,Shrimp,5
-Fried Tofu with Spicy Salt,12.99,10,3,16,330,Gluten,5
-Szechuan Tofu,11.99,12,8,14,320,Soy,5
-Chinese BBQ Ribs,13.49,20,6,16,350,None,5
-Pan-Fried Noodles,14.99,16,8,20,380,Gluten,5
-Peking Pork Chops,12.99,20,4,14,330,None,5
-Egg Drop Soup,6.99,3,1,2,120,Egg,5
-Chinese Lemon Chicken,11.99,18,12,10,310,None,5
-Bitter Melon Stir-Fry,10.99,8,4,12,270,None,5
-Buddha's Delight,9.99,6,6,10,250,Gluten,5
-Salt and Pepper Tofu,13.99,12,4,18,350,Gluten,5
-Sichuan String Beans,11.99,4,6,12,290,None,5
-Chao Mian (Stir-Fried Noodles),12.49,10,6,14,320,Gluten,5
-Hummus with Pita,8.99,5,1,8,180,Sesame,6
-Falafel Platter,12.99,10,2,14,250,None,6
-Tzatziki Sauce,4.99,3,2,6,120,Dairy,6
-Greek Salad,10.99,6,6,8,200,Dairy,6
-Lamb Gyros,14.99,20,3,12,280,None,6
-Tabbouleh,7.99,2,4,5,150,Wheat,6
-Baba Ghanoush,9.49,3,2,9,170,Sesame,6
-Chicken Shawarma,13.99,18,5,10,260,None,6
-Stuffed Grape Leaves,8.99,4,2,5,140,None,6
-Feta Cheese,5.99,6,1,8,160,Dairy,6
-Lentil Soup,6.99,5,3,4,130,None,6
-Kebab Platter,15.99,24,4,16,300,None,6
-Couscous,9.99,4,1,6,140,Wheat,6
-Labneh,8.49,7,3,10,180,Dairy,6
-Fattoush Salad,10.49,4,5,7,160,Wheat,6
-Beef Shawarma,14.99,22,4,14,270,None,6
-Rice Pilaf,6.99,3,1,6,120,None,6
-Moussaka,12.99,14,6,10,240,Dairy,6
-Spanakopita,8.99,6,2,8,160,Dairy,6
-Kibbeh,10.99,12,2,10,200,Wheat,6
-Grilled Octopus,15.99,20,2,18,290,None,6
-Cacık,7.99,5,2,5,140,Dairy,6
-Couscous Salad,9.49,6,4,7,160,Wheat,6
-Turkish Delight,5.99,1,18,1,80,Nuts,6
-Shish Taouk,13.99,18,4,12,260,None,6
-Taramosalata,8.49,3,1,7,150,Fish,6
-Moussaka,12.99,14,6,10,240,Dairy,6
-Baklava,9.99,3,20,10,220,Nuts,6
-Pita Bread,6.99,3,1,4,110,Wheat,6
-Lamb Kofta,14.99,20,3,16,280,Wheat,6
-Labneh,8.49,7,3,10,180,Dairy,6
-Baba Ghanoush,9.49,3,2,9,170,Sesame,6
-Lentil Soup,6.99,5,3,4,130,None,6
-Kebab Platter,15.99,24,4,16,300,None,6
-Chicken Shawarma,13.99,18,5,10,260,None,6
-Tzatziki Sauce,4.99,3,2,6,120,Dairy,6
-Stuffed Grape Leaves,8.99,4,2,5,140,None,6
-Falafel Platter,12.99,10,2,14,250,None,6
-Hummus with Pita,8.99,5,1,8,180,Sesame,6
-Spanakopita,8.99,6,2,8,160,Dairy,6
-Moussaka,12.99,14,6,10,240,Dairy,6
-Tabbouleh,7.99,2,4,5,150,Wheat,6
-Lamb Gyros,14.99,20,3,12,280,None,6
-Feta Cheese,5.99,6,1,8,160,Dairy,6
-Couscous,9.99,4,1,6,140,Wheat,6
-Chicken Shawarma,13.99,18,5,10,260,None,6
-Stuffed Grape Leaves,8.99,4,2,5,140,None,6
-Tzatziki Sauce,4.99,3,2,6,120,Dairy,6
-Kebab Platter,15.99,24,4,16,300,None,6
-Kibbeh,10.99,12,2,10,200,Wheat,6
-Taramosalata,8.49,3,1,7,150,Fish,6
-Fattoush Salad,10.49,4,5,7,160,Wheat,6
-Labneh,8.49,7,3,10,180,Dairy,6
-Lentil Soup,6.99,5,3,4,130,None,6
-Baba Ghanoush,9.49,3,2,9,170,Sesame,6
-Turkish Delight,5.99,1,18,1,80,Nuts,6
-Shish Taouk,13.99,18,4,12,260,None,6
-Kibbeh,10.99,12,2,10,200,Wheat,6
-Rice Pilaf,6.99,3,1,6,120,None,6
-Moussaka,12.99,14,6,10,240,Dairy,6
-Baklava,9.99,3,20,10,220,Nuts,6
-Pita Bread,6.99,3,1,4,110,Wheat,6
-Cacık,7.99,5,2,5,140,Dairy,6
-Couscous Salad,9.49,6,4,7,160,Wheat,6
-Turkish Delight,5.99,1,18,1,80,Nuts,6
-Shish Taouk,13.99,18,4,12,260,None,6
-Taramosalata,8.49,3,1,7,150,Fish,6
-Moussaka,12.99,14,6,10,240,Dairy,6
-Baklava,9.99,3,20,10,220,Nuts,6
-Pita Bread,6.99,3,1,4,110,Wheat,6
-Lamb Kofta,14.99,20,3,16,280,Wheat,6
-Bruschetta,7.99,3,3,6,150,Gluten,7
-Caesar Salad,9.49,4,2,8,180,Egg,7
-Caprese Salad,8.99,5,3,9,160,Dairy,7
-Quiche Lorraine,10.99,12,2,14,220,Gluten,7
-Mushroom Risotto,13.99,7,2,10,230,Dairy,7
-Beef Bourguignon,16.99,20,4,18,290,Gluten,7
-Coq au Vin,15.99,18,5,16,280,Gluten,7
-Ratatouille,11.49,3,7,8,190,None,7
-Bouillabaisse,17.99,22,6,20,320,Fish,7
-Cassoulet,14.99,14,3,16,270,Gluten,7
-Sole Meunière,19.99,25,2,22,350,Fish,7
-Escargot,12.99,8,1,14,240,Dairy,7
-Lobster Bisque,10.99,6,2,12,200,Shellfish,7
-Croissant,4.99,3,4,6,120,Gluten,7
-Crepes,8.49,6,8,10,180,Dairy,7
-Tartiflette,13.99,10,4,14,240,Dairy,7
-French Onion Soup,9.99,5,6,8,160,Gluten,7
-Pork Schnitzel,12.99,20,2,12,220,Gluten,7
-Goulash,14.99,16,5,14,260,Gluten,7
-Pierogi,10.49,7,3,10,190,Gluten,7
-Borscht,8.99,4,5,6,140,Gluten,7
-Potato Leek Soup,7.49,2,3,5,110,Gluten,7
-Spanakopita,12.99,6,2,14,230,Dairy,7
-Moules Marinières,15.99,18,2,20,310,Shellfish,7
-Gnocchi,11.99,6,3,14,240,Gluten,7
-Rösti,9.49,4,2,8,160,None,7
-Wiener Schnitzel,16.99,22,3,20,330,Gluten,7
-Sauerbraten,13.99,18,4,14,280,Gluten,7
-Pretzel,5.99,3,2,5,120,Gluten,7
-Strudel,8.49,4,12,10,190,Nuts,7
-Kebab,10.99,15,4,12,220,None,7
-Baklava,9.99,3,20,10,220,Nuts,7
-Stroopwafels,7.49,2,15,6,140,Gluten,7
-Poffertjes,6.99,2,12,5,130,Gluten,7
-Scotch Egg,8.49,9,1,12,190,Egg,7
-Bangers and Mash,12.99,14,3,16,260,Gluten,7
-Shepherd's Pie,11.99,10,4,12,240,Gluten,7
-Black Pudding,7.99,6,1,10,180,Gluten,7
-Ploughman's Lunch,9.99,12,8,10,220,Dairy,7
-Lancashire Hotpot,13.49,16,4,14,280,Gluten,7
-Cullen Skink,10.99,8,4,10,220,Gluten,7
-Haggis,8.99,10,2,10,200,Gluten,7
-Cornish Pasty,7.99,6,3,8,160,Gluten,7
-Bubble and Squeak,6.99,4,5,6,140,Gluten,7
-Scampi and Chips,15.99,18,2,20,320,Shellfish,7
-Pork Pie,9.49,8,2,10,190,Gluten,7
-Beef Wellington,17.99,22,4,20,350,Gluten,7
-Kedgeree,11.99,12,5,10,240,Fish,7
-Ploughman's Lunch,9.99,12,8,10,220,Dairy,7
-Fish and Chips,12.99,20,2,16,270,Gluten,7
-Sticky Toffee Pudding,7.99,3,20,8,180,Dairy,7
-Bread and Butter Pudding,8.99,5,15,12,200,Dairy,7
-Eccles Cake,6.49,2,10,8,150,Gluten,7
-Chelsea Bun,5.99,4,15,6,130,Gluten,7
-Lancashire Hotpot,13.49,16,4,14,280,Gluten,7
-Cullen Skink,10.99,8,4,10,220,Gluten,7
-Haggis,8.99,10,2,10,200,Gluten,7
-Cornish Pasty,7.99,6,3,8,160,Gluten,7
-Bubble and Squeak,6.99,4,5,6,140,Gluten,7
-Scampi and Chips,15.99,18,2,20,320,Shellfish,7
-Chicken Tikka,12.99,25,3,12,280,Dairy,8
-Butter Chicken,14.49,22,5,16,310,Dairy,8
-Biryani (Chicken),13.99,20,4,14,300,None,8
-Paneer Tikka,11.99,12,3,10,250,Dairy,8
-Tandoori Naan,3.49,4,2,6,140,Gluten,8
-Rogan Josh (Lamb),16.99,28,6,18,350,None,8
-Chana Masala,9.99,10,4,8,220,None,8
-Samosa,5.99,3,3,8,160,Gluten,8
-Vindaloo (Pork),15.99,24,4,20,320,None,8
-Aloo Gobi,11.99,6,4,10,240,None,8
-Dal Makhani,10.99,8,2,10,230,Dairy,8
-Tandoori Chicken,13.99,28,2,14,290,Dairy,8
-Malai Kofta,12.49,10,10,16,280,Dairy,8
-Gulab Jamun,6.99,2,20,10,220,Dairy,8
-Palak Paneer,11.99,14,5,12,260,Dairy,8
-Veg Biryani,11.49,6,4,10,240,None,8
-Chaat,7.99,5,8,6,180,None,8
-Tandoori Roti,3.99,3,1,2,120,Gluten,8
-Mutton Curry,15.49,26,3,18,340,None,8
-Pani Puri,8.99,4,6,4,160,Gluten,8
-Aloo Paratha,6.49,4,2,8,170,Dairy,8
-Rice Pilaf,5.99,3,1,6,140,None,8
-Raita,4.99,3,4,5,130,Dairy,8
-Kheer,7.49,2,15,8,190,Dairy,8
-Bhindi Masala,9.99,6,4,8,220,None,8
-Pakoras,6.99,5,6,10,200,Gluten,8
-Pulao (Veg),8.99,4,3,6,180,None,8
-Mango Lassi,4.49,3,30,3,150,Dairy,8
-Baingan Bharta,10.99,8,6,10,240,Dairy,8
-Pesarattu,5.49,4,2,6,140,Gluten,8
-Tandoori Fish,14.99,24,3,18,330,None,8
-Saffron Rice,7.99,3,2,6,160,Gluten,8
-Dosa,9.49,5,1,6,180,Gluten,8
-Papri Chaat,6.99,4,8,6,160,None,8
-Tandoori Shrimp,16.99,26,2,20,360,None,8
-Methi Malai Murg,12.99,18,4,14,290,Dairy,8
-Hyderabadi Biryani (Mutton),16.49,24,4,20,340,None,8
-Rajma Chawal,8.99,6,3,8,220,None,8
-Chole Bhature,11.99,10,6,14,270,Gluten,8
-Misal Pav,10.99,8,6,12,260,Gluten,8
-Nihari,13.99,20,2,16,310,None,8
-Shahi Paneer,12.49,10,6,16,280,Dairy,8
-Puri Bhaji,6.99,4,4,10,200,Gluten,8
-Mutton Keema,13.99,16,4,14,280,None,8
-Chicken Korma,14.99,22,6,18,320,Dairy,8
-Bisi Bele Bath,11.99,8,4,10,240,Gluten,8
-Masala Dosa,9.99,5,1,6,180,Gluten,8
-Rava Upma,7.49,4,2,6,160,Gluten,8
-Tandoori Mushroom,10.99,6,3,10,230,Dairy,8
-Shrikhand,6.99,3,25,8,190,Dairy,8
-Pav Bhaji,9.49,6,6,10,220,Dairy,8
-Matzo Ball Soup,6.99,5,2,4,130,Gluten,9
-Latkes,8.99,4,2,7,160,Egg,9
-Challah Bread,4.99,5,5,2,120,Gluten,9
-Brisket,16.99,28,5,20,340,Gluten,9
-Kugel,10.49,6,12,8,190,Dairy,9
-Borscht,7.99,4,8,5,140,Gluten,9
-Rugelach,6.99,2,8,10,180,Nuts,9
-Shakshuka,11.99,12,8,14,250,Egg,9
-Kreplach,9.49,10,2,6,180,Gluten,9
-Cholent,13.99,14,5,16,290,Gluten,9
-Sufganiyot,8.99,3,18,10,220,Dairy,9
-Gefilte Fish,12.99,10,4,14,260,Fish,9
-Knish,7.99,5,2,8,160,Gluten,9
-Hamantaschen,6.99,2,10,8,180,Nuts,9
-Chopped Liver,10.99,12,4,10,240,None,9
-Kasha Varnishkes,9.99,6,3,8,200,Gluten,9
-Babka,11.49,5,12,14,260,Dairy,9
-Kasha,7.49,4,2,6,140,Gluten,9
-Falafel,8.99,6,3,10,180,Gluten,9
-Tzimmes,9.49,4,10,8,200,Gluten,9
-Schnitzel,12.99,20,3,16,270,Gluten,9
-Herring,10.99,12,1,8,240,Fish,9
-Chopped Herring,6.99,5,2,4,140,Fish,9
-Blintzes,8.99,6,5,10,180,Dairy,9
-Sufganiyot,8.99,3,18,10,220,Dairy,9
-Chicken Soup with Matzo Balls,11.99,12,5,8,240,Gluten,9
-Kugel,10.49,6,12,8,190,Dairy,9
-Kreplach,9.49,10,2,6,180,Gluten,9
-Lokshen Kugel,7.99,4,6,8,160,Gluten,9
-Gefilte Fish,12.99,10,4,14,260,Fish,9
-Potato Kugel,10.99,5,4,8,220,Egg,9
-Matzo Brei,8.99,8,3,6,180,Egg,9
-Chopped Liver,10.99,12,4,10,240,None,9
-Kasha Varnishkes,9.99,6,3,8,200,Gluten,9
-Cholent,13.99,14,5,16,290,Gluten,9
-Tzimmes,9.49,4,10,8,200,Gluten,9
-Schnitzel,12.99,20,3,16,270,Gluten,9
-Herring,10.99,12,1,8,240,Fish,9
-Knish,7.99,5,2,8,160,Gluten,9
-Hamantaschen,6.99,2,10,8,180,Nuts,9
-Chopped Herring,6.99,5,2,4,140,Fish,9
-Blintzes,8.99,6,5,10,180,Dairy,9
-Rugelach,6.99,2,8,10,180,Nuts,9
-Babka,11.49,5,12,14,260,Dairy,9
-Challah Bread,4.99,5,5,2,120,Gluten,9
-Kasha,7.49,4,2,6,140,Gluten,9
-Cholent,13.99,14,5,16,290,Gluten,9
-Falafel,8.99,6,3,10,180,Gluten,9
-Shakshuka,11.99,12,8,14,250,Egg,9
-Borscht,7.99,4,8,5,140,Gluten,9
-Lokshen Kugel,7.99,4,6,8,160,Gluten,9
-Potato Kugel,10.99,5,4,8,220,Egg,9
-Chicken Soup with Matzo Balls,11.99,12,5,8,240,Gluten,9
-Matzo Brei,8.99,8,3,6,180,Egg,9
-Challah Bread,4.99,5,5,2,120,Gluten,9
-Pho,9.99,18,4,2,180,Gluten,10
-Banh Mi,7.99,15,5,10,220,Gluten,10
-Goi Cuon (Spring Rolls),6.99,6,4,2,120,Shrimp,10
-Bun Thit Nuong,8.99,20,8,6,230,None,10
-Com Tam,10.49,25,6,8,280,None,10
-Bo Luc Lac,13.99,22,5,14,310,None,10
-Ca Kho To,11.99,18,8,12,270,None,10
-Bun Rieu,9.49,14,10,6,220,Shrimp,10
-Goi Du Du,7.49,3,12,2,110,None,10
-Canh Chua,8.99,8,10,4,160,None,10
-Cao Lau,12.99,12,8,10,240,Gluten,10
-Bun Bo Hue,10.99,24,6,16,290,Gluten,10
-Com Ga Hoi An,14.49,20,2,14,320,Gluten,10
-Nom Hoa Chuoi,6.49,2,10,1,90,None,10
-Cha Ca,11.99,16,2,12,260,Gluten,10
-Bun Moc,9.99,15,5,10,230,None,10
-Bun Oc,8.49,8,8,6,180,Snail,10
-Goi Cuon Tom Thit,7.99,8,6,4,140,Shrimp,10
-Banh Canh Cua,10.99,16,4,10,250,Gluten,10
-Com Hen,8.49,6,4,4,160,Shellfish,10
-Goi Xoai,7.49,4,14,2,120,None,10
-Bun Cha,11.49,22,8,10,260,None,10
-Bun Dau Mam Tom,9.99,12,6,8,220,Shrimp,10
-Banh Khot,7.99,6,4,6,140,Shrimp,10
-Hu Tieu,10.99,16,6,12,270,Gluten,10
-Goi Tom Thit,8.99,10,8,6,200,Shrimp,10
-Mi Quang,12.49,10,8,14,290,Gluten,10
-Nom Thit Bo Kho,6.99,12,10,4,180,None,10
-Ca Tim Nuong Mo Hanh,11.99,8,6,10,240,None,10
-Bun Hen Xuc Banh Trang,9.49,4,10,2,140,Shellfish,10
-Bo La Lot,8.99,14,4,12,220,None,10
-Bun Thang,7.49,12,10,2,160,Gluten,10
-Bun Mang Vit,10.99,14,10,6,240,Gluten,10
-Nom Nom,8.49,6,14,2,140,None,10
-Banh It Tran,7.99,4,8,4,120,None,10
-Pho Cuon,11.99,16,6,8,260,Gluten,10
-Bun Rieu Cua,9.49,16,12,4,200,Shrimp,10
-Bun Suon Nuong,6.99,20,2,10,210,None,10
-Goi Ngo Sen,12.49,4,12,10,260,Shrimp,10
-Banh Trang Nuong,10.49,8,14,8,220,None,10
-Bun Thit Heo Nuong,8.99,16,4,6,190,None,10
-Nom Du Du,7.49,2,12,2,110,None,10
-Bun Kho,11.99,22,8,12,270,None,10
-Bun Dau,9.99,14,2,10,220,None,10
-Com Suon Bi,8.49,16,8,4,200,None,10
-Bun Tau,6.99,18,4,6,190,None,10
-Ca Tim Xao Nam,10.49,4,10,8,220,None,10
-Goi Vit,12.99,14,14,10,260,None,10
-Banh Hoi,9.49,6,8,4,160,Shrimp,10
-Bun Dau Mam Tom,7.99,12,10,4,180,Shrimp,10
-Mi Xao Don,11.49,8,12,10,240,Gluten,10
-Nom Hoa Chuoi,8.99,4,10,2,130,None,10
-Com Ga Xoi Mo,6.49,20,4,8,210,Gluten,10
-Nom Thit Bo Kho,10.99,12,10,4,200,None,10
-Banh Canh Cua,9.99,16,4,10,250,Gluten,10
-Bun Hen Xuc Banh Trang,7.99,4,10,2,140,Shellfish,10
-Banh Xeo,11.49,8,8,10,240,Shrimp,10
-Goi Xoai,8.99,4,14,2,120,None,10
-Hu Tieu,10.49,16,6,12,270,Gluten,10
-Ca Tim Nuong Mo Hanh,9.49,8,6,10,240,None,10
-Goi Tom Thit,7.99,10,8,6,200,Shrimp,10
-Mi Quang,11.99,10,8,14,290,Gluten,10
-Nom Nom,8.99,6,14,2,140,None,10
-Bun Cha,12.49,22,8,10,260,None,10
-Tomato Soup,4.99,3,6,2,100,None,11
-Chicken Noodle Soup,5.99,10,3,6,140,Gluten,11
-Minestrone Soup,6.99,7,7,3,120,Gluten,11
-Miso Soup,5.49,3,2,2,80,Soy,11
-Potato Leek Soup,6.49,3,2,6,130,Dairy,11
-Lentil Soup,5.99,8,2,2,110,None,11
-Cream of Mushroom Soup,7.49,5,3,8,160,Dairy,11
-Clam Chowder,8.49,12,4,10,200,Shellfish,11
-French Onion Soup,7.99,4,6,8,160,Gluten,11
-Beef Stew,9.49,16,4,10,210,Gluten,11
-Broccoli Cheddar Soup,7.99,7,4,12,180,Dairy,11
-Tom Yum Soup,8.99,10,8,4,150,Shellfish,11
-Gazpacho,6.99,2,5,1,90,None,11
-Hot and Sour Soup,8.49,6,5,3,130,Egg,11
-Goulash Soup,7.49,8,6,4,140,Gluten,11
-Chowder,9.99,14,8,6,190,Shellfish,11
-Butternut Squash Soup,8.99,2,10,4,120,Dairy,11
-Pho,10.49,18,4,2,180,Gluten,11
-Borscht,9.49,4,8,5,140,Gluten,11
-Matzo Ball Soup,7.99,5,2,4,130,Gluten,11
-Wonton Soup,8.99,7,2,4,140,Gluten,11
-Gumbo,10.99,18,6,14,240,Shellfish,11
-Sancocho,9.49,16,4,12,220,None,11
-Tortilla Soup,8.49,8,3,6,160,Gluten,11
-Avgolemono Soup,7.49,6,4,4,130,Egg,11
-Ramen,9.99,12,3,6,180,Gluten,11
-Vichyssoise,8.99,4,2,10,200,Dairy,11
-Cabbage Soup,7.99,6,5,2,120,Gluten,11
-Shrimp Bisque,10.49,12,6,14,230,Shellfish,11
-Lobster Bisque,9.49,10,5,12,210,Shellfish,11
-Bisque,8.49,8,4,10,190,Shellfish,11
-Pumpkin Soup,7.99,2,8,6,150,Gluten,11
-Egg Drop Soup,6.99,4,2,2,90,Egg,11
-Laksa,8.99,12,4,8,170,Shellfish,11
-Rasam,7.49,2,6,2,100,Gluten,11
-Menudo,9.49,12,3,8,160,None,11
-Caldo Verde,8.49,6,4,6,140,Gluten,11
-Soto Ayam,7.99,10,5,4,120,Gluten,11
-Avgolemono Soup,6.99,6,4,4,130,Egg,11
-Harira,8.99,8,6,4,150,None,11
-Khar,9.99,16,4,10,210,None,11
-Fasolada,7.49,6,5,2,120,Gluten,11
-Kuy Teav,10.49,12,3,6,180,Gluten,11
-Bun Rieu,9.49,14,10,6,220,Shrimp,11
-Borscht,7.99,4,8,5,140,Gluten,11
-Soljanka,8.99,8,6,4,160,None,11
-Sinigang,6.99,6,8,2,110,None,11
-Bun Thit Nuong,9.99,20,8,6,230,None,11
-Satsivi,8.49,14,2,10,200,Nuts,11
-Caldo Tlalpeño,7.49,8,4,6,150,None,11
-Patsás,10.49,12,4,8,170,None,11
-Acquacotta,9.99,4,6,4,140,Gluten,11
-Kharcho,8.99,10,4,6,160,None,11
-Ribollita,7.99,8,6,4,130,Gluten,11
-Tom Kha Gai,6.99,12,8,6,180,Coconut,11
-Menudo,8.49,10,5,4,120,Gluten,11
-Caldo Verde,9.49,6,4,6,140,Gluten,11
-Jókai Bableves,7.99,10,4,6,160,Gluten,11
-Mulligatawny,8.99,12,5,10,190,Gluten,11
-Avgolemono Soup,6.99,6,4,4,130,Egg,11
-Harira,9.99,8,6,4,150,None,11
-Khar,8.49,16,4,10,210,None,11
-Fasolada,7.49,6,5,2,120,Gluten,11
-Kuy Teav,10.49,12,3,6,180,Gluten,11
-Bun Rieu,9.49,14,10,6,220,Shrimp,11
-Borscht,8.99,4,8,5,140,Gluten,11
-Soljanka,7.99,8,6,4,160,None,11
-Sinigang,6.99,6,8,2,110,None,11
-Soto Ayam,8.99,10,5,4,120,Gluten,11
-Avgolemono Soup,7.49,6,4,4,130,Egg,11
-Harira,9.99,8,6,4,150,None,11
-Khar,8.49,16,4,10,210,None,11
-Fasolada,7.99,6,5,2,120,Gluten,11
-Kuy Teav,10.49,12,3,6,180,Gluten,11
-Bun Rieu,9.49,14,10,6,220,Shrimp,11
-Borscht,8.99,4,8,5,140,Gluten,11
-Soljanka,7.99,8,6,4,160,None,11
-Sinigang,6.99,6,8,2,110,None,11
-Soto Ayam,8.99,10,5,4,120,Gluten,11
-Buffalo Wings,9.99,20,2,16,280,Gluten,12
-Mozzarella Sticks,7.99,10,4,18,260,Dairy,12
-Jalapeno Poppers,8.49,8,2,12,220,Gluten,12
-Potato Skins,7.49,6,3,10,200,Dairy,12
-Nachos,10.99,12,4,14,240,Gluten,12
-Fried Calamari,11.99,18,2,20,310,Shellfish,12
-Onion Rings,6.99,4,6,14,260,Gluten,12
-Chicken Tenders,8.99,15,3,12,250,Gluten,12
-Sliders,9.49,16,4,14,270,Gluten,12
-Loaded Fries,7.99,6,2,10,220,Gluten,12
-Quesadilla,10.99,14,4,16,290,Gluten,12
-Bruschetta,8.99,4,2,10,200,Gluten,12
-Pretzel Bites,6.49,4,2,6,160,Gluten,12
-Tater Tots,7.49,2,1,10,190,Gluten,12
-Chips and Salsa,5.99,2,2,6,150,Gluten,12
-Spinach Artichoke Dip,9.99,6,2,12,250,Dairy,12
-Mini Tacos,8.49,10,3,14,260,Gluten,12
-Fish and Chips,11.99,20,4,22,320,Gluten,12
-Cheese Fries,7.99,8,2,14,240,Dairy,12
-Fried Pickles,6.99,2,4,10,180,Gluten,12
-Boneless Wings,8.99,18,2,14,260,Gluten,12
-Bacon-Wrapped Shrimp,9.49,14,2,12,250,None,12
-Mushroom Swiss Burger,10.99,20,4,18,300,Gluten,12
-Loaded Nachos,11.49,16,4,20,320,Gluten,12
-Fried Mozzarella,7.49,8,3,12,230,Dairy,12
-Sweet Potato Fries,6.99,2,6,14,240,Gluten,12
-Popcorn Shrimp,9.99,12,2,16,280,Gluten,12
-Potato Chips,5.99,2,2,8,170,Gluten,12
-Shrimp Cocktail,10.99,20,2,6,260,Shellfish,12
-Guacamole,8.99,4,4,10,220,None,12
-Hot Dog,7.99,10,3,12,250,Gluten,12
-Fried Chicken,11.99,20,2,18,290,Gluten,12
-Pulled Pork Sandwich,9.49,14,6,12,270,Gluten,12
-Cheese Curds,8.49,12,4,16,280,Dairy,12
-Chili Cheese Fries,10.99,10,6,18,290,Dairy,12
-Buffalo Cauliflower Bites,7.99,6,4,10,200,Gluten,12
-Sausage Rolls,9.99,10,2,14,260,Gluten,12
-Baked Brie,8.99,6,6,12,230,Dairy,12
-Fried Ravioli,11.99,10,4,16,280,Dairy,12
-Chips and Guacamole,6.99,4,4,10,220,None,12
-BBQ Ribs,10.99,20,12,16,320,None,12
-Spinach Dip,9.49,8,4,14,270,Dairy,12
-Stuffed Mushrooms,7.49,6,2,10,210,Gluten,12
-Hummus,8.99,4,4,12,250,None,12
-Loaded Potato Skins,10.99,12,4,18,290,Dairy,12
-Chicken Quesadilla,11.49,16,6,14,300,Gluten,12
-Mango Salsa,6.49,2,8,4,160,None,12
-Crispy Brussels Sprouts,9.49,4,2,14,270,Gluten,12
-Cheese and Charcuterie Board,8.99,12,6,10,230,None,12
-Corn Dogs,10.99,10,8,16,270,Gluten,12
-Sausage and Peppers,11.99,18,4,20,320,Gluten,12
-Bacon-Wrapped Jalapenos,7.99,8,4,10,220,None,12
-Mushroom Caps,9.99,6,2,14,250,Gluten,12
-Corn Nuggets,8.49,6,4,12,230,Gluten,12
-Steak Bites,10.99,20,2,16,280,Gluten,12
-Buffalo Chicken Dip,11.49,10,4,14,270,Dairy,12
-Pulled Pork Sliders,6.99,12,8,10,240,Gluten,12
-Potato Croquettes,8.99,6,4,14,260,Gluten,12
-Crab Rangoon,9.49,8,4,12,250,Dairy,12
-Chorizo Tacos,10.99,14,4,16,270,Gluten,12
-Tuna Tartare,11.49,20,4,12,280,Gluten,12
-Shrimp Po' Boy,7.99,16,4,14,290,Gluten,12
-Beer-Battered Fish Tacos,9.99,18,6,16,310,Gluten,12
-Cheeseburger Sliders,8.99,14,6,12,270,Gluten,12
-Fried Green Tomatoes,10.99,4,6,14,260,Gluten,12
-Garlic Parmesan Fries,11.49,6,4,12,250,Gluten,12
-Beef Sliders,6.99,12,4,10,240,Gluten,12
-Chicken Nachos,8.49,14,6,12,270,Gluten,12
-Truffle Fries,9.99,4,2,16,280,Gluten,12
-Bratwurst,7.49,14,2,14,250,Gluten,12
-Baked Pretzel,8.99,6,4,12,260,Gluten,12
-Pepperoni Pizza,10.99,16,4,18,300,Gluten,12
-Chicken Tacos,11.49,12,4,14,270,Gluten,12
-Chili Cheese Dogs,6.99,14,6,16,290,Gluten,12
-Egg Rolls,8.49,8,2,12,230,Gluten,12
-Potato Salad,9.99,4,6,8,200,Egg,12
-Mozzarella Sticks,7.99,10,4,18,260,Dairy,12
-Jalapeno Poppers,8.49,8,2,12,220,Gluten,12
-Potato Skins,7.49,6,3,10,200,Dairy,12
-Nachos,10.99,12,4,14,240,Gluten,12
-Fried Calamari,11.99,18,2,20,310,Shellfish,12
-Onion Rings,6.99,4,6,14,260,Gluten,12
-Chicken Tenders,8.99,15,3,12,250,Gluten,12
-Sliders,9.49,16,4,14,270,Gluten,12
-Loaded Fries,7.99,6,2,10,220,Gluten,12
-Quesadilla,10.99,14,4,16,290,Gluten,12
-Bruschetta,8.99,4,2,10,200,Gluten,12
-Pretzel Bites,6.49,4,2,6,160,Gluten,12
-Tater Tots,7.49,2,1,10,190,Gluten,12
-Chips and Salsa,5.99,2,2,6,150,Gluten,12
-Spinach Artichoke Dip,9.99,6,2,12,250,Dairy,12
-Mini Tacos,8.49,10,3,14,260,Gluten,12
-Fish and Chips,11.99,20,4,22,320,Gluten,12
-Cheese Fries,7.99,8,2,14,240,Dairy,12
-Fried Pickles,6.99,2,4,10,180,Gluten,12
-Boneless Wings,8.99,18,2,14,260,Gluten,12
-Bacon-Wrapped Shrimp,9.49,14,2,12,250,None,12
-Mushroom Swiss Burger,10.99,20,4,18,300,Gluten,12
-Loaded Nachos,11.49,16,4,20,320,Gluten,12
-Fried Mozzarella,7.49,8,3,12,230,Dairy,12
-Sweet Potato Fries,6.99,2,6,14,240,Gluten,12
-Popcorn Shrimp,9.99,12,2,16,280,Gluten,12
-Potato Chips,5.99,2,2,8,170,Gluten,12
-Shrimp Cocktail,10.99,20,2,6,260,Shellfish,12
-Guacamole,8.99,4,4,10,220,None,12
-Hot Dog,7.99,10,3,12,250,Gluten,12
-Fried Chicken,11.99,20,2,18,290,Gluten,12
-Pulled Pork Sandwich,9.49,14,6,12,270,Gluten,12
-Cheese Curds,8.49,12,4,16,280,Dairy,12
-Chili Cheese Fries,10.99,10,6,18,290,Dairy,12
-Buffalo Cauliflower Bites,7.99,6,4,10,200,Gluten,12
-Sausage Rolls,9.99,10,2,14,260,Gluten,12
-Baked Brie,8.99,6,6,12,230,Dairy,12
-Fried Ravioli,11.99,10,4,16,280,Dairy,12
-Chips and Guacamole,6.99,4,4,10,220,None,12
-BBQ Ribs,10.99,20,12,16,320,None,12
-Spinach Dip,9.49,8,4,14,270,Dairy,12
-Stuffed Mushrooms,7.49,6,2,10,210,Gluten,12
-Hummus,8.99,4,4,12,250,None,12
-Loaded Potato Skins,10.99,12,4,18,290,Dairy,12
-Chicken Quesadilla,11.49,16,6,14,300,Gluten,12
-Mango Salsa,6.49,2,8,4,160,None,12
-Crispy Brussels Sprouts,9.49,4,2,14,270,Gluten,12
-Cheese and Charcuterie Board,8.99,12,6,10,230,None,12
-Corn Dogs,10.99,10,8,16,270,Gluten,12
-Sausage and Peppers,11.99,18,4,20,320,Gluten,12
-Bacon-Wrapped Jalapenos,7.99,8,4,10,220,None,12
-Mushroom Caps,9.99,6,2,14,250,Gluten,12
-Corn Nuggets,8.49,6,4,12,230,Gluten,12
-Steak Bites,10.99,20,2,16,280,Gluten,12
-Buffalo Chicken Dip,11.49,10,4,14,270,Dairy,12
-Pulled Pork Sliders,6.99,12,8,10,240,Gluten,12
-Potato Croquettes,8.99,6,4,14,260,Gluten,12
-Crab Rangoon,9.49,8,4,12,250,Dairy,12
-Chorizo Tacos,10.99,14,4,16,270,Gluten,12
-Tuna Tartare,11.49,20,4,12,280,Gluten,12
-Shrimp Po' Boy,7.99,16,4,14,290,Gluten,12
-Beer-Battered Fish Tacos,9.99,18,6,16,310,Gluten,12
-Cheeseburger Sliders,8.99,14,6,12,270,Gluten,12
+1,Margherita Pizza,15.99,12,2,10,450,Dairy,2
+2,Spaghetti Bolognese,14.49,18,7,10,580,Gluten,2
+3,Caprese Salad,10.99,8,5,12,320,Dairy,2
+4,Chicken Alfredo,17.99,22,3,20,680,Dairy,2
+5,Tiramisu,6.99,5,15,10,340,Dairy,2
+6,Pepperoni Pizza,16.49,15,3,14,520,Dairy,2
+7,Garlic Knots,6.99,3,2,6,280,Dairy,2
+8,Pizza Margherita,14.99,12,2,10,420,Gluten,2
+9,Fettuccine Alfredo,16.99,14,6,22,620,Dairy,2
+10,Pesto Pasta,12.99,10,3,15,460,Nuts,2
+11,Spinach and Artichoke Dip,8.99,6,4,9,350,Dairy,2
+12,Mushroom Risotto,11.99,7,3,10,400,None,2
+13,Bruschetta,7.49,2,3,7,280,None,2
+14,Caesar Salad,10.49,6,4,12,340,Dairy,2
+15,Caprese Panini,9.99,12,5,10,420,Dairy, 2
+16,Lemon Sorbet,5.99,0,20,0,200,None,2
+17,Lasagna,17.99,18,8,14,580,Dairy,2
+18,Tuna Melt,13.99,15,4,10,460,Dairy,2
+19,Gelato,6.99,2,20,8,320,Dairy,2
+20,Meatball Sub,14.99,20,6,12,540,Gluten,2
+21,Ricotta Stuffed Shells,12.99,8,6,10,400,Dairy,2
+22,Antipasto Platter,10.99,10,4,16,480,None,2
+23,Olive Tapenade,7.99,1,2,10,260,None,2
+24,Gnocchi,11.99,4,4,6,380,Gluten,2
+25,Eggplant Parmesan,14.99,6,8,10,480,Dairy,2
+26,Calzone,13.49,16,2,12,520,Gluten,2
+27,Breaded Chicken Cutlet,15.99,24,4,10,560,Gluten,2
+28,Margherita Flatbread,10.99,9,3,7,360,Gluten,2
+29,Lobster Ravioli,18.99,16,4,12,620,Dairy,2
+30,Mozzarella Sticks,9.99,10,2,12,400,Gluten,2
+31,Tortellini Alfredo,12.99,12,4,14,460,Dairy,2
+32,Vegetable Lasagna,11.99,10,6,12,440,Dairy,2
+33,Pepperoncini,5.99,0,3,0,100,None,2
+34,Garlic Cheese Bread,8.99,5,2,10,320,Gluten,2
+35,Cannoli,7.49,2,18,8,340,Dairy,2
+36,Mediterranean Salad,9.99,6,4,14,360,None,2
+37,Margherita Calzone,13.99,10,6,12,480,Gluten,2
+38,Veal Parmesan,17.99,28,3,14,640,Dairy,2
+39,Fried Calamari,12.99,18,3,8,430,None,2
+40,Linguine with Clams,15.99,20,3,10,520,Shellfish,2
+41,Tortellini Primavera,11.99,10,4,8,420,Dairy,2
+42,Olive Oil Dipping Sauce,5.99,0,0,14,120,None,2
+43,Spaghetti Carbonara,15.49,16,5,14,500,Gluten,2
+44,Garlic Aioli,6.99,1,1,9,280,Egg,2
+45,Burrata Salad,10.99,8,5,12,340,Dairy,2
+46,Lemon Gelato,7.99,0,20,2,260,Dairy,2
+47,Italian Wedding Soup,8.99,5,3,6,320,Dairy,2
+48,Gnocchi with Pesto,9.99,6,3,14,370,Nuts,2
+49,Grilled Salmon,18.99,25,2,12,420,Fish,1
+50,Caesar Salad,12.49,8,4,15,330,Dairy,1
+51,Beef Burger,14.99,20,3,18,480,Gluten,1
+52,Vegetable Stir-Fry,16.99,10,8,6,390,Soy,1
+53,Chocolate Cake,7.99,4,30,15,580,Dairy,1
+54,Spicy Tuna Roll,9.99,12,5,6,340,Fish,1
+55,Shrimp Scampi,19.99,22,3,16,550,Shellfish,1
+56,French Onion Soup,8.49,6,8,9,320,Dairy,1
+57,Chicken Caesar Wrap,11.99,18,4,14,420,Dairy,1
+58,Key Lime Pie,6.99,3,20,12,380,Gluten,1
+59,Lobster Bisque,14.99,10,5,10,420,Shellfish,1
+60,Grilled Vegetable Platter,15.99,5,10,9,330,None,1
+61,Chicken Parmesan,17.99,25,4,12,510,Dairy,1
+62,Mushroom Risotto,12.99,7,3,10,370,None,1
+63,Cannoli,5.99,2,18,8,300,Dairy,1
+64,BBQ Ribs,21.99,30,8,18,650,None,1
+65,Lemon Meringue Pie,7.49,2,25,10,400,Dairy,1
+66,Stuffed Bell Peppers,16.49,15,7,10,460,None,1
+67,Pumpkin Soup,9.99,5,10,6,290,Dairy,1
+68,Shrimp and Grits,19.99,20,4,14,530,Shellfish,1
+69,Grilled Portobello Mushroom,11.99,6,5,7,360,None,1
+70,Tofu Stir-Fry,13.99,15,7,8,410,Soy,1
+71,Breaded Fish Fillet,14.49,18,2,14,420,Fish,1
+72,Mixed Berry Parfait,6.99,4,20,6,350,Dairy,1
+73,Eggplant Parmesan,16.99,8,6,14,480,Dairy,1
+74,Ribeye Steak,24.99,30,0,20,590,None,1
+75,Baked Potato,8.99,2,3,0,250,None,1
+76,Grilled Chicken,14.99,25,1,8,360,None,1
+77,Chicken Caesar Salad,10.49,6,4,12,310,Dairy,1
+78,Apple Pie,7.99,2,20,10,380,Gluten,1
+79,Creamy Clam Chowder,11.99,8,3,5,340,Shellfish,1
+80,Roasted Garlic Shrimp,17.49,20,2,12,490,Shellfish,1
+81,Crab Cakes,18.99,15,1,10,440,Shellfish,1
+82,Grilled Swordfish,21.99,30,0,12,530,None,1
+83,Key Lime Pie,8.99,3,25,12,400,Gluten,1
+84,Margarita Pizza,14.99,12,2,10,380,Gluten,1
+85,Pepperoni Pizza,16.49,15,3,14,450,Gluten,1
+86,Garlic Knots,6.99,3,2,6,260,Gluten,1
+87,Caprese Salad,11.99,8,5,12,330,Dairy,1
+88,Tiramisu,7.99,5,15,10,380,Dairy,1
+89,Pad Thai,12.99,15,10,8,460,Peanuts,1
+90,Green Curry,14.49,10,6,12,420,Coconut,1
+91,Tom Yum Soup,8.99,5,3,3,290,Shrimp,1
+92,Mango Sticky Rice,7.99,2,20,4,360,Dairy,1
+93,Spring Rolls,9.99,4,5,10,320,Shrimp,1
+94,Quinoa Salad,10.99,8,4,6,370,None,1
+95,Avocado Toast,9.49,5,2,15,330,Gluten,1
+96,Spinach Salad,8.99,6,4,7,280,None,1
+97,Lentil Soup,7.99,10,2,4,320,None,1
+98,Vegan Brownie,5.99,3,12,10,280,None,1
+99,Sashimi Platter,22.99,30,0,8,390,Fish,3
+100,California Roll,12.99,15,7,5,320,Imitation Crab,3
+101,Miso Soup,4.99,3,2,1,45,Soy,3
+102,Tempura Shrimp,16.99,15,4,14,330,Shellfish,3
+103,Green Tea Ice Cream,5.99,2,15,8,180,Dairy,3
+104,Sushi Sashimi Combo,23.99,28,3,9,420,Fish,3
+105,Seaweed Salad,8.49,2,3,5,90,Soy,3
+106,Spicy Tuna Roll,14.99,12,5,6,310,Fish,3
+107,Shrimp Tempura Roll,13.49,16,7,8,350,Shellfish,3
+108,Teriyaki Chicken,17.99,22,8,12,400,Soy,3
+109,Edamame,4.99,8,2,2,120,Soy,3
+110,Unagi Nigiri,7.99,10,5,6,190,Fish,3
+111,Salmon Nigiri,6.49,11,2,4,150,Fish,3
+112,Yellowtail Nigiri,8.99,13,3,5,170,Fish,3
+113,Tofu Miso Ramen,15.99,12,7,10,340,Soy,3
+114,Dragon Roll,18.99,19,8,15,400,Imitation Crab,3
+115,Soft Shell Crab Roll,16.49,22,4,12,360,Shellfish,3
+116,Avocado Cucumber Roll,9.99,2,3,6,160,None,3
+117,Eel Avocado Roll,11.99,4,12,8,210,Fish,3
+118,Wasabi,2.99,0,0,0,10,None,3
+119,Sake Nigiri,7.49,14,1,3,140,Fish,3
+120,Soy Sauce,1.49,2,0,0,15,Soy,3
+121,Scallop Nigiri,8.49,10,2,5,170,Shellfish,3
+122,Spicy Salmon Roll,12.99,13,8,10,280,Fish,3
+123,Octopus Nigiri,9.99,15,3,6,220,None,3
+124,Cucumber Salad,5.99,1,5,3,70,None,3
+125,Tuna Tartare,18.49,20,2,8,330,Fish,3
+126,Sesame Seared Tuna,19.99,26,2,10,370,Fish,3
+127,Soy-Ginger Glazed Salmon,17.99,28,8,14,400,Fish,3
+128,Veggie Tempura,13.99,4,5,12,280,Gluten,3
+129,Udon Noodles,10.99,8,4,2,220,Gluten,3
+130,Sushi Rice,3.99,2,0,0,50,None,3
+131,Rainbow Roll,20.99,23,9,16,420,Fish,3
+132,Wasabi Mayo,4.49,1,2,4,60,Gluten,3
+133,Inari Sushi,6.99,5,10,2,140,None,3
+134,Hibachi Chicken,16.99,24,8,10,360,Soy,3
+135,Seared Yellowtail Nigiri,9.49,16,4,5,200,Fish,3
+136,Avocado Roll,8.99,3,2,5,170,None,3
+137,Chirashi Bowl,15.49,18,6,14,330,Fish,3
+138,Sesame Seared Salmon,18.99,24,6,12,370,Fish,3
+139,Spicy Edamame,6.49,6,2,4,90,Soy,3
+140,Veggie Spring Rolls,7.99,2,3,4,110,None,3
+141,Sushi Sashimi Boat,29.99,36,5,15,510,Fish,3
+142,Soy Wasabi Glaze,5.49,0,2,0,30,Soy,3
+143,Spicy Yellowtail Roll,13.99,15,7,9,290,Fish,3
+144,Avocado Sushi,6.99,2,2,5,120,None,3
+145,Tofu Teriyaki,14.49,20,9,8,320,Soy,3
+146,Miso-Glazed Cod,21.99,32,4,16,420,Fish,3
+147,Shrimp Nigiri,8.99,12,3,6,220,Shellfish,3
+148,Scallop Nigiri,8.49,10,2,5,170,Shellfish,3
+149,Octopus Nigiri,9.99,15,3,6,220,None,3
+150,Eel Nigiri,10.99,20,5,10,280,Fish,3
+151,Mango Sticky Rice,7.99,2,20,4,300,Dairy,3
+152,Miso-Glazed Eggplant,10.49,2,7,6,140,Soy,3
+153,Green Tea,2.99,1,0,0,0,None,3
+154,Soy Sauce,1.49,2,0,0,15,Soy,3
+155,Yuzu Sorbet,5.99,0,22,0,120,None,3
+156,Tacos (Beef),10.99,15,2,12,280,Gluten,4
+157,Quesadilla,13.49,10,4,18,340,Dairy,4
+158,Guacamole,7.99,2,5,10,180,None,4
+159,Enchiladas,14.99,12,6,14,310,Dairy,4
+160,Churros,5.99,3,20,8,240,Egg,4
+161,Salsa Verde,3.49,0,3,0,15,None,4
+162,Chili Rellenos,16.99,8,10,12,330,Gluten,4
+163,Chicken Fajitas,15.99,20,5,12,290,None,4
+164,Tres Leches Cake,6.99,4,30,15,280,Dairy,4
+165,Sopapillas,8.49,2,6,10,190,None,4
+166,Ceviche,12.99,14,6,6,250,Fish,4
+167,Tamales,11.99,10,4,8,220,Gluten,4
+168,Refried Beans,4.99,5,1,4,110,Gluten,4
+169,Mexican Rice,4.99,2,3,1,90,Gluten,4
+170,Fried Ice Cream,7.99,4,15,10,260,Dairy,4
+171,Fish Tacos,14.99,20,3,12,320,Gluten,4
+172,Pozole,9.49,12,3,10,240,Gluten,4
+173,Margarita,7.49,0,10,0,200,None,4
+174,Burrito (Chicken),12.99,18,6,10,300,Dairy,4
+175,Burrito (Vegetarian),11.99,8,7,8,270,None,4
+176,Horchata,3.99,2,20,4,170,Dairy,4
+177,Chimichanga,13.99,15,5,16,340,Gluten,4
+178,Salsa Roja,3.49,0,2,0,15,None,4
+179,Carne Asada,16.99,25,2,18,370,Gluten,4
+180,Taco Salad,10.99,12,4,8,250,Dairy,4
+181,Taco (Al Pastor),9.99,10,2,6,220,None,4
+182,Mole Poblano,14.49,8,7,12,300,Dairy,4
+183,Sopes,8.99,6,4,10,210,Gluten,4
+184,Mexican Street Corn,6.99,3,6,10,180,Dairy,4
+185,Agua Fresca,3.99,1,18,0,110,None,4
+186,Nachos,12.99,10,5,14,280,Dairy,4
+187,Flan,6.49,5,24,10,270,Dairy,4
+188,Taco (Carnitas),9.99,12,3,8,230,None,4
+189,Chiles Rellenos,14.99,10,8,12,310,Gluten,4
+190,Salsa Pico de Gallo,3.49,1,2,0,15,None,4
+191,Taco (Barbacoa),11.99,15,2,10,260,None,4
+192,Fajita Burrito,13.99,20,6,14,330,Dairy,4
+193,Mexican Wedding Cookies,5.99,2,10,8,190,Nuts,4
+194,Birria,12.99,15,5,10,290,Gluten,4
+195,Salsa Ranchera,3.49,0,1,0,10,None,4
+196,Chimichurri,6.99,0,2,8,130,None,4
+197,Taco (Lengua),9.99,18,2,6,220,None,4
+198,Mole Verde,14.49,6,8,12,290,Gluten,4
+199,Chile Verde,13.99,10,6,14,310,Gluten,4
+200,Salsa Habanero,3.49,0,5,0,20,None,4
+201,Chile Colorado,16.99,20,5,16,340,Gluten,4
+202,Mangonada,5.99,1,30,0,200,None,4
+203,Taco (Chorizo),11.99,12,2,10,260,None,4
+204,Salsa Chipotle,3.49,0,4,0,20,None,4
+205,Chorizo con Papas,12.99,15,4,12,280,None,4
+206,Salsa Taquera,3.49,0,3,0,15,None,4
+207,Molletes,8.99,10,3,8,230,Gluten,4
+208,Huevos Rancheros,9.99,12,3,10,240,Gluten,4
+209,Cochinita Pibil,14.49,18,5,14,320,Gluten,4
+210,Salsa Guacamole,4.49,0,3,6,50,None,4
+211,Chorizo Tacos,10.99,12,3,10,260,None,4
+212,Salsa Tamarindo,4.49,1,20,0,160,None,4
+213,Chiles en Nogada,16.99,10,12,14,350,Dairy,4
+214,Salsa Molcajete,4.49,1,4,6,70,None,4
+215,Salsa Chile Morita,4.49,0,2,4,40,None,4
+216,Chile Relleno Tacos,12.99,8,6,12,290,Gluten,4
+217,Bistec a la Mexicana,14.49,18,3,14,320,Gluten,4
+218,Salsa Ranchera,3.49,1,2,2,40,None,4
+219,Salsa de Torear,3.49,0,5,0,20,None,4
+220,Kung Pao Chicken,12.99,25,5,15,340,Peanuts,5
+221,Hot and Sour Soup,4.99,5,3,3,120,Egg,5
+222,General Tso's Chicken,13.49,22,10,18,360,Egg,5
+223,Egg Fried Rice,8.99,10,2,10,250,Egg,5
+224,Dumplings,9.99,15,2,10,280,Soy,5
+225,Peking Duck,19.99,30,3,20,450,None,5
+226,Sweet and Sour Pork,11.99,18,20,12,320,None,5
+227,Spring Rolls,6.99,5,3,8,180,Shrimp,5
+228,Lo Mein,10.49,12,8,14,300,Egg,5
+229,Dim Sum Platter,14.99,20,10,16,380,None,5
+230,Mongolian Beef,12.99,26,4,14,350,Gluten,5
+231,Chow Mein,8.49,8,3,10,220,None,5
+232,Hot Pot,16.99,25,5,18,400,Shellfish,5
+233,Ma Po Tofu,10.99,15,3,10,280,Soy,5
+234,Scallion Pancakes,7.49,4,2,6,160,Egg,5
+235,Fried Wontons,9.99,6,5,12,240,Shrimp,5
+236,Black Bean Sauce Noodles,11.99,10,4,14,320,None,5
+237,Szechuan Shrimp,14.49,20,6,12,350,Shellfish,5
+238,General Tso's Tofu,12.99,15,10,16,330,Gluten,5
+239,Beef and Broccoli,13.99,24,8,12,340,None,5
+240,Sesame Chicken,12.99,20,15,16,350,None,5
+241,Cantonese Congee,7.99,5,1,4,150,None,5
+242,Honey Walnut Shrimp,15.99,18,20,18,380,Tree Nuts,5
+243,Soy Sauce Chicken,13.49,22,3,14,360,Soy,5
+244,Mapo Eggplant,10.99,8,5,10,260,Soy,5
+245,Jiaozi (Potstickers),9.99,15,3,10,280,Soy,5
+246,Xiaolongbao (Soup Dumplings),11.49,10,3,10,290,Soy,5
+247,Chow Fun,12.99,18,8,14,340,Soy,5
+248,Salt and Pepper Shrimp,16.49,22,4,20,400,Shellfish,5
+249,Sweet and Sour Chicken,11.99,15,18,12,310,None,5
+250,Kung Pao Tofu,12.49,20,6,14,330,Peanuts,5
+251,Sichuan Noodles,11.99,12,10,16,320,Peanuts,5
+252,Wonton Soup,6.99,6,3,2,140,Shrimp,5
+253,Crispy Pork Belly,14.99,22,0,28,450,None,5
+254,Scallion Beef Rolls,13.49,18,3,20,360,Gluten,5
+255,Char Siu Bao (BBQ Pork Buns),8.99,8,15,6,230,Tree Nuts,5
+256,Kung Pao Shrimp,14.99,20,10,18,380,Peanuts,5
+257,Sticky Rice Dumplings,11.49,12,5,10,300,Tree Nuts,5
+258,Black Bean Tofu,9.99,15,4,12,270,Soy,5
+259,Five-Spice Spare Ribs,15.99,25,8,22,420,None,5
+260,Cumin Lamb,14.49,28,5,18,370,None,5
+261,Vegetable Spring Rolls,7.99,3,5,6,170,None,5
+262,Hunan Chicken,12.99,22,6,16,340,None,5
+263,Fried Rice with Shrimp,13.49,15,4,14,350,Shrimp,5
+264,Ginger Scallion Lobster,16.99,30,5,22,400,None,5
+265,Twice-Cooked Pork,11.99,18,4,12,310,None,5
+266,Dan Dan Noodles,10.99,12,6,10,290,Peanuts,5
+267,Zongzi (Sticky Rice Dumplings),8.49,6,5,8,200,None,5
+268,Lion's Head Meatballs,14.99,20,4,18,380,Gluten,5
+269,Szechuan Eggplant,12.99,10,6,14,330,Soy,5
+270,Cantonese Egg Tart,6.99,3,15,6,180,Dairy,5
+271,Garlic Pork,13.99,20,4,16,350,None,5
+272,Stir-Fried Snow Peas,8.99,4,6,2,120,None,5
+273,Szechuan Fish,15.49,26,6,20,400,Shellfish,5
+274,Shrimp Toast,11.49,10,5,14,320,Shrimp,5
+275,Chinese Broccoli with Oyster Sauce,10.99,4,4,12,270,None,5
+276,Sesame Balls,6.99,3,15,10,240,None,5
+277,Sizzling Rice Soup,9.99,5,5,8,180,None,5
+278,Shrimp Dumplings (Har Gow),7.99,8,4,6,160,Shrimp,5
+279,Fried Tofu with Spicy Salt,12.99,10,3,16,330,Gluten,5
+280,Szechuan Tofu,11.99,12,8,14,320,Soy,5
+281,Chinese BBQ Ribs,13.49,20,6,16,350,None,5
+282,Pan-Fried Noodles,14.99,16,8,20,380,Gluten,5
+283,Peking Pork Chops,12.99,20,4,14,330,None,5
+284,Egg Drop Soup,6.99,3,1,2,120,Egg,5
+285,Chinese Lemon Chicken,11.99,18,12,10,310,None,5
+286,Bitter Melon Stir-Fry,10.99,8,4,12,270,None,5
+287,Buddha's Delight,9.99,6,6,10,250,Gluten,5
+288,Salt and Pepper Tofu,13.99,12,4,18,350,Gluten,5
+289,Sichuan String Beans,11.99,4,6,12,290,None,5
+290,Chao Mian (Stir-Fried Noodles),12.49,10,6,14,320,Gluten,5
+291,Hummus with Pita,8.99,5,1,8,180,Sesame,6
+292,Falafel Platter,12.99,10,2,14,250,None,6
+293,Tzatziki Sauce,4.99,3,2,6,120,Dairy,6
+294,Greek Salad,10.99,6,6,8,200,Dairy,6
+295,Lamb Gyros,14.99,20,3,12,280,None,6
+296,Tabbouleh,7.99,2,4,5,150,Wheat,6
+297,Baba Ghanoush,9.49,3,2,9,170,Sesame,6
+298,Chicken Shawarma,13.99,18,5,10,260,None,6
+299,Stuffed Grape Leaves,8.99,4,2,5,140,None,6
+300,Feta Cheese,5.99,6,1,8,160,Dairy,6
+301,Lentil Soup,6.99,5,3,4,130,None,6
+302,Kebab Platter,15.99,24,4,16,300,None,6
+303,Couscous,9.99,4,1,6,140,Wheat,6
+304,Labneh,8.49,7,3,10,180,Dairy,6
+305,Fattoush Salad,10.49,4,5,7,160,Wheat,6
+306,Beef Shawarma,14.99,22,4,14,270,None,6
+307,Rice Pilaf,6.99,3,1,6,120,None,6
+308,Moussaka,12.99,14,6,10,240,Dairy,6
+309,Spanakopita,8.99,6,2,8,160,Dairy,6
+310,Kibbeh,10.99,12,2,10,200,Wheat,6
+311,Grilled Octopus,15.99,20,2,18,290,None,6
+312,Cacık,7.99,5,2,5,140,Dairy,6
+313,Couscous Salad,9.49,6,4,7,160,Wheat,6
+314,Turkish Delight,5.99,1,18,1,80,Nuts,6
+315,Shish Taouk,13.99,18,4,12,260,None,6
+316,Taramosalata,8.49,3,1,7,150,Fish,6
+317,Moussaka,12.99,14,6,10,240,Dairy,6
+318,Baklava,9.99,3,20,10,220,Nuts,6
+319,Pita Bread,6.99,3,1,4,110,Wheat,6
+320,Lamb Kofta,14.99,20,3,16,280,Wheat,6
+321,Labneh,8.49,7,3,10,180,Dairy,6
+322,Baba Ghanoush,9.49,3,2,9,170,Sesame,6
+323,Lentil Soup,6.99,5,3,4,130,None,6
+324,Kebab Platter,15.99,24,4,16,300,None,6
+325,Chicken Shawarma,13.99,18,5,10,260,None,6
+326,Tzatziki Sauce,4.99,3,2,6,120,Dairy,6
+327,Stuffed Grape Leaves,8.99,4,2,5,140,None,6
+328,Falafel Platter,12.99,10,2,14,250,None,6
+329,Hummus with Pita,8.99,5,1,8,180,Sesame,6
+330,Spanakopita,8.99,6,2,8,160,Dairy,6
+331,Moussaka,12.99,14,6,10,240,Dairy,6
+332,Tabbouleh,7.99,2,4,5,150,Wheat,6
+333,Lamb Gyros,14.99,20,3,12,280,None,6
+334,Feta Cheese,5.99,6,1,8,160,Dairy,6
+335,Couscous,9.99,4,1,6,140,Wheat,6
+336,Chicken Shawarma,13.99,18,5,10,260,None,6
+337,Stuffed Grape Leaves,8.99,4,2,5,140,None,6
+338,Tzatziki Sauce,4.99,3,2,6,120,Dairy,6
+339,Kebab Platter,15.99,24,4,16,300,None,6
+340,Kibbeh,10.99,12,2,10,200,Wheat,6
+341,Taramosalata,8.49,3,1,7,150,Fish,6
+342,Fattoush Salad,10.49,4,5,7,160,Wheat,6
+343,Labneh,8.49,7,3,10,180,Dairy,6
+344,Lentil Soup,6.99,5,3,4,130,None,6
+345,Baba Ghanoush,9.49,3,2,9,170,Sesame,6
+346,Turkish Delight,5.99,1,18,1,80,Nuts,6
+347,Shish Taouk,13.99,18,4,12,260,None,6
+348,Kibbeh,10.99,12,2,10,200,Wheat,6
+349,Rice Pilaf,6.99,3,1,6,120,None,6
+350,Moussaka,12.99,14,6,10,240,Dairy,6
+351,Baklava,9.99,3,20,10,220,Nuts,6
+352,Pita Bread,6.99,3,1,4,110,Wheat,6
+353,Cacık,7.99,5,2,5,140,Dairy,6
+354,Couscous Salad,9.49,6,4,7,160,Wheat,6
+355,Turkish Delight,5.99,1,18,1,80,Nuts,6
+356,Shish Taouk,13.99,18,4,12,260,None,6
+357,Taramosalata,8.49,3,1,7,150,Fish,6
+358,Moussaka,12.99,14,6,10,240,Dairy,6
+359,Baklava,9.99,3,20,10,220,Nuts,6
+360,Pita Bread,6.99,3,1,4,110,Wheat,6
+361,Lamb Kofta,14.99,20,3,16,280,Wheat,6
+362,Bruschetta,7.99,3,3,6,150,Gluten,7
+363,Caesar Salad,9.49,4,2,8,180,Egg,7
+364,Caprese Salad,8.99,5,3,9,160,Dairy,7
+365,Quiche Lorraine,10.99,12,2,14,220,Gluten,7
+366,Mushroom Risotto,13.99,7,2,10,230,Dairy,7
+367,Beef Bourguignon,16.99,20,4,18,290,Gluten,7
+368,Coq au Vin,15.99,18,5,16,280,Gluten,7
+369,Ratatouille,11.49,3,7,8,190,None,7
+370,Bouillabaisse,17.99,22,6,20,320,Fish,7
+371,Cassoulet,14.99,14,3,16,270,Gluten,7
+372,Sole Meunière,19.99,25,2,22,350,Fish,7
+373,Escargot,12.99,8,1,14,240,Dairy,7
+374,Lobster Bisque,10.99,6,2,12,200,Shellfish,7
+375,Croissant,4.99,3,4,6,120,Gluten,7
+376,Crepes,8.49,6,8,10,180,Dairy,7
+377,Tartiflette,13.99,10,4,14,240,Dairy,7
+378,French Onion Soup,9.99,5,6,8,160,Gluten,7
+379,Pork Schnitzel,12.99,20,2,12,220,Gluten,7
+380,Goulash,14.99,16,5,14,260,Gluten,7
+381,Pierogi,10.49,7,3,10,190,Gluten,7
+382,Borscht,8.99,4,5,6,140,Gluten,7
+383,Potato Leek Soup,7.49,2,3,5,110,Gluten,7
+384,Spanakopita,12.99,6,2,14,230,Dairy,7
+385,Moules Marinières,15.99,18,2,20,310,Shellfish,7
+386,Gnocchi,11.99,6,3,14,240,Gluten,7
+387,Rösti,9.49,4,2,8,160,None,7
+388,Wiener Schnitzel,16.99,22,3,20,330,Gluten,7
+389,Sauerbraten,13.99,18,4,14,280,Gluten,7
+390,Pretzel,5.99,3,2,5,120,Gluten,7
+391,Strudel,8.49,4,12,10,190,Nuts,7
+392,Kebab,10.99,15,4,12,220,None,7
+393,Baklava,9.99,3,20,10,220,Nuts,7
+394,Stroopwafels,7.49,2,15,6,140,Gluten,7
+395,Poffertjes,6.99,2,12,5,130,Gluten,7
+396,Scotch Egg,8.49,9,1,12,190,Egg,7
+397,Bangers and Mash,12.99,14,3,16,260,Gluten,7
+398,Shepherd's Pie,11.99,10,4,12,240,Gluten,7
+399,Black Pudding,7.99,6,1,10,180,Gluten,7
+400,Ploughman's Lunch,9.99,12,8,10,220,Dairy,7
+401,Lancashire Hotpot,13.49,16,4,14,280,Gluten,7
+402,Cullen Skink,10.99,8,4,10,220,Gluten,7
+403,Haggis,8.99,10,2,10,200,Gluten,7
+404,Cornish Pasty,7.99,6,3,8,160,Gluten,7
+405,Bubble and Squeak,6.99,4,5,6,140,Gluten,7
+406,Scampi and Chips,15.99,18,2,20,320,Shellfish,7
+407,Pork Pie,9.49,8,2,10,190,Gluten,7
+408,Beef Wellington,17.99,22,4,20,350,Gluten,7
+409,Kedgeree,11.99,12,5,10,240,Fish,7
+410,Ploughman's Lunch,9.99,12,8,10,220,Dairy,7
+411,Fish and Chips,12.99,20,2,16,270,Gluten,7
+412,Sticky Toffee Pudding,7.99,3,20,8,180,Dairy,7
+413,Bread and Butter Pudding,8.99,5,15,12,200,Dairy,7
+414,Eccles Cake,6.49,2,10,8,150,Gluten,7
+415,Chelsea Bun,5.99,4,15,6,130,Gluten,7
+416,Lancashire Hotpot,13.49,16,4,14,280,Gluten,7
+417,Cullen Skink,10.99,8,4,10,220,Gluten,7
+418,Haggis,8.99,10,2,10,200,Gluten,7
+419,Cornish Pasty,7.99,6,3,8,160,Gluten,7
+420,Bubble and Squeak,6.99,4,5,6,140,Gluten,7
+421,Scampi and Chips,15.99,18,2,20,320,Shellfish,7
+422,Chicken Tikka,12.99,25,3,12,280,Dairy,8
+423,Butter Chicken,14.49,22,5,16,310,Dairy,8
+424,Biryani (Chicken),13.99,20,4,14,300,None,8
+425,Paneer Tikka,11.99,12,3,10,250,Dairy,8
+426,Tandoori Naan,3.49,4,2,6,140,Gluten,8
+427,Rogan Josh (Lamb),16.99,28,6,18,350,None,8
+428,Chana Masala,9.99,10,4,8,220,None,8
+429,Samosa,5.99,3,3,8,160,Gluten,8
+430,Vindaloo (Pork),15.99,24,4,20,320,None,8
+431,Aloo Gobi,11.99,6,4,10,240,None,8
+432,Dal Makhani,10.99,8,2,10,230,Dairy,8
+433,Tandoori Chicken,13.99,28,2,14,290,Dairy,8
+434,Malai Kofta,12.49,10,10,16,280,Dairy,8
+435,Gulab Jamun,6.99,2,20,10,220,Dairy,8
+436,Palak Paneer,11.99,14,5,12,260,Dairy,8
+437,Veg Biryani,11.49,6,4,10,240,None,8
+438,Chaat,7.99,5,8,6,180,None,8
+439,Tandoori Roti,3.99,3,1,2,120,Gluten,8
+440,Mutton Curry,15.49,26,3,18,340,None,8
+441,Pani Puri,8.99,4,6,4,160,Gluten,8
+442,Aloo Paratha,6.49,4,2,8,170,Dairy,8
+443,Rice Pilaf,5.99,3,1,6,140,None,8
+444,Raita,4.99,3,4,5,130,Dairy,8
+445,Kheer,7.49,2,15,8,190,Dairy,8
+446,Bhindi Masala,9.99,6,4,8,220,None,8
+447,Pakoras,6.99,5,6,10,200,Gluten,8
+448,Pulao (Veg),8.99,4,3,6,180,None,8
+449,Mango Lassi,4.49,3,30,3,150,Dairy,8
+450,Baingan Bharta,10.99,8,6,10,240,Dairy,8
+451,Pesarattu,5.49,4,2,6,140,Gluten,8
+452,Tandoori Fish,14.99,24,3,18,330,None,8
+453,Saffron Rice,7.99,3,2,6,160,Gluten,8
+454,Dosa,9.49,5,1,6,180,Gluten,8
+455,Papri Chaat,6.99,4,8,6,160,None,8
+456,Tandoori Shrimp,16.99,26,2,20,360,None,8
+457,Methi Malai Murg,12.99,18,4,14,290,Dairy,8
+458,Hyderabadi Biryani (Mutton),16.49,24,4,20,340,None,8
+459,Rajma Chawal,8.99,6,3,8,220,None,8
+460,Chole Bhature,11.99,10,6,14,270,Gluten,8
+461,Misal Pav,10.99,8,6,12,260,Gluten,8
+462,Nihari,13.99,20,2,16,310,None,8
+463,Shahi Paneer,12.49,10,6,16,280,Dairy,8
+464,Puri Bhaji,6.99,4,4,10,200,Gluten,8
+465,Mutton Keema,13.99,16,4,14,280,None,8
+466,Chicken Korma,14.99,22,6,18,320,Dairy,8
+467,Bisi Bele Bath,11.99,8,4,10,240,Gluten,8
+468,Masala Dosa,9.99,5,1,6,180,Gluten,8
+469,Rava Upma,7.49,4,2,6,160,Gluten,8
+470,Tandoori Mushroom,10.99,6,3,10,230,Dairy,8
+471,Shrikhand,6.99,3,25,8,190,Dairy,8
+472,Pav Bhaji,9.49,6,6,10,220,Dairy,8
+473,Matzo Ball Soup,6.99,5,2,4,130,Gluten,9
+474,Latkes,8.99,4,2,7,160,Egg,9
+475,Challah Bread,4.99,5,5,2,120,Gluten,9
+476,Brisket,16.99,28,5,20,340,Gluten,9
+477,Kugel,10.49,6,12,8,190,Dairy,9
+478,Borscht,7.99,4,8,5,140,Gluten,9
+479,Rugelach,6.99,2,8,10,180,Nuts,9
+480,Shakshuka,11.99,12,8,14,250,Egg,9
+481,Kreplach,9.49,10,2,6,180,Gluten,9
+482,Cholent,13.99,14,5,16,290,Gluten,9
+483,Sufganiyot,8.99,3,18,10,220,Dairy,9
+484,Gefilte Fish,12.99,10,4,14,260,Fish,9
+485,Knish,7.99,5,2,8,160,Gluten,9
+486,Hamantaschen,6.99,2,10,8,180,Nuts,9
+487,Chopped Liver,10.99,12,4,10,240,None,9
+488,Kasha Varnishkes,9.99,6,3,8,200,Gluten,9
+489,Babka,11.49,5,12,14,260,Dairy,9
+490,Kasha,7.49,4,2,6,140,Gluten,9
+491,Falafel,8.99,6,3,10,180,Gluten,9
+492,Tzimmes,9.49,4,10,8,200,Gluten,9
+493,Schnitzel,12.99,20,3,16,270,Gluten,9
+494,Herring,10.99,12,1,8,240,Fish,9
+495,Chopped Herring,6.99,5,2,4,140,Fish,9
+496,Blintzes,8.99,6,5,10,180,Dairy,9
+497,Sufganiyot,8.99,3,18,10,220,Dairy,9
+498,Chicken Soup with Matzo Balls,11.99,12,5,8,240,Gluten,9
+499,Kugel,10.49,6,12,8,190,Dairy,9
+500,Kreplach,9.49,10,2,6,180,Gluten,9
+501,Lokshen Kugel,7.99,4,6,8,160,Gluten,9
+502,Gefilte Fish,12.99,10,4,14,260,Fish,9
+503,Potato Kugel,10.99,5,4,8,220,Egg,9
+504,Matzo Brei,8.99,8,3,6,180,Egg,9
+505,Chopped Liver,10.99,12,4,10,240,None,9
+506,Kasha Varnishkes,9.99,6,3,8,200,Gluten,9
+507,Cholent,13.99,14,5,16,290,Gluten,9
+508,Tzimmes,9.49,4,10,8,200,Gluten,9
+509,Schnitzel,12.99,20,3,16,270,Gluten,9
+510,Herring,10.99,12,1,8,240,Fish,9
+511,Knish,7.99,5,2,8,160,Gluten,9
+512,Hamantaschen,6.99,2,10,8,180,Nuts,9
+513,Chopped Herring,6.99,5,2,4,140,Fish,9
+514,Blintzes,8.99,6,5,10,180,Dairy,9
+515,Rugelach,6.99,2,8,10,180,Nuts,9
+516,Babka,11.49,5,12,14,260,Dairy,9
+517,Challah Bread,4.99,5,5,2,120,Gluten,9
+518,Kasha,7.49,4,2,6,140,Gluten,9
+519,Cholent,13.99,14,5,16,290,Gluten,9
+520,Falafel,8.99,6,3,10,180,Gluten,9
+521,Shakshuka,11.99,12,8,14,250,Egg,9
+522,Borscht,7.99,4,8,5,140,Gluten,9
+523,Lokshen Kugel,7.99,4,6,8,160,Gluten,9
+524,Potato Kugel,10.99,5,4,8,220,Egg,9
+525,Chicken Soup with Matzo Balls,11.99,12,5,8,240,Gluten,9
+526,Matzo Brei,8.99,8,3,6,180,Egg,9
+527,Challah Bread,4.99,5,5,2,120,Gluten,9
+528,Pho,9.99,18,4,2,180,Gluten,10
+529,Banh Mi,7.99,15,5,10,220,Gluten,10
+530,Goi Cuon (Spring Rolls),6.99,6,4,2,120,Shrimp,10
+531,Bun Thit Nuong,8.99,20,8,6,230,None,10
+532,Com Tam,10.49,25,6,8,280,None,10
+533,Bo Luc Lac,13.99,22,5,14,310,None,10
+534,Ca Kho To,11.99,18,8,12,270,None,10
+535,Bun Rieu,9.49,14,10,6,220,Shrimp,10
+536,Goi Du Du,7.49,3,12,2,110,None,10
+537,Canh Chua,8.99,8,10,4,160,None,10
+538,Cao Lau,12.99,12,8,10,240,Gluten,10
+539,Bun Bo Hue,10.99,24,6,16,290,Gluten,10
+540,Com Ga Hoi An,14.49,20,2,14,320,Gluten,10
+541,Nom Hoa Chuoi,6.49,2,10,1,90,None,10
+542,Cha Ca,11.99,16,2,12,260,Gluten,10
+543,Bun Moc,9.99,15,5,10,230,None,10
+544,Bun Oc,8.49,8,8,6,180,Snail,10
+545,Goi Cuon Tom Thit,7.99,8,6,4,140,Shrimp,10
+546,Banh Canh Cua,10.99,16,4,10,250,Gluten,10
+547,Com Hen,8.49,6,4,4,160,Shellfish,10
+548,Goi Xoai,7.49,4,14,2,120,None,10
+549,Bun Cha,11.49,22,8,10,260,None,10
+550,Bun Dau Mam Tom,9.99,12,6,8,220,Shrimp,10
+551,Banh Khot,7.99,6,4,6,140,Shrimp,10
+552,Hu Tieu,10.99,16,6,12,270,Gluten,10
+553,Goi Tom Thit,8.99,10,8,6,200,Shrimp,10
+554,Mi Quang,12.49,10,8,14,290,Gluten,10
+555,Nom Thit Bo Kho,6.99,12,10,4,180,None,10
+556,Ca Tim Nuong Mo Hanh,11.99,8,6,10,240,None,10
+557,Bun Hen Xuc Banh Trang,9.49,4,10,2,140,Shellfish,10
+558,Bo La Lot,8.99,14,4,12,220,None,10
+559,Bun Thang,7.49,12,10,2,160,Gluten,10
+560,Bun Mang Vit,10.99,14,10,6,240,Gluten,10
+561,Nom Nom,8.49,6,14,2,140,None,10
+562,Banh It Tran,7.99,4,8,4,120,None,10
+563,Pho Cuon,11.99,16,6,8,260,Gluten,10
+564,Bun Rieu Cua,9.49,16,12,4,200,Shrimp,10
+565,Bun Suon Nuong,6.99,20,2,10,210,None,10
+566,Goi Ngo Sen,12.49,4,12,10,260,Shrimp,10
+567,Banh Trang Nuong,10.49,8,14,8,220,None,10
+568,Bun Thit Heo Nuong,8.99,16,4,6,190,None,10
+569,Nom Du Du,7.49,2,12,2,110,None,10
+570,Bun Kho,11.99,22,8,12,270,None,10
+571,Bun Dau,9.99,14,2,10,220,None,10
+572,Com Suon Bi,8.49,16,8,4,200,None,10
+573,Bun Tau,6.99,18,4,6,190,None,10
+574,Ca Tim Xao Nam,10.49,4,10,8,220,None,10
+575,Goi Vit,12.99,14,14,10,260,None,10
+576,Banh Hoi,9.49,6,8,4,160,Shrimp,10
+577,Bun Dau Mam Tom,7.99,12,10,4,180,Shrimp,10
+578,Mi Xao Don,11.49,8,12,10,240,Gluten,10
+579,Nom Hoa Chuoi,8.99,4,10,2,130,None,10
+580,Com Ga Xoi Mo,6.49,20,4,8,210,Gluten,10
+581,Nom Thit Bo Kho,10.99,12,10,4,200,None,10
+582,Banh Canh Cua,9.99,16,4,10,250,Gluten,10
+583,Bun Hen Xuc Banh Trang,7.99,4,10,2,140,Shellfish,10
+584,Banh Xeo,11.49,8,8,10,240,Shrimp,10
+585,Goi Xoai,8.99,4,14,2,120,None,10
+586,Hu Tieu,10.49,16,6,12,270,Gluten,10
+587,Ca Tim Nuong Mo Hanh,9.49,8,6,10,240,None,10
+588,Goi Tom Thit,7.99,10,8,6,200,Shrimp,10
+589,Mi Quang,11.99,10,8,14,290,Gluten,10
+590,Nom Nom,8.99,6,14,2,140,None,10
+591,Bun Cha,12.49,22,8,10,260,None,10
+592,Tomato Soup,4.99,3,6,2,100,None,11
+593,Chicken Noodle Soup,5.99,10,3,6,140,Gluten,11
+594,Minestrone Soup,6.99,7,7,3,120,Gluten,11
+595,Miso Soup,5.49,3,2,2,80,Soy,11
+596,Potato Leek Soup,6.49,3,2,6,130,Dairy,11
+597,Lentil Soup,5.99,8,2,2,110,None,11
+598,Cream of Mushroom Soup,7.49,5,3,8,160,Dairy,11
+599,Clam Chowder,8.49,12,4,10,200,Shellfish,11
+600,French Onion Soup,7.99,4,6,8,160,Gluten,11
+601,Beef Stew,9.49,16,4,10,210,Gluten,11
+602,Broccoli Cheddar Soup,7.99,7,4,12,180,Dairy,11
+603,Tom Yum Soup,8.99,10,8,4,150,Shellfish,11
+604,Gazpacho,6.99,2,5,1,90,None,11
+605,Hot and Sour Soup,8.49,6,5,3,130,Egg,11
+606,Goulash Soup,7.49,8,6,4,140,Gluten,11
+607,Chowder,9.99,14,8,6,190,Shellfish,11
+608,Butternut Squash Soup,8.99,2,10,4,120,Dairy,11
+609,Pho,10.49,18,4,2,180,Gluten,11
+610,Borscht,9.49,4,8,5,140,Gluten,11
+611,Matzo Ball Soup,7.99,5,2,4,130,Gluten,11
+612,Wonton Soup,8.99,7,2,4,140,Gluten,11
+613,Gumbo,10.99,18,6,14,240,Shellfish,11
+614,Sancocho,9.49,16,4,12,220,None,11
+615,Tortilla Soup,8.49,8,3,6,160,Gluten,11
+616,Avgolemono Soup,7.49,6,4,4,130,Egg,11
+617,Ramen,9.99,12,3,6,180,Gluten,11
+618,Vichyssoise,8.99,4,2,10,200,Dairy,11
+619,Cabbage Soup,7.99,6,5,2,120,Gluten,11
+620,Shrimp Bisque,10.49,12,6,14,230,Shellfish,11
+621,Lobster Bisque,9.49,10,5,12,210,Shellfish,11
+622,Bisque,8.49,8,4,10,190,Shellfish,11
+623,Pumpkin Soup,7.99,2,8,6,150,Gluten,11
+624,Egg Drop Soup,6.99,4,2,2,90,Egg,11
+625,Laksa,8.99,12,4,8,170,Shellfish,11
+626,Rasam,7.49,2,6,2,100,Gluten,11
+627,Menudo,9.49,12,3,8,160,None,11
+628,Caldo Verde,8.49,6,4,6,140,Gluten,11
+629,Soto Ayam,7.99,10,5,4,120,Gluten,11
+630,Avgolemono Soup,6.99,6,4,4,130,Egg,11
+631,Harira,8.99,8,6,4,150,None,11
+632,Khar,9.99,16,4,10,210,None,11
+633,Fasolada,7.49,6,5,2,120,Gluten,11
+634,Kuy Teav,10.49,12,3,6,180,Gluten,11
+635,Bun Rieu,9.49,14,10,6,220,Shrimp,11
+636,Borscht,7.99,4,8,5,140,Gluten,11
+637,Soljanka,8.99,8,6,4,160,None,11
+638,Sinigang,6.99,6,8,2,110,None,11
+639,Bun Thit Nuong,9.99,20,8,6,230,None,11
+640,Satsivi,8.49,14,2,10,200,Nuts,11
+641,Caldo Tlalpeño,7.49,8,4,6,150,None,11
+642,Patsás,10.49,12,4,8,170,None,11
+643,Acquacotta,9.99,4,6,4,140,Gluten,11
+644,Kharcho,8.99,10,4,6,160,None,11
+645,Ribollita,7.99,8,6,4,130,Gluten,11
+646,Tom Kha Gai,6.99,12,8,6,180,Coconut,11
+647,Menudo,8.49,10,5,4,120,Gluten,11
+648,Caldo Verde,9.49,6,4,6,140,Gluten,11
+649,Jókai Bableves,7.99,10,4,6,160,Gluten,11
+650,Mulligatawny,8.99,12,5,10,190,Gluten,11
+651,Avgolemono Soup,6.99,6,4,4,130,Egg,11
+652,Harira,9.99,8,6,4,150,None,11
+653,Khar,8.49,16,4,10,210,None,11
+654,Fasolada,7.49,6,5,2,120,Gluten,11
+655,Kuy Teav,10.49,12,3,6,180,Gluten,11
+656,Bun Rieu,9.49,14,10,6,220,Shrimp,11
+657,Borscht,8.99,4,8,5,140,Gluten,11
+658,Soljanka,7.99,8,6,4,160,None,11
+659,Sinigang,6.99,6,8,2,110,None,11
+660,Soto Ayam,8.99,10,5,4,120,Gluten,11
+661,Avgolemono Soup,7.49,6,4,4,130,Egg,11
+662,Harira,9.99,8,6,4,150,None,11
+663,Khar,8.49,16,4,10,210,None,11
+664,Fasolada,7.99,6,5,2,120,Gluten,11
+665,Kuy Teav,10.49,12,3,6,180,Gluten,11
+666,Bun Rieu,9.49,14,10,6,220,Shrimp,11
+667,Borscht,8.99,4,8,5,140,Gluten,11
+668,Soljanka,7.99,8,6,4,160,None,11
+669,Sinigang,6.99,6,8,2,110,None,11
+670,Soto Ayam,8.99,10,5,4,120,Gluten,11
+671,Buffalo Wings,9.99,20,2,16,280,Gluten,12
+672,Mozzarella Sticks,7.99,10,4,18,260,Dairy,12
+673,Jalapeno Poppers,8.49,8,2,12,220,Gluten,12
+674,Potato Skins,7.49,6,3,10,200,Dairy,12
+675,Nachos,10.99,12,4,14,240,Gluten,12
+676,Fried Calamari,11.99,18,2,20,310,Shellfish,12
+677,Onion Rings,6.99,4,6,14,260,Gluten,12
+678,Chicken Tenders,8.99,15,3,12,250,Gluten,12
+679,Sliders,9.49,16,4,14,270,Gluten,12
+680,Loaded Fries,7.99,6,2,10,220,Gluten,12
+681,Quesadilla,10.99,14,4,16,290,Gluten,12
+682,Bruschetta,8.99,4,2,10,200,Gluten,12
+683,Pretzel Bites,6.49,4,2,6,160,Gluten,12
+684,Tater Tots,7.49,2,1,10,190,Gluten,12
+685,Chips and Salsa,5.99,2,2,6,150,Gluten,12
+686,Spinach Artichoke Dip,9.99,6,2,12,250,Dairy,12
+687,Mini Tacos,8.49,10,3,14,260,Gluten,12
+688,Fish and Chips,11.99,20,4,22,320,Gluten,12
+689,Cheese Fries,7.99,8,2,14,240,Dairy,12
+690,Fried Pickles,6.99,2,4,10,180,Gluten,12
+691,Boneless Wings,8.99,18,2,14,260,Gluten,12
+692,Bacon-Wrapped Shrimp,9.49,14,2,12,250,None,12
+693,Mushroom Swiss Burger,10.99,20,4,18,300,Gluten,12
+694,Loaded Nachos,11.49,16,4,20,320,Gluten,12
+695,Fried Mozzarella,7.49,8,3,12,230,Dairy,12
+696,Sweet Potato Fries,6.99,2,6,14,240,Gluten,12
+697,Popcorn Shrimp,9.99,12,2,16,280,Gluten,12
+698,Potato Chips,5.99,2,2,8,170,Gluten,12
+699,Shrimp Cocktail,10.99,20,2,6,260,Shellfish,12
+700,Guacamole,8.99,4,4,10,220,None,12
+701,Hot Dog,7.99,10,3,12,250,Gluten,12
+702,Fried Chicken,11.99,20,2,18,290,Gluten,12
+703,Pulled Pork Sandwich,9.49,14,6,12,270,Gluten,12
+704,Cheese Curds,8.49,12,4,16,280,Dairy,12
+705,Chili Cheese Fries,10.99,10,6,18,290,Dairy,12
+706,Buffalo Cauliflower Bites,7.99,6,4,10,200,Gluten,12
+707,Sausage Rolls,9.99,10,2,14,260,Gluten,12
+708,Baked Brie,8.99,6,6,12,230,Dairy,12
+709,Fried Ravioli,11.99,10,4,16,280,Dairy,12
+710,Chips and Guacamole,6.99,4,4,10,220,None,12
+711,BBQ Ribs,10.99,20,12,16,320,None,12
+712,Spinach Dip,9.49,8,4,14,270,Dairy,12
+713,Stuffed Mushrooms,7.49,6,2,10,210,Gluten,12
+714,Hummus,8.99,4,4,12,250,None,12
+715,Loaded Potato Skins,10.99,12,4,18,290,Dairy,12
+716,Chicken Quesadilla,11.49,16,6,14,300,Gluten,12
+717,Mango Salsa,6.49,2,8,4,160,None,12
+718,Crispy Brussels Sprouts,9.49,4,2,14,270,Gluten,12
+719,Cheese and Charcuterie Board,8.99,12,6,10,230,None,12
+720,Corn Dogs,10.99,10,8,16,270,Gluten,12
+721,Sausage and Peppers,11.99,18,4,20,320,Gluten,12
+722,Bacon-Wrapped Jalapenos,7.99,8,4,10,220,None,12
+723,Mushroom Caps,9.99,6,2,14,250,Gluten,12
+724,Corn Nuggets,8.49,6,4,12,230,Gluten,12
+725,Steak Bites,10.99,20,2,16,280,Gluten,12
+726,Buffalo Chicken Dip,11.49,10,4,14,270,Dairy,12
+727,Pulled Pork Sliders,6.99,12,8,10,240,Gluten,12
+728,Potato Croquettes,8.99,6,4,14,260,Gluten,12
+729,Crab Rangoon,9.49,8,4,12,250,Dairy,12
+730,Chorizo Tacos,10.99,14,4,16,270,Gluten,12
+731,Tuna Tartare,11.49,20,4,12,280,Gluten,12
+732,Shrimp Po' Boy,7.99,16,4,14,290,Gluten,12
+733,Beer-Battered Fish Tacos,9.99,18,6,16,310,Gluten,12
+734,Cheeseburger Sliders,8.99,14,6,12,270,Gluten,12
+735,Fried Green Tomatoes,10.99,4,6,14,260,Gluten,12
+736,Garlic Parmesan Fries,11.49,6,4,12,250,Gluten,12
+737,Beef Sliders,6.99,12,4,10,240,Gluten,12
+738,Chicken Nachos,8.49,14,6,12,270,Gluten,12
+739,Truffle Fries,9.99,4,2,16,280,Gluten,12
+740,Bratwurst,7.49,14,2,14,250,Gluten,12
+741,Baked Pretzel,8.99,6,4,12,260,Gluten,12
+742,Pepperoni Pizza,10.99,16,4,18,300,Gluten,12
+743,Chicken Tacos,11.49,12,4,14,270,Gluten,12
+744,Chili Cheese Dogs,6.99,14,6,16,290,Gluten,12
+745,Egg Rolls,8.49,8,2,12,230,Gluten,12
+746,Potato Salad,9.99,4,6,8,200,Egg,12
+747,Mozzarella Sticks,7.99,10,4,18,260,Dairy,12
+748,Jalapeno Poppers,8.49,8,2,12,220,Gluten,12
+749,Potato Skins,7.49,6,3,10,200,Dairy,12
+750,Nachos,10.99,12,4,14,240,Gluten,12
+751,Fried Calamari,11.99,18,2,20,310,Shellfish,12
+752,Onion Rings,6.99,4,6,14,260,Gluten,12
+753,Chicken Tenders,8.99,15,3,12,250,Gluten,12
+754,Sliders,9.49,16,4,14,270,Gluten,12
+755,Loaded Fries,7.99,6,2,10,220,Gluten,12
+756,Quesadilla,10.99,14,4,16,290,Gluten,12
+757,Bruschetta,8.99,4,2,10,200,Gluten,12
+758,Pretzel Bites,6.49,4,2,6,160,Gluten,12
+759,Tater Tots,7.49,2,1,10,190,Gluten,12
+760,Chips and Salsa,5.99,2,2,6,150,Gluten,12
+761,Spinach Artichoke Dip,9.99,6,2,12,250,Dairy,12
+762,Mini Tacos,8.49,10,3,14,260,Gluten,12
+763,Fish and Chips,11.99,20,4,22,320,Gluten,12
+764,Cheese Fries,7.99,8,2,14,240,Dairy,12
+765,Fried Pickles,6.99,2,4,10,180,Gluten,12
+766,Boneless Wings,8.99,18,2,14,260,Gluten,12
+767,Bacon-Wrapped Shrimp,9.49,14,2,12,250,None,12
+768,Mushroom Swiss Burger,10.99,20,4,18,300,Gluten,12
+769,Loaded Nachos,11.49,16,4,20,320,Gluten,12
+770,Fried Mozzarella,7.49,8,3,12,230,Dairy,12
+771,Sweet Potato Fries,6.99,2,6,14,240,Gluten,12
+772,Popcorn Shrimp,9.99,12,2,16,280,Gluten,12
+773,Potato Chips,5.99,2,2,8,170,Gluten,12
+774,Shrimp Cocktail,10.99,20,2,6,260,Shellfish,12
+775,Guacamole,8.99,4,4,10,220,None,12
+776,Hot Dog,7.99,10,3,12,250,Gluten,12
+777,Fried Chicken,11.99,20,2,18,290,Gluten,12
+778,Pulled Pork Sandwich,9.49,14,6,12,270,Gluten,12
+779,Cheese Curds,8.49,12,4,16,280,Dairy,12
+780,Chili Cheese Fries,10.99,10,6,18,290,Dairy,12
+781,Buffalo Cauliflower Bites,7.99,6,4,10,200,Gluten,12
+782,Sausage Rolls,9.99,10,2,14,260,Gluten,12
+783,Baked Brie,8.99,6,6,12,230,Dairy,12
+784,Fried Ravioli,11.99,10,4,16,280,Dairy,12
+785,Chips and Guacamole,6.99,4,4,10,220,None,12
+786,BBQ Ribs,10.99,20,12,16,320,None,12
+787,Spinach Dip,9.49,8,4,14,270,Dairy,12
+788,Stuffed Mushrooms,7.49,6,2,10,210,Gluten,12
+789,Hummus,8.99,4,4,12,250,None,12
+790,Loaded Potato Skins,10.99,12,4,18,290,Dairy,12
+791,Chicken Quesadilla,11.49,16,6,14,300,Gluten,12
+792,Mango Salsa,6.49,2,8,4,160,None,12
+793,Crispy Brussels Sprouts,9.49,4,2,14,270,Gluten,12
+794,Cheese and Charcuterie Board,8.99,12,6,10,230,None,12
+795,Corn Dogs,10.99,10,8,16,270,Gluten,12
+796,Sausage and Peppers,11.99,18,4,20,320,Gluten,12
+797,Bacon-Wrapped Jalapenos,7.99,8,4,10,220,None,12
+798,Mushroom Caps,9.99,6,2,14,250,Gluten,12
+799,Corn Nuggets,8.49,6,4,12,230,Gluten,12
+800,Steak Bites,10.99,20,2,16,280,Gluten,12
+801,Buffalo Chicken Dip,11.49,10,4,14,270,Dairy,12
+802,Pulled Pork Sliders,6.99,12,8,10,240,Gluten,12
+803,Potato Croquettes,8.99,6,4,14,260,Gluten,12
+804,Crab Rangoon,9.49,8,4,12,250,Dairy,12
+805,Chorizo Tacos,10.99,14,4,16,270,Gluten,12
+806,Tuna Tartare,11.49,20,4,12,280,Gluten,12
+807,Shrimp Po' Boy,7.99,16,4,14,290,Gluten,12
+808,Beer-Battered Fish Tacos,9.99,18,6,16,310,Gluten,12
+809,Cheeseburger Sliders,8.99,14,6,12,270,Gluten,12
