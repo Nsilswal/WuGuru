@@ -80,7 +80,7 @@ class RecommendationForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
     description = StringField('Description', validators=[DataRequired()])
     photo = FileField('Photo Upload')
-    selected_items = SelectMultipleField('Select Items', choices=[
+    selected_items = SelectMultipleField('Select Meal Tags', choices=[
         ('Breakfast', 'Breakfast'),
         ('Lunch', 'Lunch'),
         ('Dinner', 'Dinner'),
