@@ -26,6 +26,7 @@
     <tr>
       <th scope="col">Reviewer</th>
       <th scope="col">Date</th>
+      <th scope="col">Restaurant</th>
       <th scope="col">Rating</th>
       <th scope="col">Description</th>
     </tr>
@@ -35,6 +36,7 @@
       <tr>
         <th scope="row">{{review.firstname}} {{review.lastname}}</th>
         <td>{{humanize_time(review.date)}}</td>
+        <td>{{review.restaurant}}</td>
         <td>{{review.rating}} / 5</td>
         <td>{{review.description}}</td>
       </tr>
