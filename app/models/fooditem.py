@@ -48,6 +48,17 @@ class Fooditem:
             return None
 
     @staticmethod
+    def search_by_keyword(keyword):
+        modified_keyword = f'%{keyword}%'
+        rows = app.db.execute('''
+            SELECT id,name,protein,sugars,
+            fats,price,allergens, calories,restaurantID
+            FROM fooditems
+            WHERE name LIKE :modified_keyword
+            ''', modified_keyword=modified_keyword)
+        return [Fooditem(*row) for row in rows] 
+
+    @staticmethod
     def get_all(attribute=6, ordering=0):
         attribute_list= ['id','name','protein','sugars','fats','price','allergens','calories','restaurantID']
         ordering_list= ['DESC','ASC']
