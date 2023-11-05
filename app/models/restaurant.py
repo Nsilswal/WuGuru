@@ -63,24 +63,55 @@ class Restaurants:
         
         return [Restaurants(*row) for row in rows]
     
-  
+    #Instead of get menu, link to a filter of food items?
     @staticmethod
     def get_menu(id):
         rows = app.db.execute('''
             SELECT
+                r.id as restaurant_id,
                 r.name AS restaurant_name,
                 f.name AS food_item_name,
                 f.price
             FROM
                 Restaurants r
-            INNER JOIN
-                Sells s
-            ON
-                r.id = s.rid
-            INNER JOIN
+            LEFT JOIN
                 fooditems f
             ON
-                s.fid = f.id;
+                r.id = s.restaurantID
+            WHERE r.id = :id
+            ''',
+                              id=id)
+        return [Restaurants(*row) for row in rows]
+    
+    def get_reviews(id):
+        rows = app.db.execute('''
+            SELECT
+                r.name AS restaurant_name,
+                rev.rating AS food_item_name,
+                rev.description
+            FROM
+                Restaurants r
+            LEFT JOIN
+                Reviews rev
+            ON
+                r.id = rev.restaurant_ID
+            WHERE r.id = :id
+            ''',
+                              id=id)
+        return [Restaurants(*row) for row in rows]
+    
+    def get_rating(id):
+        rows = app.db.execute('''
+            SELECT
+                r.id,
+                r.name AS restaurant_name,
+                AVG(Reviews.score)
+            FROM
+                Restaurants r
+            LEFT JOIN
+                Reviews
+            ON
+                r.id = Reviews.restaurant_ID
             WHERE r.id = :id
             ''',
                               id=id)
