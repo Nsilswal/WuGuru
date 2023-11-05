@@ -28,7 +28,7 @@ class Fooditem:
             rows = app.db.execute("""
             INSERT INTO fooditems
             (id,name,protein,sugars,
-            fats,price, allergens, restaurantID))
+            fats,price,allergens, calories,restaurantID))
             VALUES(:id,:title,:protein,:sugars,:fats,:price,:allergens,:calories,:restaurantID)
             RETURNING id
             """,
