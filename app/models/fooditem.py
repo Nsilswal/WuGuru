@@ -54,7 +54,7 @@ class Fooditem:
             SELECT id,name,protein,sugars,
             fats,price,allergens, calories,restaurantID
             FROM fooditems
-            WHERE name LIKE :modified_keyword
+            WHERE name ILIKE :modified_keyword
             ''', modified_keyword=modified_keyword)
         return [Fooditem(*row) for row in rows] 
 
