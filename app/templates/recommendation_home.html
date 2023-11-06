@@ -11,27 +11,49 @@
   <input type="text" id="search" name="query" placeholder="Enter your search term">
   <input type="submit" value="Search">
 </form>
-
-<h4>- OR -</h4>
-
 <form action="{{ url_for('recommendations.recommendations_filter')}}" method="POST">
-  <label for="Attribute">Sort by...</label>
+  <label for="Attribute">Sort by:</label>
   <select name="Attribute" id="Attribute1">
     <option value="Attribute...">Attribute...</option>
     <option value="Title">Title</option>
     <option value="Recent Posts">Recent Posts</option>
     <option value="Trending">Trending</option>
   </select>
-  
   <label for="Ordering"></label>
   <select name="Ordering" id="Ordering1">
     <option value="Ordering...">Ordering...</option>
     <option value="Ascending">Ascending</option>
     <option value="Descending">Descending</option>
   </select>
-  
   <input type="submit" value="Sort">
 </form>
+
+<div class="button-group">
+  <p>Tags:</p>
+  <form action="{{ url_for('recommendations.recommendations_tag_search', tagname='Breakfast')}}" method="GET">
+    <input type="submit" value="Breakfast">
+  </form>
+  <form action="{{ url_for('recommendations.recommendations_tag_search', tagname='Lunch')}}" method="GET">
+    <input type="submit" value="Lunch">
+  </form>
+  <form action="{{ url_for('recommendations.recommendations_tag_search', tagname='Dinner')}}" method="GET">
+    <input type="submit" value="Dinner">
+  </form>
+  <form action="{{ url_for('recommendations.recommendations_tag_search', tagname='Snack')}}" method="GET">
+    <input type="submit" value="Snack">
+  </form>
+</div>
+<style>
+  .button-group {
+    display: flex;
+    align-items: center; /* Vertically center-align items within the container */
+  }
+
+  .button-group p {
+    margin-right: 10px; /* Add some spacing between the word and buttons */
+  }
+</style>
+
 
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">

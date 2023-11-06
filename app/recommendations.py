@@ -3,12 +3,13 @@ from flask import jsonify, redirect, url_for, flash, render_template, request, s
 from flask import Flask, Blueprint
 import os
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, FileField
+from wtforms import StringField, SubmitField, FileField, SelectMultipleField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
 from datetime import datetime
  
 from .models.recommendation import Recommendation
 from .models.rec_photo import Rec_Photo
+from .models.rec_tag import Rec_Tag
 from .models.user import User
 
 bp = Blueprint('recommendations', __name__)
@@ -31,6 +32,11 @@ def recommendations_search():
     recommendations = Recommendation.search_by_keyword(keyword)
     return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
 
+@bp.route('/recommendations/tagsearch/<tagname>', methods=['GET'])
+def recommendations_tag_search(tagname):
+    recommendations = Recommendation.get_all_for_tag(tagname)
+    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
+    
 @bp.route('/recommendations/add', methods=['POST'])
 def recommendation_add():
     form = RecommendationForm()
@@ -43,6 +49,7 @@ def recommendation_add():
             rec_id = Recommendation.register(user_id, form.title.data, form.description.data, formatted_time, init_pop).id
             if rec_id:
                 Rec_Photo.register(rec_id, form.photo.data)
+                Rec_Tag.register(rec_id, form.selected_items.data)
                 return redirect(url_for('recommendations.recommendations'))
     return render_template('recommendation_add.html', title='Add A Recommendation', form=form)
 
@@ -50,8 +57,10 @@ def recommendation_add():
 def recommendations_view(rec_id):
     rec_info = Recommendation.get(rec_id)
     rec_photos = Rec_Photo.get_all(rec_id)
+    rec_tags = Rec_Tag.get_all_for_entry(rec_id)
+    print(rec_tags)
     user_creator = User.get(rec_info.user_id)
-    return render_template('recommendation_view.html', title="View Recommendation", rec=rec_info, photos=rec_photos, user=user_creator)
+    return render_template('recommendation_view.html', title="View Recommendation", rec=rec_info, photos=rec_photos, user=user_creator, tags=rec_tags)
 
 @bp.route('/recommendations/upvote/<int:rec_id>', methods=['POST'])
 def recommendations_upvote(rec_id):
@@ -71,5 +80,11 @@ class RecommendationForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
     description = StringField('Description', validators=[DataRequired()])
     photo = FileField('Photo Upload')
+    selected_items = SelectMultipleField('Select Meal Tags', choices=[
+        ('Breakfast', 'Breakfast'),
+        ('Lunch', 'Lunch'),
+        ('Dinner', 'Dinner'),
+        ('Snack', 'Snack')
+    ])
     submit = SubmitField('Register') 
 

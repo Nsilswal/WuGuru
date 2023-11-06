@@ -1,25 +1,26 @@
 from flask import current_app as app
 
 class Review:
-    def __init__(self, id, firstname, lastname, date, rating, description):
+    def __init__(self, id, firstname, lastname, date, rating, description, restaurant):
         self.id = id
         self.firstname = firstname
         self.lastname = lastname
         self.date = date
         self.rating = rating
         self.description = description
+        self.restaurant = restaurant
 
     @staticmethod
     def get(id):
         rows = app.db.execute('''
-            SELECT id, user_id, date, rating, description
-            FROM Reviews
-            WHERE id = :id
+            SELECT Reviews.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description, Restaurants.name
+            FROM Reviews, Users, Restaurants
+            WHERE id = :id AND Reviews.user_id = Users.id AND Reviews.restaurant_id = Restaurants.id
             ''', id=id)
         return Review(*(rows[0])) if rows else None
 
     @staticmethod
-    def register(user_id, date, rating, description):
+    def register(user_id, date, rating, description, restaurant_id):
         try:
             rows = app.db.execute("""
             INSERT INTO Reviews(user_id, date, rating, description)
@@ -29,7 +30,8 @@ class Review:
             user_id=user_id,
             date=date,
             rating = rating,
-            description=description)
+            description=description,
+            restaurant_id=restaurant_id)
             id = rows[0][0]
             return Review.get(id)
         except Exception as e:
@@ -45,14 +47,14 @@ class Review:
         ordering_list = ['DESC', 'ASC']
 
         if(0 <= attribute <= 1 and 0 <= ordering <= 1):
-            query = f"""SELECT Reviews.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description
-                        FROM Reviews, Users
-                        WHERE Reviews.user_id = Users.id
+            query = f"""SELECT Reviews.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description, Restaurants.name
+                        FROM Reviews, Users, Restaurants
+                        WHERE Reviews.user_id = Users.id AND Reviews.restaurant_id = Restaurants.id
                         ORDER BY {attribute_list[attribute]} {ordering_list[ordering]}"""
         else:
-            query = """SELECT Reviews.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description
-                        FROM Reviews, Users
-                        WHERE Reviews.user_id = Users.id
+            query = """SELECT Reviews.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description, Restaurants.name
+                        FROM Reviews, Users, Restaurants
+                        WHERE Reviews.user_id = Users.id AND Reviews.restaurant_id = Restaurants.id
                         ORDER BY date DESC"""
 
         rows = app.db.execute(query)
