@@ -2,9 +2,10 @@ from flask import current_app as app
 
 
 class Restaurants:
-    def __init__(self, id, name, floor, MobileOrder, OpeningTime, ClosingTime):
+    def __init__(self, id, name, rating, floor, MobileOrder, OpeningTime, ClosingTime):
         self.id = id
         self.name = name
+        self.rating = rating
         self.floor = floor
         self.MobileOrder = MobileOrder
         self.OpeningTime = OpeningTime
@@ -13,9 +14,11 @@ class Restaurants:
     @staticmethod
     def get(id):
         rows = app.db.execute('''
-            SELECT id, name, floor, MobileOrder, OpeningTime, ClosingTime
-            FROM Restaurants
-            WHERE id = :id
+            SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
+                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
+            FROM Restaurants r, Reviews
+            WHERE r.id = :id AND r.id = Reviews.restaurant_id
+            GROUP BY r.id
             ''',
                               id = id)
         return Restaurants(*(rows[0])) if rows is not None else None
@@ -44,18 +47,24 @@ class Restaurants:
 
     @staticmethod
     def get_all(attribute=1, ordering=0):
-        # Attribute: 0 - id, 1-name, 2 - floor, 3 - Mobile, 4-Open, 5-Close
+        # Attribute: 0 - id, 1-name, 2 - rating, 3-floor, 4 - Mobile, 5-Open, 6-Close
         # Ordering: 0 - ASC, 1 - DESC
-        attribute_list = ['id', 'name', 'floor', 'MobileOrder', 'OpeningTime', 'ClosingTime']
+        attribute_list = ['id', 'name', 'rating', 'floor', 'MobileOrder', 'OpeningTime', 'ClosingTime']
         ordering_list = ['ASC', 'DESC']
 
-        if(0 <= attribute <= 5 and 0 <= ordering <= 1):
-            query = f"""SELECT *
-                        FROM Restaurants
+        if(0 <= attribute <= 6 and 0 <= ordering <= 1):
+            query = f"""SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
+                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
+                        FROM Restaurants r, Reviews
+                        WHERE r.id = Reviews.restaurant_id
+                        GROUP BY r.id
                         ORDER BY {attribute_list[attribute]} {ordering_list[ordering]}"""
         else:
-            query = """SELECT *
-                        FROM Restaurants
+            query = """SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
+                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
+                        FROM Restaurants r, Reviews
+                        WHERE r.id = Reviews.restaurant_id
+                        GROUP BY r.id
                         ORDER BY name DESC"""
 
         rows = app.db.execute(query)
@@ -63,7 +72,7 @@ class Restaurants:
         
         return [Restaurants(*row) for row in rows]
     
-    #Instead of get menu, link to a filter of food items?
+    #Instead of get menu, link to a filter of food items done by Mia
     @staticmethod
     def get_menu(id):
         rows = app.db.execute('''
@@ -104,8 +113,7 @@ class Restaurants:
         rows = app.db.execute('''
             SELECT
                 r.id,
-                r.name AS restaurant_name,
-                AVG(Reviews.score)
+                AVG(Reviews.rating)
             FROM
                 Restaurants r
             LEFT JOIN
