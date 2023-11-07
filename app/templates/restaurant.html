@@ -4,18 +4,21 @@
  
 <h2>WU Restaurants</h2>
 
-<form action="{{ url_for('restaurants.restaurants', attribute=1, ordering=0)}}" method="GET">
-  <input type ="submit" value="Name A-Z">
-</form>
-<form action="{{ url_for('restaurants.restaurants_filter', attribute=2, ordering=1)}}" method="GET">
-  <input type ="submit" value="Highest Rated">
-</form>
-<form action="{{ url_for('restaurants.restaurants_filter', attribute=3, ordering=0)}}" method="GET">
-  <input type ="submit" value="Floor Level">
-</form>
-<form action="{{ url_for('restaurants.restaurants_filter', attribute=4, ordering=1)}}" method="GET">
-  <input type ="submit" value="Mobile Order Available">
-</form>
+<div class="button-group">
+  <form action="{{ url_for('restaurants.restaurants', attribute=1, ordering=0)}}" method="GET">
+      <input type="submit" value="Name A-Z">
+  </form>
+  <form action="{{ url_for('restaurants.restaurants_filter', attribute=2, ordering=1)}}" method="GET">
+      <input type="submit" value="Highest Rated">
+  </form>
+  <form action="{{ url_for('restaurants.restaurants_filter', attribute=3, ordering=0)}}" method="GET">
+      <input type="submit" value="Floor Level">
+  </form>
+  <form action="{{ url_for('restaurants.restaurants_filter', attribute=4, ordering=1)}}" method="GET">
+      <input type="submit" value="Mobile Order Available">
+  </form>
+</div>
+
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
     <tr>
@@ -35,10 +38,20 @@
         <td>{{rest.floor}}</td>
         <td>{{rest.OpeningTime}}</td>
         <td>{{rest.ClosingTime}}</td>
-        <td>{{rest.MobileOrder}}</td> 
+        <td>{{rest.MobileOrder}}</td>
       </tr>
     {% endfor %}
   </tbody>
 </table>
+
+<style>
+  .button-group {
+    display: flex; /* Display buttons horizontally */
+  }
+
+  .button-group form {
+    margin-right: 10px; /* Adjust the margin as needed to separate the buttons */
+  }
+</style>
 
 {% endblock %}

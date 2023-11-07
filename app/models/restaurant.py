@@ -1,5 +1,5 @@
 from flask import current_app as app
-
+from datetime import datetime
 
 class Restaurants:
     def __init__(self, id, name, rating, floor, MobileOrder, OpeningTime, ClosingTime):
@@ -71,7 +71,24 @@ class Restaurants:
 
         
         return [Restaurants(*row) for row in rows]
-    
+
+    @staticmethod
+    def get_open_restaurants():
+        current_time = datetime.now().strftime('%H:%M:%S')
+        
+        query = '''
+            SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
+                   r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
+            FROM Restaurants r, Reviews
+            WHERE r.id = Reviews.restaurant_id
+            GROUP BY r.id
+            HAVING :current_time >= r.OpeningTime AND :current_time <= r.ClosingTime
+        '''
+
+        rows = app.db.execute(query, current_time=current_time)
+
+        return [Restaurants(*row) for row in rows]
+
     #Instead of get menu, link to a filter of food items done by Mia
     @staticmethod
     def get_menu(id):
@@ -109,20 +126,6 @@ class Restaurants:
                               id=id)
         return [Restaurants(*row) for row in rows]
     
-    def get_rating(id):
-        rows = app.db.execute('''
-            SELECT
-                r.id,
-                AVG(Reviews.rating)
-            FROM
-                Restaurants r
-            LEFT JOIN
-                Reviews
-            ON
-                r.id = Reviews.restaurant_ID
-            WHERE r.id = :id
-            ''',
-                              id=id)
-        return [Restaurants(*row) for row in rows]
+
  
    

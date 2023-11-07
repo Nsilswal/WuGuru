@@ -1,12 +1,12 @@
-1,Il Forno,1,true,11:00,21:00,1
-2,Cafe,1,false,07:30,21:00,5
-3,Skillet,1,true,09:00,21:00,3
-4,Sazon,1,true,11:00,21:00,1
-5,JB's Roasts and Chops,1,true,11:00,21:00,3
-6,Panera,0,false,07:00,21:00,4
-7,The Devil's Krafthouse,0,true,11:00,23:59,5
-8,Tandoor,1,true,11:00,21:00,2
-9,Farmstead and Sprout,1,true,11:00,21:00,5
-10,Ginger and Soy,1,true,11:00,21:00,2
-11,Gyotaku,1,true,11:00,21:00,2
-12,It's Thyme,2,false,11:00,15:00,5
+1,Il Forno,1,True,11:00,21:00,1
+2,Cafe,1,False,07:30,21:00,5
+3,Skillet,1,True,09:00,21:00,3
+4,Sazon,1,True,11:00,21:00,1
+5,JB's Roasts and Chops,1,True,11:00,21:00,3
+6,Panera,0,False,07:00,21:00,4
+7,The Devil's Krafthouse,0,True,11:00,23:59,5
+8,Tandoor,1,True,11:00,21:00,2
+9,Farmstead and Sprout,1,True,11:00,21:00,5
+10,Ginger and Soy,1,True,11:00,21:00,2
+11,Gyotaku,1,True,11:00,21:00,2
+12,It's Thyme,2,False,11:00,15:00,5
