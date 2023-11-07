@@ -17,10 +17,6 @@ def cross_comparisons():
     fooditems = Fooditem.get_all()  # Assuming Fooditem.get_all() fetches the food items from your database
     return render_template('crosscomparisons_home.html', title="Cross Comparisons Home", avail_fi=fooditems,)
 
-# @bp.route('/crosscomparisons/compare/<string:fd1>/<string:fd2>/<string:category>/<string:method>', methods=['GET'])
-# def compare(fd1, fd2,category,method):
-#     return ("comparing " + fd1 + " and " + fd2 + " in category " + category + " using method " + method)
-
 @bp.route('/crosscomparisons/compare', methods=['POST'])
 def compare():
     comparison_result = None
@@ -38,14 +34,18 @@ def compare():
         else:
             comparison = "ASC"
 
-
         # Construct the SQL query dynamically based on the category and comparison type
         query = f"SELECT * FROM fooditems WHERE name IN ('{food1}', '{food2}') ORDER BY {category} {comparison} LIMIT 1"
-    
+
         # Execute the query using your database connection and fetch the result
         row = app.db.execute(query)
-        comparison_result = f'The food with the {order} {category} are {row[0][1]}'
+        # Checking query results
+        if len(row) == 0:
+            comparison_result = f"Sorry, we couldn't find any food items with the names {food1} and {food2}"
+        else:
+            comparison_result = f'The food with the {order} {category} is {row[0][1]}'
+
+        # comparison_result = f'{row}'
 
     # Render the template with comparison_result
-    # return row[0][1]
     return render_template('crosscomparisons_home.html', comparison_result=comparison_result)
