@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Leave a Review</h1>
+
+{% if not current_user.is_authenticated %}
+<p><a href="{{ url_for('users.login') }}">Log in</a> to leave a review!</p>
+
+{% else %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.restaurant.label }}
+            {{ form.restaurant }}
+        </p>
+        <p>
+            {{ form.rating.label }}
+            {{ form.rating }}
+        </p>
+        <p>
+            {{ form.description.label }}<br/>
+            {{ form.description }}<br/>
+            {% for error in form.description.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endif %}
+
+{% endblock %}
