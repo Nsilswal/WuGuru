@@ -27,7 +27,7 @@ def reviews_filter():
     ordering = request.form['Ordering']
     restaurant_id = request.form['Restaurant']
     reviews = []
-    if restaurant == 'None':
+    if restaurant_id == 'None':
         reviews = Review.get_all(attribute, ordering)
     else:
         reviews = Review.get_all_for_restaurant(int(restaurant_id), attribute, ordering)
