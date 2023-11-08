@@ -6,17 +6,32 @@
 
 <h2>Reviews:</h2>
 
-<form action="{{ url_for('reviews.reviews_filter', attribute=1, ordering=1)}}" method="GET">
-  <input type ="submit" value="Sort by rating: low to high">
+<form action="{{ url_for('reviews.reviews_filter')}}" method="POST">
+  <label for="Attribute">Sort by:</label>
+  <select name="Attribute" id="Attribute">
+    <option value="Attribute...">Attribute...</option>
+    <option value="Rating">Rating</option>
+    <option value="Date">Date</option>
+  </select>
+  <label for="Ordering"></label>
+  <select name="Ordering" id="Ordering">
+    <option value="Ordering...">Ordering...</option>
+    <option value="Ascending">Ascending</option>
+    <option value="Descending">Descending</option>
+  </select>
+  <label for="Restaurant">Filter by:</label>
+  <select name="Restaurant" id="Restaurant">
+    <option value="None">All Restaurants</option>
+    {% for rest in avail_rests %}
+      <option value="{{ rest.id }}">{{ rest.name }}</option>
+    {% endfor %}
+  </select>
+  <input type="submit" value="Go">
 </form>
-<form action="{{ url_for('reviews.reviews_filter', attribute=1, ordering=0)}}" method="GET">
-  <input type ="submit" value="Sort by rating: high to low">
-</form>
-<form action="{{ url_for('reviews.reviews_filter', attribute=0, ordering=1)}}" method="GET">
-  <input type ="submit" value="Sort by date: oldest to newest">
-</form>
-<form action="{{ url_for('reviews.reviews_filter', attribute=0, ordering=0)}}" method="GET">
-  <input type ="submit" value="Sort by date: newest to oldest">
+
+
+<form action="{{ url_for('reviews.review_add')}}" method="POST">
+  <input type ="submit" value="Add new review">
 </form>
 
 <br><br>
