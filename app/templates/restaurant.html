@@ -27,18 +27,31 @@
       <th scope="col">Floor</th>
       <th scope="col">Opens</th>
       <th scope="col">Closes</th>
-      <th scope="col">Mobile Order Available</th>
+      <th scope="col">Mobile Order</th>
     </tr>
   </thead>
   <tbody>
     {% for rest in avail_rests%}
       <tr>
-        <th scope="row">{{rest.name}}</th>
-        <td>{{ "{:.1f}/5.0".format(rest.rating) }}</td>
+        <th scope="row"><a href="{{ url_for('fooditems.fooditems') }}">
+          {{rest.name}}
+        </a>
+        </th>
+        <td>
+          <a href="{{ url_for('reviews.reviews') }}">
+            {{ "{:.1f}/5.0".format(rest.rating) }}
+          </a>
+        </td>
         <td>{{rest.floor}}</td>
         <td>{{rest.OpeningTime}}</td>
         <td>{{rest.ClosingTime}}</td>
-        <td>{{rest.MobileOrder}}</td>
+        <td>
+          {% if rest.MobileOrder %}
+            Available
+          {% else %}
+            Unavailable
+          {% endif %}
+        </td>
       </tr>
     {% endfor %}
   </tbody>
@@ -52,6 +65,16 @@
   .button-group form {
     margin-right: 10px; /* Adjust the margin as needed to separate the buttons */
   }
+
+  /* Define a CSS rule to change the hyperlink color to red */
+  a {
+  color: black; /* Change color to red */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: blue; /* Change color on hover */
+}
 </style>
 
 {% endblock %}
