@@ -2,6 +2,14 @@
 
 {% block content %}
 
+
+<p><a href="{{ url_for('users.login') }}">Log in</a> to see your purchase history!</p>
+<p><a href="{{ url_for('restaurants.restaurants') }}">Click here</a> for a list of WU Restaurants!</p>
+<p><a href="{{ url_for('fooditems.fooditems') }}">Click here</a> to see the menu items!</p>
+<p><a href="{{ url_for('reviews.reviews') }}">Click here</a> to see restaurant reviews!</p>
+<p><a href="{{ url_for('recommendations.recommendations') }}">Go to recommendations</a></p>
+<p><a href="{{ url_for('crosscomparisons.cross_comparisons') }}">Go to Cross Comparisons!</a></p>
+
 <br><br>
 
 <h2>Published Recommendations:</h2>
@@ -25,34 +33,26 @@
 </table>
 
 <br><br>
-{% if current_user.is_authenticated %}
-<!--
-<h2>Your recent purchases:</h2>
+
+<h2>Published Reviews:</h2>
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
     <tr>
-      <th scope="col">Purchase ID</th>
-      <th scope="col">Price</th>
+      <th scope="col">Restuarant Name</th>
+      <th scope="col">My Review</th>
     </tr>
   </thead>
   <tbody>
-    {% for purchase in all_purch%}
+    {% for rev in Review_history%}
       <tr>
-        <th scope="row">{{purchase.pid}}</th>
-        <td>{{purchase.time_purchased}}</td>
+        <th scope="row">{{rev.restaurant}}</th>
+        <td>{{rev.description}}</td>
       </tr>
     {% endfor %}
   </tbody>
-</table>
--->
-{% else %}
-<p><a href="{{ url_for('users.login') }}">Log in</a> to see your purchase history!</p>
-{% endif %}
-<p><a href="{{ url_for('restaurants.restaurants') }}">Click here</a> for a list of WU Restaurants!</p>
-<p><a href="{{ url_for('fooditems.fooditems') }}">Click here</a> to see the menu items!</p>
-<p><a href="{{ url_for('reviews.reviews') }}">Click here</a> to see restaurant reviews!</p>
-<p><a href="{{ url_for('recommendations.recommendations') }}">Go to recommendations</a></p>
-<p><a href="{{ url_for('crosscomparisons.cross_comparisons') }}">Go to Cross Comparisons!</a></p>
+
+<br><br>
+
 {% endblock %}
 
 
