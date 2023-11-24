@@ -62,7 +62,8 @@ CREATE TABLE fooditems (
     fats FLOAT NOT NULL,
     calories INT NOT NULL,
     allergens VARCHAR(50) NOT NULL,
-    restaurantID INT NOT NULL
+    restaurantID INT NOT NULL,
+    diet VARCHAR(100)
 );
 
 CREATE TABLE Reviews (

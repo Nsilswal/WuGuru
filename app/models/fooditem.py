@@ -1,7 +1,7 @@
 from flask import current_app as app
 
 class Fooditem:
-    def __init__(self,id,name,price,protein,sugars,fats,calories, allergens, restaurantID):
+    def __init__(self,id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet):
         self.id=id
         self.name = name
         self.protein = protein
@@ -10,26 +10,27 @@ class Fooditem:
         self.price = price
         self.allergens = allergens
         self.restaurantID = restaurantID
+        self.diet = diet
         self.calories = calories
 
     @staticmethod
     def get(id):
         rows = app.db.execute('''
         SELECT id, name, protein, 
-        sugars, fats, price,allergens,calories,restaurantID
+        sugars, fats, price,allergens,calories,restaurantID, diet
         FROM fooditems
         WHERE id = :id
         ''', id=id)
         return Fooditem(*(rows[0])) if rows else None
 
     @staticmethod
-    def register(id,name,price,protein,sugars,fats,calories, allergens, restaurantID):
+    def register(id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet):
         try:
             rows = app.db.execute("""
             INSERT INTO fooditems
             (id,name,protein,sugars,
-            fats,price,allergens, calories,restaurantID))
-            VALUES(:id,:title,:protein,:sugars,:fats,:price,:allergens,:calories,:restaurantID)
+            fats,price,allergens, calories,restaurantID,diet))
+            VALUES(:id,:title,:protein,:sugars,:fats,:price,:allergens,:calories,:restaurantID,:diet)
             RETURNING id
             """,
             id = id,
@@ -40,7 +41,8 @@ class Fooditem:
             price = price,
             calories = calories,
             allergens = allergens,
-            restaurantID = restaurantID)
+            restaurantID = restaurantID,
+            diet = diet)
             id = rows[0][0]
             return Fooditem.get(id)
         except Exception as e:
@@ -52,15 +54,15 @@ class Fooditem:
         modified_keyword = f'%{keyword}%'
         rows = app.db.execute('''
             SELECT id,name,protein,sugars,
-            fats,price,allergens, calories,restaurantID
+            fats,price,allergens, calories,restaurantID,diet
             FROM fooditems
-            WHERE name ILIKE :modified_keyword
+            WHERE name ILIKE :modified_keyword OR diet ILIKE :modified_keyword
             ''', modified_keyword=modified_keyword)
         return [Fooditem(*row) for row in rows] 
 
     @staticmethod
     def get_all(attribute=6, ordering=0):
-        attribute_list= ['id','name','protein','sugars','fats','price','allergens','calories','restaurantID']
+        attribute_list= ['id','name','protein','sugars','fats','price','allergens','calories','restaurantID','diet']
         ordering_list= ['DESC','ASC']
 
         if(0 <= attribute <= 6 and 0 <= ordering <= 1):
