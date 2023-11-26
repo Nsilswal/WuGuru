@@ -90,4 +90,14 @@ class Review:
         if rows == None:
             return []
         return [Review(*row) for row in rows]
+
+    @staticmethod
+    def search_by_keyword(keyword):
+        modified_keyword = f'%{keyword}%'
+        rows = app.db.execute('''
+                        SELECT Reviews.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description, Restaurants.name
+                        FROM Reviews, Users, Restaurants
+                        WHERE Reviews.user_id = Users.id AND Reviews.restaurant_id = Restaurants.id AND Reviews.description LIKE :modified_keyword
+            ''', modified_keyword=modified_keyword)
+        return [Review(*row) for row in rows]  
     

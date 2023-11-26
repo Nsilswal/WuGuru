@@ -29,12 +29,23 @@
   <input type="submit" value="Go">
 </form>
 
+<form action="{{ url_for('reviews.reviews_search') }}" method="GET">
+  <label for="search">Search keyword:</label>
+  <input type="text" id="search" name="query" placeholder="Enter your search term">
+  <input type="submit" value="Search">
+</form>
+
+<br><br>
 
 <form action="{{ url_for('reviews.review_add')}}" method="POST">
   <input type ="submit" value="Add new review">
 </form>
 
 <br><br>
+
+{% if avail_reviews|length > 0 %}
+
+<h3>Showing {{avail_reviews|length}} reviews:</h3>
 
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
@@ -58,6 +69,12 @@
     {% endfor %}
   </tbody>
 </table>
+
+{% else %}
+
+<h2>No reviews found</h2>
+
+{% endif %}
 
 <br><br>
 

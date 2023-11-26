@@ -46,6 +46,13 @@ def review_add():
                 return redirect(url_for('reviews.reviews'))
     return render_template('review_add.html', title='Add A Review', form=form)
 
+@bp.route('/reviews/search', methods=['GET'])
+def reviews_search():
+    keyword = request.args.get('query')
+    reviews = Review.search_by_keyword(keyword)
+    restaurants = Restaurants.get_all()
+    return render_template('review_home.html', title="Review Home", avail_reviews = reviews, avail_rests = restaurants, humanize_time=humanize_time)
+
 def humanize_time(dt):
     return naturaldate(datetime.date(dt.year, dt.month, dt.day))
 
