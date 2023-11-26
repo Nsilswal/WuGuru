@@ -101,3 +101,11 @@ class Review:
             ''', modified_keyword=modified_keyword)
         return [Review(*row) for row in rows]  
     
+    @staticmethod
+    def get_all_by_uid_since(u, d):
+        rows = app.db.execute('''
+            SELECT Reviews.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description, Restaurants.name
+            FROM Reviews, Users, Restaurants
+            WHERE Reviews.user_id = Users.id AND Reviews.restaurant_id = Restaurants.id AND Reviews.user_id = :uid AND Reviews.date >= :date
+            ''', uid=u, date=d)
+        return [Review(*row) for row in rows]
