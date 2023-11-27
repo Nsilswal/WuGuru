@@ -1,7 +1,7 @@
 from flask import current_app as app
 
 class Fooditem:
-    def __init__(self,id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet, rname):
+    def __init__(self,id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet):
         self.id=id
         self.name = name
         self.protein = protein
@@ -12,7 +12,6 @@ class Fooditem:
         self.restaurantID = restaurantID
         self.diet = diet
         self.calories = calories
-        self.rname = rname
 
     @staticmethod
     def get(id):
@@ -71,20 +70,20 @@ class Fooditem:
                         fooditems.id, fooditems.name, 
                         fooditems.protein, fooditems.sugars, fooditems.fats, 
                         fooditems.price, fooditems.allergens, 
-                        fooditems.calories, fooditems.restaurantID, fooditems.diet, r.name AS rname
+                        fooditems.calories, fooditems.restaurantID, fooditems.diet
                     FROM 
                         fooditems
                     JOIN
                         Restaurants r
                     ON
-                        r.id = fooditems.restaurantID
+                    r.id = fooditems.restaurantID
                         ORDER BY {attribute_list[attribute]} {ordering_list[ordering]}""" 
         else:
             query = f"""SELECT 
                         fooditems.id, fooditems.name, 
                         fooditems.protein, fooditems.sugars, fooditems.fats, 
                         fooditems.price, fooditems.allergens, 
-                        fooditems.calories, fooditems.restaurantID, fooditems.diet, r.name AS rname
+                        fooditems.calories, fooditems.restaurantID, fooditems.diet, Restaurants.name
                     FROM 
                         fooditems
                     JOIN
