@@ -2,6 +2,7 @@ from flask_login import current_user
 from flask import jsonify, redirect, url_for, flash, render_template, request, send_from_directory
 from flask import Flask, Blueprint
 import os
+from datetime import datetime
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, FileField, SelectMultipleField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
@@ -36,6 +37,42 @@ def recommendations_search():
 def recommendations_tag_search(tagname):
     recommendations = Recommendation.get_all_for_tag(tagname)
     return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations)
+
+@bp.route('/recommendation/filter/mine', methods=['GET'])
+def recommendations_get_mine():
+    if current_user.is_authenticated:
+        recs = Recommendation.get_all_by_uid_since(current_user.id, datetime(1980, 9, 14, 0, 0, 0))
+        return render_template('recommendation_home.html', title="My Recommendations", avail_recs = recs)
+    return recommendations()
+
+@bp.route('/recommendations/edit/<int:rec_id>', methods=['POST'])
+def recommendations_edit(rec_id):
+    target_rec = Recommendation.get(rec_id)
+    if not current_user.is_authenticated or current_user.id != target_rec.user_id:
+        return recommendations_view(rec_id)
+    current_title = target_rec.title
+    current_description = target_rec.description
+    # Create an instance of the form and set dynamic values
+    form = RecommendationForm(
+        title=current_title,
+        description=current_description
+    )
+    if form.validate_on_submit():
+        if current_user.is_authenticated:
+            current_time = datetime.now()
+            formatted_time = current_time.strftime('%Y-%m-%d %H:%M:%S')
+            success = Recommendation.update(rec_id, form.title.data, form.description.data, formatted_time)
+            if success:
+                return recommendations_view(rec_id)
+    return render_template('recommendation_add.html', title='Edit This Recommendation', form=form)
+
+@bp.route('/recommendations/delete/<int:rec_id>', methods=['POST'])
+def recommendations_delete(rec_id):
+    target_rec = Recommendation.get(rec_id)
+    if not current_user.is_authenticated or current_user.id != target_rec.user_id:
+        return recommendations_view(rec_id)
+    success = Recommendation.delete(rec_id)
+    return recommendations()
     
 @bp.route('/recommendations/add', methods=['POST'])
 def recommendation_add():
