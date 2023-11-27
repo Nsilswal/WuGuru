@@ -66,12 +66,31 @@ class Fooditem:
         ordering_list= ['DESC','ASC']
 
         if(0 <= attribute <= 6 and 0 <= ordering <= 1):
-            query = f"""SELECT *
-                        FROM fooditems
+            query = f"""SELECT 
+                        fooditems.id, fooditems.name, 
+                        fooditems.protein, fooditems.sugars, fooditems.fats, 
+                        fooditems.price, fooditems.allergens, 
+                        fooditems.calories, fooditems.restaurantID, fooditems.diet
+                    FROM 
+                        fooditems
+                    JOIN
+                        Restaurants r
+                    ON
+                    r.id = fooditems.restaurantID
                         ORDER BY {attribute_list[attribute]} {ordering_list[ordering]}""" 
         else:
-            query = """SELECT *
-                        FROM fooditems
+            query = f"""SELECT 
+                        fooditems.id, fooditems.name, 
+                        fooditems.protein, fooditems.sugars, fooditems.fats, 
+                        fooditems.price, fooditems.allergens, 
+                        fooditems.calories, fooditems.restaurantID, fooditems.diet, Restaurants.name
+                    FROM 
+                        fooditems
+                    JOIN
+                        Restaurants r
+                    ON
+                        r.id = fooditems.restaurantID
+                    WHERE r.id = :id
                         ORDER BY name DESC"""
         # if(0 <= attribute <= 2 and 0 <= ordering <= 1):
         #     query = f"""SELECT *
