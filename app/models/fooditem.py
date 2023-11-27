@@ -1,7 +1,7 @@
 from flask import current_app as app
 
 class Fooditem:
-    def __init__(self,id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet, rname):
+    def __init__(self,id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet, rname='test'):
         self.id=id
         self.name = name
         self.protein = protein
@@ -54,10 +54,16 @@ class Fooditem:
     def search_by_keyword(keyword):
         modified_keyword = f'%{keyword}%'
         rows = app.db.execute('''
-            SELECT id,name,protein,sugars,
-            fats,price,allergens, calories,restaurantID,diet
-            FROM fooditems
-            WHERE name ILIKE :modified_keyword OR diet ILIKE :modified_keyword
+            SELECT * FROM 
+                (SELECT fooditems.id, fooditems.name, 
+                        fooditems.protein, fooditems.sugars, fooditems.fats, 
+                        fooditems.price, fooditems.allergens, 
+                        fooditems.calories, fooditems.restaurantID, fooditems.diet, r.name as rname
+                FROM fooditems
+                JOIN Restaurants r
+                ON r.id = fooditems.restaurantID) AS H
+            WHERE H.name ILIKE :modified_keyword OR H.diet ILIKE :modified_keyword OR H.rname ILIKE :modified_keyword
+            
             ''', modified_keyword=modified_keyword)
         return [Fooditem(*row) for row in rows] 
 
@@ -91,7 +97,6 @@ class Fooditem:
                         Restaurants r
                     ON
                         r.id = fooditems.restaurantID
-                    WHERE r.id = :id
                         ORDER BY name DESC"""
         # if(0 <= attribute <= 2 and 0 <= ordering <= 1):
         #     query = f"""SELECT *
