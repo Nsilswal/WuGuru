@@ -63,6 +63,8 @@ def recommendations_edit(rec_id):
             formatted_time = current_time.strftime('%Y-%m-%d %H:%M:%S')
             success = Recommendation.update(rec_id, form.title.data, form.description.data, formatted_time)
             if success:
+                Rec_Photo.register(rec_id, form.photo.data)
+                Rec_Tag.register(rec_id, form.selected_items.data)
                 return recommendations_view(rec_id)
     return render_template('recommendation_add.html', title='Edit This Recommendation', form=form)
 
