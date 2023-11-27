@@ -3,7 +3,7 @@
 {% block content %}
 
 
-<p><a href="{{ url_for('users.login') }}">Log in</a> to see your purchase history!</p>
+<p><a href="{{ url_for('users.login') }}">Log in</a> to see your account history!</p>
 <p><a href="{{ url_for('restaurants.restaurants') }}">Click here</a> for a list of WU Restaurants!</p>
 <p><a href="{{ url_for('fooditems.fooditems') }}">Click here</a> to see the menu items!</p>
 <p><a href="{{ url_for('reviews.reviews') }}">Click here</a> to see restaurant reviews!</p>
@@ -12,51 +12,73 @@
 
 <br><br>
 
-<h2>Published Recommendations:</h2>
-<table class='table table-hover table-bordered container'>
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Recommendation Title</th>
-      <th scope="col">Recommendation Description</th>
-      <th scope="col">Recommendation Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for rec in Recommendation_history%}
-      <tr>
-        <th scope="row">{{rec.title}}</th>
-        <td>{{rec.description}}</td>
-        <td>{{rec.popularity}}</td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{% if current_user.is_authenticated %}
 
-<br><br>
+  <h2>Published Recommendations:</h2>
 
-<h2>Published Reviews:</h2>
+  {% if Recommendation_history|length > 0 %}
+    <table class='table table-hover table-bordered container'>
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Recommendation Title</th>
+          <th scope="col">Recommendation Description</th>
+          <th scope="col">Recommendation Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for rec in Recommendation_history%}
+          <tr>
+            <th scope="row">{{rec.title}}</th>
+            <td>{{rec.description}}</td>
+            <td>{{rec.popularity}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
 
-<table class='table table-hover table-bordered container'>
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Date</th>
-      <th scope="col">Restaurant</th>
-      <th scope="col">Rating</th>
-      <th scope="col">My Review</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for review in Review_history%}
-      <tr>
-        <td>{{humanize_time(review.date)}}</td>
-        <td>{{review.restaurant}}</td>
-        <td>{{review.rating}} / 5</td>
-        <td>{{review.description}}</td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+  {% else %}
+    You have not published any recommendations.
+  {% endif %}
 
+  <br><br>
+
+  <h2>Published Reviews:</h2>
+
+  {% if Review_history|length > 0 %}
+
+    <table class='table table-hover table-bordered container'>
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Restaurant</th>
+          <th scope="col">Rating</th>
+          <th scope="col">My Review</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for review in Review_history%}
+          <tr>
+            <td>{{humanize_time(review.date)}}</td>
+            <td>{{review.restaurant}}</td>
+            <td>{{review.rating}} / 5</td>
+            <td>{{review.description}}</td>
+            <td>
+              <form action="{{ url_for('index.review_delete') }}" method=POST>
+                <input type="hidden" name="review_id" value="{{ review.id }}">
+                <input type="submit" value="Delete" />
+              </form>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  {% else %}
+    You have not published any reviews.
+  {% endif %}
+
+{% endif %}
 <br><br>
 
 {% endblock %}

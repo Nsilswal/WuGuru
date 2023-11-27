@@ -40,6 +40,18 @@ class Review:
             return None
     
     @staticmethod
+    def delete(review_id):
+        try:
+            rows = app.db.execute("""
+            DELETE FROM Reviews
+            WHERE Reviews.id = :review_id
+            """,
+            review_id=review_id)
+        except Exception as e:
+            # Print error
+            print(str(e))
+    
+    @staticmethod
     def get_all(attribute='Date', ordering='Descending'):
         attribute_dict = {
             "Date": "date",

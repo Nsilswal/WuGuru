@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import jsonify, redirect, url_for, flash, render_template, request, send_from_directory
 from flask_login import current_user
 import datetime
 from humanize import naturaldate
@@ -28,6 +28,12 @@ def index():
                            Recommendation_history=reccs,
                            Review_history=revs, 
                            humanize_time=humanize_time)
+
+@bp.route('/delete', methods=['POST'])
+def review_delete():
+    review = request.form['review_id']
+    Review.delete(int(review))
+    return redirect(url_for('index.index'))
 
 def humanize_time(dt):
     return naturaldate(datetime.date(dt.year, dt.month, dt.day))
