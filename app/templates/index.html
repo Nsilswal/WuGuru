@@ -2,8 +2,9 @@
 
 {% block content %}
 
-
+{% if not current_user.is_authenticated %}
 <p><a href="{{ url_for('users.login') }}">Log in</a> to see your account history!</p>
+{% endif %}
 <p><a href="{{ url_for('restaurants.restaurants') }}">Click here</a> for a list of WU Restaurants!</p>
 <p><a href="{{ url_for('fooditems.fooditems') }}">Click here</a> to see the menu items!</p>
 <p><a href="{{ url_for('reviews.reviews') }}">Click here</a> to see restaurant reviews!</p>
@@ -54,6 +55,7 @@
           <th scope="col">Rating</th>
           <th scope="col">My Review</th>
           <th scope="col">Delete</th>
+          <th scope="col">Update</th>
         </tr>
       </thead>
       <tbody>
@@ -64,9 +66,14 @@
             <td>{{review.rating}} / 5</td>
             <td>{{review.description}}</td>
             <td>
-              <form action="{{ url_for('index.review_delete') }}" method=POST>
+              <form action="{{ url_for('reviews.review_delete') }}" method="POST">
                 <input type="hidden" name="review_id" value="{{ review.id }}">
                 <input type="submit" value="Delete" />
+              </form>
+            </td>
+            <td>
+              <form action="{{ url_for('reviews.review_update', id=review.id)}}" method="GET">
+                <input type ="submit" value="Update">
               </form>
             </td>
           </tr>

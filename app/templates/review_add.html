@@ -25,6 +25,11 @@
                 <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
+        <p>
+            {{ form.anonymous.label }} 
+            {{ form.anonymous}}
+        </p>
+
         <p>{{ form.submit() }}</p>
     </form>
 {% endif %}

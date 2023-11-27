@@ -72,5 +72,6 @@ CREATE TABLE Reviews (
     date DATE NOT NULL DEFAULT CURRENT_DATE,
     rating INT NOT NULL,
     description VARCHAR(300) NOT NULL,
-    restaurant_id INT NOT NULL REFERENCES Restaurants(id)
+    restaurant_id INT NOT NULL REFERENCES Restaurants(id),
+    anonymous BOOLEAN NOT NULL
 );

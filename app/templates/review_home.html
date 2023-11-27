@@ -60,7 +60,13 @@
   <tbody>
     {% for review in avail_reviews%}
       <tr>
-        <th scope="row">{{review.firstname}} {{review.lastname}}</th>
+        <td>
+          {% if review.anonymous %}
+            <b>Anonymous</b>
+          {% else %}
+            <b>{{review.firstname}} {{review.lastname}}</b>
+          {% endif%} 
+        </td>
         <td>{{humanize_time(review.date)}}</td>
         <td>{{review.restaurant}}</td>
         <td>{{review.rating}} / 5</td>

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Update Review</h1>
+
+<form action="{{ url_for('reviews.review_update', id=review.id)}}" method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.restaurant.label }}
+        {{ form.restaurant }}
+    </p>
+    <p>
+        {{ form.rating.label }}
+        {{ form.rating }}
+    </p>
+    <p>
+        {{ form.description.label }}<br/>
+        {{ form.description(value= review.description) }}<br/>
+        {% for error in form.description.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.anonymous.label }} 
+        {{ form.anonymous}}
+    </p>
+
+    <p>{{ form.submit() }}</p>
+</form>
+
+{% endblock %}
