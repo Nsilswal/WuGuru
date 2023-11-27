@@ -35,21 +35,27 @@
 <br><br>
 
 <h2>Published Reviews:</h2>
+
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
     <tr>
-      <th scope="col">Restuarant Name</th>
+      <th scope="col">Date</th>
+      <th scope="col">Restaurant</th>
+      <th scope="col">Rating</th>
       <th scope="col">My Review</th>
     </tr>
   </thead>
   <tbody>
-    {% for rev in Review_history%}
+    {% for review in Review_history%}
       <tr>
-        <th scope="row">{{rev.restaurant}}</th>
-        <td>{{rev.description}}</td>
+        <td>{{humanize_time(review.date)}}</td>
+        <td>{{review.restaurant}}</td>
+        <td>{{review.rating}} / 5</td>
+        <td>{{review.description}}</td>
       </tr>
     {% endfor %}
   </tbody>
+</table>
 
 <br><br>
 

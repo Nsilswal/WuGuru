@@ -1,6 +1,7 @@
 from flask import render_template
 from flask_login import current_user
 import datetime
+from humanize import naturaldate
 
 from .models.recommendation import Recommendation
 from .models.purchase import Purchase
@@ -25,4 +26,8 @@ def index():
     # render the page by adding information to the index.html file
     return render_template('index.html',
                            Recommendation_history=reccs,
-                           Review_history=revs)
+                           Review_history=revs, 
+                           humanize_time=humanize_time)
+
+def humanize_time(dt):
+    return naturaldate(datetime.date(dt.year, dt.month, dt.day))

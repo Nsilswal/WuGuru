@@ -4,7 +4,7 @@
 
 <br><br>
 
-<h2>Reviews:</h2>
+<h2>Reviews</h2>
 
 <form action="{{ url_for('reviews.reviews_filter')}}" method="POST">
   <label for="Attribute">Sort by:</label>
@@ -45,7 +45,7 @@
 
 {% if avail_reviews|length > 0 %}
 
-<h3>Showing {{avail_reviews|length}} reviews:</h3>
+<h3>Average rating of <font color="#ff0000">{{avg}}</font> from <font color="#ff0000">{{avail_reviews|length}}</font> reviews:</h3>
 
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
