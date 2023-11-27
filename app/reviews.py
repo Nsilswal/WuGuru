@@ -47,9 +47,8 @@ def review_add():
     if form.validate_on_submit():
         if current_user.is_authenticated:
             user_id = current_user.id 
-            rev_id = Review.create(user_id, datetime.date.today(), int(form.rating.data), form.description.data, int(form.restaurant.data), form.anonymous.data)
-            if rev_id:
-                return redirect(url_for('reviews.reviews'))
+            Review.create(user_id, datetime.date.today(), int(form.rating.data), form.description.data, int(form.restaurant.data), form.anonymous.data)
+            return redirect(url_for('reviews.reviews'))
     return render_template('review_add.html', title='Add A Review', form=form)
 
 @bp.route('/reviews/update/<int:id>', methods=['GET', 'POST'])
@@ -60,12 +59,9 @@ def review_update(id):
             restaurant_id = review.restaurant_id
             form = ReviewForm(rating=review.rating, restaurant=restaurant_id, description=review.description, anonymous=review.anonymous)
             form.restaurant.choices = [(restaurant.id, restaurant.name) for restaurant in Restaurants.get_all()]
-            if request.method == "POST":
-                if form.validate_on_submit():
-                    if current_user.is_authenticated:
-                        rev_id = Review.update(id, datetime.date.today(), int(form.rating.data), form.description.data, int(form.restaurant.data), form.anonymous.data)
-                        if rev_id:
-                            return redirect(url_for('index.index'))
+            if request.method == "POST" and form.validate_on_submit():
+                Review.update(id, datetime.date.today(), int(form.rating.data), form.description.data, int(form.restaurant.data), form.anonymous.data)
+                return redirect(url_for('index.index'))
             else:
                 return render_template('review_update.html', title='Update Review', form=form, review=review)
         else:
