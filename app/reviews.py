@@ -3,7 +3,7 @@ from flask import jsonify, redirect, url_for, flash, render_template, request, s
 from flask import Flask, Blueprint
 import os
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, FileField, SelectField, TextAreaField
+from wtforms import StringField, SubmitField, BooleanField, SelectField, TextAreaField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, Length, InputRequired
 import datetime
 from humanize import naturaldate
@@ -47,10 +47,38 @@ def review_add():
     if form.validate_on_submit():
         if current_user.is_authenticated:
             user_id = current_user.id 
-            rev_id = Review.create(user_id, datetime.date.today(), int(form.rating.data), form.description.data, int(form.restaurant.data))
+            rev_id = Review.create(user_id, datetime.date.today(), int(form.rating.data), form.description.data, int(form.restaurant.data), form.anonymous.data)
             if rev_id:
                 return redirect(url_for('reviews.reviews'))
     return render_template('review_add.html', title='Add A Review', form=form)
+
+@bp.route('/reviews/update/<int:id>', methods=['GET', 'POST'])
+def review_update(id):
+    if current_user.is_authenticated:
+        review = Review.get(id) 
+        if review and current_user.id == review.user_id:
+            restaurant_id = review.restaurant_id
+            form = ReviewForm(rating=review.rating, restaurant=restaurant_id, description=review.description, anonymous=review.anonymous)
+            form.restaurant.choices = [(restaurant.id, restaurant.name) for restaurant in Restaurants.get_all()]
+            if request.method == "POST":
+                if form.validate_on_submit():
+                    if current_user.is_authenticated:
+                        rev_id = Review.update(id, datetime.date.today(), int(form.rating.data), form.description.data, int(form.restaurant.data), form.anonymous.data)
+                        if rev_id:
+                            return redirect(url_for('index.index'))
+            else:
+                return render_template('review_update.html', title='Update Review', form=form, review=review)
+        else:
+            return "Sorry, you cannot access this page or this page does not exist."
+    else:
+        return "Sorry, you cannot access this page or this page does not exist."
+
+@bp.route('/reviews/delete', methods=['POST'])
+def review_delete():
+    review_id = request.form['review_id']
+    if current_user.is_authenticated:
+        Review.delete(int(review_id))
+    return redirect(url_for('index.index'))
 
 @bp.route('/reviews/search', methods=['GET'])
 def reviews_search():
@@ -69,5 +97,6 @@ class ReviewForm(FlaskForm):
     restaurant = SelectField('Select restaurant', choices = [], validators=[DataRequired()])
     rating = SelectField('Select rating', choices=[1, 2, 3, 4, 5], validators=[DataRequired()])
     description = TextAreaField('Description', validators=[DataRequired(), Length(max=300)])
+    anonymous = BooleanField('Leave review anonymously?')
     submit = SubmitField('Submit')
 

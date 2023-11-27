@@ -29,11 +29,5 @@ def index():
                            Review_history=revs, 
                            humanize_time=humanize_time)
 
-@bp.route('/delete', methods=['POST'])
-def review_delete():
-    review = request.form['review_id']
-    Review.delete(int(review))
-    return redirect(url_for('index.index'))
-
 def humanize_time(dt):
     return naturaldate(datetime.date(dt.year, dt.month, dt.day))
