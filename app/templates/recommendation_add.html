@@ -32,10 +32,18 @@
     {% endfor %}
   </p>
   <p>
-    {{ form.selected_items.label }}<br/>
-    <select name="selected_items" multiple>
-      {% for choice in form.selected_items.choices %}
+    {{ form.related_tags.label }}<br/>
+    <select name="related_tags" multiple>
+      {% for choice in form.related_tags.choices %}
         <option value="{{ choice[0] }}">{{ choice[1] }}</option>
+      {% endfor %}
+    </select>
+  </p>
+  <p>
+    {{ form.related_foods.label }}<br/>
+    <select name="related_foods" multiple>
+      {% for choice in form.related_foods.choices %}
+        <option value={{choice[0]}}>{{ choice[1] }}</option>
       {% endfor %}
     </select>
   </p>

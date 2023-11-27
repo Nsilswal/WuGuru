@@ -12,6 +12,7 @@ from .models.recommendation import Recommendation
 from .models.rec_photo import Rec_Photo
 from .models.rec_tag import Rec_Tag
 from .models.user import User
+from .models.fooditem import Fooditem
 
 bp = Blueprint('recommendations', __name__)
 
@@ -79,6 +80,7 @@ def recommendations_delete(rec_id):
 @bp.route('/recommendations/add', methods=['POST'])
 def recommendation_add():
     form = RecommendationForm()
+    form.related_foods.choices = Fooditem.generate_full_pairings()
     if form.validate_on_submit():
         if current_user.is_authenticated:
             user_id = current_user.id
@@ -119,11 +121,12 @@ class RecommendationForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
     description = StringField('Description', validators=[DataRequired()])
     photo = FileField('Photo Upload')
-    selected_items = SelectMultipleField('Select Meal Tags', choices=[
+    related_tags = SelectMultipleField('Select Meal Tags', choices=[
         ('Breakfast', 'Breakfast'),
         ('Lunch', 'Lunch'),
         ('Dinner', 'Dinner'),
         ('Snack', 'Snack')
     ])
+    related_foods = SelectMultipleField('Select Related Foods', choices=[])
     submit = SubmitField('Register') 
 

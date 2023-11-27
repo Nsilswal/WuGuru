@@ -106,5 +106,14 @@ class Fooditem:
         rows = app.db.execute(query)
 
         return [Fooditem(*row) for row in rows]
-        #return query     
+        #return query    
 
+    @staticmethod
+    def generate_full_pairings():
+        results = app.db.execute("""
+                SELECT fooditems.id, fooditems.name, Restaurants.name
+                FROM fooditems, Restaurants
+                WHERE fooditems.restaurantID = Restaurants.id""") 
+        pairings = [(item[0], f'{item[2]}: {item[1]}') for item in results]
+        return pairings
+        
