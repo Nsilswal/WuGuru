@@ -7,6 +7,7 @@ from wtforms import StringField, SubmitField, FileField, SelectField, TextAreaFi
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, Length, InputRequired
 import datetime
 from humanize import naturaldate
+import statistics
 
 from .models.review import Review
 from .models.user import User
@@ -18,8 +19,10 @@ bp = Blueprint('reviews', __name__)
 def reviews():
     reviews = Review.get_all()
     restaurants = Restaurants.get_all()
-    return render_template('review_home.html', title = "Review Home", avail_reviews = reviews, avail_rests = restaurants, humanize_time=humanize_time
-)
+    average = 0
+    if len(reviews) > 0:
+        average = statistics.mean([float(review.rating) for review in reviews])
+    return render_template('review_home.html', title = "Review Home", avail_reviews = reviews, avail_rests = restaurants, humanize_time=humanize_time, avg = f'{average:.2f}')
 
 @bp.route('/reviews/filter', methods=['POST'])
 def reviews_filter():
@@ -32,7 +35,10 @@ def reviews_filter():
     else:
         reviews = Review.get_all_for_restaurant(int(restaurant_id), attribute, ordering)
     restaurants = Restaurants.get_all()
-    return render_template('review_home.html', title="Review Home", avail_reviews = reviews, avail_rests = restaurants, humanize_time=humanize_time)
+    average = 0
+    if len(reviews) > 0:
+        average = statistics.mean([float(review.rating) for review in reviews])
+    return render_template('review_home.html', title="Review Home", avail_reviews = reviews, avail_rests = restaurants, humanize_time=humanize_time, avg = f'{average:.2f}')
 
 @bp.route('/reviews/add', methods=['POST'])
 def review_add():
@@ -45,6 +51,16 @@ def review_add():
             if rev_id:
                 return redirect(url_for('reviews.reviews'))
     return render_template('review_add.html', title='Add A Review', form=form)
+
+@bp.route('/reviews/search', methods=['GET'])
+def reviews_search():
+    keyword = request.args.get('query')
+    reviews = Review.search_by_keyword(keyword)
+    restaurants = Restaurants.get_all()
+    average = 0
+    if len(reviews) > 0:
+        average = statistics.mean([float(review.rating) for review in reviews])
+    return render_template('review_home.html', title="Review Home", avail_reviews = reviews, avail_rests = restaurants, humanize_time=humanize_time, avg = f'{average:.2f}')
 
 def humanize_time(dt):
     return naturaldate(datetime.date(dt.year, dt.month, dt.day))
