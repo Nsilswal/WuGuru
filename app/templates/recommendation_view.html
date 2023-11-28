@@ -8,6 +8,30 @@
   <input type ="submit" value="Back">
 </form>
 
+<br><br>
+
+{% if display_edit %}
+  <div class="button-group">
+    <p>Your Actions:</p>
+    <form action="{{ url_for('recommendations.recommendations_edit', rec_id=rec.id) }}" method="POST">
+      <input type ="submit" value="Edit">
+    </form>
+    <form action="{{ url_for('recommendations.recommendations_delete', rec_id=rec.id) }}" method="POST">
+      <input type ="submit" value="Delete">
+    </form>
+  </div>
+{% endif %}
+<style>
+  .button-group {
+    display: flex;
+    align-items: center; /* Vertically center-align items within the container */
+  }
+
+  .button-group p {
+    margin-right: 10px; /* Add some spacing between the word and buttons */
+  }
+</style>
+
 <h2>{{rec.title}}</h2>
 
 <body>
@@ -19,7 +43,34 @@
     {% for tag in tags %}
         #{{ tag.tag_name }}{% if not loop.last %}, {% endif %}
     {% endfor %}
-</p>
+  </p>
+  <p>Nutrition Facts:</p>
+  <table class='table table-hover table-bordered container'>
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Restaurant</th>
+        <th scope="col">Food Item</th>
+        <th scope="col">Calories</th>
+        <th scope="col">Proteins</th>
+        <th scope="col">Sugars</th>
+        <th scope="col">Fats</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in nutrition_summary%}
+        <tr>
+          <th scope="row">{{item[0]}}</th>
+          <td>{{item[1]}}</td>
+          <td>{{item[2]}}</td>
+          <td>{{item[3]}}</td>
+          <td>{{item[4]}}</td>
+          <td>{{item[5]}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <p>Photos:</p>
   <div class="photo-gallery">
     {% for photo in photos %}
         <div class="photo">

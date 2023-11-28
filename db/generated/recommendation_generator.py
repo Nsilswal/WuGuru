@@ -50,7 +50,20 @@ def generate_photos():
             print(f'{id},food2.jpeg')
         else:
             print(f'{id},food3.png')
-
+def generate_attached_foods():
+    counter = 0
+    rec_id = 0
+    while counter < 4000:
+        num_foods = random.randint(1, 4)
+        for j in range(num_foods):
+            food_id = random.randint(1, 800)
+            print(f'{rec_id},{food_id}')
+            counter += 1
+        rec_id += 1
+        if rec_id > 1000:
+            rec_id = 1
+    
 # generate_recommendations()
 # generate_photos()
-generate_tags()
+# generate_tags()
+generate_attached_foods()
