@@ -8,13 +8,29 @@
   <input type ="submit" value="Back">
 </form>
 
-<form action="{{ url_for('recommendations.recommendations_edit', rec_id=rec.id) }}" method="POST">
-  <input type ="submit" value="Edit">
-</form>
+<br><br>
 
-<form action="{{ url_for('recommendations.recommendations_delete', rec_id=rec.id) }}" method="POST">
-  <input type ="submit" value="Delete">
-</form>
+{% if display_edit %}
+  <div class="button-group">
+    <p>Your Actions:</p>
+    <form action="{{ url_for('recommendations.recommendations_edit', rec_id=rec.id) }}" method="POST">
+      <input type ="submit" value="Edit">
+    </form>
+    <form action="{{ url_for('recommendations.recommendations_delete', rec_id=rec.id) }}" method="POST">
+      <input type ="submit" value="Delete">
+    </form>
+  </div>
+{% endif %}
+<style>
+  .button-group {
+    display: flex;
+    align-items: center; /* Vertically center-align items within the container */
+  }
+
+  .button-group p {
+    margin-right: 10px; /* Add some spacing between the word and buttons */
+  }
+</style>
 
 <h2>{{rec.title}}</h2>
 
@@ -27,7 +43,12 @@
     {% for tag in tags %}
         #{{ tag.tag_name }}{% if not loop.last %}, {% endif %}
     {% endfor %}
-</p>
+  </p>
+  <p>Foods: 
+    {% for food in foods %}
+        {{ food }}{% if not loop.last %}, {% endif %}
+    {% endfor %}
+  </p>
   <div class="photo-gallery">
     {% for photo in photos %}
         <div class="photo">
