@@ -108,10 +108,10 @@ def recommendations_view(rec_id):
     rec_info = Recommendation.get(rec_id)
     rec_photos = Rec_Photo.get_all(rec_id)
     rec_tags = Rec_Tag.get_all_for_entry(rec_id)
-    rec_foods = Rec_Food.get_all_names_for_entry(rec_id)
     user_creator = User.get(rec_info.user_id)
+    nutrition_summary = Rec_Food.generate_summary_for_rec(rec_id)
     is_owner = current_user.is_authenticated and current_user.id == user_creator.id
-    return render_template('recommendation_view.html', title="View Recommendation", rec=rec_info, photos=rec_photos, user=user_creator, tags=rec_tags, foods=rec_foods, display_edit=is_owner)
+    return render_template('recommendation_view.html', title="View Recommendation", rec=rec_info, photos=rec_photos, user=user_creator, tags=rec_tags, nutrition_summary=nutrition_summary, display_edit=is_owner)
 
 @bp.route('/recommendations/upvote/<int:rec_id>', methods=['POST'])
 def recommendations_upvote(rec_id):
