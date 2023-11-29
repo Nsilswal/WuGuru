@@ -42,7 +42,8 @@ WHERE email = :email
 
     @staticmethod
     def register(email, password, firstname, lastname, isOwner, restaurantOwned):
-        try:
+        boo = User.email_exists(email)
+        if not boo:
             rows = app.db.execute("""
 INSERT INTO Users(email, password, firstname, lastname, isOwner, restaurantOwned)
 VALUES(:email, :password, :firstname, :lastname, :isOwned, :restaurantOwned)
@@ -52,25 +53,10 @@ RETURNING id
                                   password=generate_password_hash(password),
                                   firstname=firstname, lastname=lastname, isOwner = isOwner, restaurantOwned = restaurantOwned)
             id = rows[0][0]
-            return User.get(id)
-        except Exception as e:
-            boo = True
-            # likely email already in use; better error checking and reporting needed;
-            # the following simply prints the error to the console:
-            while boo:
-                try:
-                    rows = app.db.execute("""
-INSERT INTO Users(email, password, firstname, lastname, isOwner, restaurantOwned)
-VALUES(:email, :password, :firstname, :lastname, :isOwned, :restaurantOwned)
-RETURNING id
-""",
-                                  email=email,
-                                  password=generate_password_hash(password),
-                                  firstname=firstname, lastname=lastname, isOwner = isOwner, restaurantOwned = restaurantOwned)
-                    id = rows[0][0]
-                    return User.get(id)
-                except Exception as e:
-                    boo = True
+            return "Success, user registered"
+        else:
+            return "Email in use, please use a differnt email and re-register"
+
 
     @staticmethod
     @login.user_loader
@@ -85,3 +71,42 @@ WHERE id = :id
     @staticmethod
     def logout():
         return User(None)
+    
+    @staticmethod
+    def changePassword(newPW):
+        target = User.get(id)
+        app.db.execute('''
+            UPDATE User
+            SET password = :password
+            WHERE id = :id
+            ''', password=newPW,id=target)
+        return "Success"
+    @staticmethod
+    def changeEmail(newEmail):
+        boo = User.email_exists(newEmail)
+        if boo:
+            return "Email already exists in the system, please choose another"
+        target = User.get(id)
+        app.db.execute('''
+            UPDATE User
+            SET email = :email
+            WHERE id = :id
+            ''', password=newEmail,id=target)
+        return "Success"
+    @staticmethod
+    def changeFname(newFirstName):
+        target = User.get(id)
+        app.db.execute('''
+            UPDATE User
+            SET firstname = :firstname
+            WHERE id = :id
+            ''', firstname=newFirstName,id=target)
+    def changeLname(newLastName):
+        target = User.get(id)
+        app.db.execute('''
+            UPDATE User
+            SET lastname = :lastname
+            WHERE id = :id
+            ''', lastname=newLastName,id=target)
+
+
