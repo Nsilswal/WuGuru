@@ -1,5 +1,6 @@
 from flask import current_app as app
 from datetime import datetime
+import user
 
 class Restaurants:
     def __init__(self, id, name, rating, floor, MobileOrder, OpeningTime, ClosingTime,OwnedBy):
@@ -141,6 +142,42 @@ class Restaurants:
             ''',
                               id=id)
         return [Restaurants(*row) for row in rows]
+    @staticmethod
+    def changeFloor(rest, newFloor):
+        app.db.execute('''
+            UPDATE Restaurant
+            SET floor = :floor
+            WHERE id = :id
+            ''', floor= newFloor,id=rest)
+    @staticmethod
+    def changeName(rest, newName):
+        app.db.execute('''
+            UPDATE Restaurant
+            SET name = :name
+            WHERE id = :id
+            ''', name= newName,id=rest)
+    @staticmethod
+    def changeOpenTime(rest, newOpenTime):
+        app.db.execute('''
+            UPDATE Restaurant
+            SET OpenTime = :OpenTime
+            WHERE id = :id
+            ''', OpenTime= newOpenTime,id=rest)
+    @staticmethod
+    def changeCloseTime(rest, newCloseTime):
+        app.db.execute('''
+            UPDATE Restaurant
+            SET Closeime = :CloseTime
+            WHERE id = :id
+            ''', CloseTime= newCloseTime,id=rest)
+    @staticmethod
+    def changeMobileOrder(rest, newMO):
+        app.db.execute('''
+            UPDATE Restaurant
+            SET MobileOrder = :MobileOrder
+            WHERE id = :id
+            ''', OpenTime= newMO,id=rest)
+            
     
 
  

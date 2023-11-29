@@ -108,5 +108,15 @@ WHERE id = :id
             SET lastname = :lastname
             WHERE id = :id
             ''', lastname=newLastName,id=target)
+    @staticmethod
+    @login.user_loader
+    def getOwnedRestaurant(id):
+        rows = app.db.execute("""
+SELECT restaurantOwned
+FROM Users
+WHERE id = :id
+""",
+                              id=id)
+        return User(*(rows[0])) if rows else None
 
 
