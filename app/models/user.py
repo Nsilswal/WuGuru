@@ -54,10 +54,23 @@ RETURNING id
             id = rows[0][0]
             return User.get(id)
         except Exception as e:
+            boo = True
             # likely email already in use; better error checking and reporting needed;
             # the following simply prints the error to the console:
-            print(str(e))
-            return None
+            while boo:
+                try:
+                    rows = app.db.execute("""
+INSERT INTO Users(email, password, firstname, lastname, isOwner, restaurantOwned)
+VALUES(:email, :password, :firstname, :lastname, :isOwned, :restaurantOwned)
+RETURNING id
+""",
+                                  email=email,
+                                  password=generate_password_hash(password),
+                                  firstname=firstname, lastname=lastname, isOwner = isOwner, restaurantOwned = restaurantOwned)
+                    id = rows[0][0]
+                    return User.get(id)
+                except Exception as e:
+                    boo = True
 
     @staticmethod
     @login.user_loader
