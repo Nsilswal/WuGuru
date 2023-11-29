@@ -79,7 +79,7 @@ WHERE id = :id
             UPDATE User
             SET password = :password
             WHERE id = :id
-            ''', password=newPW,id=target)
+            ''', password=generate_password_hash(newPW),id=target)
         return "Success"
     @staticmethod
     def changeEmail(newEmail):
