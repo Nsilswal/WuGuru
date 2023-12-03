@@ -34,10 +34,11 @@ def fooditems_search():
 def fooditems_add():
     form = AddForm()
     if form.validate_on_submit():
-        restuarantID = current_user.restaurantOwned
-        Fooditem.register(form.name.data,form.price.data,form.protein.data,
-        form.sugars.data, form.fats.data, forms.calories.data, 
-        forms.allergens.data, restaurantID, forms.diet.data)
+        restaurantID = current_user.restaurantOwned
+        userID = current_user.id
+        Fooditem.register(userID, form.name.data,form.price.data,form.protein.data,
+        form.sugars.data, form.fats.data, form.calories.data, 
+        form.allergens.data, restaurantID, form.diet.data)
         return redirect(url_for('index.index'))
     return render_template('add_fooditem.html',title='Add a Menu Item', form = form)
     
