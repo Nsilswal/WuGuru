@@ -110,3 +110,14 @@ WHERE id = :id
             SET lastname = :lastname
             WHERE id = :id
             ''', lastname=newLastName,id=target)
+
+    @staticmethod
+    def is_owner(id):
+        rows = app.db.execute("""
+                                SELECT isOwner
+                                FROM Users
+                                WHERE id = :id
+                            """,
+                              id=id)
+        result = rows[0][0]
+        return result
