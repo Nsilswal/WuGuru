@@ -41,6 +41,15 @@ WHERE email = :email
         return len(rows) > 0
 
     @staticmethod
+    def edit(email, pw, fname, lname, id):
+        if(not(pw == "")):
+            User.changePassword(pw, id)
+        if(not(lname == "")):
+            User.changeLname(lname, id)
+        if(not(fname == "")):
+            User.changeFname(fname, id)
+        return "Success, user registered"
+    @staticmethod
     def register(email, password, firstname, lastname, isOwner, restaurantOwned):
         boo = User.email_exists(email)
         if not boo:
@@ -75,7 +84,7 @@ WHERE id = :id
         return User(None)
     
     @staticmethod
-    def changePassword(newPW):
+    def changePassword(newPW, id):
         target = User.get(id)
         app.db.execute('''
             UPDATE User
@@ -84,7 +93,7 @@ WHERE id = :id
             ''', password=generate_password_hash(newPW),id=target)
         return "Success"
     @staticmethod
-    def changeEmail(newEmail):
+    def changeEmail(newEmail, id):
         boo = User.email_exists(newEmail)
         if boo:
             return "Email already exists in the system, please choose another"
@@ -96,14 +105,14 @@ WHERE id = :id
             ''', password=newEmail,id=target)
         return "Success"
     @staticmethod
-    def changeFname(newFirstName):
+    def changeFname(newFirstName, id):
         target = User.get(id)
         app.db.execute('''
             UPDATE User
             SET firstname = :firstname
             WHERE id = :id
             ''', firstname=newFirstName,id=target)
-    def changeLname(newLastName):
+    def changeLname(newLastName, id):
         target = User.get(id)
         app.db.execute('''
             UPDATE User
