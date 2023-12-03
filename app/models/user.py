@@ -70,3 +70,14 @@ WHERE id = :id
     @staticmethod
     def logout():
         return User(None)
+
+    @staticmethod
+    def is_owner(id):
+        rows = app.db.execute("""
+                                SELECT isOwner
+                                FROM Users
+                                WHERE id = :id
+                            """,
+                              id=id)
+        result = rows[0][0]
+        return result
