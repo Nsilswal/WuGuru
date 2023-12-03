@@ -107,6 +107,29 @@ class Fooditem:
 
         return [Fooditem(*row) for row in rows]
         #return query    
+    
+    @staticmethod
+    def update_fi(id,name,protein,sugars,fats,price,calories,allergens, diet):
+        try:
+            app.db.execute("""
+            UPDATE fooditems 
+            SET name = :name, protein = :protein, sugars = :sugars, fats = :fats, price = :price, allergens = :allergnes, calories = :calories, diet = :diet
+            WHERE fooditems.id = :id
+            """,
+            id = id,
+            name = name,
+            protein = protein,
+            sugars = sugars,
+            fats = fats,
+            price = price,
+            calories = calories,
+            allergens = allergens,
+            diet = diet)
+            return Fooditem.get(id)
+        except Exception as e:
+            # Print error
+            print(str(e))
+            return None
 
     @staticmethod
     def generate_full_pairings():
