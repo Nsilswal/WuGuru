@@ -18,7 +18,6 @@ CREATE TABLE Restaurants (
     MobileOrder BOOLEAN,
     OpeningTime TIME,
     ClosingTime TIME,
-    OwnID INT NOT NULL,
     ownedBY INT NOT NULL REFERENCES Users(id)
 );
 

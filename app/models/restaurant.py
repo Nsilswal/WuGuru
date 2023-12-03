@@ -1,6 +1,6 @@
 from flask import current_app as app
 from datetime import datetime
-import user
+
 
 class Restaurants:
     def __init__(self, id, name, rating, floor, MobileOrder, OpeningTime, ClosingTime,OwnedBy):
@@ -26,12 +26,12 @@ class Restaurants:
         return Restaurants(*(rows[0])) if rows is not None else None
     
     @staticmethod
-    def register(id, name, floor, MobileOrder, OpeningTime, ClosingTime, OwnID, OwnedBY):
+    def register(id, name, floor, MobileOrder, OpeningTime, ClosingTime, OwnedBY):
         try:
             rows = app.db.execute("""
             INSERT INTO Restaurants
-            (id, name, floor, MobileOrder, OpeningTime, ClosingTime, OwnID, OwnedBY))
-            VALUES(:id,:name,:floor,:MobileOrder,:OpeningTime,:ClosingTime,:OwnID, :OwnedBY)
+            (id, name, floor, MobileOrder, OpeningTime, ClosingTime, OwnedBY))
+            VALUES(:id,:name,:floor,:MobileOrder,:OpeningTime,:ClosingTime,:OwnedBY)
             RETURNING id
             """,
             id = id,
@@ -40,7 +40,6 @@ class Restaurants:
             MobileOrder = MobileOrder,
             OpeningTime = OpeningTime,
             ClosingTime = ClosingTime,
-            OwnID = OwnID,
             OwnedBY = OwnedBY)
             id = rows[0][0]
             return Restaurants.get(id)
@@ -53,12 +52,12 @@ class Restaurants:
     def get_all(attribute=1, ordering=0):
         # Attribute: 0 - id, 1-name, 2 - rating, 3-floor, 4 - Mobile, 5-Open, 6-Close, 7-OwnID, 8-ownedBY
         # Ordering: 0 - ASC, 1 - DESC
-        attribute_list = ['id', 'name', 'rating', 'floor', 'MobileOrder', 'OpeningTime', 'ClosingTime', 'OwnID', 'ownedBY']
+        attribute_list = ['id', 'name', 'rating', 'floor', 'MobileOrder', 'OpeningTime', 'ClosingTime', 'ownedBY']
         ordering_list = ['ASC', 'DESC']
 
         if(0 <= attribute <= 6 and 0 <= ordering <= 1):
             query = f"""SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
-                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime, r.OwnID, r.ownedBY
+                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime, r.ownedBY
                         FROM Restaurants r, Reviews
                         WHERE r.id = Reviews.restaurant_id
                         GROUP BY r.id
@@ -66,7 +65,7 @@ class Restaurants:
                         rating DESC"""
         else:
             query = """SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
-                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime, r.OwnID, r.ownedBY
+                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime, r.ownedBY
                         FROM Restaurants r, Reviews
                         WHERE r.id = Reviews.restaurant_id
                         GROUP BY r.id
