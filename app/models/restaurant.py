@@ -89,18 +89,7 @@ class Restaurants:
         rows = app.db.execute(query, current_time=current_time)
 
         return [Restaurants(*row) for row in rows]
-    '''
-    def format_time(time_string):
-        try:
-            time_obj = datetime.strptime(time_string, '%H:%M:%S')
-            return time_obj.strftime('%H:%M')
-        except ValueError:
-            return time_string
-
-    app.jinja_env.filters['format_time'] = format_time
-    
-    '''
-    
+   
 
     #Instead of get menu, link to a filter of food items done by Mia
     @staticmethod

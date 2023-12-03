@@ -19,11 +19,12 @@ CREATE TABLE Restaurants (
     OwnID INT NOT NULL
 );
 
-CREATE TABLE Restaurant_photos (
+CREATE TABLE Restaurant_page (
     rid INT NOT NULL REFERENCES Restaurants(id),
     logo_photo VARCHAR(100) CHECK (logo_photo LIKE '%.jpg' OR logo_photo LIKE '%.png'),
     restaurant_photo VARCHAR(100) CHECK (restaurant_photo LIKE '%.jpg' OR restaurant_photo LIKE '%.png'),
     map_photo VARCHAR(100) CHECK (map_photo LIKE '%.jpg' OR map_photo LIKE '%.png'),
+    descript VARCHAR(1000),
     PRIMARY KEY (rid)
 );
 

@@ -21,13 +21,7 @@ def restaurants_filter(attribute, ordering):
     restaurants = Restaurants.get_all(attribute, ordering)
     return render_template('restaurant.html', title="WU Restaurants", avail_rests = restaurants)
 
-'''
-@bp.route('/restaurants/menu/<int:id>', methods=['GET'])
-def restaurants_menu(id):
-    menu = Restaurants.get_menu(id)
-    return render_template('restaurant.html', title="Menu", avail_recs = menu)
 
-'''
 
 
 
