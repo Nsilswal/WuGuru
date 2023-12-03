@@ -4,8 +4,12 @@ import datetime
 from humanize import naturaldate
 
 from .models.recommendation import Recommendation
-from .models.purchase import Purchase
+from .models.user import User
 from .models.review import Review
+
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, BooleanField, SubmitField
+from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
 
 
 from flask import Blueprint

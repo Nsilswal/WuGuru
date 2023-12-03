@@ -6,7 +6,9 @@ CREATE TABLE Users (
     email VARCHAR UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
     firstname VARCHAR(255) NOT NULL,
-    lastname VARCHAR(255) NOT NULL
+    lastname VARCHAR(255) NOT NULL,
+    isOwner BOOLEAN,
+    restaurantOwned INT NOT NULL
 );
 
 CREATE TABLE Restaurants (
@@ -16,7 +18,7 @@ CREATE TABLE Restaurants (
     MobileOrder BOOLEAN,
     OpeningTime TIME,
     ClosingTime TIME,
-    OwnID INT NOT NULL
+    ownedBY INT NOT NULL REFERENCES Users(id)
 );
 
 CREATE TABLE Products (
