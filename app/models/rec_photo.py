@@ -1,11 +1,15 @@
+# Rec_Photo is a model representing a photo attached to a particular recommendation.
+
 from flask import current_app as app
 import os
 
 class Rec_Photo:
+    # Constructor
     def __init__(self, rec_id, filename):
         self.rec_id = rec_id
         self.filename = filename
     
+    # Get all photo filepaths for a particular recommendation
     @staticmethod
     def get_all(rec_id):
         rows = app.db.execute("""SELECT *
@@ -16,6 +20,7 @@ class Rec_Photo:
             return []
         return [Rec_Photo(*row) for row in rows]
     
+    # Register and save a new photo for a recommendation
     @staticmethod
     def register(rec_id, photo):
         filename = photo.filename
