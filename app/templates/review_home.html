@@ -4,7 +4,7 @@
 
 <br><br>
 
-<h2>Reviews:</h2>
+<h2>Reviews</h2>
 
 <form action="{{ url_for('reviews.reviews_filter')}}" method="POST">
   <label for="Attribute">Sort by:</label>
@@ -29,12 +29,23 @@
   <input type="submit" value="Go">
 </form>
 
+<form action="{{ url_for('reviews.reviews_search') }}" method="GET">
+  <label for="search">Search keyword:</label>
+  <input type="text" id="search" name="query" placeholder="Enter your search term">
+  <input type="submit" value="Search">
+</form>
+
+<br><br>
 
 <form action="{{ url_for('reviews.review_add')}}" method="POST">
   <input type ="submit" value="Add new review">
 </form>
 
 <br><br>
+
+{% if avail_reviews|length > 0 %}
+
+<h3>Average rating of <font color="#ff0000">{{avg}}</font> from <font color="#ff0000">{{avail_reviews|length}}</font> reviews:</h3>
 
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
@@ -49,7 +60,13 @@
   <tbody>
     {% for review in avail_reviews%}
       <tr>
-        <th scope="row">{{review.firstname}} {{review.lastname}}</th>
+        <td>
+          {% if review.anonymous %}
+            <b>Anonymous</b>
+          {% else %}
+            <b>{{review.firstname}} {{review.lastname}}</b>
+          {% endif%} 
+        </td>
         <td>{{humanize_time(review.date)}}</td>
         <td>{{review.restaurant}}</td>
         <td>{{review.rating}} / 5</td>
@@ -58,6 +75,12 @@
     {% endfor %}
   </tbody>
 </table>
+
+{% else %}
+
+<h2>No reviews found</h2>
+
+{% endif %}
 
 <br><br>
 

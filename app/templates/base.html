@@ -2,6 +2,35 @@
 <html lang="en">
 
 <head>
+  <div class="button-group">
+    <form action="{{ url_for('index.index') }}" method="GET">
+      <input type ="submit" value="Home">
+    </form>
+    <form action="{{ url_for('restaurants.restaurants') }}" method="GET">
+      <input type ="submit" value="Restaurants">
+    </form>
+    <form action="{{ url_for('reviews.reviews') }}" method="GET">
+      <input type ="submit" value="Reviews">
+    </form>
+    <form action="{{ url_for('recommendations.recommendations') }}" method="GET">
+      <input type ="submit" value="Recommendations">
+    </form>
+    <form action="{{ url_for('crosscomparisons.cross_comparisons') }}" method="GET">
+      <input type ="submit" value="Cross Comparisons">
+    </form>  
+  </div>
+  
+  <style>
+  .button-group {
+    display: flex;
+    align-items: center; /* Vertically center-align items within the container */
+  }
+
+  .button-group p {
+    margin-right: 10px; /* Add some spacing between the word and buttons */
+  }
+</style>
+  
   <title>WU-Guru</title>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -19,7 +48,7 @@
 
     .sidenav {
         height: 100%;
-        background-color: #000;
+        background-color: #001f3f;
         overflow-x: hidden;
         padding-top: 20px;
     }
@@ -49,6 +78,7 @@
   <div class="sidenav">
     {% block msg %}
       <h1 style="color:aliceblue">Welcome to WU-Guru!</h1>
+      <h4 style="color:aliceblue">Built by students, for students</h4>
       <div style="color: aliceblue; text-align: right; margin-bottom: 25px">
         {% if current_user.is_authenticated %}
           Hello {{current_user.firstname}}! <a href="{{ url_for('users.logout') }}" type="button" class="btn btn-light">Log out</a>

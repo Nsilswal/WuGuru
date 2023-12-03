@@ -49,6 +49,45 @@ class Recommendation:
             return None
     
     @staticmethod
+    def update(rec_id, new_title, new_description, new_time_submitted):
+        try:
+            rows = app.db.execute("""
+            UPDATE Recommendations
+            SET title=:new_title, description=:new_description,time_submitted=:new_time_submitted
+            WHERE id = :rec_id""",
+            new_title=new_title,
+            new_description=new_description,
+            new_time_submitted=new_time_submitted,
+            rec_id=rec_id)
+            return rows
+        except Exception as e:
+            print(str(e))
+            return None
+            
+    @staticmethod
+    def delete(rec_id):
+        try:
+            rows = app.db.execute("""
+            DELETE FROM RecPhotos
+            WHERE rec_id = :rec_id""",
+            rec_id=rec_id)
+
+            rows = app.db.execute("""
+            DELETE FROM RecTags
+            WHERE rec_id = :rec_id""",
+            rec_id=rec_id)
+
+            rows = app.db.execute("""
+            DELETE FROM Recommendations
+            WHERE id = :rec_id""",
+            rec_id=rec_id)
+            
+            return True
+        except Exception as e:
+            print(str(e))
+            return None
+    
+    @staticmethod
     def get_all(attribute='Trending', ordering='Descending'):
         attribute_dict = {
             "Title": "title",

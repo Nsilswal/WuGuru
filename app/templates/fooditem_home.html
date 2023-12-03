@@ -23,9 +23,10 @@
       <th scope="col">Protein</th>
       <th scope="col">Sugars</th>
       <th scope="col">Fats</th>
-      <th scope="col">Calories</th>
       <th scope="col">Allergens</th>
+      <th scope="col">Calories</th>
       <th scope="col">Restaurant</th>
+      <th scope="col">Dietary Restrictions</th>
     </tr>
   </thead>
   <tbody>
@@ -38,7 +39,8 @@
         <td>{{fooditems.fats}}</td>
         <td>{{fooditems.calories}}</td>
         <td>{{fooditems.allergens}}</td>
-        <td>{{fooditems.restaurantID}}</td>
+        <td>{{fooditems.rname}}</td>
+        <td>{{fooditems.diet}}</td>
       </tr>
     {% endfor %}
   </tbody>
