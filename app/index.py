@@ -35,3 +35,30 @@ def index():
 
 def humanize_time(dt):
     return naturaldate(datetime.date(dt.year, dt.month, dt.day))
+
+class EditForm(FlaskForm):
+    firstname = StringField('First Name')
+    lastname = StringField('Last Name')
+    email = StringField('Email')
+    password = PasswordField('Password', validators=[])
+    password2 = PasswordField(
+        'Repeat Password', validators=[
+                                       EqualTo('password')])
+    submit = SubmitField('Edit')
+
+    def validate_email(self, email):
+        if User.email_exists(email.data):
+            raise ValidationError('Already a user with this email.')
+
+
+@bp.route('/user_edit', methods=['GET', 'POST'])
+def Edit():
+    form = EditForm()
+    if form.validate_on_submit():
+        if User.edit(form.email.data,
+                         form.password.data,
+                         form.firstname.data,
+                         form.lastname.data, current_user.id):
+            flash('Edits have been processed!')
+            return redirect(url_for('users.login'))
+    return render_template('user_edit.html', title='Edit Account Info', form=form)
