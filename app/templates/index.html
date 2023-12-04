@@ -12,9 +12,19 @@
 <p><a href="{{ url_for('crosscomparisons.cross_comparisons') }}">Go to Cross Comparisons!</a></p>
 
 <br><br>
-
+<h2>Update Menu:</h2>
 {% if current_user.is_authenticated %}
+  {% if current_user.isOwner %}
+  <form action ="{{ url_for('fooditems.fooditems_add') }}" method="POST">
+    <input type = "submit" value= "Add Menu Item">
+    </form>
 
+  <form action ="{{ url_for('fooditems.fooditems_delete') }}" method="POST">
+    <input type = "submit" value= "Delete Menu Item">
+    </form>
+  {% endif %}
+
+  <br><br>
   <h2>Published Recommendations:</h2>
 
   {% if Recommendation_history|length > 0 %}
@@ -84,13 +94,9 @@
   {% else %}
     You have not published any reviews.
   {% endif %}
-
 {% endif %}
-<br><br>
-<form action ="{{ url_for('fooditems.fooditems_add') }}" method="POST">
-  <input type = "submit" value= "Add Menu Item">
-  </form>
-  
+
+
 {% endblock %}
 
 
