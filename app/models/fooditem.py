@@ -4,10 +4,10 @@ class Fooditem:
     def __init__(self,id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet, rname='test'):
         self.id=id
         self.name = name
+        self.price = price
         self.protein = protein
         self.sugars = sugars
         self.fats = fats
-        self.price = price
         self.allergens = allergens
         self.restaurantID = restaurantID
         self.diet = diet
@@ -17,29 +17,28 @@ class Fooditem:
     @staticmethod
     def get(id):
         rows = app.db.execute('''
-        SELECT id, name, protein, 
-        sugars, fats, price,allergens,calories,restaurantID, diet
+        SELECT id, name, price protein, 
+        sugars, fats, allergens,calories,restaurantID, diet
         FROM fooditems
         WHERE id = :id
         ''', id=id)
         return Fooditem(*(rows[0])) if rows else None
 
     @staticmethod
-    def register(id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet):
+    def register(name,fats,protein,sugars,price,calories, allergens, restaurantID, diet):
         try:
             rows = app.db.execute("""
             INSERT INTO fooditems
-            (id,name,protein,sugars,
-            fats,price,allergens, calories,restaurantID,diet))
-            VALUES(:id,:title,:protein,:sugars,:fats,:price,:allergens,:calories,:restaurantID,:diet)
+            (name,price,protein,sugars,
+            fats,allergens, calories,restaurantID,diet)
+            VALUES(:name,:price,:protein,:sugars,:fats,:allergens,:calories,:restaurantID,:diet)
             RETURNING id
             """,
-            id = id,
             name = name,
+            price = price,
             protein = protein,
             sugars = sugars,
             fats = fats,
-            price = price,
             calories = calories,
             allergens = allergens,
             restaurantID = restaurantID,
@@ -51,13 +50,26 @@ class Fooditem:
             return None
 
     @staticmethod
+    def delete_fi(name,restaurantID):
+        try:
+            rows = app.db.execute("""
+            DELETE FROM fooditems
+            WHERE name = :name AND restaurantID = :restaurantID
+            """,
+            name = name,
+            restaurantID = restaurantID)
+        except Exception as e:
+            # Print error
+            print(str(e))
+
+    @staticmethod
     def search_by_keyword(keyword):
         modified_keyword = f'%{keyword}%'
         rows = app.db.execute('''
             SELECT * FROM 
-                (SELECT fooditems.id, fooditems.name, 
+                (SELECT fooditems.id, fooditems.name, fooditems.price,
                         fooditems.protein, fooditems.sugars, fooditems.fats, 
-                        fooditems.price, fooditems.allergens, 
+                        fooditems.allergens, 
                         fooditems.calories, fooditems.restaurantID, fooditems.diet, r.name as rname
                 FROM fooditems
                 JOIN Restaurants r
@@ -74,9 +86,9 @@ class Fooditem:
 
         if(0 <= attribute <= 6 and 0 <= ordering <= 1):
             query = f"""SELECT 
-                        fooditems.id, fooditems.name, 
+                        fooditems.id, fooditems.name, fooditems.price,
                         fooditems.protein, fooditems.sugars, fooditems.fats, 
-                        fooditems.price, fooditems.allergens, 
+                        fooditems.allergens, 
                         fooditems.calories, fooditems.restaurantID, fooditems.diet, r.name AS rname
                     FROM 
                         fooditems

@@ -34,28 +34,37 @@ def fooditems_search():
 def fooditems_add():
     form = AddForm()
     if form.validate_on_submit():
-        restuarantID = current_user.restaurantOwned
-        Fooditem.register(form.name.data,form.price.data,form.protein.data,
-        form.sugars.data, form.fats.data, forms.calories.data, 
-        forms.allergens.data, restaurantID, forms.diet.data)
-        return redirect(url_for('index.index'))
+        restaurantID = current_user.restaurantOwned
+        Fooditem.register(form.name.data,form.fats.data,form.protein.data,
+        form.sugars.data, form.price.data, form.calories.data, 
+        form.allergens.data, restaurantID, form.diet.data)
+        return redirect(url_for('fooditems.fooditems'))
     return render_template('add_fooditem.html',title='Add a Menu Item', form = form)
-    
 
+@bp.route('/fooditems/delete',methods=['POST'])
+def fooditems_delete():
+    form = DeleteForm()
+    if form.validate_on_submit():
+        restaurantID = current_user.restaurantOwned
+        Fooditem.delete_fi(form.name.data,restaurantID)
+        return redirect(url_for('fooditems.fooditems'))
+    return render_template('delete_fooditem.html',title='Delete a Menu Item', form = form)        
 
 class SearchForm(FlaskForm):
         title = StringField('Food Item name',validators=[DataRequired()])
         search = SubmitField('Search')
 
 class AddForm(FlaskForm):
-        name = StringField('Add name', validators=[DataRequired()])
+        name = StringField('Enter name', validators=[DataRequired()])
+        price = FloatField('Price:', validators=[DataRequired()])
         protein = FloatField('Protein (g):', validators=[DataRequired()])
         sugars = FloatField('Sugars:', validators=[DataRequired()])
         fats = FloatField('Fats:', validators=[DataRequired()])
-        price = FloatField('Price:', validators=[DataRequired()])
         calories = IntegerField('Calories:', validators=[DataRequired()])
         allergens = StringField('Add allergens:', validators = [DataRequired()])
         diet = StringField('Add dietary restriction')
         submit = SubmitField('Submit')
 
-
+class DeleteForm(FlaskForm):
+    name = StringField('Enter name', validators=[DataRequired()])
+    submit = SubmitField('Submit')
