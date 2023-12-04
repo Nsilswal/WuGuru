@@ -26,47 +26,40 @@ class Fooditem:
 
     @staticmethod
     def register(name,price,protein,sugars,fats,calories, allergens, restaurantID, diet):
-        if ("""SELECT id FROM fooditems WHERE EXISTS fooditems.name = :name AND fooditems.restaurantID = restaurantID"""):
-            try:
-                app.db.execute("""
-                UPDATE Fooditems
-                SET price = :price, protein = :protein, sugars = :sugars, fats = :fats, calories = :calories, allergens = :allergens, diet = :diet
-                WHERE fooditems.name = :name AND fooditems.restaurantID = restaurantID""",
-                price = price,
-                protein = protein,
-                sugars = sugars,
-                fats = fats,
-                calories = calories,
-                allergens = allergens,
-                diet = diet)
-                return Fooditem.get(id)
-            except Exception as e:
-                # Print error
-                print(str(e))
-                return None    
-        else:
-            try:
-                rows = app.db.execute("""
-                INSERT INTO fooditems
-                (name,protein,sugars,
-                fats,price,allergens, calories,restaurantID,diet)
-                VALUES(:name,:protein,:sugars,:fats,:price,:allergens,:calories,:restaurantID,:diet)
-                RETURNING id
-                """,
-                name = name,
-                protein = protein,
-                sugars = sugars,
-                fats = fats,
-                price = price,
-                calories = calories,
-                allergens = allergens,
-                restaurantID = restaurantID,
-                diet = diet)
-                id = rows[0][0]
-                return Fooditem.get(id)
-            except Exception as e:
-                print(str(e))
-                return None
+        try:
+            rows = app.db.execute("""
+            INSERT INTO fooditems
+            (name,protein,sugars,
+            fats,price,allergens, calories,restaurantID,diet)
+            VALUES(:name,:protein,:sugars,:fats,:price,:allergens,:calories,:restaurantID,:diet)
+            RETURNING id
+            """,
+            name = name,
+            protein = protein,
+            sugars = sugars,
+            fats = fats,
+            price = price,
+            calories = calories,
+            allergens = allergens,
+            restaurantID = restaurantID,
+            diet = diet)
+            id = rows[0][0]
+            return Fooditem.get(id)
+        except Exception as e:
+            print(str(e))
+            return None
+
+    @staticmethod
+    def delete_fi(name,restaurantID):
+        try:
+            rows = app.db.execute("""
+            DELETE FROM fooditems
+            WHERE Fooditem.name = :name AND Fooditem.restaurantID = restaurantID
+            """,
+            id = id)
+        except Exception as e:
+            # Print error
+            print(str(e))
 
     @staticmethod
     def search_by_keyword(keyword):

@@ -84,13 +84,19 @@
   {% else %}
     You have not published any reviews.
   {% endif %}
+  <br><br> 
+  {% if current_user.isOwner %}
+  <form action ="{{ url_for('fooditems.fooditems_add') }}" method="POST">
+    <input type = "submit" value= "Add Menu Item">
+    </form>
 
+  <form action ="{{ url_for('fooditems.fooditems_delete') }}" method="POST">
+    <input type = "submit" value= "Delete Menu Item">
+    </form>
+  {% endif %}
 {% endif %}
-<br><br>
-<form action ="{{ url_for('fooditems.fooditems_add') }}" method="POST">
-  <input type = "submit" value= "Add Menu Item">
-  </form>
-  
+
+
 {% endblock %}
 
 
