@@ -60,5 +60,5 @@ def Edit():
                          form.firstname.data,
                          form.lastname.data, current_user.id):
             flash('Edits have been processed!')
-            return redirect(url_for('users.login'))
+        return redirect(url_for('users.login'))
     return render_template('user_edit.html', title='Edit Account Info', form=form)
