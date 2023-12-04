@@ -25,16 +25,15 @@ class Fooditem:
         return Fooditem(*(rows[0])) if rows else None
 
     @staticmethod
-    def register(id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet):
+    def register(name,price,protein,sugars,fats,calories, allergens, restaurantID, diet):
         try:
             rows = app.db.execute("""
             INSERT INTO fooditems
-            (id,name,protein,sugars,
-            fats,price,allergens, calories,restaurantID,diet))
-            VALUES(:id,:title,:protein,:sugars,:fats,:price,:allergens,:calories,:restaurantID,:diet)
+            (name,protein,sugars,
+            fats,price,allergens, calories,restaurantID,diet)
+            VALUES(:name,:protein,:sugars,:fats,:price,:allergens,:calories,:restaurantID,:diet)
             RETURNING id
             """,
-            id = id,
             name = name,
             protein = protein,
             sugars = sugars,
