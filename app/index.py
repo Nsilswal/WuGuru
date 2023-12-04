@@ -39,7 +39,7 @@ def humanize_time(dt):
 class EditForm(FlaskForm):
     firstname = StringField('First Name')
     lastname = StringField('Last Name')
-    email = StringField('Email', validators=[Email()])
+    email = StringField('Email')
     password = PasswordField('Password', validators=[])
     password2 = PasswordField(
         'Repeat Password', validators=[
@@ -60,5 +60,5 @@ def Edit():
                          form.firstname.data,
                          form.lastname.data, current_user.id):
             flash('Edits have been processed!')
-            return redirect(url_for('users.index'))
+            return redirect(url_for('users.login'))
     return render_template('user_edit.html', title='Edit Account Info', form=form)
