@@ -3,8 +3,8 @@ from flask import jsonify, redirect, url_for, flash, render_template, request, s
 from flask import Flask, Blueprint
 import os
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, FileField
-from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
+from wtforms import SubmitField, IntegerField, TimeField
+from wtforms.validators import DataRequired
 from datetime import datetime
  
 from .models.restaurant import Restaurants
@@ -29,5 +29,22 @@ def restaurants_menu(id):
 
 '''
 
+@bp.route('/restaurant_edit', methods=['POST'])
+def Rest_Edit():
+    form = Restaurant_EditForm()
+    if form.validate_on_submit():
+        Restaurants.edit(form.floor.data,
+                         form.MobileOrder.data,
+                         form.OpeningTime.data,
+                         form.ClosingTime.data, current_user.restaurantOwned)
+        flash('Edits have been processed!')
+        return redirect(url_for('restaurants.restaurants'))
+    return render_template('restaurant_edit.html', title='Edit Restaurant Info', form=form)
 
+class Restaurant_EditForm(FlaskForm):
+    floor = IntegerField('Floor:')
+    MobileOrder = IntegerField('Mobile Order (Enter 0 for No and 1 for Yes):')
+    OpeningTime = TimeField('Opening Time:')
+    ClosingTime = TimeField('Closing Time')
+    submit = SubmitField('Edit')
 

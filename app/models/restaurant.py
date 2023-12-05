@@ -144,40 +144,43 @@ class Restaurants:
     @staticmethod
     def changeFloor(rest, newFloor):
         app.db.execute('''
-            UPDATE Restaurant
+            UPDATE Restaurants
             SET floor = :floor
             WHERE id = :id
             ''', floor= newFloor,id=rest)
     @staticmethod
-    def changeName(rest, newName):
-        app.db.execute('''
-            UPDATE Restaurant
-            SET name = :name
-            WHERE id = :id
-            ''', name= newName,id=rest)
-    @staticmethod
     def changeOpenTime(rest, newOpenTime):
         app.db.execute('''
-            UPDATE Restaurant
-            SET OpenTime = :OpenTime
+            UPDATE Restaurants
+            SET OpeningTime = :OpenTime
             WHERE id = :id
             ''', OpenTime= newOpenTime,id=rest)
     @staticmethod
     def changeCloseTime(rest, newCloseTime):
         app.db.execute('''
-            UPDATE Restaurant
-            SET Closeime = :CloseTime
+            UPDATE Restaurants
+            SET ClosingTime = :CloseTime
             WHERE id = :id
             ''', CloseTime= newCloseTime,id=rest)
     @staticmethod
     def changeMobileOrder(rest, newMO):
         app.db.execute('''
-            UPDATE Restaurant
+            UPDATE Restaurants
             SET MobileOrder = :MobileOrder
             WHERE id = :id
-            ''', OpenTime= newMO,id=rest)
+            ''', MobileOrder= newMO,id=rest)
             
-    
+    @staticmethod
+    def edit(floor, mo, open, close, id):
+        if (mo == 1):
+            mobor = True
+        else:
+            mobor = False
+        Restaurants.changeFloor(id, floor)
+        Restaurants.changeMobileOrder(id, mobor)
+        Restaurants.changeOpenTime(id, open)
+        Restaurants.changeCloseTime(id, close)
+        return True
 
  
    
