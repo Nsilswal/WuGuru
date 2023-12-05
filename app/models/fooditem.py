@@ -24,7 +24,7 @@ class Fooditem:
         ''', id=id)
         return Fooditem(*(rows[0])) if rows else None
 
-    @staticmethod
+    @staticmethod #to add food item to database
     def register(name,fats,protein,sugars,price,calories, allergens, restaurantID, diet):
         try:
             rows = app.db.execute("""
@@ -49,7 +49,7 @@ class Fooditem:
             print(str(e))
             return None
 
-    @staticmethod
+    @staticmethod #remove food item from database -> can only process if user is logged in & they are an admin of the restaurant whose food they want to remove
     def delete_fi(name,restaurantID):
         try:
             rows = app.db.execute("""
@@ -62,7 +62,7 @@ class Fooditem:
             # Print error
             print(str(e))
 
-    @staticmethod
+    @staticmethod #search method, joining fooditems with restaurants to get restaurantID displayed as restaurant name
     def search_by_keyword(keyword):
         modified_keyword = f'%{keyword}%'
         rows = app.db.execute('''
@@ -120,7 +120,7 @@ class Fooditem:
         return [Fooditem(*row) for row in rows]
         #return query    
     
-    @staticmethod
+    @staticmethod #method not in use
     def update_fi(id,name,protein,sugars,fats,price,calories,allergens, diet):
         try:
             app.db.execute("""
