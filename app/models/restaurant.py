@@ -152,14 +152,14 @@ class Restaurants:
     def changeOpenTime(rest, newOpenTime):
         app.db.execute('''
             UPDATE Restaurants
-            SET OpenTime = :OpenTime
+            SET OpeningTime = :OpenTime
             WHERE id = :id
             ''', OpenTime= newOpenTime,id=rest)
     @staticmethod
     def changeCloseTime(rest, newCloseTime):
         app.db.execute('''
             UPDATE Restaurants
-            SET Closeime = :CloseTime
+            SET ClosingTime = :CloseTime
             WHERE id = :id
             ''', CloseTime= newCloseTime,id=rest)
     @staticmethod
