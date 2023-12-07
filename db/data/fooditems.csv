@@ -62,7 +62,7 @@
 62,Mushroom Risotto,12.99,7,3,10,370,None,1,kosher
 63,Cannoli,5.99,2,18,8,300,Dairy,1,vegetarian
 64,BBQ Ribs,21.99,30,8,18,650,None,1,halal
-65,Lemon Meringue Pie,7.49,2,25,10,400,Dairy,1,vegetarian
+65,Garden Pesto,7.49,2,25,10,400,Dairy,1,vegetarian
 66,Stuffed Bell Peppers,16.49,15,7,10,460,None,1,kosher
 67,Pumpkin Soup,9.99,5,10,6,290,Dairy,1,vegetarian
 68,Shrimp and Grits,19.99,20,4,14,530,Shellfish,1,halal
@@ -564,7 +564,7 @@
 564,Bun Rieu Cua,9.49,16,12,4,200,Shrimp,10,kosher
 565,Bun Suon Nuong,6.99,20,2,10,210,None,10,vegetarian
 566,Goi Ngo Sen,12.49,4,12,10,260,Shrimp,10,halal
-567,Banh Trang Nuong,10.49,8,14,8,220,None,10,vegetarian
+567,Pad Thai,10.49,8,14,8,220,None,10,vegetarian
 568,Bun Thit Heo Nuong,8.99,16,4,6,190,None,10,kosher
 569,Nom Du Du,7.49,2,12,2,110,None,10,vegetarian
 570,Bun Kho,11.99,22,8,12,270,None,10,halal
@@ -582,7 +582,7 @@
 582,Banh Canh Cua,9.99,16,4,10,250,Gluten,10,halal
 583,Bun Hen Xuc Banh Trang,7.99,4,10,2,140,Shellfish,10,vegetarian
 584,Banh Xeo,11.49,8,8,10,240,Shrimp,10,kosher
-585,Goi Xoai,8.99,4,14,2,120,None,10,vegetarian
+585,Seoul Bowl,8.99,4,14,2,120,None,10,vegetarian
 586,Hu Tieu,10.49,16,6,12,270,Gluten,10,halal
 587,Ca Tim Nuong Mo Hanh,9.49,8,6,10,240,None,10,vegetarian
 588,Goi Tom Thit,7.99,10,8,6,200,Shrimp,10,kosher
