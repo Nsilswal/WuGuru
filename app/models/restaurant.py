@@ -63,7 +63,7 @@ class Restaurants:
                         WHERE r.id = Reviews.restaurant_id
                         GROUP BY r.id
                         ORDER BY {attribute_list[attribute]} {ordering_list[ordering]},
-                        rating DESC"""
+                        name ASC"""
         else:
             query = """SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
                               r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime, r.ownedBY

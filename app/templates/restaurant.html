@@ -3,6 +3,9 @@
 {% block content %}
  
 <h2>WU Restaurants</h2>
+Click on the restaurant's name to navigate to its homepage!
+<!-- Extra Space -->
+<div style="height: 30px;"></div>
 
 <div class="button-group">
   <form action="{{ url_for('restaurants.restaurants', attribute=1, ordering=0)}}" method="GET">
