@@ -96,11 +96,11 @@ class Recommendation:
             return None
     
     @staticmethod
-    def get_all(attribute='Trending', ordering='Descending'):
+    def get_all(attribute='Popularity', ordering='Descending'):
         attribute_dict = {
             "Title": "title",
-            "Recent Posts": "time_submitted",
-            "Trending" : "popularity"
+            "Date Posted": "time_submitted",
+            "Popularity" : "popularity"
         }
         ordering_dict = {
             "Ascending": "ASC",
