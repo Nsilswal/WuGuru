@@ -1,5 +1,7 @@
 # Recommendations contains all of the endpoints relevant to viewing and changing recommendations.
 
+import random
+
 from flask_login import current_user
 from flask import jsonify, redirect, url_for, flash, render_template, request, send_from_directory
 from flask import current_app as app
@@ -24,7 +26,8 @@ bp = Blueprint('recommendations', __name__)
 def recommendations():
     recommendations = Recommendation.get_all()
     is_logged_in = current_user.is_authenticated
-    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations, logged_in=is_logged_in)
+    highlight_message = generate_highlight_message()
+    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations, logged_in=is_logged_in, banner_message = highlight_message)
 
 # Returns a list of recommendations based on an attribute and ordering
 @bp.route('/recommendations/filter', methods=['POST'])
@@ -33,7 +36,8 @@ def recommendations_filter():
     order = request.form['Ordering']
     recommendations = Recommendation.get_all(attr, order)
     is_logged_in = current_user.is_authenticated
-    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs=recommendations, logged_in=is_logged_in)
+    highlight_message = generate_highlight_message()
+    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations, logged_in=is_logged_in, banner_message = highlight_message)
 
 # Returns a list of recommendations based on keyword matches
 @bp.route('/recommendations/search', methods=['GET'])
@@ -41,14 +45,16 @@ def recommendations_search():
     keyword = request.args.get('query')
     recommendations = Recommendation.search_by_keyword(keyword)
     is_logged_in = current_user.is_authenticated
-    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs=recommendations, logged_in=is_logged_in)
+    highlight_message = generate_highlight_message()
+    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations, logged_in=is_logged_in, banner_message = highlight_message)
 
 # Returns a list of recommendations based on tag matches
 @bp.route('/recommendations/tagsearch/<tagname>', methods=['GET'])
 def recommendations_tag_search(tagname):
     recommendations = Recommendation.get_all_for_tag(tagname)
     is_logged_in = current_user.is_authenticated
-    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs=recommendations, logged_in=is_logged_in)
+    highlight_message = generate_highlight_message()
+    return render_template('recommendation_home.html', title="Recommendation Home", avail_recs = recommendations, logged_in=is_logged_in, banner_message = highlight_message)
 
 # Returns a list of recommendations made by the current user (if logged in)
 @bp.route('/recommendation/filter/mine', methods=['GET'])
@@ -152,3 +158,14 @@ class RecommendationForm(FlaskForm):
         ])
     related_foods = SelectMultipleField('Select Related Foods')
     submit = SubmitField('Register') 
+
+# Generate a random awards message at the top of the home page, based off rankings of a food's appearance and total popularity
+def generate_highlight_message():
+    top_appearing_foods = Rec_Food.get_most_attached()
+    top_popular_foods = Rec_Food.get_most_popular()
+    rand_appearing_rank = random.randint(0, 9)
+    rand_pop_rank = random.randint(0, 9)
+    selected_appearing_food = top_appearing_foods[rand_appearing_rank]
+    selected_pop_food = top_popular_foods[rand_pop_rank]
+    message = f'TRENDING NOW: Currently, {selected_appearing_food[0]} from {selected_appearing_food[1]} is #{rand_appearing_rank + 1} in total mentions! Additionally, check out this rising contender: {selected_pop_food[0]} from {selected_pop_food[1]} is #{rand_pop_rank + 1} in total popularity - yum!'
+    return message

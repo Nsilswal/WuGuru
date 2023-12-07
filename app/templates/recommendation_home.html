@@ -3,7 +3,32 @@
 {% block content %}
 
 <br><br>
+<style>
+  #banner {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: slide 20s linear infinite;
+  }
 
+  #text {
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+<div id="banner">
+  <div id="text"><b>{{banner_message}}</b></div>
+</div>
 <h2>Existing Recommendations</h2>
 
 {% if logged_in %}
