@@ -6,7 +6,9 @@ CREATE TABLE Users (
     email VARCHAR UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
     firstname VARCHAR(255) NOT NULL,
-    lastname VARCHAR(255) NOT NULL
+    lastname VARCHAR(255) NOT NULL,
+    isOwner BOOLEAN,
+    restaurantOwned INT NOT NULL
 );
 
 CREATE TABLE Restaurants (
@@ -16,10 +18,10 @@ CREATE TABLE Restaurants (
     MobileOrder BOOLEAN,
     OpeningTime TIME,
     ClosingTime TIME,
-    OwnID INT NOT NULL
+    ownedBY INT NOT NULL REFERENCES Users(id)
 );
 
-CREATE TABLE Restaurant_page (
+CREATE TABLE RestaurantPhotos (
     rid INT NOT NULL REFERENCES Restaurants(id),
     logo_photo VARCHAR(100) CHECK (logo_photo LIKE '%.jpg' OR logo_photo LIKE '%.png'),
     restaurant_photo VARCHAR(100) CHECK (restaurant_photo LIKE '%.jpg' OR restaurant_photo LIKE '%.png'),

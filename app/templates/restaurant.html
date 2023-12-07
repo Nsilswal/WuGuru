@@ -33,12 +33,11 @@
   <tbody>
     {% for rest in avail_rests%}
       <tr>
-        <th scope="row"><a href="{{ url_for('restaurants_page', id=rest.id) }}">
+        <th scope="row"><a href="{{ url_for('restaurants.restaurants_view', rid=rest.id) }}">
           {{rest.name}}
         </a>
         </th>
         <td>
-          <a href="{{ url_for('reviews.reviews') }}">
             {{ "{:.1f}/5.0".format(rest.rating) }}
           </a>
         </td>
@@ -62,11 +61,7 @@
   .button-group {
     display: flex; /* Display buttons horizontally */
   }
-
-  .button-group form {
-    margin-right: 10px; /* Adjust the margin as needed to separate the buttons */
-  }
-
+  
   /* Define a CSS rule to change the hyperlink color to red */
   a {
   color: black; /* Change color to red */

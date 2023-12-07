@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Edit Restaurant Information (All Information Fields Must be Filled Out)</h1>
+
+<form action="" method="post">
+  {{ form.hidden_tag() }}
+  <p>
+    {{ form.floor.label }}<br/>
+    {{ form.floor(size=32) }}<br/>
+    {% for error in form.floor.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+  </p>
+  <p>
+    {{ form.MobileOrder.label }}<br/>
+    {{ form.MobileOrder(size=32) }}<br/>
+    {% for error in form.MobileOrder.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+  </p>
+  <p>
+    {{ form.OpeningTime.label }}<br/>
+    {{ form.OpeningTime(size=64) }}<br/>
+    {% for error in form.OpeningTime.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+  </p>
+  <p>
+    {{ form.ClosingTime.label }}<br/>
+    {{ form.ClosingTime(size=32) }}<br/>
+    {% for error in form.ClosingTime.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+  </p>
+  <p>{{ form.submit() }}</p>
+</form>
+
+{% endblock %}

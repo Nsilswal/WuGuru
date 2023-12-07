@@ -1,14 +1,18 @@
+# Recommendation is a model representing the central information for a particular recommendation.
 from flask import current_app as app
+import humanize
 
 class Recommendation:
+    # Constructor
     def __init__(self, id, user_id, title, description, time_submitted, popularity):
         self.id = id
         self.user_id = user_id
         self.title = title
         self.description = description
-        self.time_submitted = time_submitted
+        self.time_submitted = humanize.naturaltime(time_submitted)
         self.popularity = popularity
     
+    # Get a recommendation, given an ID
     @staticmethod
     def get(id):
         rows = app.db.execute('''
@@ -18,6 +22,7 @@ class Recommendation:
             ''', id=id)
         return Recommendation(*(rows[0])) if rows else None
 
+    # Get recommendation that contain a keyword in the title or description
     @staticmethod
     def search_by_keyword(keyword):
         modified_keyword = f'%{keyword}%'
@@ -28,6 +33,7 @@ class Recommendation:
             ''', modified_keyword=modified_keyword)
         return [Recommendation(*row) for row in rows]  
       
+    # Register a new recommendation
     @staticmethod
     def register(user_id, title, description, time_submitted, popularity):
         try:
@@ -48,6 +54,7 @@ class Recommendation:
             print(str(e))
             return None
     
+    # Update a particular recommendation
     @staticmethod
     def update(rec_id, new_title, new_description, new_time_submitted):
         try:
@@ -63,7 +70,8 @@ class Recommendation:
         except Exception as e:
             print(str(e))
             return None
-            
+
+    # Delete a recommendation       
     @staticmethod
     def delete(rec_id):
         try:
@@ -88,11 +96,11 @@ class Recommendation:
             return None
     
     @staticmethod
-    def get_all(attribute='Trending', ordering='Descending'):
+    def get_all(attribute='Popularity', ordering='Descending'):
         attribute_dict = {
             "Title": "title",
-            "Recent Posts": "time_submitted",
-            "Trending" : "popularity"
+            "Date Posted": "time_submitted",
+            "Popularity" : "popularity"
         }
         ordering_dict = {
             "Ascending": "ASC",
@@ -112,6 +120,7 @@ class Recommendation:
         
         return [Recommendation(*row) for row in rows]
     
+    # Modify the popularity of a particular recommendation
     @staticmethod
     def change_popularity(id, amount):
         target = Recommendation.get(id)
@@ -122,15 +131,17 @@ class Recommendation:
             WHERE id = :id
             ''', popularity=new_popularity,id=id)
 
+    # Get all recommendations by a user since a given date
     @staticmethod
-    def get_all_by_uid_since(u, d):
+    def get_all_by_uid_since(user, date):
             rows = app.db.execute('''
                 SELECT *
                 FROM Recommendations
                 WHERE user_id = :uid and time_submitted > :date
-                ''', uid=u, date = d)
+                ''', uid=user, date=date)
             return [Recommendation(*row) for row in rows]
     
+    # Get all recommendations with a particular tag
     @staticmethod
     def get_all_for_tag(tag_name):
         rows = app.db.execute("""SELECT Recommendations.id, user_id, title, description, time_submitted, popularity

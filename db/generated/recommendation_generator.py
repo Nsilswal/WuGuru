@@ -1,4 +1,5 @@
 import random
+import csv
 
 def generate_date():
     # Generate random values for year, month, day, hour, minute, and second
@@ -66,4 +67,24 @@ def generate_attached_foods():
 # generate_recommendations()
 # generate_photos()
 # generate_tags()
-generate_attached_foods()
+# generate_attached_foods()
+
+def regen_recommendations():
+    with open('generated_titles.txt', 'r') as file:
+        lines = file.readlines()
+
+    new_titles = [line.strip() for line in lines]
+
+    with open('../data/Recommendations.csv', 'r', newline='') as csvfile:
+        csv_reader = csv.reader(csvfile)
+        rows = [row for row in csv_reader]    
+
+    for i in range(len(new_titles)):
+        rows[i][2] = new_titles[i]
+    
+    with open('new_recs.csv', 'w', newline='') as csvfile:
+        csv_writer = csv.writer(csvfile)
+        for row in rows:
+            csv_writer.writerow(row)
+
+regen_recommendations()

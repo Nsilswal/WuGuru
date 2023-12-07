@@ -13,19 +13,12 @@ SELECT pg_catalog.setval('public.recommendations_id_seq',
 \COPY RecPhotos FROM 'RecPhotos.csv' WITH DELIMITER ',' NULL '' CSV
 \COPY RecTags FROM 'RecTags.csv' WITH DELIMITER ',' NULL '' CSV
 
-                
-
-\COPY RecFoods FROM 'RecFoods.csv' WITH DELIMITER ',' NULL '' CSV
-
 \COPY Restaurants FROM 'Restaurants.csv' WITH DELIMITER ',' NULL '' CSV
 SELECT pg_catalog.setval('public.restaurants_id_seq',
                          (SELECT MAX(id)+1 FROM Restaurants),
                          false);
 
-\COPY Restaurant_page FROM 'Restaurant_page.csv' WITH DELIMITER ',' NULL '' CSV
-SELECT pg_catalog.setval('public.restaurant_page_id_seq',
-                         (SELECT MAX(id)+1 FROM Restaurant_page),
-                         false);
+\COPY RestaurantPhotos FROM 'RestaurantPhotos.csv' WITH DELIMITER ',' NULL '' CSV
 
 \COPY Reviews FROM 'Reviews.csv' WITH DELIMITER ',' NULL '' CSV
 SELECT pg_catalog.setval('public.reviews_id_seq',
@@ -36,3 +29,5 @@ SELECT pg_catalog.setval('public.reviews_id_seq',
 SELECT pg_catalog.setval('public.fooditems_id_seq',
                          (SELECT MAX(id)+1 FROM fooditems),
                          false); 
+
+\COPY RecFoods FROM 'RecFoods.csv' WITH DELIMITER ',' NULL '' CSV

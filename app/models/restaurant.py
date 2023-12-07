@@ -1,8 +1,9 @@
 from flask import current_app as app
-from datetime import datetime
+from datetime import datetime, time
+
 
 class Restaurants:
-    def __init__(self, id, name, rating, floor, MobileOrder, OpeningTime, ClosingTime):
+    def __init__(self, id, name, rating, floor, MobileOrder, OpeningTime, ClosingTime,OwnedBy):
         self.id = id
         self.name = name
         self.rating = rating
@@ -10,12 +11,14 @@ class Restaurants:
         self.MobileOrder = MobileOrder
         self.OpeningTime = OpeningTime
         self.ClosingTime = ClosingTime
+        self.ownedBY = OwnedBy
 
     @staticmethod
     def get(id):
         rows = app.db.execute('''
             SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
-                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
+                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime,
+                              r.ownedBY
             FROM Restaurants r, Reviews
             WHERE r.id = :id AND r.id = Reviews.restaurant_id
             GROUP BY r.id
@@ -24,12 +27,12 @@ class Restaurants:
         return Restaurants(*(rows[0])) if rows is not None else None
     
     @staticmethod
-    def register(id, name, floor, MobileOrder, OpeningTime, ClosingTime):
+    def register(id, name, floor, MobileOrder, OpeningTime, ClosingTime, OwnedBY):
         try:
             rows = app.db.execute("""
             INSERT INTO Restaurants
-            (id, name, floor, MobileOrder, OpeningTime, ClosingTime))
-            VALUES(:id,:name,:floor,:MobileOrder,:OpeningTime,:ClosingTime)
+            (id, name, floor, MobileOrder, OpeningTime, ClosingTime, OwnedBY))
+            VALUES(:id,:name,:floor,:MobileOrder,:OpeningTime,:ClosingTime,:OwnedBY)
             RETURNING id
             """,
             id = id,
@@ -37,7 +40,8 @@ class Restaurants:
             floor = floor,
             MobileOrder = MobileOrder,
             OpeningTime = OpeningTime,
-            ClosingTime = ClosingTime)
+            ClosingTime = ClosingTime,
+            OwnedBY = OwnedBY)
             id = rows[0][0]
             return Restaurants.get(id)
         except Exception as e:
@@ -47,14 +51,14 @@ class Restaurants:
 
     @staticmethod
     def get_all(attribute=1, ordering=0):
-        # Attribute: 0 - id, 1-name, 2 - rating, 3-floor, 4 - Mobile, 5-Open, 6-Close
+        # Attribute: 0 - id, 1-name, 2 - rating, 3-floor, 4 - Mobile, 5-Open, 6-Close, 7-OwnID, 8-ownedBY
         # Ordering: 0 - ASC, 1 - DESC
-        attribute_list = ['id', 'name', 'rating', 'floor', 'MobileOrder', 'OpeningTime', 'ClosingTime']
+        attribute_list = ['id', 'name', 'rating', 'floor', 'MobileOrder', 'OpeningTime', 'ClosingTime', 'ownedBY']
         ordering_list = ['ASC', 'DESC']
 
         if(0 <= attribute <= 6 and 0 <= ordering <= 1):
             query = f"""SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
-                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
+                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime, r.ownedBY
                         FROM Restaurants r, Reviews
                         WHERE r.id = Reviews.restaurant_id
                         GROUP BY r.id
@@ -62,7 +66,7 @@ class Restaurants:
                         rating DESC"""
         else:
             query = """SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
-                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
+                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime, r.ownedBY
                         FROM Restaurants r, Reviews
                         WHERE r.id = Reviews.restaurant_id
                         GROUP BY r.id
@@ -74,60 +78,62 @@ class Restaurants:
         return [Restaurants(*row) for row in rows]
 
     @staticmethod
-    def get_open_restaurants():
-        current_time = datetime.now().strftime('%H:%M:%S')
-        
+    def get_if_open(id, current_time):
+        current_time_time = current_time.time()
         query = '''
-            SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
-                   r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
-            FROM Restaurants r, Reviews
-            WHERE r.id = Reviews.restaurant_id
-            GROUP BY r.id
-            HAVING :current_time >= r.OpeningTime AND :current_time <= r.ClosingTime
+            SELECT *
+            FROM Restaurants r
+            WHERE r.id = :id AND :current_time >= r.OpeningTime AND :current_time <= r.ClosingTime
         '''
 
-        rows = app.db.execute(query, current_time=current_time)
+        rows = app.db.execute(query, current_time=current_time_time, id=id)
 
-        return [Restaurants(*row) for row in rows]
+        if rows:
+            return True  # The restaurant is open
+        else:
+            return False  # The restaurant is closed
    
 
-    #Instead of get menu, link to a filter of food items done by Mia
     @staticmethod
-    def get_menu(id):
-        rows = app.db.execute('''
-            SELECT
-                r.id as restaurant_id,
-                r.name AS restaurant_name,
-                f.name AS food_item_name,
-                f.price
-            FROM
-                Restaurants r
-            LEFT JOIN
-                fooditems f
-            ON
-                r.id = s.restaurantID
-            WHERE r.id = :id
-            ''',
-                              id=id)
-        return [Restaurants(*row) for row in rows]
-    
-    def get_reviews(id):
-        rows = app.db.execute('''
-            SELECT
-                r.name AS restaurant_name,
-                rev.rating AS food_item_name,
-                rev.description
-            FROM
-                Restaurants r
-            LEFT JOIN
-                Reviews rev
-            ON
-                r.id = rev.restaurant_ID
-            WHERE r.id = :id
-            ''',
-                              id=id)
-        return [Restaurants(*row) for row in rows]
-    
+    def changeFloor(rest, newFloor):
+        app.db.execute('''
+            UPDATE Restaurants
+            SET floor = :floor
+            WHERE id = :id
+            ''', floor= newFloor,id=rest)
+    @staticmethod
+    def changeOpenTime(rest, newOpenTime):
+        app.db.execute('''
+            UPDATE Restaurants
+            SET OpeningTime = :OpenTime
+            WHERE id = :id
+            ''', OpenTime= newOpenTime,id=rest)
+    @staticmethod
+    def changeCloseTime(rest, newCloseTime):
+        app.db.execute('''
+            UPDATE Restaurants
+            SET ClosingTime = :CloseTime
+            WHERE id = :id
+            ''', CloseTime= newCloseTime,id=rest)
+    @staticmethod
+    def changeMobileOrder(rest, newMO):
+        app.db.execute('''
+            UPDATE Restaurants
+            SET MobileOrder = :MobileOrder
+            WHERE id = :id
+            ''', MobileOrder= newMO,id=rest)
+            
+    @staticmethod
+    def edit(floor, mo, open, close, id):
+        if (mo == 1):
+            mobor = True
+        else:
+            mobor = False
+        Restaurants.changeFloor(id, floor)
+        Restaurants.changeMobileOrder(id, mobor)
+        Restaurants.changeOpenTime(id, open)
+        Restaurants.changeCloseTime(id, close)
+        return True
 
  
    
