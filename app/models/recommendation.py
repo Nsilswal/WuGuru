@@ -1,5 +1,6 @@
 # Recommendation is a model representing the central information for a particular recommendation.
 from flask import current_app as app
+import humanize
 
 class Recommendation:
     # Constructor
@@ -8,7 +9,7 @@ class Recommendation:
         self.user_id = user_id
         self.title = title
         self.description = description
-        self.time_submitted = time_submitted
+        self.time_submitted = humanize.naturaltime(time_submitted)
         self.popularity = popularity
     
     # Get a recommendation, given an ID

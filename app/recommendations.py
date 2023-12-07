@@ -3,12 +3,11 @@
 from flask_login import current_user
 from flask import jsonify, redirect, url_for, flash, render_template, request, send_from_directory
 from flask import current_app as app
-from flask import Flask, Blueprint
-import os
+from flask import Blueprint
 from datetime import datetime
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, FileField, SelectMultipleField
-from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
+from wtforms.validators import DataRequired
 from datetime import datetime
  
 from .models.recommendation import Recommendation
@@ -122,7 +121,7 @@ def recommendations_view(rec_id):
     user_creator = User.get(rec_info.user_id)
     nutrition_summary = Rec_Food.generate_summary_for_rec(rec_id)
     is_owner = current_user.is_authenticated and current_user.id == user_creator.id
-    return render_template('recommendation_view.html', title="View Recommendation", rec=rec_info, photos=rec_photos, user=user_creator, tags=rec_tags, nutrition_summary=nutrition_summary, display_edit=is_owner)
+    return render_template('recommendation_view.html', title="View Recommendation", rec=rec_info, photos=rec_photos, user=user_creator, tags=rec_tags, nutrition_summary=nutrition_summary, display_edit=is_owner, is_logged_in=current_user.is_authenticated)
 
 # Upvote (increase popularity) of a recommendation
 @bp.route('/recommendations/upvote/<int:rec_id>', methods=['POST'])
@@ -153,5 +152,3 @@ class RecommendationForm(FlaskForm):
         ])
     related_foods = SelectMultipleField('Select Related Foods')
     submit = SubmitField('Register') 
-
-
