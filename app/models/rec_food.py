@@ -37,4 +37,20 @@ class Rec_Food:
             print(str(e))
             return None
         
+    # Return the most attached foods (foods appearing in the most recommendations)
+    @staticmethod
+    def get_most_attached():
+        rows = app.db.execute("""
+                    SELECT *
+                    FROM MostAttachedFood
+                       """)
+        return rows
     
+    # Return the most popular foods (foods receiving the most recommendations)
+    @staticmethod
+    def get_most_popular():
+        rows = app.db.execute("""
+                    SELECT *
+                    FROM MostPopularFood
+                       """)
+        return rows

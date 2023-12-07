@@ -76,6 +76,11 @@ class Recommendation:
     def delete(rec_id):
         try:
             rows = app.db.execute("""
+            DELETE FROM RecFoods
+            WHERE rec_id = :rec_id""",
+            rec_id=rec_id)
+
+            rows = app.db.execute("""
             DELETE FROM RecPhotos
             WHERE rec_id = :rec_id""",
             rec_id=rec_id)
