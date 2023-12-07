@@ -10,12 +10,13 @@
 <p><a href="{{ url_for('reviews.reviews') }}">Click here</a> to see restaurant reviews!</p>
 <p><a href="{{ url_for('recommendations.recommendations') }}">Go to recommendations</a></p>
 <p><a href="{{ url_for('crosscomparisons.cross_comparisons') }}">Go to Cross Comparisons!</a></p>
-
+{% if current_user.is_authenticated %}
 <br><br>
 <h2>Edit User Account Information:</h2>
 <form action ="{{ url_for('index.Edit') }}" method="POST">
   <input type = "submit" value= "Edit Account Information">
   </form>
+  {% endif %}
 {% if current_user.is_authenticated %}
 <h2>Update Menu:</h2>
   {% if current_user.isOwner %}
