@@ -2,34 +2,50 @@
 <html lang="en">
 
 <head>
-  <div class="button-group">
-    <form action="{{ url_for('index.index') }}" method="GET">
-      <input type ="submit" value="Home">
-    </form>
-    <form action="{{ url_for('restaurants.restaurants') }}" method="GET">
-      <input type ="submit" value="Restaurants">
-    </form>
-    <form action="{{ url_for('reviews.reviews') }}" method="GET">
-      <input type ="submit" value="Reviews">
-    </form>
-    <form action="{{ url_for('recommendations.recommendations') }}" method="GET">
-      <input type ="submit" value="Recommendations">
-    </form>
-    <form action="{{ url_for('crosscomparisons.cross_comparisons') }}" method="GET">
-      <input type ="submit" value="Cross Comparisons">
-    </form>  
+  <style>
+
+    .tabs {
+      display: flex;
+      background-color: #001f3f;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .tab:hover {
+      background-color: #2980b9;
+      text-decoration: none;
+    }
+
+  </style>
+  <div class="tabs">
+    <a href="{{ url_for('index.index') }}" class="tab">
+      Home
+    </a>
+    <a href="{{ url_for('restaurants.restaurants') }}" class="tab">
+      Restaurants
+    </a>
+    <a href="{{ url_for('fooditems.fooditems') }}" class="tab">
+      Food Items
+    </a>
+    <a href="{{ url_for('reviews.reviews') }}" class="tab">
+      Reviews
+    </a>
+    <a href="{{ url_for('recommendations.recommendations') }}" class="tab">
+      Recommendations
+    </a>
+    <a href="{{ url_for('crosscomparisons.cross_comparisons') }}" class="tab">
+      Comparisons
+    </a>
   </div>
   
-  <style>
-  .button-group {
-    display: flex;
-    align-items: center; /* Vertically center-align items within the container */
-  }
-
-  .button-group p {
-    margin-right: 10px; /* Add some spacing between the word and buttons */
-  }
-</style>
   
   <title>WU-Guru</title>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
