@@ -66,8 +66,8 @@
   </form>
   {% endif %}
 {% if current_user.is_authenticated %}
-<h2>Update Menu:</h2>
   {% if current_user.isOwner %}
+  <h2>Update Menu:</h2>
   <form action ="{{ url_for('fooditems.fooditems_add') }}" method="POST">
     <input type = "submit" value= "Add Menu Item">
     </form>
@@ -78,8 +78,8 @@
   {% endif %}
 
   {% if current_user.is_authenticated %}
-<h2>Edit Restaurant Information:</h2>
   {% if current_user.isOwner %}
+  <h2>Edit Restaurant Information:</h2>
   <form action ="{{ url_for('restaurants.Rest_Edit') }}" method="POST">
     <input type = "submit" value= "Edit Restaurant Information">
     </form>
@@ -156,7 +156,7 @@
   {% else %}
     You have not published any reviews.
   {% endif %}
-  {% endif %}
+{% endif %}
+<br><br>
+<br><br>
 {% endblock %}
-
-
