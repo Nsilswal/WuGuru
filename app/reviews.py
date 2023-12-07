@@ -11,11 +11,12 @@ import statistics
 
 from .models.review import Review
 from .models.user import User
-from.models.restaurant import Restaurants
+from .models.restaurant import Restaurants
 
 bp = Blueprint('reviews', __name__)
 
 @bp.route('/reviews')
+# home page for reviews, shows all reviews in database sorted by date descending
 def reviews():
     reviews = Review.get_all()
     restaurants = Restaurants.get_all()
@@ -25,6 +26,7 @@ def reviews():
     return render_template('review_home.html', title = "Review Home", avail_reviews = reviews, avail_rests = restaurants, humanize_time=humanize_time, avg = f'{average:.2f}')
 
 @bp.route('/reviews/filter', methods=['POST'])
+# shows reviews filtered by restaurant and/or sorted by date or rating
 def reviews_filter():
     attribute = request.form['Attribute']
     ordering = request.form['Ordering']
@@ -41,6 +43,7 @@ def reviews_filter():
     return render_template('review_home.html', title="Review Home", avail_reviews = reviews, avail_rests = restaurants, humanize_time=humanize_time, avg = f'{average:.2f}')
 
 @bp.route('/reviews/add', methods=['POST'])
+# goes to create new review form page, if data inputted in form is valid, creates new review and redirects to review home page
 def review_add():
     form = ReviewForm()
     form.restaurant.choices = [(restaurant.id, restaurant.name) for restaurant in Restaurants.get_all()]
@@ -52,6 +55,7 @@ def review_add():
     return render_template('review_add.html', title='Add A Review', form=form)
 
 @bp.route('/reviews/update/<int:id>', methods=['GET', 'POST'])
+# goes to update existing review form page, if data inputted in form is valid, updates review and redirects to user home page
 def review_update(id):
     if current_user.is_authenticated:
         review = Review.get(id) 
@@ -70,6 +74,7 @@ def review_update(id):
         return "Sorry, you cannot access this page or this page does not exist."
 
 @bp.route('/reviews/delete', methods=['POST'])
+# deletes review and redirects to user home page
 def review_delete():
     review_id = request.form['review_id']
     if current_user.is_authenticated:
@@ -77,6 +82,7 @@ def review_delete():
     return redirect(url_for('index.index'))
 
 @bp.route('/reviews/search', methods=['GET'])
+# shows all reviews with descriptions containing keyword
 def reviews_search():
     keyword = request.args.get('query')
     reviews = Review.search_by_keyword(keyword)
