@@ -9,13 +9,13 @@ from datetime import datetime
  
 from .models.restaurant_pages import Restaurant_page
 
-bp = Blueprint('restaurant', __name__)
+bp = Blueprint('restaurants_page', __name__)
 
 
-@bp.route('/restaurants/<int:id>', methods=['GET'])
-def restaurants_filter(id):
+@bp.route('/restaurants_page/<int:id>', methods=['GET'])
+def restaurants_page(id):
     restaurant = Restaurant_page.get(id)
-    return render_template('restaurant_page.html', title=restaurant.name, avail_rests = restaurant)
+    return render_template('restaurants_page.html', title=restaurant.name, avail_rests = restaurant)
 
 
 

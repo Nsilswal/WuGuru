@@ -102,7 +102,7 @@ def recommendation_add():
                 Rec_Food.register(rec_id, form.related_foods.data)
                 return redirect(url_for('recommendations.recommendations'))
     return render_template('recommendation_add.html', title='Add A Recommendation', form=form)
-
+#look at this for view
 @bp.route('/recommendations/view/<int:rec_id>', methods=['GET'])
 def recommendations_view(rec_id):
     rec_info = Recommendation.get(rec_id)
