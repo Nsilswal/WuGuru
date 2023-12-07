@@ -14,6 +14,7 @@ class Review:
         self.anonymous = anonymous
 
     @staticmethod
+    # get Review with id
     def get(id):
         rows = app.db.execute('''
             SELECT Reviews.id, Users.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description, Restaurants.id, Restaurants.name, Reviews.anonymous
@@ -23,6 +24,7 @@ class Review:
         return Review(*(rows[0])) if rows else None
 
     @staticmethod
+    # create new Review
     def create(user_id, date, rating, description, restaurant_id, anonymous):
         try:
             rows = app.db.execute("""
@@ -44,6 +46,7 @@ class Review:
             return None
     
     @staticmethod
+    # update existing Review date, rating, description, restaurant, and/or whether it is anonymous
     def update(review_id, date, rating, description, restaurant_id, anonymous):
         try:
             app.db.execute("""
@@ -64,6 +67,7 @@ class Review:
             return None
     
     @staticmethod
+    # delete existing Review with id = review_id
     def delete(review_id):
         try:
             rows = app.db.execute("""
@@ -76,6 +80,7 @@ class Review:
             print(str(e))
     
     @staticmethod
+    # get all Reviews in database, if there are sort parameters order the rows accordingly, else default to sorting by date descending
     def get_all(attribute='Date', ordering='Descending'):
         attribute_dict = {
             "Date": "date",
@@ -102,6 +107,7 @@ class Review:
         return [Review(*row) for row in rows]
     
     @staticmethod
+    # get all Reviews for a certain restaurant in the database, if there are sort parameters order the rows accordingly, else default to sorting by date descending
     def get_all_for_restaurant(restaurant_id, attribute = 'Date', ordering = 'Descending'):
         attribute_dict = {
             "Date": "date",
@@ -128,6 +134,7 @@ class Review:
         return [Review(*row) for row in rows]
 
     @staticmethod
+    # get all Reviews were the description contains keyword, sorted by date descending
     def search_by_keyword(keyword):
         modified_keyword = f'%{keyword}%'
         rows = app.db.execute('''
@@ -139,6 +146,7 @@ class Review:
         return [Review(*row) for row in rows]  
     
     @staticmethod
+    # get all Reviews written by user with id = u since date = d, sorted by date descending
     def get_all_by_uid_since(u, d):
         rows = app.db.execute('''
             SELECT Reviews.id, Users.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description, Restaurants.id, Restaurants.name, Reviews.anonymous
