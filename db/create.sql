@@ -75,3 +75,19 @@ CREATE TABLE Reviews (
     restaurant_id INT NOT NULL REFERENCES Restaurants(id),
     anonymous BOOLEAN NOT NULL
 );
+
+CREATE VIEW MostAttachedFood AS
+SELECT fooditems.name, Restaurants.name as rName, COUNT(*) as freq
+FROM RecFoods, fooditems, Restaurants
+WHERE fooditems.id = food_id AND Restaurants.id = fooditems.restaurantID
+GROUP BY fooditems.id, fooditems.name, Restaurants.name
+ORDER BY freq DESC
+LIMIT 10;
+
+CREATE VIEW MostPopularFood AS
+SELECT fooditems.name, Restaurants.name as rName, SUM(popularity) as total_pop
+FROM RecFoods, fooditems, Restaurants, Recommendations
+WHERE fooditems.id = food_id AND Restaurants.id = fooditems.restaurantID and rec_id = Recommendations.id
+GROUP BY fooditems.id, fooditems.name, Restaurants.name
+ORDER BY total_pop DESC
+LIMIT 10;
