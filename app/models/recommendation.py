@@ -1,5 +1,6 @@
 # Recommendation is a model representing the central information for a particular recommendation.
 from flask import current_app as app
+import humanize
 
 class Recommendation:
     # Constructor
@@ -8,7 +9,7 @@ class Recommendation:
         self.user_id = user_id
         self.title = title
         self.description = description
-        self.time_submitted = time_submitted
+        self.time_submitted = humanize.naturaltime(time_submitted)
         self.popularity = popularity
     
     # Get a recommendation, given an ID
@@ -95,11 +96,11 @@ class Recommendation:
             return None
     
     @staticmethod
-    def get_all(attribute='Trending', ordering='Descending'):
+    def get_all(attribute='Popularity', ordering='Descending'):
         attribute_dict = {
             "Title": "title",
-            "Recent Posts": "time_submitted",
-            "Trending" : "popularity"
+            "Date Posted": "time_submitted",
+            "Popularity" : "popularity"
         }
         ordering_dict = {
             "Ascending": "ASC",
