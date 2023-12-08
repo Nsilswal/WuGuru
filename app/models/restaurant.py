@@ -101,6 +101,8 @@ class Restaurants:
             SET floor = :floor
             WHERE id = :id
             ''', floor= newFloor,id=rest)
+    
+    #Change the OpeningTime attribute of a restaurant given a restaurant id and the new value
     @staticmethod
     def changeOpenTime(rest, newOpenTime):
         app.db.execute('''
@@ -108,6 +110,7 @@ class Restaurants:
             SET OpeningTime = :OpenTime
             WHERE id = :id
             ''', OpenTime= newOpenTime,id=rest)
+    #Change the ClosingTime attribute of a restaurant given a restaurant id and the new value
     @staticmethod
     def changeCloseTime(rest, newCloseTime):
         app.db.execute('''
@@ -115,6 +118,8 @@ class Restaurants:
             SET ClosingTime = :CloseTime
             WHERE id = :id
             ''', CloseTime= newCloseTime,id=rest)
+    
+    #Change the MobileOrder attribute of a restaurant given a restaurant id and the new value
     @staticmethod
     def changeMobileOrder(rest, newMO):
         app.db.execute('''
@@ -123,6 +128,10 @@ class Restaurants:
             WHERE id = :id
             ''', MobileOrder= newMO,id=rest)
             
+    
+    #When the edit restaurant attributes form is submitted by the admin user that owns
+    #a certain restaurant, take in the new values for each attribute as well as the restuarant id
+    #of the restaurant being edited
     @staticmethod
     def edit(floor, mo, open, close, id):
         if (mo == 1):

@@ -11,7 +11,7 @@ from .models.user import User
 from flask import Blueprint
 bp = Blueprint('users', __name__)
 
-
+#Create a Login Form so Users can access information tied to their account
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
@@ -37,7 +37,7 @@ def login():
         return redirect(next_page)
     return render_template('login.html', title='Sign In', form=form)
 
-
+#Create a Registration Form so Users can store information in their accounts
 class RegistrationForm(FlaskForm):
     firstname = StringField('First Name', validators=[DataRequired()])
     lastname = StringField('Last Name', validators=[DataRequired()])
@@ -67,7 +67,7 @@ def register():
             return redirect(url_for('users.login'))
     return render_template('register.html', title='Register', form=form)
 
-
+#Allow Users to Logout so other users do not see their account information
 @bp.route('/logout')
 def logout():
     logout_user()

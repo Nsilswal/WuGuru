@@ -44,6 +44,7 @@ def get_photo(filename):
         print(e)
         return None
 
+#Create a form that can be used by restaurant owners to modify current restaurant attributes
 @bp.route('/restaurant_edit', methods=['POST'])
 def Rest_Edit():
     form = Restaurant_EditForm()
