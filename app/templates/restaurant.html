@@ -3,6 +3,9 @@
 {% block content %}
  
 <h2>WU Restaurants</h2>
+Click on the restaurant's name to navigate to its homepage!
+<!-- Extra Space -->
+<div style="height: 30px;"></div>
 
 <div class="button-group">
   <form action="{{ url_for('restaurants.restaurants', attribute=1, ordering=0)}}" method="GET">
@@ -33,12 +36,11 @@
   <tbody>
     {% for rest in avail_rests%}
       <tr>
-        <th scope="row"><a href="{{ url_for('fooditems.fooditems') }}">
+        <th scope="row"><a href="{{ url_for('restaurants.restaurants_view', rid=rest.id) }}">
           {{rest.name}}
         </a>
         </th>
         <td>
-          <a href="{{ url_for('reviews.reviews') }}">
             {{ "{:.1f}/5.0".format(rest.rating) }}
           </a>
         </td>

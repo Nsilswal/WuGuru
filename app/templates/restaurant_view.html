@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br>
+
+<form action="{{ url_for('restaurants.restaurants') }}" method="GET">
+  <input type ="submit" value="Back to Restaurants">
+</form>
+
+<br><br>
+
+<style>
+  /* Style for the photo container */
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Style for each photo */
+.photo {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.photo img {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    height: auto;
+}
+
+.description {
+    max-width: 80%;
+    padding: 20px; /* Add padding for better aesthetics */
+    text-align: left; /* Left-align the text within the description */
+}
+</style>
+
+<h1>{{ res.name }}</h1>
+<!-- Restaurant Description -->
+<div class="description">
+    <p>{{ res_photos.descript }}</p>
+
+    <!-- Display Open/Closed status -->
+    {% if now_open %}
+        <p>Currently OPEN  <Br> NOTE: Business hours may change depending on holidays and other events</p>
+    {% else %}
+        <p>Currently CLOSED</p>
+    {% endif %}
+    
+</div>
+
+
+<!-- Restaurant Photos -->
+<div class="photo-container">
+  <div class="photo">
+      <img src="{{ url_for('restaurants.get_photo', filename=res_photos.logo_photo) }}" alt="Logo Photo">
+  </div>
+  <div class="photo">
+      <img src="{{ url_for('restaurants.get_photo', filename=res_photos.restaurant_photo) }}" alt="Restaurant Photo">
+  </div>
+  <div class="photo">
+      <img src="{{ url_for('restaurants.get_photo', filename=res_photos.map_photo) }}" alt="Map Photo">
+  </div>
+</div>
+
+<!-- Restaurant Info -->
+<h2>Restaurant Info</h2>
+<p>Floor Level: {{ res.floor }}</p>
+<p>Mobile Order Availability: {{ res.MobileOrder }}</p>
+<p>Opening Time: {{ res.OpeningTime }}</p>
+<p>Closing Time: {{ res.ClosingTime }}</p>
+
+<!-- Menu -->
+<h2>Menu</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Protein</th>
+            <th>Sugars</th>
+            <th>Fats</th>
+            <th>Allergens</th>
+            <th>Calories</th>
+            <th>Diet</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in menu %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.price }}</td>
+                <td>{{ item.protein }}</td>
+                <td>{{ item.sugars }}</td>
+                <td>{{ item.fats }}</td>
+                <td>{{ item.allergens }}</td>
+                <td>{{ item.calories }}</td>
+                <td>{{ item.diet }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<!-- Extra Space -->
+<div style="height: 30px;"></div>
+<!-- Reviews -->
+<h2>Reviews</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Date</th>
+            <th>Rating</th>
+            <th>Description</th>
+            <th>Anonymous</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for review in rev %}
+            <tr>
+                <td>{{ review.firstname }} {{ review.lastname }}</td>
+                <td>{{ review.date }}</td>
+                <td>{{ review.rating }}</td>
+                <td>{{ review.description }}</td>
+                <td>{{ review.anonymous }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

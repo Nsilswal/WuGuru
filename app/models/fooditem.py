@@ -151,4 +151,20 @@ class Fooditem:
                 WHERE fooditems.restaurantID = Restaurants.id""") 
         pairings = [(f'{item[0]}', f'{item[2]}: {item[1]}') for item in results]
         return pairings
-        
+    
+    @staticmethod
+    def get_menu_for_restaurant(restaurant_id): 
+        rid = restaurant_id
+        rows = app.db.execute('''
+            SELECT fooditems.id, fooditems.name, fooditems.price,
+                    fooditems.protein, fooditems.sugars, fooditems.fats, 
+                    fooditems.allergens, 
+                    fooditems.calories, fooditems.restaurantID, fooditems.diet, r.name as rname
+            FROM fooditems
+            JOIN Restaurants r
+            ON r.id = fooditems.restaurantID
+            WHERE fooditems.restaurantID = :rid  
+            ORDER BY name ASC                     
+            
+            ''', rid=rid)
+        return [Fooditem(*row) for row in rows] 

@@ -1,5 +1,5 @@
 from flask import current_app as app
-from datetime import datetime
+from datetime import datetime, time
 
 
 class Restaurants:
@@ -17,7 +17,8 @@ class Restaurants:
     def get(id):
         rows = app.db.execute('''
             SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
-                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
+                              r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime,
+                              r.ownedBY
             FROM Restaurants r, Reviews
             WHERE r.id = :id AND r.id = Reviews.restaurant_id
             GROUP BY r.id
@@ -62,7 +63,7 @@ class Restaurants:
                         WHERE r.id = Reviews.restaurant_id
                         GROUP BY r.id
                         ORDER BY {attribute_list[attribute]} {ordering_list[ordering]},
-                        rating DESC"""
+                        name ASC"""
         else:
             query = """SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
                               r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime, r.ownedBY
@@ -77,72 +78,22 @@ class Restaurants:
         return [Restaurants(*row) for row in rows]
 
     @staticmethod
-    def get_open_restaurants():
-        current_time = datetime.now().strftime('%H:%M:%S')
-        
+    def get_if_open(id, current_time):
+        current_time_time = current_time.time()
         query = '''
-            SELECT r.id, r.name, AVG(Reviews.rating) AS rating,
-                   r.floor, r.MobileOrder, r.OpeningTime, r.ClosingTime
-            FROM Restaurants r, Reviews
-            WHERE r.id = Reviews.restaurant_id
-            GROUP BY r.id
-            HAVING :current_time >= r.OpeningTime AND :current_time <= r.ClosingTime
+            SELECT *
+            FROM Restaurants r
+            WHERE r.id = :id AND :current_time >= r.OpeningTime AND :current_time <= r.ClosingTime
         '''
 
-        rows = app.db.execute(query, current_time=current_time)
+        rows = app.db.execute(query, current_time=current_time_time, id=id)
 
-        return [Restaurants(*row) for row in rows]
-    '''
-    def format_time(time_string):
-        try:
-            time_obj = datetime.strptime(time_string, '%H:%M:%S')
-            return time_obj.strftime('%H:%M')
-        except ValueError:
-            return time_string
+        if rows:
+            return True  # The restaurant is open
+        else:
+            return False  # The restaurant is closed
+   
 
-    app.jinja_env.filters['format_time'] = format_time
-    
-    '''
-    
-
-    #Instead of get menu, link to a filter of food items done by Mia
-    @staticmethod
-    def get_menu(id):
-        rows = app.db.execute('''
-            SELECT
-                r.id as restaurant_id,
-                r.name AS restaurant_name,
-                f.name AS food_item_name,
-                f.price
-            FROM
-                Restaurants r
-            LEFT JOIN
-                fooditems f
-            ON
-                r.id = s.restaurantID
-            WHERE r.id = :id
-            ''',
-                              id=id)
-        return [Restaurants(*row) for row in rows]
-    
-    def get_reviews(id):
-        rows = app.db.execute('''
-            SELECT
-                r.name AS restaurant_name,
-                rev.rating AS food_item_name,
-                rev.description
-            FROM
-                Restaurants r
-            LEFT JOIN
-                Reviews rev
-            ON
-                r.id = rev.restaurant_ID
-            WHERE r.id = :id
-            ''',
-                              id=id)
-        return [Restaurants(*row) for row in rows]
-    
-    #Change the floor attribute of a restaurant given a restaurant id and the new floor value
     @staticmethod
     def changeFloor(rest, newFloor):
         app.db.execute('''

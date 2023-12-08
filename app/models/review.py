@@ -140,7 +140,7 @@ class Review:
         rows = app.db.execute('''
                         SELECT Reviews.id, Users.id, Users.firstname, Users.lastname, Reviews.date, Reviews.rating, Reviews.description, Restaurants.id, Restaurants.name, Reviews.anonymous
                         FROM Reviews, Users, Restaurants
-                        WHERE Reviews.user_id = Users.id AND Reviews.restaurant_id = Restaurants.id AND Reviews.description LIKE :modified_keyword
+                        WHERE Reviews.user_id = Users.id AND Reviews.restaurant_id = Restaurants.id AND (Reviews.description ILIKE :modified_keyword OR Restaurants.name ILIKE :modified_keyword)
                         ORDER BY date DESC
             ''', modified_keyword=modified_keyword)
         return [Review(*row) for row in rows]  
