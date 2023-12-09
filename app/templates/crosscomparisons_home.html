@@ -17,25 +17,6 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
-                <h2>Average Restaurant Ratings</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Restaurant Name</th>
-                            <th>Average Rating</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for restaurant in average_ratings %}
-                        <tr>
-                            <td>{{ restaurant[0] }}</td>
-                            <td>{{ restaurant[1] }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-6">
                 <h1 class="mb-4">Food Comparisons</h1>
                 <form method="post" action="{{ url_for('crosscomparisons.compare') }}">
                     <!-- Food Selection Section -->
@@ -118,6 +99,30 @@
                         <p style="color: black;">{{comparison_result}}</p>
                     </section>
                 </form>
+            </div>
+            <div class="col-md-6">
+                <!-- ... (existing content) ... -->
+            
+                <!-- Top 5 Comparisons Table -->
+                <h2 class="mb-4">Top 5 Most Frequently Compared Selections</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Food Item 1</th>
+                            <th>Food Item 2</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for comparison in top_comparisons %}
+                        <tr>
+                            <td>{{ comparison[1] }}</td>
+                            <td>{{ comparison[2] }}</td>
+                            <td>{{ comparison[3] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
