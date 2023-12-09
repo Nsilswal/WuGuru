@@ -122,7 +122,12 @@
     <tbody>
         {% for review in rev %}
             <tr>
-                <td>{{ review.firstname }} {{ review.lastname }}</td>
+                <td>{% if review.anonymous %}
+                    <b>Anonymous</b>
+                  {% else %}
+                    <b>{{review.firstname}} {{review.lastname}}</b>
+                  {% endif%} 
+                </td>
                 <td>{{ review.date }}</td>
                 <td>{{ review.rating }}</td>
                 <td>{{ review.description }}</td>
