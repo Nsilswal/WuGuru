@@ -3,6 +3,7 @@ from datetime import datetime, time
 
 
 class Restaurants:
+    #Init class restaurants
     def __init__(self, id, name, rating, floor, MobileOrder, OpeningTime, ClosingTime,OwnedBy):
         self.id = id
         self.name = name
@@ -13,6 +14,7 @@ class Restaurants:
         self.ClosingTime = ClosingTime
         self.ownedBY = OwnedBy
 
+    #Get method that takes
     @staticmethod
     def get(id):
         rows = app.db.execute('''
@@ -26,6 +28,7 @@ class Restaurants:
                               id = id)
         return Restaurants(*(rows[0])) if rows is not None else None
     
+    #Regsiter new restaurant
     @staticmethod
     def register(id, name, floor, MobileOrder, OpeningTime, ClosingTime, OwnedBY):
         try:
@@ -48,7 +51,7 @@ class Restaurants:
             print(str(e))
             return None
         
-
+    #Get_all function used to sort restaurants by various attributes
     @staticmethod
     def get_all(attribute=1, ordering=0):
         # Attribute: 0 - id, 1-name, 2 - rating, 3-floor, 4 - Mobile, 5-Open, 6-Close, 7-OwnID, 8-ownedBY
