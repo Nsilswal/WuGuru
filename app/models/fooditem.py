@@ -1,6 +1,8 @@
+# The Fooditem class represents a model on one food item offered at Duke.
 from flask import current_app as app
 
 class Fooditem:
+    # Constructor
     def __init__(self,id,name,price,protein,sugars,fats,calories, allergens, restaurantID, diet, rname='test'):
         self.id=id
         self.name = name
@@ -14,6 +16,7 @@ class Fooditem:
         self.calories = calories
         self.rname = rname
 
+    # Get a food item with a given ID
     @staticmethod
     def get(id):
         rows = app.db.execute('''
@@ -24,7 +27,8 @@ class Fooditem:
         ''', id=id)
         return Fooditem(*(rows[0])) if rows else None
 
-    @staticmethod #to add food item to database
+    # Add a food item to the database with given values
+    @staticmethod 
     def register(name,fats,protein,sugars,price,calories, allergens, restaurantID, diet):
         try:
             rows = app.db.execute("""
@@ -49,7 +53,8 @@ class Fooditem:
             print(str(e))
             return None
 
-    @staticmethod #remove food item from database -> can only process if user is logged in & they are an admin of the restaurant whose food they want to remove
+    # Remove an item from the database. Must be signed in as the correct restaurant admin
+    @staticmethod
     def delete_fi(name,restaurantID):
         try:
             rows = app.db.execute("""
@@ -62,7 +67,8 @@ class Fooditem:
             # Print error
             print(str(e))
 
-    @staticmethod #search method, joining fooditems with restaurants to get restaurantID displayed as restaurant name
+    # Search for a food item by name, restaurant, etc.
+    @staticmethod 
     def search_by_keyword(keyword):
         modified_keyword = f'%{keyword}%'
         rows = app.db.execute('''
@@ -79,6 +85,7 @@ class Fooditem:
             ''', modified_keyword=modified_keyword)
         return [Fooditem(*row) for row in rows] 
 
+    # Sort food items by a given attribute in a certain ordering
     @staticmethod
     def get_all(attribute=6, ordering=0):
         attribute_list= ['id','name','protein','sugars','fats','price','allergens','calories','restaurantID','diet']
@@ -110,17 +117,13 @@ class Fooditem:
                     ON
                         r.id = fooditems.restaurantID
                         ORDER BY name DESC"""
-        # if(0 <= attribute <= 2 and 0 <= ordering <= 1):
-        #     query = f"""SELECT *
-        #                 FROM fooditems
-        #                 ORDER BY {attribute_list[attribute]} {ordering_list[ordering]}"""
 
         rows = app.db.execute(query)
 
-        return [Fooditem(*row) for row in rows]
-        #return query    
+        return [Fooditem(*row) for row in rows] 
     
-    @staticmethod #method not in use
+    # Update a food item
+    @staticmethod 
     def update_fi(id,name,protein,sugars,fats,price,calories,allergens, diet):
         try:
             app.db.execute("""
@@ -143,6 +146,7 @@ class Fooditem:
             print(str(e))
             return None
 
+    # Generate humanized names to display for food items
     @staticmethod
     def generate_full_pairings():
         results = app.db.execute("""
@@ -152,6 +156,7 @@ class Fooditem:
         pairings = [(f'{item[0]}', f'{item[2]}: {item[1]}') for item in results]
         return pairings
     
+    # Return all food items sold by a particular restaurant
     @staticmethod
     def get_menu_for_restaurant(restaurant_id): 
         rid = restaurant_id

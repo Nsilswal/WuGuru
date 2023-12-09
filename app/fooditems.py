@@ -11,6 +11,7 @@ from .models.fooditem import Fooditem
 
 bp = Blueprint('fooditems',__name__)
 
+# Home endpoint for food items
 @bp.route('/fooditems') #search function
 def fooditems():
         form = SearchForm()
@@ -19,17 +20,20 @@ def fooditems():
         avail_fi = fooditems, form = form)
         #return 'Hello World'
 
+# Sort food items by attribute and ordering
 @bp.route('/fooditems/filter/<int:attribute>/<int:ordering>', methods=['GET']) #retrieve all attributes
 def fooditems_filter(attribute, ordering):
     fooditems = Fooditem.get_all(attribute, ordering)
     return render_template('fooditem_home.html', title="Food Item Home", avail_fi = fooditems)
 
+# Search food items by keyword
 @bp.route('/fooditems/search', methods=['GET']) #keyword matching for search
 def fooditems_search():
     keyword = request.args.get('query')
     fooditems = Fooditem.search_by_keyword(keyword)
     return render_template('fooditem_home.html', title="Food Item Home", avail_fi = fooditems)
 
+# Add a new food item
 @bp.route('/fooditems/add',methods=['POST']) #adding inputted food item to database
 def fooditems_add():
     form = AddForm()
@@ -41,6 +45,7 @@ def fooditems_add():
         return redirect(url_for('fooditems.fooditems'))
     return render_template('add_fooditem.html',title='Add a Menu Item', form = form)
 
+# Delete a food item, if authorized
 @bp.route('/fooditems/delete',methods=['POST']) #removing inputted food item from database
 def fooditems_delete():
     form = DeleteForm()
