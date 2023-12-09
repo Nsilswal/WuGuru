@@ -1,6 +1,8 @@
+# The recommendation_generator file is a collection of utility functions to generate data for recommendations.
 import random
 import csv
 
+# Generate a random date
 def generate_date():
     # Generate random values for year, month, day, hour, minute, and second
     year = random.randint(2023, 2023)  # Set the desired year
@@ -14,6 +16,7 @@ def generate_date():
     date_time_str = f"{year:04d}-{month:02d}-{day:02d} {hour:02d}:{minute:02d}:{second:02d}"
     return date_time_str
 
+# Generate a placeholder with a random date and popularity
 def generate_recommendations():
     for i in range(96, 1050):
         id = i
@@ -25,6 +28,7 @@ def generate_recommendations():
         row = f'{id},{user_id},{title},{description},{date},{popularity}'
         print(row)
     
+# Generate random tags associated with recommendations
 def generate_tags():
     for i in range(1, 1000):
         id = i
@@ -41,6 +45,7 @@ def generate_tags():
         if chance < .75:
             print(f'{id},Snack')
 
+# Generate pairings between recommendations and existing photos (placeholders)
 def generate_photos():
     for i in range(1, 1000):
         id = i
@@ -51,6 +56,8 @@ def generate_photos():
             print(f'{id},food2.jpeg')
         else:
             print(f'{id},food3.png')
+
+# Generate pairings between recommendations and existing foods
 def generate_attached_foods():
     counter = 0
     rec_id = 0
@@ -63,12 +70,8 @@ def generate_attached_foods():
         rec_id += 1
         if rec_id > 1000:
             rec_id = 1
-    
-# generate_recommendations()
-# generate_photos()
-# generate_tags()
-# generate_attached_foods()
 
+# Regenerate recommendations, replacing titles 
 def regen_recommendations():
     with open('generated_titles.txt', 'r') as file:
         lines = file.readlines()
@@ -87,4 +90,9 @@ def regen_recommendations():
         for row in rows:
             csv_writer.writerow(row)
 
-regen_recommendations()
+# regen_recommendations()
+
+# generate_recommendations()
+# generate_photos()
+# generate_tags()
+# generate_attached_foods()
