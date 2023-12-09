@@ -14,7 +14,8 @@ class Restaurants:
         self.ClosingTime = ClosingTime
         self.ownedBY = OwnedBy
 
-    #Get method that takes
+    #Get method that takes as input the restaurant id as input
+    #Returns all restaurants that match that restaurant ID
     @staticmethod
     def get(id):
         rows = app.db.execute('''
@@ -28,7 +29,7 @@ class Restaurants:
                               id = id)
         return Restaurants(*(rows[0])) if rows is not None else None
     
-    #Regsiter new restaurant
+    #Register function: Takes as input all attributes of restaurants to add new restaurant
     @staticmethod
     def register(id, name, floor, MobileOrder, OpeningTime, ClosingTime, OwnedBY):
         try:
@@ -51,7 +52,8 @@ class Restaurants:
             print(str(e))
             return None
         
-    #Get_all function used to sort restaurants by various attributes
+    #Get_all function that takes as input attribute and ordering ints
+    #Used to sort the restaurants in the main restaurants table
     @staticmethod
     def get_all(attribute=1, ordering=0):
         # Attribute: 0 - id, 1-name, 2 - rating, 3-floor, 4 - Mobile, 5-Open, 6-Close, 7-OwnID, 8-ownedBY
@@ -80,6 +82,8 @@ class Restaurants:
         
         return [Restaurants(*row) for row in rows]
 
+    #Function takes in restaurant id and current user time
+    #Returns all restaurants 
     @staticmethod
     def get_if_open(id, current_time):
         current_time_time = current_time.time()
@@ -96,7 +100,7 @@ class Restaurants:
         else:
             return False  # The restaurant is closed
    
-
+    #Change the floor level of restaurant in WU
     @staticmethod
     def changeFloor(rest, newFloor):
         app.db.execute('''
