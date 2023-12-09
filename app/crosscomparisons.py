@@ -26,10 +26,6 @@ def cross_comparisons():
 def compare():
     comparison_result = None
 
-    query = "SELECT r.name AS restaurant_name, AVG(reviews.rating) AS average_rating FROM restaurants r JOIN reviews ON r.id = reviews.restaurant_id GROUP BY r.name ORDER BY average_rating DESC;"
-    avgReviews = app.db.execute(query)
-    avgReviews = [(restaurant, round(average_rating, 2)) for restaurant, average_rating in avgReviews]
-
     ratio1 = request.form.get('ratio1')
     ratio2 = request.form.get('ratio2')
     print(ratio1)
@@ -101,14 +97,18 @@ def scatterplot():
     category2 = request.form.get('scatterCategory2')
 
     # Fetch data from the database
-    food_items = Fooditem.get_all()
+    query = f"""SELECT 
+                        fooditems.{category1}, fooditems.{category2}
+                    FROM 
+                        fooditems"""
+    
+    rows = app.db.execute(query)
+    food_items = [row for row in rows]
 
-    print(category1)
-    print(category2)
 
     # Extract data for the selected categories, association is maintained through indexing of the list
-    x_data = [getattr(item, category1) for item in food_items]
-    y_data = [getattr(item, category2) for item in food_items]
+    x_data = [item[0] for item in food_items]
+    y_data = [item[1] for item in food_items]
 
     # Create a scatterplot using Matplotlib
     plt.scatter(x_data, y_data)
