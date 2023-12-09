@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
+<br><br>
+
+<form action="{{ url_for('restaurants.restaurants') }}" method="GET">
+  <input type ="submit" value="Back to Restaurants">
+</form>
+
+<br><br>
 
 <style>
   /* Style for the photo container */
@@ -20,19 +27,28 @@
     max-width: 800px; /* Adjust the maximum width as needed */
     height: auto;
 }
+
+.description {
+    max-width: 80%;
+    padding: 20px; /* Add padding for better aesthetics */
+    text-align: left; /* Left-align the text within the description */
+}
 </style>
 
 <h1>{{ res.name }}</h1>
 <!-- Restaurant Description -->
-<h2>Description</h2>
-<p>{{ res_photos.descript }}</p>
+<div class="description">
+    <p>{{ res_photos.descript }}</p>
 
-<!-- Display Open/Closed status -->
-{% if now_open %}
-    <p>Currently OPEN</p>
-{% else %}
-    <p>Currently CLOSED</p>
-{% endif %}
+    <!-- Display Open/Closed status -->
+    {% if now_open %}
+        <p>Currently OPEN  <Br> NOTE: Business hours may change depending on holidays and other events</p>
+    {% else %}
+        <p>Currently CLOSED</p>
+    {% endif %}
+    
+</div>
+
 
 <!-- Restaurant Photos -->
 <div class="photo-container">

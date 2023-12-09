@@ -35,7 +35,7 @@ def index():
 
 def humanize_time(dt):
     return naturaldate(datetime.date(dt.year, dt.month, dt.day))
-
+#create a form that authenticated users can use to edit their account information
 class EditForm(FlaskForm):
     firstname = StringField('First Name')
     lastname = StringField('Last Name')
