@@ -1,12 +1,15 @@
 from flask import current_app as app
 
 class FoodComparison:
+    # Contructor
     def __init__(self, id, food1, food2, frequency):
         self.id = id
         self.food1 = food1
         self.food2 = food2
         self.frequency = frequency
 
+
+    # Method to select top 5 most frequent comparisons
     @staticmethod
     def getTop5():
         rows = app.db.execute('''
@@ -17,6 +20,7 @@ class FoodComparison:
         ''')
         return rows if rows else None
     
+    # Method to create a new row in the table if a new comparison is completed
     @staticmethod
     def create(food1, food2, frequency):
             rows = app.db.execute("""
@@ -28,6 +32,7 @@ class FoodComparison:
             id = rows[0][0]
             return id
 
+    # Method to delete a row in the table if a comparison needs to be deleted (mainly for testing)
     @staticmethod
     def delete(id):
         try:
@@ -38,6 +43,8 @@ class FoodComparison:
         except Exception as e:
             print(str(e))
     
+    # Method to increment or create a comparison when a new comparison is completed
+    # Ensures food1 vs food2 and food2 vs food1 are one comparison 
     @staticmethod
     def add_or_increment(food1, food2):
         # First ensure food1 is > food2
@@ -67,6 +74,7 @@ class FoodComparison:
             # Add a new row with frequency 1
             FoodComparison.create(food1=food1, food2=food2, frequency=1)
         
+    # Method to search for a comparison by keyword
     @staticmethod
     def search_by_keyword(keyword):
         modified_keyword = f'%{keyword}%'
