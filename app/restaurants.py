@@ -13,17 +13,19 @@ from .models.restaurant_photo import RestaurantPhotos
 
 bp = Blueprint('restaurants', __name__)
 
+#get all restaurants on first visit to restaurants main page
 @bp.route('/restaurants')
 def restaurants():
     restaurants = Restaurants.get_all()
     return render_template('restaurant.html', title="WU Restaurants", avail_rests = restaurants)
 
+#sort restaurants by attribute on the restaurants main page
 @bp.route('/restaurants/filter/<int:attribute>/<int:ordering>', methods=['GET'])
 def restaurants_filter(attribute, ordering):
     restaurants = Restaurants.get_all(attribute, ordering)
     return render_template('restaurant.html', title="WU Restaurants", avail_rests = restaurants)
 
-# Fetch and generate a webpage for a specific restaurant
+# Fetch and generate a homepage for a specific restaurant
 @bp.route('/restaurants/view/<int:rid>', methods=['GET'])
 def restaurants_view(rid):
     current_time = datetime.now()
