@@ -8,7 +8,12 @@ from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
 from datetime import datetime
 from flask import current_app as app
 
+from flask import send_file
+import matplotlib.pyplot as plt
+from io import BytesIO
+
 from .models.food_comparison import FoodComparison
+from .models.fooditem import Fooditem
 
 bp = Blueprint('crosscomparisons',__name__)
 
@@ -88,4 +93,38 @@ def add_or_increment():
     
     # You can return some data or a template if needed
     return render_template('crosscomparisons_home.html')
+
+@bp.route('/scatterplot', methods=['POST'])
+def scatterplot():
+    # Get selected categories from the form
+    category1 = request.form.get('scatterCategory1')
+    category2 = request.form.get('scatterCategory2')
+
+    # Fetch data from the database
+    food_items = Fooditem.get_all()
+
+    print(category1)
+    print(category2)
+
+    # Extract data for the selected categories, association is maintained through indexing of the list
+    x_data = [getattr(item, category1) for item in food_items]
+    y_data = [getattr(item, category2) for item in food_items]
+
+    # Create a scatterplot using Matplotlib
+    plt.scatter(x_data, y_data)
+    plt.title(f'Scatterplot of {category1} vs {category2}')
+    plt.xlabel(category1)
+    plt.ylabel(category2)
+
+    # Save the plot to a BytesIO buffer
+    buffer = BytesIO()
+    plt.savefig(buffer, format='png')
+    buffer.seek(0)
+    
+    # Clear the Matplotlib figure
+    plt.clf()
+
+    # Return the scatterplot image as a response
+    return send_file(buffer, mimetype='image/png')
+
 
