@@ -31,3 +31,6 @@ SELECT pg_catalog.setval('public.fooditems_id_seq',
                          false); 
 
 \COPY RecFoods FROM 'RecFoods.csv' WITH DELIMITER ',' NULL '' CSV
+
+\COPY FoodComparisons FROM 'FoodComparisons.csv' WITH DELIMITER ',' NULL '' CSV
+SELECT pg_catalog.setval('public.foodcomparisons_id_seq', (SELECT MAX(id)+1 FROM FoodComparisons), false);
