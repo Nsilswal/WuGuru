@@ -66,7 +66,12 @@
 <!-- Restaurant Info -->
 <h2>Restaurant Info</h2>
 <p>Floor Level: {{ res.floor }}</p>
-<p>Mobile Order Availability: {{ res.MobileOrder }}</p>
+<!-- Display Open/Closed status -->
+{% if res.MobileOrder %}
+<p>Mobile Ordering is Available through the Duke Dine-Out App</p>
+{% else %}
+<p>Mobile Ordering is Not Available</p>
+{% endif %}
 <p>Opening Time: {{ res.OpeningTime }}</p>
 <p>Closing Time: {{ res.ClosingTime }}</p>
 
