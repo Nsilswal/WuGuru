@@ -14,8 +14,12 @@ Video Outline (with timestamps):
 12. SQL Injection Prevention – (17:27)
 Link to video:
 https://youtu.be/Glc2zEvpeCE
+
+
 Team Members:
 Alec Liu, Mia Malden, Celina Ma, Nirvan Silswal, Jeffery Tan, Allison Taub
+
+
 Summary of Progress:
 Users
 ● Users can update all information except the id. Ensure that email is unique among all
