@@ -1,0 +1,818 @@
+0,0,9/10/22,5,Pizza from Il Forno never misses,1,1
+1,1,9/11/22,4,Best fries on campus!,5,0
+2,2,9/10/22,3,Extremely average taco,4,1
+3,4,8/30/23,2,Sushi gave me food poisoning,11,0
+4,6,9/12/23,1,Chicken was extremely dry and overcooked. Could not be considered edible.,4,0
+5,50,7/22/23,5,Everyone should try the Bruschetta pizza from Il Forno at least once,1,0
+6,8,5/18/23,4,Farmstead potatoes taste like home,9,0
+7,11,8/16/23,2,Smoothie was basically a frozen chunk of ice. Would not recommend.,6,0
+8,9,11/12/22,5,Ginger and Soy's bowls are tried and true. WU's most reliable meal,10,0
+9,10,11/17/22,1,"Do not get the falafel. I repeat, do not get the falafel.",9,0
+10,17,8/25/02,5,The food was amazing!,8,1
+11,59,5/7/06,5,The service was terrible.,7,0
+12,10,10/31/19,2,The atmosphere was cozy and inviting.,3,1
+13,76,2/9/04,2,The prices were a bit high for the quality of the food.,7,1
+14,47,12/9/00,2,The portions were huge and delicious.,5,1
+15,38,3/11/01,5,The drinks were creative and tasty.,1,1
+16,29,11/20/11,4,The waitstaff was friendly and attentive.,4,0
+17,17,9/23/06,4,The decor was outdated and unappealing.,8,1
+18,97,2/24/10,3,The menu was limited and uninspired.,9,0
+19,4,6/19/15,1,The noise level was too high for a relaxing meal.,9,0
+20,12,4/13/11,3,The restaurant had a great view of the city.,2,1
+21,80,1/17/18,4,The food was overcooked and dry.,5,1
+22,36,7/20/00,3,The restaurant was very crowded and noisy.,5,1
+23,29,4/18/11,5,The staff was rude and unprofessional.,11,1
+24,9,11/19/05,4,The restaurant had a great selection of wines.,8,0
+25,7,3/3/19,4,The food was bland and tasteless.,7,0
+26,87,9/25/10,1,The restaurant was very clean and well-maintained.,6,1
+27,9,6/14/10,4,The prices were reasonable for the quality of the food.,10,1
+28,62,7/8/04,3,The restaurant had a great ambiance.,7,1
+29,44,11/28/15,5,The food was fresh and flavorful.,7,1
+30,25,12/14/06,1,The restaurant had a great selection of vegetarian options.,4,0
+31,83,5/13/20,1,The service was slow and inattentive.,7,1
+32,99,7/30/14,3,The restaurant had a great outdoor seating area.,6,1
+33,42,8/5/09,1,The food was too spicy for my taste.,4,0
+34,79,4/10/10,2,The restaurant had a great selection of craft beers.,11,0
+35,29,12/21/20,5,The restaurant was very kid-friendly.,12,0
+36,7,8/13/15,4,The food was too salty.,12,1
+37,96,10/23/19,4,The restaurant had a great happy hour menu.,12,1
+38,60,10/16/01,1,The restaurant had a great selection of desserts.,2,0
+39,33,6/6/06,2,The food was too greasy.,2,1
+40,51,9/21/12,2,The restaurant had a great selection of seafood.,3,0
+41,77,6/3/19,4,The restaurant had a great selection of cocktails.,9,1
+42,9,8/14/13,2,The food was too sweet.,8,0
+43,76,9/27/02,3,The restaurant had a great selection of appetizers.,2,1
+44,25,4/11/07,3,The restaurant had a great selection of entrees.,5,0
+45,63,1/12/20,3,The food was too sour.,4,1
+46,93,9/6/21,1,The restaurant had a great selection of side dishes.,3,1
+47,60,12/2/19,3,The restaurant had a great selection of wines by the glass.,2,0
+48,98,9/13/03,4,The food was too bitter.,11,1
+49,59,2/27/04,1,The restaurant had a great selection of non-alcoholic drinks.,1,1
+50,56,2/21/20,5,The restaurant had a great selection of gluten-free options.,9,1
+51,16,3/12/11,2,The food was too dry.,4,1
+52,33,3/18/13,3,The restaurant had a great selection of vegan options.,12,0
+53,66,5/15/06,3,The restaurant had a great selection of local beers.,11,0
+54,60,4/1/17,5,The food was too chewy.,3,1
+55,75,6/15/06,5,The restaurant had a great selection of international cuisine.,4,0
+56,67,9/29/18,1,The restaurant had a great selection of exotic meats.,9,0
+57,81,12/23/22,1,The food was too tough.,6,0
+58,2,1/22/15,2,The restaurant had a great selection of farm-to-table dishes.,4,0
+59,89,3/10/16,5,The restaurant had a great selection of fusion cuisine.,10,0
+60,19,10/16/01,5,The food was too mushy.,7,1
+61,91,11/10/13,3,The restaurant had a great selection of comfort food.,8,0
+62,62,2/11/15,1,The restaurant had a great selection of classic dishes.,4,0
+63,43,2/5/22,2,The food was too bland.,12,1
+64,87,7/18/22,1,The restaurant had a great selection of spicy dishes.,4,1
+65,15,7/17/06,3,The restaurant had a great selection of healthy options.,5,1
+66,72,5/5/23,4,The food was too oily.,1,1
+67,44,11/19/10,3,The restaurant had a great selection of comfort food.,7,0
+68,55,2/11/19,4,The restaurant had a great selection of classic dishes.,3,1
+69,13,1/27/02,2,The food was too bland.,7,1
+70,5,11/19/06,4,The restaurant had a great selection of spicy dishes.,10,1
+71,19,10/14/03,4,The restaurant had a great selection of healthy options.,11,1
+72,4,12/11/22,3,The food was too oily.,2,1
+73,44,9/12/12,4,The restaurant had a great selection of vegetarian dishes.,4,1
+74,51,12/17/21,2,The restaurant had a great selection of meat dishes.,1,0
+75,86,10/17/00,2,The food was too salty.,3,1
+76,82,10/27/09,2,The restaurant had a great selection of seafood dishes.,3,0
+77,35,7/18/20,4,The restaurant had a great selection of pasta dishes.,7,1
+78,86,5/14/11,2,The food was too sweet.,8,0
+79,13,7/16/04,1,The restaurant had a great selection of pizza.,6,0
+80,85,12/26/04,1,The restaurant had a great selection of burgers.,12,1
+81,8,10/2/21,5,The food was too sour.,10,1
+82,33,2/6/01,3,The restaurant had a great selection of sandwiches.,5,1
+83,42,12/5/18,5,The restaurant had a great selection of salads.,7,1
+84,24,11/25/05,5,The food was too spicy.,5,1
+85,46,10/13/16,2,The restaurant had a great selection of soups.,2,0
+86,15,9/6/06,5,The restaurant had a great selection of appetizers.,11,0
+87,18,7/11/21,1,The food was too greasy.,4,0
+88,80,11/20/21,3,The restaurant had a great selection of desserts.,6,0
+89,59,10/1/23,5,The restaurant had a great selection of drinks.,5,1
+90,61,9/21/16,2,The food was too dry.,2,1
+91,8,10/31/17,3,The restaurant had a great selection of entrees.,9,0
+92,39,6/9/13,4,The restaurant had a great selection of side dishes.,1,0
+93,30,9/20/03,3,The food was too chewy.,1,1
+94,27,4/6/01,3,The restaurant had a great selection of non-alcoholic drinks.,7,1
+95,48,2/26/22,5,The restaurant had a great selection of alcoholic drinks.,4,0
+96,70,6/24/02,3,The food was too tough.,10,0
+97,83,1/3/17,2,The restaurant had a great selection of craft cocktails.,4,0
+98,55,7/7/03,5,The restaurant had a great selection of local wines.,10,1
+99,35,6/17/03,2,The food was too mushy.,10,1
+100,11,1/10/11,1,The restaurant had a great selection of craft beers.,11,1
+101,74,3/13/04,2,The restaurant had a great selection of imported wines.,9,1
+102,9,9/1/07,5,The food was too bland.,3,0
+103,84,3/18/01,3,The restaurant had a great selection of imported beers.,11,1
+104,26,3/12/15,5,The restaurant had a great selection of local cuisine.,5,0
+105,37,8/18/07,2,The food was too oily.,11,0
+106,50,6/19/16,1,The restaurant had a great selection of international cuisine.,5,1
+107,54,5/5/02,2,The food was amazing! I highly recommend the steak.,12,1
+108,67,4/11/04,5,The service was terrible. Our waiter was rude and unprofessional.,1,1
+109,52,6/6/05,3,The atmosphere was cozy and inviting. I felt right at home.,10,1
+110,51,3/20/23,2,The prices were a bit high for the quality of the food. I expected better for the price.,6,0
+111,25,12/3/00,3,The portions were huge and delicious. I couldn't finish my meal!,6,0
+112,39,5/17/03,2,The drinks were creative and tasty. I loved the signature cocktail.,4,1
+113,9,7/20/18,3,The waitstaff was friendly and attentive. They made us feel welcome.,3,0
+114,77,6/21/01,4,The decor was outdated and unappealing. It could use a refresh.,12,0
+115,68,4/12/14,5,The menu was limited and uninspired. I wish there were more options.,7,1
+116,46,3/26/22,2,The noise level was too high for a relaxing meal. It was hard to hear my dining companion.,11,0
+117,87,7/28/05,5,The restaurant had a great view of the city. It was breathtaking.,12,0
+118,100,12/16/05,3,The food was overcooked and dry. I was disappointed.,6,1
+119,88,10/5/23,2,The restaurant was very crowded and noisy. It was hard to move around.,10,0
+120,17,3/22/23,5,The staff was rude and unprofessional. I won't be going back.,3,0
+121,91,7/9/11,2,The restaurant had a great selection of wines. I loved the sommelier's recommendations.,8,1
+122,57,3/19/09,4,The food was bland and tasteless. I expected more flavor.,6,1
+123,35,1/16/14,1,The restaurant was very clean and well-maintained. I appreciated the attention to detail.,3,1
+124,78,10/10/02,3,The prices were reasonable for the quality of the food. I felt like I got a good value.,5,0
+125,19,1/13/02,1,The restaurant had a great ambiance. It was perfect for a romantic dinner.,11,1
+126,73,7/26/17,2,The food was fresh and flavorful. I loved the use of local ingredients.,3,0
+127,97,10/30/10,3,The restaurant had a great selection of vegetarian options. I appreciated the variety.,8,1
+128,55,1/31/11,3,The service was slow and inattentive. I had to flag down my waiter several times.,12,1
+129,27,1/31/10,4,The restaurant had a great outdoor seating area. It was perfect for a summer evening.,3,1
+130,11,5/9/09,4,The food was too spicy for my taste. I wish I had known before ordering.,2,1
+131,55,1/2/09,3,The restaurant had a great selection of craft beers. I loved trying new brews.,6,1
+132,22,6/9/13,3,The restaurant was very kid-friendly. My children loved the menu options.,3,1
+133,37,5/1/16,3,The food was too salty. It was hard to eat.,4,0
+134,65,10/10/19,5,The restaurant had a great happy hour menu. I loved the discounted drinks and appetizers.,3,1
+135,68,3/6/05,2,The restaurant had a great selection of desserts. I couldn't decide which one to order!,7,0
+136,8,7/30/23,1,The food was too greasy. I felt sick after eating.,6,0
+137,91,8/4/17,2,The restaurant had a great selection of seafood. I loved the fresh oysters.,5,0
+138,90,7/12/12,2,The restaurant had a great selection of cocktails. I loved the creative combinations.,9,0
+139,91,4/16/16,1,The food was too sweet. It was overwhelming.,11,1
+140,99,1/15/22,4,The restaurant had a great selection of appetizers. I loved the small plates.,7,1
+141,30,5/17/14,2,The restaurant had a great selection of entrees. I had a hard time choosing.,9,0
+142,31,6/22/09,5,The food was too sour. It was hard to eat.,7,1
+143,80,12/10/05,2,The restaurant had a great selection of side dishes. I loved the roasted vegetables.,4,1
+144,45,3/16/07,4,The restaurant had a great selection of wines by the glass. I loved trying different varietals.,11,0
+145,79,2/19/10,2,The food was too bitter. It was hard to enjoy.,8,1
+146,66,12/22/14,5,The restaurant had a great selection of non-alcoholic drinks. I appreciated the variety.,5,1
+147,22,4/3/08,5,The restaurant had a great selection of gluten-free options. I appreciated the attention to dietary restrictions.,7,1
+148,2,6/14/18,4,The food was too dry. It was hard to swallow.,10,0
+149,95,6/20/02,1,The restaurant had a great selection of vegan options. I appreciated the variety.,2,1
+150,73,5/18/05,1,The restaurant had a great selection of local beers. I loved supporting local breweries.,1,0
+151,70,11/12/00,4,The food was too chewy. It was hard to eat.,4,0
+152,49,2/14/06,4,The restaurant had a great selection of international cuisine. I loved trying new flavors.,12,1
+153,40,7/3/19,2,The restaurant had a great selection of exotic meats. I loved trying something new.,7,1
+154,78,12/29/21,5,The food was too tough. It was hard to chew.,8,0
+155,3,10/12/05,2,The restaurant had a great selection of farm-to-table dishes. I appreciated the use of local ingredients.,10,0
+156,74,4/26/11,3,The restaurant had a great selection of fusion cuisine. I loved the creative combinations.,2,1
+157,87,5/4/18,3,The food was too mushy. It was unappetizing.,2,0
+158,16,10/23/00,1,The restaurant had a great selection of comfort food. It was perfect for a cozy night in.,5,1
+159,14,6/19/19,4,The restaurant had a great selection of classic dishes. I loved the traditional flavors.,9,1
+160,94,2/21/10,3,The food was too bland. It was unremarkable.,8,1
+161,90,4/10/05,5,The restaurant had a great selection of spicy dishes. I loved the heat.,4,0
+162,87,5/7/12,3,The restaurant had a great selection of healthy options. I appreciated the attention to nutrition.,7,1
+163,62,6/15/11,4,The food was too oily. It was hard to eat.,8,1
+164,88,7/12/16,5,The restaurant had a great selection of vegetarian dishes. I appreciated the variety.,7,1
+165,4,9/9/09,3,The restaurant had a great selection of meat dishes. I loved the variety of proteins.,5,0
+166,87,8/22/22,3,The food was too salty. It was hard to eat.,3,0
+167,80,7/13/16,4,The restaurant had a great selection of seafood dishes. I loved the fresh catch.,9,0
+168,17,10/23/18,5,The restaurant had a great selection of pasta dishes. I loved the homemade noodles.,5,0
+169,33,5/1/22,4,The food was too sweet. It was overwhelming.,12,1
+170,86,12/1/22,1,The restaurant had a great selection of pizza. I loved the thin crust.,5,0
+171,74,1/24/21,2,The restaurant had a great selection of burgers. I loved the juicy patties.,5,1
+172,58,1/16/15,3,The food was too sour. It was hard to eat.,8,1
+173,53,4/30/00,5,The restaurant had a great selection of sandwiches. I loved the fresh bread.,6,1
+174,15,3/20/03,3,The restaurant had a great selection of salads. I loved the variety of greens.,7,1
+175,38,10/24/11,4,The food was too spicy. It was overwhelming.,1,1
+176,74,10/3/03,3,The restaurant had a great selection of soups. I loved the hearty broths.,9,1
+177,57,10/31/13,3,The restaurant had a great selection of desserts. I loved the sweet treats.,6,1
+178,95,6/10/20,4,The food was too greasy. It was hard to eat.,3,0
+179,87,7/17/01,2,The restaurant had a great selection of drinks. I loved the creative combinations.,7,1
+180,94,6/22/14,2,The food was too dry. It was hard to swallow.,11,1
+181,8,12/3/22,1,The restaurant had a great selection of entrees. I loved the variety of proteins.,5,0
+182,12,5/28/01,3,The restaurant had a great selection of side dishes. I loved the variety of vegetables.,1,1
+183,6,2/29/08,3,The food was too chewy. It was hard to eat.,4,1
+184,22,6/26/02,3,The restaurant had a great selection of non-alcoholic drinks. I appreciated the variety.,4,1
+185,23,9/1/06,2,The restaurant had a great selection of alcoholic drinks. I loved the creative cocktails.,5,0
+186,15,1/6/09,1,The food was too tough. It was hard to chew.,8,1
+187,98,9/1/14,2,The restaurant had a great selection of craft cocktails. I loved the unique flavors.,7,1
+188,39,1/22/19,3,The restaurant had a great selection of local wines. I loved supporting local vineyards.,7,1
+189,2,10/27/09,1,The food was too mushy. It was unappetizing.,11,1
+190,25,8/16/18,4,The restaurant had a great selection of craft beers. I loved trying new brews.,9,0
+191,33,2/16/04,4,The restaurant had a great selection of imported wines. I loved trying new varietals.,2,1
+192,90,10/6/22,4,The food was too bland. It was unremarkable.,5,0
+193,78,8/5/06,5,The restaurant had a great selection of imported beers. I loved trying new brews.,2,1
+194,30,8/11/16,5,The restaurant had a great selection of local cuisine. I loved the regional flavors.,3,1
+195,93,9/21/04,1,The food was too oily. It was hard to eat.,11,1
+196,84,10/30/08,5,The restaurant had a great selection of international cuisine. I loved trying new flavors.,10,1
+197,79,10/2/04,2,"The food was amazing! I'd give it a 9 out of 10 because there are a lot of options, everything tastes fresh, and the dining hall staff is very inclusive to those with dietary restrictions.",11,0
+198,35,11/21/18,1,"The service was terrible. The staff was rude and unprofessional, and the lines were always too long.",2,1
+199,51,6/10/11,4,The atmosphere was cozy and inviting. I felt right at home and loved the decor.,12,1
+200,29,4/5/06,4,The prices were a bit high for the quality of the food. I expected better for the price and felt like I wasn't getting a good value.,3,0
+201,79,8/22/10,1,The portions were huge and delicious. I couldn't finish my meal and loved the variety of options.,5,0
+202,70,7/25/11,3,The drinks were creative and tasty. I loved the signature cocktails and the variety of non-alcoholic options.,10,0
+203,100,4/7/13,2,The waitstaff was friendly and attentive. They made us feel welcome and were always available to answer questions.,2,1
+204,40,7/27/19,2,The decor was outdated and unappealing. It could use a refresh and felt like it was stuck in the past.,1,0
+205,0,8/11/17,3,The menu was limited and uninspired. I wish there were more options and more variety.,6,0
+206,78,6/22/10,2,The noise level was too high for a relaxing meal. It was hard to hear my dining companion and felt like I was in a cafeteria.,12,1
+207,81,6/28/09,4,The dining hall had a great view of the campus. It was breathtaking and made the dining experience more enjoyable.,7,1
+208,45,10/13/12,1,The food was overcooked and dry. I was disappointed and felt like it was a waste of money.,11,1
+209,83,3/30/12,3,The dining hall was very crowded and noisy. It was hard to move around and felt like a chaotic environment.,5,1
+210,88,4/25/02,5,The staff was rude and unprofessional. I won't be going back and would not recommend this dining hall to others.,9,1
+211,25,9/15/13,1,The dining hall had a great selection of healthy options. I appreciated the attention to nutrition and felt like I could make healthy choices.,6,0
+212,7,11/20/22,3,The food was bland and tasteless. I expected more flavor and felt like it was lacking in seasoning.,10,1
+213,10,2/13/04,5,The dining hall was very clean and well-maintained. I appreciated the attention to cleanliness and felt like it was a safe environment.,2,0
+214,93,2/15/18,2,The prices were reasonable for the quality of the food. I felt like I got a good value and would return.,2,1
+215,20,7/19/21,3,The dining hall had a great ambiance. It was perfect for a casual meal with friends and felt like a welcoming environment.,5,1
+216,56,10/29/22,2,The food was fresh and flavorful. I loved the use of local ingredients and felt like it was a healthy option.,12,1
+217,56,10/28/00,2,The dining hall had a great selection of vegetarian options. I appreciated the variety and felt like I could make healthy choices.,2,1
+218,14,12/15/02,4,The service was slow and inattentive. I had to wait a long time for my food and felt like the staff was not paying attention.,9,1
+219,72,7/20/21,5,The dining hall had a great outdoor seating area. It was perfect for a summer evening and felt like a relaxing environment.,10,0
+220,68,3/28/22,4,The food was too spicy for my taste. I wish I had known before ordering and felt like it was overwhelming.,9,1
+221,72,3/25/08,1,The dining hall had a great selection of craft beers. I loved trying new brews and felt like it was a fun experience.,5,1
+222,27,11/14/03,1,The dining hall was very kid-friendly. My children loved the menu options and felt like it was a family-friendly environment.,8,1
+223,96,9/6/20,3,The food was too salty. It was hard to eat and felt like it was unhealthy.,4,1
+224,26,10/11/06,3,The dining hall had a great happy hour menu. I loved the discounted drinks and appetizers and felt like it was a good value.,5,0
+225,9,7/4/22,3,The dining hall had a great selection of desserts. I couldn't decide which one to order and felt like it was a sweet treat.,7,1
+226,73,11/21/06,4,The food was too greasy. I felt sick after eating and felt like it was unhealthy.,9,1
+227,54,10/27/12,5,The dining hall had a great selection of seafood. I loved the fresh catch and felt like it was a healthy option.,4,0
+228,6,4/4/13,4,The dining hall had a great selection of cocktails. I loved the creative combinations and felt like it was a fun experience.,6,0
+229,33,3/6/08,1,The food was too sweet. It was overwhelming and felt like it was unhealthy.,12,0
+230,48,4/27/06,5,The dining hall had a great selection of appetizers. I loved the small plates and felt like it was a fun experience.,3,0
+231,30,6/17/03,4,The dining hall had a great selection of entrees. I had a hard time choosing and felt like it was a good value.,1,1
+232,89,3/2/13,3,The food was too sour. It was hard to eat and felt like it was unappetizing.,2,0
+233,45,3/5/20,4,The dining hall had a great selection of side dishes. I loved the variety of vegetables and felt like it was a healthy option.,2,1
+234,91,4/29/10,1,The dining hall had a great selection of wines by the glass. I loved trying different varietals and felt like it was a fun experience.,8,0
+235,63,8/2/13,5,The food was too bitter. It was hard to enjoy and felt like it was unappetizing.,6,0
+236,27,12/29/07,2,The dining hall had a great selection of non-alcoholic drinks. I appreciated the variety and felt like it was a healthy option.,7,1
+237,8,10/19/10,3,The dining hall had a great selection of gluten-free options. I appreciated the attention to dietary restrictions and felt like it was a healthy option.,2,0
+238,55,6/22/20,3,The food was too dry. It was hard to swallow and felt like it was overcooked.,4,0
+239,68,12/25/02,2,The dining hall had a great selection of vegan options. I appreciated the variety and felt like it was a healthy option.,1,1
+240,19,10/16/16,3,The dining hall had a great selection of local beers. I loved supporting local breweries and felt like it was a fun experience.,9,1
+241,89,1/30/03,2,The food was too chewy. It was hard to eat and felt like it was overcooked.,6,0
+242,34,12/17/02,2,The dining hall had a great selection of international cuisine. I loved trying new flavors and felt like it was a fun experience.,6,0
+243,42,10/20/08,5,The dining hall had a great selection of exotic meats. I loved trying something new and felt like it was a fun experience.,1,1
+244,17,7/24/01,2,The food was too tough. It was hard to chew and felt like it was overcooked.,9,0
+245,69,9/16/03,2,The dining hall had a great selection of farm-to-table dishes. I appreciated the use of local ingredients and felt like it was a healthy option.,4,1
+246,85,10/20/08,4,The dining hall had a great selection of fusion cuisine. I loved the creative combinations and felt like it was a fun experience.,5,0
+247,59,11/29/10,3,The food was too mushy. It was unappetizing and felt like it was overcooked.,6,0
+248,67,7/3/16,4,The dining hall had a great selection of comfort food. It was perfect for a cozy night in and felt like a comforting environment.,9,1
+249,43,9/11/07,5,The dining hall had a great selection of classic dishes. I loved the traditional flavors and felt like it was a comforting environment.,1,0
+250,37,11/22/08,4,The food was too bland. It was unremarkable and felt like it was lacking in flavor.,12,1
+251,83,6/1/16,4,The dining hall had a great selection of spicy dishes. I loved the heat and felt like it was a fun experience.,3,0
+252,83,9/29/07,1,The dining hall had a great selection of healthy options. I appreciated the attention to nutrition and felt like it was a healthy option.,7,1
+253,59,8/11/04,3,The food was too oily. It was hard to eat and felt like it was unhealthy.,8,1
+254,40,2/25/08,4,The dining hall had a great selection of vegetarian dishes. I appreciated the variety and felt like it was a healthy option.,10,1
+255,82,10/3/14,1,The dining hall had a great selection of meat dishes. I loved the variety of proteins and felt like it was a healthy option.,11,1
+256,23,11/26/12,3,The food was too salty. It was hard to eat and felt like it was unhealthy.,8,1
+257,67,2/14/14,4,The dining hall had a great selection,7,0
+258,27,8/27/21,4,The restaurant had a great selection of local cuisine.,3,1
+259,41,6/20/22,4,The food was too oily.,8,1
+260,44,8/15/08,1,The restaurant had a great selection of international cuisine.,3,0
+261,18,6/16/01,1,The food was amazing! I highly recommend the steak.,2,0
+262,10,12/16/14,3,The service was terrible. Our waiter was rude and unprofessional.,4,0
+263,84,5/27/19,1,The food was amazing!,7,0
+264,95,8/7/04,1,The service was terrible.,5,0
+265,97,11/3/15,5,The atmosphere was cozy and inviting.,2,0
+266,51,6/17/21,4,The prices were a bit high for the quality of the food.,10,1
+267,50,6/14/01,3,The portions were huge and delicious.,1,1
+268,94,12/11/09,2,The drinks were creative and tasty.,9,0
+269,56,4/6/00,3,The waitstaff was friendly and attentive.,7,0
+270,40,2/26/18,1,The decor was outdated and unappealing.,6,1
+271,39,5/27/04,2,The menu was limited and uninspired.,3,1
+272,17,11/27/21,5,The noise level was too high for a relaxing meal.,12,1
+273,32,4/25/07,5,The restaurant had a great view of the city.,12,0
+274,51,2/15/11,3,The food was overcooked and dry.,5,1
+275,63,12/11/22,3,The restaurant was very crowded and noisy.,8,1
+276,23,8/30/01,5,The staff was rude and unprofessional.,12,1
+277,98,9/15/02,3,The restaurant had a great selection of wines.,2,1
+278,84,10/3/04,2,The food was bland and tasteless.,4,1
+279,67,2/22/14,4,The restaurant was very clean and well-maintained.,10,0
+280,16,6/18/15,3,The prices were reasonable for the quality of the food.,11,0
+281,75,2/4/04,5,The restaurant had a great ambiance.,7,0
+282,62,10/4/22,1,The food was fresh and flavorful.,7,1
+283,55,4/9/13,1,The restaurant had a great selection of vegetarian options.,10,0
+284,90,4/9/05,2,The service was slow and inattentive.,5,0
+285,31,5/10/23,2,The restaurant had a great outdoor seating area.,8,0
+286,38,9/30/10,2,The food was too spicy for my taste.,5,0
+287,65,1/30/14,5,The restaurant had a great selection of craft beers.,6,1
+288,12,10/22/02,3,The restaurant was very kid-friendly.,2,0
+289,89,2/9/04,5,The food was too salty.,8,0
+290,12,3/4/22,2,The restaurant had a great happy hour menu.,12,0
+291,86,7/26/01,5,The restaurant had a great selection of desserts.,2,1
+292,69,3/23/03,4,The food was too greasy.,6,0
+293,90,11/3/06,3,The restaurant had a great selection of seafood.,6,0
+294,43,9/6/01,2,The restaurant had a great selection of cocktails.,2,0
+295,34,5/29/05,5,The food was too sweet.,1,1
+296,14,11/21/04,5,The restaurant had a great selection of appetizers.,9,1
+297,8,12/30/12,3,The restaurant had a great selection of entrees.,1,0
+298,56,3/10/20,2,The food was too sour.,7,0
+299,71,1/23/09,4,The restaurant had a great selection of side dishes.,6,1
+300,27,7/19/04,4,The restaurant had a great selection of wines by the glass.,4,0
+301,67,1/31/21,3,The food was too bitter.,6,1
+302,6,4/5/15,5,The restaurant had a great selection of non-alcoholic drinks.,12,0
+303,20,11/18/15,2,The restaurant had a great selection of gluten-free options.,7,0
+304,59,7/29/08,5,The food was too dry.,11,0
+305,33,3/23/21,3,The restaurant had a great selection of vegan options.,5,0
+306,70,12/22/06,4,The restaurant had a great selection of local beers.,8,0
+307,40,9/7/20,5,The food was too chewy.,6,0
+308,3,8/2/13,5,The restaurant had a great selection of international cuisine.,8,1
+309,54,6/21/06,5,The restaurant had a great selection of exotic meats.,12,1
+310,66,3/29/20,3,The food was too tough.,9,1
+311,88,1/3/15,2,The restaurant had a great selection of farm-to-table dishes.,8,0
+312,83,10/5/20,1,The restaurant had a great selection of fusion cuisine.,9,0
+313,62,12/31/07,2,The food was too mushy.,6,0
+314,96,12/6/05,5,The restaurant had a great selection of comfort food.,5,0
+315,71,12/17/17,3,The restaurant had a great selection of classic dishes.,11,1
+316,75,10/10/00,2,The food was too bland.,2,0
+317,30,7/22/02,2,The restaurant had a great selection of spicy dishes.,2,0
+318,29,10/27/01,2,The restaurant had a great selection of healthy options.,5,1
+319,89,12/10/22,3,The food was too oily.,10,1
+320,43,12/20/13,2,The restaurant had a great selection of comfort food.,8,1
+321,76,1/4/12,3,The restaurant had a great selection of classic dishes.,1,0
+322,2,5/5/23,3,The food was too bland.,12,1
+323,21,1/3/17,2,The restaurant had a great selection of spicy dishes.,3,1
+324,62,8/22/01,2,The restaurant had a great selection of healthy options.,7,1
+325,55,5/30/18,3,The food was too oily.,10,1
+326,22,6/20/18,2,The restaurant had a great selection of vegetarian dishes.,3,0
+327,22,4/17/06,3,The restaurant had a great selection of meat dishes.,2,1
+328,14,5/24/08,1,The food was too salty.,3,0
+329,67,4/6/19,3,The restaurant had a great selection of seafood dishes.,7,0
+330,0,12/26/20,5,The restaurant had a great selection of pasta dishes.,10,1
+331,6,6/11/17,4,The food was too sweet.,12,0
+332,88,6/19/18,3,The restaurant had a great selection of pizza.,3,0
+333,48,8/4/06,3,The restaurant had a great selection of burgers.,6,1
+334,49,8/23/16,4,The food was too sour.,2,1
+335,73,9/4/14,5,The restaurant had a great selection of sandwiches.,11,0
+336,32,9/15/13,2,The restaurant had a great selection of salads.,9,1
+337,60,5/10/20,5,The food was too spicy.,1,1
+338,52,2/10/05,4,The restaurant had a great selection of soups.,7,1
+339,88,8/31/12,3,The restaurant had a great selection of appetizers.,2,0
+340,99,4/3/00,1,The food was too greasy.,11,0
+341,45,2/13/08,2,The restaurant had a great selection of desserts.,1,1
+342,64,4/12/21,5,The restaurant had a great selection of drinks.,3,1
+343,78,8/16/11,3,The food was too dry.,5,1
+344,63,10/4/22,3,The restaurant had a great selection of entrees.,11,1
+345,93,3/26/12,2,The restaurant had a great selection of side dishes.,7,0
+346,22,8/5/07,5,The food was too chewy.,2,1
+347,80,6/15/03,4,The restaurant had a great selection of non-alcoholic drinks.,8,0
+348,11,11/7/05,5,The restaurant had a great selection of alcoholic drinks.,1,0
+349,67,12/23/21,5,The food was too tough.,1,1
+350,67,8/19/17,2,The restaurant had a great selection of craft cocktails.,5,0
+351,71,7/30/22,2,The restaurant had a great selection of local wines.,6,1
+352,15,12/21/11,3,The food was too mushy.,11,1
+353,34,2/5/19,4,The restaurant had a great selection of craft beers.,2,1
+354,0,11/10/20,5,The restaurant had a great selection of imported wines.,12,0
+355,81,1/20/01,4,The food was too bland.,8,1
+356,52,12/23/01,4,The restaurant had a great selection of imported beers.,7,0
+357,58,11/17/18,4,The restaurant had a great selection of local cuisine.,8,1
+358,10,12/14/16,1,The food was too oily.,4,0
+359,88,4/24/07,4,The restaurant had a great selection of international cuisine.,4,1
+360,25,9/4/03,3,The food was amazing! I highly recommend the steak.,7,0
+361,79,9/15/17,5,The service was terrible. Our waiter was rude and unprofessional.,9,0
+362,75,3/20/23,2,The atmosphere was cozy and inviting. I felt right at home.,8,1
+363,84,5/15/07,5,The prices were a bit high for the quality of the food. I expected better for the price.,2,0
+364,76,8/13/12,5,The portions were huge and delicious. I couldn't finish my meal!,1,1
+365,47,4/24/04,2,The drinks were creative and tasty. I loved the signature cocktail.,6,0
+366,64,6/19/15,3,The waitstaff was friendly and attentive. They made us feel welcome.,2,0
+367,55,8/8/12,5,The decor was outdated and unappealing. It could use a refresh.,2,1
+368,86,2/19/01,2,The menu was limited and uninspired. I wish there were more options.,4,1
+369,20,5/28/03,1,The noise level was too high for a relaxing meal. It was hard to hear my dining companion.,4,1
+370,20,1/21/10,2,The restaurant had a great view of the city. It was breathtaking.,3,0
+371,35,12/4/19,1,The food was overcooked and dry. I was disappointed.,5,0
+372,19,5/25/17,4,The restaurant was very crowded and noisy. It was hard to move around.,3,1
+373,71,11/9/15,3,The staff was rude and unprofessional. I won't be going back.,12,0
+374,67,2/5/05,1,The restaurant had a great selection of wines. I loved the sommelier's recommendations.,5,1
+375,65,6/22/16,4,The food was bland and tasteless. I expected more flavor.,6,0
+376,93,9/24/15,3,The restaurant was very clean and well-maintained. I appreciated the attention to detail.,2,1
+377,5,12/5/13,3,The prices were reasonable for the quality of the food. I felt like I got a good value.,11,1
+378,68,5/4/11,1,The restaurant had a great ambiance. It was perfect for a romantic dinner.,8,1
+379,36,12/17/12,2,The food was fresh and flavorful. I loved the use of local ingredients.,11,1
+380,6,12/3/01,5,The restaurant had a great selection of vegetarian options. I appreciated the variety.,12,0
+381,45,4/5/02,2,The service was slow and inattentive. I had to flag down my waiter several times.,1,0
+382,85,2/24/00,2,The restaurant had a great outdoor seating area. It was perfect for a summer evening.,12,1
+383,32,5/17/09,1,The food was too spicy for my taste. I wish I had known before ordering.,7,1
+384,28,4/19/08,2,The restaurant had a great selection of craft beers. I loved trying new brews.,10,1
+385,31,10/6/04,4,The restaurant was very kid-friendly. My children loved the menu options.,6,1
+386,43,11/14/13,2,The food was too salty. It was hard to eat.,2,1
+387,10,9/7/16,3,The restaurant had a great happy hour menu. I loved the discounted drinks and appetizers.,8,0
+388,90,6/3/16,3,The restaurant had a great selection of desserts. I couldn't decide which one to order!,6,0
+389,72,7/21/07,2,The food was too greasy. I felt sick after eating.,9,0
+390,32,9/9/05,2,The restaurant had a great selection of seafood. I loved the fresh oysters.,2,0
+391,84,11/25/20,1,The restaurant had a great selection of cocktails. I loved the creative combinations.,1,1
+392,23,7/5/21,5,The food was too sweet. It was overwhelming.,11,1
+393,19,4/15/05,1,The restaurant had a great selection of appetizers. I loved the small plates.,3,0
+394,91,5/15/08,5,The restaurant had a great selection of entrees. I had a hard time choosing.,4,1
+395,78,1/20/06,4,The food was too sour. It was hard to eat.,3,1
+396,39,4/25/18,3,The restaurant had a great selection of side dishes. I loved the roasted vegetables.,11,0
+397,33,3/3/00,4,The restaurant had a great selection of wines by the glass. I loved trying different varietals.,6,1
+398,37,10/6/10,5,The food was too bitter. It was hard to enjoy.,9,0
+399,12,12/6/22,3,The restaurant had a great selection of non-alcoholic drinks. I appreciated the variety.,7,1
+400,42,4/12/17,3,The restaurant had a great selection of gluten-free options. I appreciated the attention to dietary restrictions.,4,0
+401,88,7/13/21,3,The food was too dry. It was hard to swallow.,3,1
+402,25,10/14/18,5,The restaurant had a great selection of vegan options. I appreciated the variety.,12,0
+403,10,4/26/07,1,The restaurant had a great selection of local beers. I loved supporting local breweries.,11,1
+404,81,2/18/00,3,The food was too chewy. It was hard to eat.,1,1
+405,91,3/4/04,3,The restaurant had a great selection of international cuisine. I loved trying new flavors.,4,0
+406,53,12/8/03,5,The restaurant had a great selection of exotic meats. I loved trying something new.,3,1
+407,9,6/20/23,4,The food was too tough. It was hard to chew.,12,1
+408,92,11/19/14,5,The restaurant had a great selection of farm-to-table dishes. I appreciated the use of local ingredients.,8,1
+409,2,6/15/17,2,The restaurant had a great selection of fusion cuisine. I loved the creative combinations.,3,1
+410,96,9/5/09,1,The food was too mushy. It was unappetizing.,11,1
+411,67,4/8/05,4,The restaurant had a great selection of comfort food. It was perfect for a cozy night in.,10,1
+412,54,8/15/13,3,The restaurant had a great selection of classic dishes. I loved the traditional flavors.,3,1
+413,3,3/9/21,4,The food was too bland. It was unremarkable.,8,1
+414,54,11/8/10,1,The restaurant had a great selection of spicy dishes. I loved the heat.,5,0
+415,50,3/14/19,3,The restaurant had a great selection of healthy options. I appreciated the attention to nutrition.,6,0
+416,65,1/11/16,3,The food was too oily. It was hard to eat.,2,1
+417,85,5/30/00,1,The restaurant had a great selection of vegetarian dishes. I appreciated the variety.,3,1
+418,19,11/27/00,3,The restaurant had a great selection of meat dishes. I loved the variety of proteins.,7,0
+419,22,12/4/10,2,The food was too salty. It was hard to eat.,12,0
+420,42,4/10/14,2,The restaurant had a great selection of seafood dishes. I loved the fresh catch.,1,0
+421,36,8/30/01,3,The restaurant had a great selection of pasta dishes. I loved the homemade noodles.,8,1
+422,59,1/16/03,4,The food was too sweet. It was overwhelming.,4,1
+423,7,5/25/21,2,The restaurant had a great selection of pizza. I loved the thin crust.,7,1
+424,46,10/28/03,2,The restaurant had a great selection of burgers. I loved the juicy patties.,9,1
+425,99,3/12/21,1,The food was too sour. It was hard to eat.,10,0
+426,40,10/15/16,5,The restaurant had a great selection of sandwiches. I loved the fresh bread.,12,0
+427,38,7/27/23,3,The restaurant had a great selection of salads. I loved the variety of greens.,5,0
+428,98,9/26/18,4,The food was too spicy. It was overwhelming.,8,1
+429,8,11/28/04,1,The restaurant had a great selection of soups. I loved the hearty broths.,6,1
+430,72,12/22/05,5,The restaurant had a great selection of desserts. I loved the sweet treats.,9,0
+431,99,3/4/04,1,The food was too greasy. It was hard to eat.,9,0
+432,43,1/12/03,1,The restaurant had a great selection of drinks. I loved the creative combinations.,10,1
+433,51,6/2/09,1,The food was too dry. It was hard to swallow.,4,1
+434,34,4/17/22,1,The restaurant had a great selection of entrees. I loved the variety of proteins.,4,1
+435,48,5/2/22,4,The restaurant had a great selection of side dishes. I loved the variety of vegetables.,7,0
+436,58,1/13/21,4,The food was too chewy. It was hard to eat.,8,0
+437,7,11/7/13,3,The restaurant had a great selection of non-alcoholic drinks. I appreciated the variety.,2,1
+438,42,10/26/06,4,The restaurant had a great selection of alcoholic drinks. I loved the creative cocktails.,3,0
+439,8,6/10/16,3,The food was too tough. It was hard to chew.,9,1
+440,46,6/17/14,1,The restaurant had a great selection of craft cocktails. I loved the unique flavors.,4,1
+441,75,10/24/03,1,The restaurant had a great selection of local wines. I loved supporting local vineyards.,1,1
+442,24,12/15/01,3,The food was too mushy. It was unappetizing.,2,1
+443,56,7/14/11,4,The restaurant had a great selection of craft beers. I loved trying new brews.,2,0
+444,35,6/27/08,4,The restaurant had a great selection of imported wines. I loved trying new varietals.,4,0
+445,89,11/16/00,5,The food was too bland. It was unremarkable.,9,1
+446,71,3/22/11,5,The restaurant had a great selection of imported beers. I loved trying new brews.,8,1
+447,37,12/7/00,4,The restaurant had a great selection of local cuisine. I loved the regional flavors.,8,1
+448,94,1/11/10,1,The food was too oily. It was hard to eat.,4,1
+449,71,2/2/08,5,The restaurant had a great selection of international cuisine. I loved trying new flavors.,5,1
+450,21,9/11/07,5,"The food was amazing! I'd give it a 9 out of 10 because there are a lot of options, everything tastes fresh, and the dining hall staff is very inclusive to those with dietary restrictions.",10,0
+451,56,5/16/06,3,"The service was terrible. The staff was rude and unprofessional, and the lines were always too long.",3,0
+452,13,5/7/05,5,The atmosphere was cozy and inviting. I felt right at home and loved the decor.,6,0
+453,1,11/4/00,3,The prices were a bit high for the quality of the food. I expected better for the price and felt like I wasn't getting a good value.,9,0
+454,24,9/22/05,1,The portions were huge and delicious. I couldn't finish my meal and loved the variety of options.,8,0
+455,60,12/25/01,2,The drinks were creative and tasty. I loved the signature cocktails and the variety of non-alcoholic options.,6,0
+456,21,3/14/21,5,The waitstaff was friendly and attentive. They made us feel welcome and were always available to answer questions.,8,0
+457,51,7/6/16,4,The decor was outdated and unappealing. It could use a refresh and felt like it was stuck in the past.,5,1
+458,80,1/28/05,1,The menu was limited and uninspired. I wish there were more options and more variety.,4,0
+459,34,3/20/01,2,The noise level was too high for a relaxing meal. It was hard to hear my dining companion and felt like I was in a cafeteria.,8,1
+460,92,2/28/18,1,The dining hall had a great view of the campus. It was breathtaking and made the dining experience more enjoyable.,9,1
+461,37,8/15/14,1,The food was overcooked and dry. I was disappointed and felt like it was a waste of money.,10,1
+462,31,10/8/15,3,The dining hall was very crowded and noisy. It was hard to move around and felt like a chaotic environment.,3,0
+463,12,6/11/07,5,The staff was rude and unprofessional. I won't be going back and would not recommend this dining hall to others.,3,1
+464,15,3/30/14,4,The dining hall had a great selection of healthy options. I appreciated the attention to nutrition and felt like I could make healthy choices.,6,0
+465,88,8/27/11,5,The food was bland and tasteless. I expected more flavor and felt like it was lacking in seasoning.,11,0
+466,35,3/21/07,4,The dining hall was very clean and well-maintained. I appreciated the attention to cleanliness and felt like it was a safe environment.,5,1
+467,17,8/8/07,3,The prices were reasonable for the quality of the food. I felt like I got a good value and would return.,12,0
+468,67,4/12/07,1,The dining hall had a great ambiance. It was perfect for a casual meal with friends and felt like a welcoming environment.,11,0
+469,90,3/4/22,4,The food was fresh and flavorful. I loved the use of local ingredients and felt like it was a healthy option.,6,1
+470,67,10/4/15,5,The dining hall had a great selection of vegetarian options. I appreciated the variety and felt like I could make healthy choices.,11,1
+471,18,1/20/01,4,The service was slow and inattentive. I had to wait a long time for my food and felt like the staff was not paying attention.,8,1
+472,96,2/19/02,1,The dining hall had a great outdoor seating area. It was perfect for a summer evening and felt like a relaxing environment.,1,1
+473,58,8/8/06,4,The food was too spicy for my taste. I wish I had known before ordering and felt like it was overwhelming.,9,0
+474,71,7/8/01,4,The dining hall had a great selection of craft beers. I loved trying new brews and felt like it was a fun experience.,10,0
+475,55,2/27/22,5,The dining hall was very kid-friendly. My children loved the menu options and felt like it was a family-friendly environment.,1,1
+476,22,5/28/17,4,The food was too salty. It was hard to eat and felt like it was unhealthy.,8,0
+477,50,12/5/21,3,The dining hall had a great happy hour menu. I loved the discounted drinks and appetizers and felt like it was a good value.,8,1
+478,59,5/16/00,4,The dining hall had a great selection of desserts. I couldn't decide which one to order and felt like it was a sweet treat.,12,1
+479,45,11/20/07,3,The food was too greasy. I felt sick after eating and felt like it was unhealthy.,10,0
+480,97,9/3/14,2,The dining hall had a great selection of seafood. I loved the fresh catch and felt like it was a healthy option.,2,0
+481,68,7/15/08,5,The dining hall had a great selection of cocktails. I loved the creative combinations and felt like it was a fun experience.,8,1
+482,22,6/9/07,5,The food was too sweet. It was overwhelming and felt like it was unhealthy.,3,0
+483,75,6/3/00,3,The dining hall had a great selection of appetizers. I loved the small plates and felt like it was a fun experience.,12,1
+484,86,9/22/11,1,The dining hall had a great selection of entrees. I had a hard time choosing and felt like it was a good value.,1,1
+485,8,7/10/11,1,The food was too sour. It was hard to eat and felt like it was unappetizing.,5,1
+486,66,11/12/00,4,The dining hall had a great selection of side dishes. I loved the variety of vegetables and felt like it was a healthy option.,3,0
+487,37,9/28/02,3,The dining hall had a great selection of wines by the glass. I loved trying different varietals and felt like it was a fun experience.,5,1
+488,34,1/3/03,2,The food was too bitter. It was hard to enjoy and felt like it was unappetizing.,4,0
+489,61,11/16/01,1,The dining hall had a great selection of non-alcoholic drinks. I appreciated the variety and felt like it was a healthy option.,8,1
+490,31,4/20/19,3,The dining hall had a great selection of gluten-free options. I appreciated the attention to dietary restrictions and felt like it was a healthy option.,2,1
+491,39,6/3/05,3,The food was too dry. It was hard to swallow and felt like it was overcooked.,3,1
+492,64,6/20/13,1,The dining hall had a great selection of vegan options. I appreciated the variety and felt like it was a healthy option.,3,1
+493,10,2/10/21,1,The dining hall had a great selection of local beers. I loved supporting local breweries and felt like it was a fun experience.,5,1
+494,13,1/26/10,5,The food was too chewy. It was hard to eat and felt like it was overcooked.,6,1
+495,64,10/23/16,5,The dining hall had a great selection of international cuisine. I loved trying new flavors and felt like it was a fun experience.,10,1
+496,64,6/10/05,5,The dining hall had a great selection of exotic meats. I loved trying something new and felt like it was a fun experience.,7,0
+497,62,5/29/08,2,The food was too tough. It was hard to chew and felt like it was overcooked.,5,0
+498,85,12/15/13,3,The dining hall had a great selection of farm-to-table dishes. I appreciated the use of local ingredients and felt like it was a healthy option.,6,0
+499,84,6/14/13,1,The dining hall had a great selection of fusion cuisine. I loved the creative combinations and felt like it was a fun experience.,2,0
+500,77,6/17/08,5,The food was too mushy. It was unappetizing and felt like it was overcooked.,3,1
+501,2,5/14/14,4,The dining hall had a great selection of comfort food. It was perfect for a cozy night in and felt like a comforting environment.,12,1
+502,87,4/8/04,2,The dining hall had a great selection of classic dishes. I loved the traditional flavors and felt like it was a comforting environment.,12,1
+503,99,3/11/17,2,The food was too bland. It was unremarkable and felt like it was lacking in flavor.,10,0
+504,64,7/19/09,3,The dining hall had a great selection of spicy dishes. I loved the heat and felt like it was a fun experience.,12,0
+505,15,3/11/15,2,The dining hall had a great selection of healthy options. I appreciated the attention to nutrition and felt like it was a healthy option.,7,1
+506,19,8/27/14,4,The food was too oily. It was hard to eat and felt like it was unhealthy.,4,0
+507,28,9/5/08,5,The dining hall had a great selection of vegetarian dishes. I appreciated the variety and felt like it was a healthy option.,4,1
+508,25,12/18/19,5,The dining hall had a great selection of meat dishes. I loved the variety of proteins and felt like it was a healthy option.,7,1
+509,63,12/8/17,5,The food was too salty. It was hard to eat and felt like it was unhealthy.,3,1
+510,12,10/29/17,4,The dining hall had a great selection,10,1
+511,94,5/17/09,4,The restaurant had a great selection of local cuisine.,6,0
+512,28,4/18/12,2,The food was too oily.,8,1
+513,9,5/2/17,5,The restaurant had a great selection of international cuisine.,8,0
+514,75,1/25/05,1,The food was amazing! I highly recommend the steak.,10,1
+515,89,7/25/11,4,The service was terrible. Our waiter was rude and unprofessional.,8,0
+516,94,2/28/11,2,The food was amazing!,5,1
+517,91,8/2/11,5,The service was terrible.,2,0
+518,91,4/12/09,4,The atmosphere was cozy and inviting.,4,0
+519,32,10/12/07,5,The prices were a bit high for the quality of the food.,1,1
+520,10,12/4/11,4,The portions were huge and delicious.,6,1
+521,96,8/10/19,5,The drinks were creative and tasty.,11,1
+522,14,10/16/01,4,The waitstaff was friendly and attentive.,11,1
+523,21,7/30/23,4,The decor was outdated and unappealing.,4,0
+524,56,1/30/10,1,The menu was limited and uninspired.,2,1
+525,23,12/12/09,5,The noise level was too high for a relaxing meal.,10,1
+526,44,1/14/00,4,The restaurant had a great view of the city.,12,1
+527,70,11/25/15,1,The food was overcooked and dry.,8,0
+528,84,3/5/15,4,The restaurant was very crowded and noisy.,6,0
+529,50,12/10/17,4,The staff was rude and unprofessional.,12,0
+530,63,9/12/11,5,The restaurant had a great selection of wines.,12,0
+531,85,9/12/06,4,The food was bland and tasteless.,5,1
+532,36,11/18/17,4,The restaurant was very clean and well-maintained.,7,1
+533,80,3/23/06,1,The prices were reasonable for the quality of the food.,3,1
+534,3,2/27/02,1,The restaurant had a great ambiance.,6,1
+535,85,12/8/19,1,The food was fresh and flavorful.,7,0
+536,6,7/17/08,3,The restaurant had a great selection of vegetarian options.,6,0
+537,40,4/25/09,4,The service was slow and inattentive.,8,0
+538,16,4/19/13,4,The restaurant had a great outdoor seating area.,12,0
+539,9,5/21/21,3,The food was too spicy for my taste.,1,0
+540,50,3/5/19,3,The restaurant had a great selection of craft beers.,3,0
+541,71,4/22/15,1,The restaurant was very kid-friendly.,11,1
+542,47,1/25/01,4,The food was too salty.,3,1
+543,20,10/19/18,5,The restaurant had a great happy hour menu.,5,0
+544,91,7/4/01,4,The restaurant had a great selection of desserts.,2,1
+545,77,1/12/07,1,The food was too greasy.,10,0
+546,33,6/22/10,5,The restaurant had a great selection of seafood.,7,0
+547,95,5/30/18,5,The restaurant had a great selection of cocktails.,5,0
+548,17,2/18/21,5,The food was too sweet.,12,0
+549,2,6/21/14,2,The restaurant had a great selection of appetizers.,9,1
+550,64,5/1/02,2,The restaurant had a great selection of entrees.,3,0
+551,74,10/7/18,2,The food was too sour.,8,1
+552,25,4/21/09,3,The restaurant had a great selection of side dishes.,4,1
+553,80,11/10/09,2,The restaurant had a great selection of wines by the glass.,5,0
+554,4,1/22/15,3,The food was too bitter.,1,1
+555,76,9/19/19,3,The restaurant had a great selection of non-alcoholic drinks.,1,0
+556,35,1/3/11,1,The restaurant had a great selection of gluten-free options.,10,0
+557,85,6/3/03,2,The food was too dry.,9,1
+558,2,8/27/15,1,The restaurant had a great selection of vegan options.,6,1
+559,63,7/14/05,4,The restaurant had a great selection of local beers.,8,0
+560,10,7/20/18,3,The food was too chewy.,4,1
+561,90,4/4/08,5,The restaurant had a great selection of international cuisine.,2,0
+562,61,3/14/04,5,The restaurant had a great selection of exotic meats.,10,1
+563,42,5/22/18,4,The food was too tough.,7,1
+564,36,6/5/15,3,The restaurant had a great selection of farm-to-table dishes.,7,0
+565,8,5/1/01,5,The restaurant had a great selection of fusion cuisine.,7,0
+566,24,2/14/18,1,The food was too mushy.,8,1
+567,90,2/27/15,4,The restaurant had a great selection of comfort food.,4,1
+568,80,6/5/04,2,The restaurant had a great selection of classic dishes.,1,0
+569,85,1/1/21,1,The food was too bland.,11,0
+570,86,8/19/13,5,The restaurant had a great selection of spicy dishes.,8,1
+571,92,2/6/01,2,The restaurant had a great selection of healthy options.,1,1
+572,90,5/7/22,1,The food was too oily.,7,0
+573,58,11/25/12,3,The restaurant had a great selection of comfort food.,8,0
+574,90,2/7/11,1,The restaurant had a great selection of classic dishes.,7,0
+575,67,6/20/02,5,The food was too bland.,11,1
+576,39,5/13/13,1,The restaurant had a great selection of spicy dishes.,9,0
+577,4,3/25/18,3,The restaurant had a great selection of healthy options.,4,0
+578,6,3/9/02,2,The food was too oily.,6,1
+579,45,2/3/09,5,The restaurant had a great selection of vegetarian dishes.,5,1
+580,5,1/4/17,4,The restaurant had a great selection of meat dishes.,6,1
+581,70,10/15/19,3,The food was too salty.,8,0
+582,27,5/16/00,4,The restaurant had a great selection of seafood dishes.,8,0
+583,87,9/16/23,4,The restaurant had a great selection of pasta dishes.,10,0
+584,42,1/28/00,3,The food was too sweet.,2,1
+585,86,6/18/03,1,The restaurant had a great selection of pizza.,11,0
+586,10,6/28/17,1,The restaurant had a great selection of burgers.,6,0
+587,73,8/23/02,3,The food was too sour.,3,0
+588,49,10/12/15,4,The restaurant had a great selection of sandwiches.,11,0
+589,53,12/28/22,3,The restaurant had a great selection of salads.,10,1
+590,63,1/29/21,1,The food was too spicy.,7,0
+591,40,7/21/04,1,The restaurant had a great selection of soups.,10,0
+592,79,3/28/02,2,The restaurant had a great selection of appetizers.,11,1
+593,51,8/25/04,2,The food was too greasy.,6,1
+594,99,10/18/14,2,The restaurant had a great selection of desserts.,10,0
+595,92,12/19/18,5,The restaurant had a great selection of drinks.,8,0
+596,92,8/12/00,5,The food was too dry.,7,0
+597,46,7/19/20,5,The restaurant had a great selection of entrees.,4,0
+598,33,5/13/22,4,The restaurant had a great selection of side dishes.,3,0
+599,20,3/7/17,1,The food was too chewy.,5,1
+600,42,12/23/03,4,The restaurant had a great selection of non-alcoholic drinks.,7,0
+601,20,5/28/08,5,The restaurant had a great selection of alcoholic drinks.,10,0
+602,74,5/3/01,2,The food was too tough.,3,1
+603,40,3/22/07,5,The restaurant had a great selection of craft cocktails.,11,1
+604,39,6/15/12,2,The restaurant had a great selection of local wines.,12,1
+605,45,9/30/01,2,The food was too mushy.,7,1
+606,84,4/19/05,5,The restaurant had a great selection of craft beers.,10,1
+607,75,4/27/02,1,The restaurant had a great selection of imported wines.,4,1
+608,12,10/31/23,5,The food was too bland.,3,1
+609,24,11/7/23,1,The restaurant had a great selection of imported beers.,3,1
+610,31,5/5/19,1,The restaurant had a great selection of local cuisine.,5,1
+611,47,10/10/06,5,The food was too oily.,9,0
+612,14,10/25/01,3,The restaurant had a great selection of international cuisine.,10,1
+613,65,2/25/13,5,The food was amazing! I highly recommend the steak.,6,1
+614,34,11/17/02,1,The service was terrible. Our waiter was rude and unprofessional.,8,1
+615,75,11/14/19,3,The atmosphere was cozy and inviting. I felt right at home.,5,0
+616,71,4/16/18,3,The prices were a bit high for the quality of the food. I expected better for the price.,3,0
+617,51,6/10/10,1,The portions were huge and delicious. I couldn't finish my meal!,3,0
+618,84,1/17/17,2,The drinks were creative and tasty. I loved the signature cocktail.,5,1
+619,34,11/5/09,3,The waitstaff was friendly and attentive. They made us feel welcome.,5,1
+620,98,6/4/08,1,The decor was outdated and unappealing. It could use a refresh.,3,1
+621,94,12/10/11,2,The menu was limited and uninspired. I wish there were more options.,9,1
+622,73,12/23/05,1,The noise level was too high for a relaxing meal. It was hard to hear my dining companion.,5,1
+623,22,11/17/07,1,The restaurant had a great view of the city. It was breathtaking.,6,1
+624,18,7/10/17,3,The food was overcooked and dry. I was disappointed.,12,1
+625,38,2/22/19,5,The restaurant was very crowded and noisy. It was hard to move around.,4,0
+626,54,8/24/17,2,The staff was rude and unprofessional. I won't be going back.,4,1
+627,39,10/21/01,1,The restaurant had a great selection of wines. I loved the sommelier's recommendations.,4,1
+628,46,12/29/07,5,The food was bland and tasteless. I expected more flavor.,2,1
+629,58,9/17/03,5,The restaurant was very clean and well-maintained. I appreciated the attention to detail.,11,0
+630,99,7/27/17,1,The prices were reasonable for the quality of the food. I felt like I got a good value.,1,1
+631,30,3/28/08,3,The restaurant had a great ambiance. It was perfect for a romantic dinner.,2,1
+632,76,10/13/19,5,The food was fresh and flavorful. I loved the use of local ingredients.,9,1
+633,11,11/4/06,3,The restaurant had a great selection of vegetarian options. I appreciated the variety.,9,1
+634,18,1/21/03,1,The service was slow and inattentive. I had to flag down my waiter several times.,5,0
+635,33,7/4/17,5,The restaurant had a great outdoor seating area. It was perfect for a summer evening.,3,0
+636,30,9/5/22,2,The food was too spicy for my taste. I wish I had known before ordering.,11,0
+637,11,7/25/08,3,The restaurant had a great selection of craft beers. I loved trying new brews.,2,1
+638,25,3/12/04,5,The restaurant was very kid-friendly. My children loved the menu options.,11,0
+639,20,12/8/17,3,The food was too salty. It was hard to eat.,7,0
+640,87,1/26/21,1,The restaurant had a great happy hour menu. I loved the discounted drinks and appetizers.,10,1
+641,21,7/1/08,4,The restaurant had a great selection of desserts. I couldn't decide which one to order!,2,0
+642,72,8/30/19,2,The food was too greasy. I felt sick after eating.,7,1
+643,76,7/31/00,1,The restaurant had a great selection of seafood. I loved the fresh oysters.,10,1
+644,82,3/9/01,4,The restaurant had a great selection of cocktails. I loved the creative combinations.,5,1
+645,12,1/20/06,5,The food was too sweet. It was overwhelming.,7,0
+646,20,2/3/13,2,The restaurant had a great selection of appetizers. I loved the small plates.,10,0
+647,31,2/19/21,1,The restaurant had a great selection of entrees. I had a hard time choosing.,9,1
+648,54,2/17/17,4,The food was too sour. It was hard to eat.,1,0
+649,21,4/20/07,5,The restaurant had a great selection of side dishes. I loved the roasted vegetables.,4,0
+650,47,2/16/17,4,The restaurant had a great selection of wines by the glass. I loved trying different varietals.,3,0
+651,32,1/22/12,5,The food was too bitter. It was hard to enjoy.,11,0
+652,38,9/28/01,2,The restaurant had a great selection of non-alcoholic drinks. I appreciated the variety.,4,0
+653,59,3/30/02,5,The restaurant had a great selection of gluten-free options. I appreciated the attention to dietary restrictions.,12,0
+654,42,1/8/20,5,The food was too dry. It was hard to swallow.,9,1
+655,51,9/13/03,1,The restaurant had a great selection of vegan options. I appreciated the variety.,10,0
+656,72,5/5/11,1,The restaurant had a great selection of local beers. I loved supporting local breweries.,7,0
+657,14,3/24/22,1,The food was too chewy. It was hard to eat.,12,1
+658,33,1/11/21,3,The restaurant had a great selection of international cuisine. I loved trying new flavors.,3,1
+659,41,5/31/07,2,The restaurant had a great selection of exotic meats. I loved trying something new.,9,1
+660,5,4/22/05,1,The food was too tough. It was hard to chew.,4,1
+661,84,6/18/23,2,The restaurant had a great selection of farm-to-table dishes. I appreciated the use of local ingredients.,4,1
+662,96,3/30/06,5,The restaurant had a great selection of fusion cuisine. I loved the creative combinations.,10,0
+663,88,5/21/07,5,The food was too mushy. It was unappetizing.,3,0
+664,37,9/19/07,4,The restaurant had a great selection of comfort food. It was perfect for a cozy night in.,11,0
+665,27,8/26/19,4,The restaurant had a great selection of classic dishes. I loved the traditional flavors.,3,0
+666,43,5/1/18,4,The food was too bland. It was unremarkable.,12,0
+667,20,8/9/07,1,The restaurant had a great selection of spicy dishes. I loved the heat.,11,0
+668,99,5/1/21,4,The restaurant had a great selection of healthy options. I appreciated the attention to nutrition.,3,1
+669,37,4/29/16,5,The food was too oily. It was hard to eat.,6,0
+670,22,9/11/05,2,The restaurant had a great selection of vegetarian dishes. I appreciated the variety.,1,1
+671,61,1/19/06,4,The restaurant had a great selection of meat dishes. I loved the variety of proteins.,8,1
+672,55,3/30/16,3,The food was too salty. It was hard to eat.,6,1
+673,19,7/28/03,3,The restaurant had a great selection of seafood dishes. I loved the fresh catch.,1,0
+674,43,11/1/18,4,The restaurant had a great selection of pasta dishes. I loved the homemade noodles.,6,1
+675,23,6/29/22,1,The food was too sweet. It was overwhelming.,11,0
+676,23,10/31/20,4,The restaurant had a great selection of pizza. I loved the thin crust.,5,1
+677,16,10/28/06,4,The restaurant had a great selection of burgers. I loved the juicy patties.,12,0
+678,93,3/3/10,4,The food was too sour. It was hard to eat.,11,1
+679,76,12/11/03,3,The restaurant had a great selection of sandwiches. I loved the fresh bread.,4,1
+680,79,2/26/23,2,The restaurant had a great selection of salads. I loved the variety of greens.,5,1
+681,19,4/6/13,5,The food was too spicy. It was overwhelming.,8,1
+682,53,7/20/06,5,The restaurant had a great selection of soups. I loved the hearty broths.,8,0
+683,16,1/31/20,4,The restaurant had a great selection of desserts. I loved the sweet treats.,12,0
+684,8,4/3/20,4,The food was too greasy. It was hard to eat.,3,1
+685,2,2/18/14,2,The restaurant had a great selection of drinks. I loved the creative combinations.,10,0
+686,71,6/2/05,2,The food was too dry. It was hard to swallow.,1,0
+687,0,9/29/13,1,The restaurant had a great selection of entrees. I loved the variety of proteins.,5,0
+688,34,6/8/16,1,The restaurant had a great selection of side dishes. I loved the variety of vegetables.,10,0
+689,45,8/9/14,2,The food was too chewy. It was hard to eat.,4,1
+690,51,5/5/14,4,The restaurant had a great selection of non-alcoholic drinks. I appreciated the variety.,7,1
+691,17,11/13/17,2,The restaurant had a great selection of alcoholic drinks. I loved the creative cocktails.,3,1
+692,100,11/27/16,3,The food was too tough. It was hard to chew.,9,1
+693,28,3/22/23,2,The restaurant had a great selection of craft cocktails. I loved the unique flavors.,12,1
+694,63,10/29/02,5,The restaurant had a great selection of local wines. I loved supporting local vineyards.,1,0
+695,77,3/10/01,2,The food was too mushy. It was unappetizing.,5,0
+696,26,12/8/15,1,The restaurant had a great selection of craft beers. I loved trying new brews.,2,1
+697,67,10/22/19,5,The restaurant had a great selection of imported wines. I loved trying new varietals.,11,1
+698,72,3/11/19,5,The food was too bland. It was unremarkable.,3,1
+699,12,7/7/13,5,The restaurant had a great selection of imported beers. I loved trying new brews.,11,1
+700,74,6/19/17,1,The restaurant had a great selection of local cuisine. I loved the regional flavors.,4,0
+701,80,8/31/04,5,The food was too oily. It was hard to eat.,2,0
+702,76,8/10/18,3,The restaurant had a great selection of international cuisine. I loved trying new flavors.,3,0
+703,23,9/25/07,5,"The food was amazing! I'd give it a 9 out of 10 because there are a lot of options, everything tastes fresh, and the dining hall staff is very inclusive to those with dietary restrictions.",4,1
+704,30,11/15/00,1,"The service was terrible. The staff was rude and unprofessional, and the lines were always too long.",5,1
+705,98,12/29/06,2,The atmosphere was cozy and inviting. I felt right at home and loved the decor.,3,1
+706,66,8/18/02,2,The prices were a bit high for the quality of the food. I expected better for the price and felt like I wasn't getting a good value.,12,0
+707,65,10/23/05,3,The portions were huge and delicious. I couldn't finish my meal and loved the variety of options.,1,1
+708,50,3/29/17,5,The drinks were creative and tasty. I loved the signature cocktails and the variety of non-alcoholic options.,12,1
+709,7,3/1/08,5,The waitstaff was friendly and attentive. They made us feel welcome and were always available to answer questions.,2,1
+710,41,2/28/11,3,The decor was outdated and unappealing. It could use a refresh and felt like it was stuck in the past.,1,0
+711,11,4/3/15,4,The menu was limited and uninspired. I wish there were more options and more variety.,2,1
+712,9,6/18/23,1,The noise level was too high for a relaxing meal. It was hard to hear my dining companion and felt like I was in a cafeteria.,3,0
+713,34,11/4/05,4,The dining hall had a great view of the campus. It was breathtaking and made the dining experience more enjoyable.,6,0
+714,61,2/19/11,2,The food was overcooked and dry. I was disappointed and felt like it was a waste of money.,8,1
+715,64,8/2/00,2,The dining hall was very crowded and noisy. It was hard to move around and felt like a chaotic environment.,11,0
+716,80,1/8/01,1,The staff was rude and unprofessional. I won't be going back and would not recommend this dining hall to others.,7,0
+717,5,12/28/10,3,The dining hall had a great selection of healthy options. I appreciated the attention to nutrition and felt like I could make healthy choices.,9,1
+718,92,4/26/03,4,The food was bland and tasteless. I expected more flavor and felt like it was lacking in seasoning.,2,1
+719,20,4/6/21,2,The dining hall was very clean and well-maintained. I appreciated the attention to cleanliness and felt like it was a safe environment.,2,1
+720,20,12/29/08,3,The prices were reasonable for the quality of the food. I felt like I got a good value and would return.,8,1
+721,79,1/8/21,3,The dining hall had a great ambiance. It was perfect for a casual meal with friends and felt like a welcoming environment.,12,1
+722,48,11/19/08,3,The food was fresh and flavorful. I loved the use of local ingredients and felt like it was a healthy option.,1,1
+723,73,12/23/16,4,The dining hall had a great selection of vegetarian options. I appreciated the variety and felt like I could make healthy choices.,4,0
+724,56,9/29/21,3,The service was slow and inattentive. I had to wait a long time for my food and felt like the staff was not paying attention.,7,1
+725,70,4/11/08,4,The dining hall had a great outdoor seating area. It was perfect for a summer evening and felt like a relaxing environment.,11,0
+726,82,4/29/18,1,The food was too spicy for my taste. I wish I had known before ordering and felt like it was overwhelming.,8,0
+727,15,7/17/01,1,The dining hall had a great selection of craft beers. I loved trying new brews and felt like it was a fun experience.,2,1
+728,91,9/25/15,3,The dining hall was very kid-friendly. My children loved the menu options and felt like it was a family-friendly environment.,4,1
+729,15,2/7/10,2,The food was too salty. It was hard to eat and felt like it was unhealthy.,1,1
+730,77,10/2/23,5,The dining hall had a great happy hour menu. I loved the discounted drinks and appetizers and felt like it was a good value.,3,1
+731,96,3/24/15,1,The dining hall had a great selection of desserts. I couldn't decide which one to order and felt like it was a sweet treat.,5,1
+732,89,3/6/11,3,The food was too greasy. I felt sick after eating and felt like it was unhealthy.,10,0
+733,62,12/22/18,4,The dining hall had a great selection of seafood. I loved the fresh catch and felt like it was a healthy option.,6,1
+734,95,9/28/22,1,The dining hall had a great selection of cocktails. I loved the creative combinations and felt like it was a fun experience.,6,0
+735,99,5/12/01,4,The food was too sweet. It was overwhelming and felt like it was unhealthy.,10,1
+736,79,11/24/00,4,The dining hall had a great selection of appetizers. I loved the small plates and felt like it was a fun experience.,12,1
+737,23,9/14/10,1,The dining hall had a great selection of entrees. I had a hard time choosing and felt like it was a good value.,2,1
+738,34,5/15/22,2,The food was too sour. It was hard to eat and felt like it was unappetizing.,12,0
+739,55,7/31/22,3,The dining hall had a great selection of side dishes. I loved the variety of vegetables and felt like it was a healthy option.,12,0
+740,14,12/20/19,2,The dining hall had a great selection of wines by the glass. I loved trying different varietals and felt like it was a fun experience.,3,1
+741,26,11/8/11,3,The food was too bitter. It was hard to enjoy and felt like it was unappetizing.,7,1
+742,86,1/2/14,4,The dining hall had a great selection of non-alcoholic drinks. I appreciated the variety and felt like it was a healthy option.,3,1
+743,9,2/13/17,1,The dining hall had a great selection of gluten-free options. I appreciated the attention to dietary restrictions and felt like it was a healthy option.,5,1
+744,53,6/25/00,1,The food was too dry. It was hard to swallow and felt like it was overcooked.,6,1
+745,44,7/21/02,5,The dining hall had a great selection of vegan options. I appreciated the variety and felt like it was a healthy option.,6,1
+746,46,9/9/07,2,The dining hall had a great selection of local beers. I loved supporting local breweries and felt like it was a fun experience.,10,0
+747,54,2/16/12,2,The food was too chewy. It was hard to eat and felt like it was overcooked.,8,1
+748,32,10/20/17,4,The dining hall had a great selection of international cuisine. I loved trying new flavors and felt like it was a fun experience.,1,0
+749,41,3/25/04,2,The dining hall had a great selection of exotic meats. I loved trying something new and felt like it was a fun experience.,6,0
+750,44,8/13/14,5,The food was too tough. It was hard to chew and felt like it was overcooked.,9,0
+751,1,11/2/11,3,The dining hall had a great selection of farm-to-table dishes. I appreciated the use of local ingredients and felt like it was a healthy option.,2,1
+752,58,7/31/23,2,The dining hall had a great selection of fusion cuisine. I loved the creative combinations and felt like it was a fun experience.,2,0
+753,42,5/30/11,2,The food was too mushy. It was unappetizing and felt like it was overcooked.,6,0
+754,26,1/28/09,3,The dining hall had a great selection of comfort food. It was perfect for a cozy night in and felt like a comforting environment.,12,1
+755,65,10/20/17,4,The dining hall had a great selection of classic dishes. I loved the traditional flavors and felt like it was a comforting environment.,7,0
+756,16,11/5/02,4,The food was too bland. It was unremarkable and felt like it was lacking in flavor.,10,1
+757,9,5/12/23,4,The dining hall had a great selection of spicy dishes. I loved the heat and felt like it was a fun experience.,11,0
+758,73,8/8/17,2,The dining hall had a great selection of healthy options. I appreciated the attention to nutrition and felt like it was a healthy option.,2,1
+759,8,12/10/09,3,The food was too oily. It was hard to eat and felt like it was unhealthy.,1,0
+760,41,5/21/22,4,The dining hall had a great selection of vegetarian dishes. I appreciated the variety and felt like it was a healthy option.,8,1
+761,26,1/7/11,4,The dining hall had a great selection of meat dishes. I loved the variety of proteins and felt like it was a healthy option.,6,1
+762,45,9/13/05,4,The food was too salty. It was hard to eat and felt like it was unhealthy.,11,1
+763,69,4/9/06,5,The dining hall had a great selection,7,0
+764,22,3/28/10,1,The restaurant had a great selection of local cuisine.,5,1
+765,0,12/31/08,3,The food was too oily.,6,0
+766,22,6/24/17,5,The restaurant had a great selection of international cuisine.,12,1
+767,75,4/14/05,1,The food was amazing! I highly recommend the steak.,11,1
+768,68,9/6/22,1,The service was terrible. Our waiter was rude and unprofessional.,12,1
+769,13,7/26/11,3,The restaurant had a great selection of pasta dishes. I loved the homemade noodles.,9,1
+770,20,9/12/00,1,The food was too sweet. It was overwhelming.,11,0
+771,46,9/12/18,4,The restaurant had a great selection of pizza. I loved the thin crust.,8,1
+772,77,9/2/16,2,The restaurant had a great selection of burgers. I loved the juicy patties.,2,0
+773,19,11/5/12,5,The food was too sour. It was hard to eat.,5,1
+774,34,12/19/16,5,The restaurant had a great selection of sandwiches. I loved the fresh bread.,10,0
+775,23,5/1/20,3,The restaurant had a great selection of salads. I loved the variety of greens.,10,1
+776,40,4/9/03,1,The food was too spicy. It was overwhelming.,2,0
+777,53,12/25/02,4,The restaurant had a great selection of soups. I loved the hearty broths.,4,0
+778,30,12/12/14,3,The restaurant had a great selection of desserts. I loved the sweet treats.,12,0
+779,70,2/27/17,3,The food was too greasy. It was hard to eat.,11,0
+780,58,12/5/14,1,The restaurant had a great selection of drinks. I loved the creative combinations.,3,1
+781,54,5/13/21,1,The food was too dry. It was hard to swallow.,4,1
+782,70,10/20/12,1,The restaurant had a great selection of entrees. I loved the variety of proteins.,7,0
+783,69,7/3/15,2,The restaurant had a great selection of side dishes. I loved the variety of vegetables.,10,1
+784,1,5/29/07,4,The food was too chewy. It was hard to eat.,1,0
+785,66,6/22/12,4,The restaurant had a great selection of non-alcoholic drinks. I appreciated the variety.,5,0
+786,7,8/3/22,1,The restaurant had a great selection of alcoholic drinks. I loved the creative cocktails.,5,1
+787,77,1/19/00,1,The food was too tough. It was hard to chew.,8,0
+788,66,1/12/21,5,The restaurant had a great selection of craft cocktails. I loved the unique flavors.,3,1
+789,25,12/14/02,4,The restaurant had a great selection of local wines. I loved supporting local vineyards.,11,1
+790,31,9/1/07,5,The food was too mushy. It was unappetizing.,7,1
+791,13,7/23/09,1,The restaurant had a great selection of craft beers. I loved trying new brews.,10,0
+792,6,11/13/07,1,The restaurant had a great selection of imported wines. I loved trying new varietals.,5,0
+793,26,6/22/01,1,The food was too bland. It was unremarkable.,2,0
+794,71,10/12/00,4,The restaurant had a great selection of imported beers. I loved trying new brews.,7,1
+795,6,6/8/03,5,The restaurant had a great selection of local cuisine. I loved the regional flavors.,1,0
+796,59,4/20/00,2,The food was too oily. It was hard to eat.,9,1
+797,48,10/2/15,5,The restaurant had a great selection of international cuisine. I loved trying new flavors.,5,0
+798,3,10/19/11,2,"The food was amazing! I'd give it a 9 out of 10 because there are a lot of options, everything tastes fresh, and the dining hall staff is very inclusive to those with dietary restrictions.",1,1
+799,91,2/2/04,2,"The service was terrible. The staff was rude and unprofessional, and the lines were always too long.",8,0
+800,52,7/2/19,1,The atmosphere was cozy and inviting. I felt right at home and loved the decor.,2,1
+801,21,8/9/05,3,The prices were a bit high for the quality of the food. I expected better for the price and felt like I wasn't getting a good value.,4,0
+802,98,10/2/06,4,The portions were huge and delicious. I couldn't finish my meal and loved the variety of options.,6,0
+803,31,12/13/07,3,The drinks were creative and tasty. I loved the signature cocktails and the variety of non-alcoholic options.,8,0
+804,8,9/29/21,1,The waitstaff was friendly and attentive. They made us feel welcome and were always available to answer questions.,6,0
+805,73,12/15/14,2,The decor was outdated and unappealing. It could use a refresh and felt like it was stuck in the past.,3,1
+806,79,4/28/10,3,The menu was limited and uninspired. I wish there were more options and more variety.,9,0
+807,18,8/25/16,1,The noise level was too high for a relaxing meal. It was hard to hear my dining companion and felt like I was in a cafeteria.,12,1
+808,37,6/29/19,3,The dining hall had a great view of the campus. It was breathtaking and made the dining experience more enjoyable.,8,0
+809,66,8/7/13,2,The food was overcooked and dry. I was disappointed and felt like it was a waste of money.,12,0
+810,36,6/15/14,3,The dining hall was very crowded and noisy. It was hard to move around and felt like a chaotic environment.,8,1
+811,23,10/19/11,1,The staff was rude and unprofessional. I won't be going back and would not recommend this dining hall to others.,8,1
+812,85,2/2/04,4,The dining hall had a great selection of healthy options. I appreciated the attention to nutrition and felt like I could make healthy choices.,8,1
+813,72,7/2/19,2,The restaurant had a great selection of farm-to-table dishes.,6,1
+814,34,8/9/05,3,The restaurant had a great selection of fusion cuisine.,13,1
+815,8,9/29/21,1,The waitstaff was friendly and attentive. They made us feel welcome and were always available to answer questions.,13,0
+816,73,12/15/14,2,The decor was outdated and unappealing. It could use a refresh and felt like it was stuck in the past.,13,1
+817,79,4/28/10,3,The menu was limited and uninspired. I wish there were more options and more variety.,13,0

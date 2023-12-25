@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+ 
+<h2>Menu Items:</h2>
+<form action="{{ url_for('fooditems.fooditems_search') }}" method="GET">
+  <label for="search">Search:</label>
+  <input type="text" id="search" name="query" placeholder="Enter your search term">
+  <input type="submit" value="Search">
+</form>
+<form action="{{ url_for('fooditems.fooditems_filter', attribute=5, ordering=1)}}" method="GET">
+  <input type ="submit" value="Sort by price: low to high">
+</form>
+<form action="{{ url_for('fooditems.fooditems_filter', attribute=5, ordering=0)}}" method="GET">
+  <input type ="submit" value="Sort by price: high to low">
+</form>
+
+<table class='table table-hover table-bordered container'>
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Protein</th>
+      <th scope="col">Sugars</th>
+      <th scope="col">Fats</th>
+      <th scope="col">Allergens</th>
+      <th scope="col">Calories</th>
+      <th scope="col">Restaurant</th>
+      <th scope="col">Dietary Restrictions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for fooditems in avail_fi%}
+      <tr>
+        <th scope="row">{{fooditems.name}}</th>
+        <td>{{fooditems.price}}</td>
+        <td>{{fooditems.protein}}</td>
+        <td>{{fooditems.sugars}}</td>
+        <td>{{fooditems.fats}}</td>
+        <td>{{fooditems.calories}}</td>
+        <td>{{fooditems.allergens}}</td>
+        <td>{{fooditems.rname}}</td>
+        <td>{{fooditems.diet}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

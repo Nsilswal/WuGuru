@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Comparisons</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+
+    {% block content %}
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="mb-4">Food Comparisons</h1>
+                <form method="post" action="{{ url_for('crosscomparisons.compare') }}">
+                    <!-- Food Selection Section -->
+                    <section class="mb-4">
+                        <h2 style="color: black;">Food Selection</h2>
+                        <div class="form-group">
+                            <label for="food1" style="color: black;">Enter Food Item 1:</label>
+                            <input type="text" class="form-control" id="food1" name="food1" placeholder="Food Item 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="food2" style="color: black;">Enter Food Item 2:</label>
+                            <input type="text" class="form-control" id="food2" name="food2" placeholder="Food Item 2">
+                        </div>
+                    </section>
+
+                    <!-- Comparison Criteria Section -->
+                    <section class="mb-4">
+                        <h2 style="color: black;">Comparison Criteria</h2>
+                        <div class="form-group">
+                            <label for="category" style="color: black;">Select Comparison Categories:</label>
+                            <select class="form-control" id="category" name="categories[]" multiple
+                                style="color: black;">
+                                <option value="calories">Calories</option>
+                                <option value="price">Price</option>
+                                <option value="protein">Protein</option>
+                                <option value="sugars">Sugar</option>
+                                <option value="fats">Fats</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comparison" style="color: black;">Select Comparison Type:</label>
+                            <select class="form-control" id="comparison" name="comparison" style="color: black;">
+                                <option value="most">Most</option>
+                                <option value="least">Least</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <!-- Ratios Section -->
+                    <section class="mb-4">
+                        <h2 style="color: black;">Ratios</h2>
+                        <div class="form-group">
+                            <label for="ratio1" style="color: black;">Select Category 1:</label>
+                            <select class="form-control" id="ratio1" name="ratio1" style="color: black;">
+                                <option value="None">None</option>
+                                <option value="price">Price</option>
+                                <option value="calories">Calories</option>
+                                <option value="protein">Protein</option>
+                                <option value="sugars">Sugar</option>
+                                <option value="fats">Fats</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="per" style="color: black;">per</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="ratio2" style="color: black;">Select Category 2:</label>
+                            <select class="form-control" id="ratio2" name="ratio2" style="color: black;">
+                                <option value="None">None</option>
+                                <option value="calories">Calories</option>
+                                <option value="price">Price</option>
+                                <option value="protein">Protein</option>
+                                <option value="sugars">Sugar</option>
+                                <option value="fats">Fats</option>
+
+                            </select>
+                        </div>
+                    </section>
+
+                    <!-- Submit Button Section -->
+                    <section class="mb-4">
+                        <h2 style="color: black;">Submit Request</h2>
+                        <button type="submit" class="btn btn-primary">Compare</button>
+                    </section>
+
+                    <!-- Comparison Result Section -->
+                    <section class="mb-4">
+                        <h2 style="color: black;">Comparison Result</h2>
+                        <p style="color: black;">{{comparison_result}}</p>
+                    </section>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <!-- ... (existing content) ... -->
+            
+                <!-- Top 5 Comparisons Table -->
+                <h2 class="mb-4">Top 5 Most Frequently Compared Selections</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Food Item 1</th>
+                            <th>Food Item 2</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for comparison in top_comparisons %}
+                        <tr>
+                            <td>{{ comparison[1] }}</td>
+                            <td>{{ comparison[2] }}</td>
+                            <td>{{ comparison[3] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+                <!-- Scatterplot Section -->
+                <h2 class="mb-4">Create Scatterplot</h2>
+                <form action="{{ url_for('crosscomparisons.scatterplot') }}" method="post">
+                    <div class="form-group">
+                        <label for="scatterCategory1" style="color: black;">Select Category 1:</label>
+                        <select class="form-control" id="scatterCategory1" name="scatterCategory1" style="color: black;">
+                            <!-- Add options dynamically based on your categories -->
+                            <!-- Example options -->
+                            <option value="calories">Calories</option>
+                            <option value="price">Price</option>
+                            <option value="protein">Protein</option>
+                            <option value="sugars">Sugar</option>
+                            <option value="fats">Fats</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="scatterCategory2" style="color: black;">Select Category 2:</label>
+                        <select class="form-control" id="scatterCategory2" name="scatterCategory2" style="color: black;">
+                            <!-- Add options dynamically based on your categories -->
+                            <!-- Example options -->
+                            <option value="calories">Calories</option>
+                            <option value="price">Price</option>
+                            <option value="protein">Protein</option>
+                            <option value="sugars">Sugar</option>
+                            <option value="fats">Fats</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Generate Scatterplot</button>
+                </form>
+
+                <!-- Scatterplot Image Container -->
+                <div class="mt-4">
+                    {% if scatterplot_image %}
+                        <img src="{{ scatterplot_image }}" alt="Scatterplot">
+                    {% endif %}
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+
+</body>
+
+</html>

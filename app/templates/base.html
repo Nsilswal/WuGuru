@@ -2,6 +2,51 @@
 <html lang="en">
 
 <head>
+  <style>
+
+    .tabs {
+      display: flex;
+      background-color: #001f3f;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .tab:hover {
+      background-color: #2980b9;
+      text-decoration: none;
+    }
+
+  </style>
+  <div class="tabs">
+    <a href="{{ url_for('index.index') }}" class="tab">
+      Home
+    </a>
+    <a href="{{ url_for('restaurants.restaurants') }}" class="tab">
+      Restaurants
+    </a>
+    <a href="{{ url_for('fooditems.fooditems') }}" class="tab">
+      Food Items
+    </a>
+    <a href="{{ url_for('reviews.reviews') }}" class="tab">
+      Reviews
+    </a>
+    <a href="{{ url_for('recommendations.recommendations') }}" class="tab">
+      Recommendations
+    </a>
+    <a href="{{ url_for('crosscomparisons.cross_comparisons') }}" class="tab">
+      Comparisons
+    </a>
+  </div>
+  
+  
   <title>WU-Guru</title>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -19,7 +64,7 @@
 
     .sidenav {
         height: 100%;
-        background-color: #000;
+        background-color: #001f3f;
         overflow-x: hidden;
         padding-top: 20px;
     }
@@ -48,7 +93,8 @@
 <body>
   <div class="sidenav">
     {% block msg %}
-      <h1 style="color:aliceblue">Welcome to CompSci 316 WU-Guru!</h1>
+      <h1 style="color:aliceblue">Welcome to WU-Guru!</h1>
+      <h4 style="color:aliceblue">Built by students, for students</h4>
       <div style="color: aliceblue; text-align: right; margin-bottom: 25px">
         {% if current_user.is_authenticated %}
           Hello {{current_user.firstname}}! <a href="{{ url_for('users.logout') }}" type="button" class="btn btn-light">Log out</a>
@@ -64,3 +110,4 @@
 </body>
 
 </html>
+

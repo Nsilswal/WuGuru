@@ -1,0 +1,820 @@
+1,Margherita Pizza,15.99,12,2,10,450,Dairy,2,vegetarian
+2,Spaghetti Bolognese,14.49,18,7,10,580,Gluten,2,kosher
+3,Caprese Salad,10.99,8,5,12,320,Dairy,2,vegetarian
+4,Chicken Alfredo,17.99,22,3,20,680,Dairy,2,halal
+5,Tiramisu,6.99,5,15,10,340,Dairy,2,vegetarian
+6,Pepperoni Pizza,16.49,15,3,14,520,Dairy,2,kosher
+7,Garlic Knots,6.99,3,2,6,280,Dairy,2,vegetarian
+8,Pizza Margherita,14.99,12,2,10,420,Gluten,2,halal
+9,Fettuccine Alfredo,16.99,14,6,22,620,Dairy,2,vegetarian
+10,Pesto Pasta,12.99,10,3,15,460,Nuts,2,kosher
+11,Spinach and Artichoke Dip,8.99,6,4,9,350,Dairy,2,vegetarian
+12,Mushroom Risotto,11.99,7,3,10,400,None,2,halal
+13,Bruschetta,7.49,2,3,7,280,None,2,vegetarian
+14,Caesar Salad,10.49,6,4,12,340,Dairy,2,kosher
+15,Caprese Panini,9.99,12,5,10,420,Dairy,2,vegetarian
+16,Lemon Sorbet,5.99,0,20,0,200,None,2,halal
+17,Lasagna,17.99,18,8,14,580,Dairy,2,vegetarian
+18,Tuna Melt,13.99,15,4,10,460,Dairy,2,kosher
+19,Gelato,6.99,2,20,8,320,Dairy,2,vegetarian
+20,Meatball Sub,14.99,20,6,12,540,Gluten,2,halal
+21,Ricotta Stuffed Shells,12.99,8,6,10,400,Dairy,2,vegetarian
+22,Antipasto Platter,10.99,10,4,16,480,None,2,kosher
+23,Olive Tapenade,7.99,1,2,10,260,None,2,vegetarian
+24,Gnocchi,11.99,4,4,6,380,Gluten,2,halal
+25,Eggplant Parmesan,14.99,6,8,10,480,Dairy,2,vegetarian
+26,Calzone,13.49,16,2,12,520,Gluten,2,kosher
+27,Breaded Chicken Cutlet,15.99,24,4,10,560,Gluten,2,vegetarian
+28,Margherita Flatbread,10.99,9,3,7,360,Gluten,2,halal
+29,Lobster Ravioli,18.99,16,4,12,620,Dairy,2,vegetarian
+30,Mozzarella Sticks,9.99,10,2,12,400,Gluten,2,kosher
+31,Tortellini Alfredo,12.99,12,4,14,460,Dairy,2,vegetarian
+32,Vegetable Lasagna,11.99,10,6,12,440,Dairy,2,halal
+33,Pepperoncini,5.99,0,3,0,100,None,2,vegetarian
+34,Garlic Cheese Bread,8.99,5,2,10,320,Gluten,2,kosher
+35,Cannoli,7.49,2,18,8,340,Dairy,2,vegetarian
+36,Mediterranean Salad,9.99,6,4,14,360,None,2,halal
+37,Margherita Calzone,13.99,10,6,12,480,Gluten,2,vegetarian
+38,Veal Parmesan,17.99,28,3,14,640,Dairy,2,kosher
+39,Fried Calamari,12.99,18,3,8,430,None,2,vegetarian
+40,Linguine with Clams,15.99,20,3,10,520,Shellfish,2,halal
+41,Tortellini Primavera,11.99,10,4,8,420,Dairy,2,vegetarian
+42,Olive Oil Dipping Sauce,5.99,0,0,14,120,None,2,kosher
+43,Spaghetti Carbonara,15.49,16,5,14,500,Gluten,2,vegetarian
+44,Garlic Aioli,6.99,1,1,9,280,Egg,2,halal
+45,Burrata Salad,10.99,8,5,12,340,Dairy,2,vegetarian
+46,Lemon Gelato,7.99,0,20,2,260,Dairy,2,kosher
+47,Italian Wedding Soup,8.99,5,3,6,320,Dairy,2,vegetarian
+48,Gnocchi with Pesto,9.99,6,3,14,370,Nuts,2,halal
+49,Grilled Salmon,18.99,25,2,12,420,Fish,1,vegetarian
+50,Caesar Salad,12.49,8,4,15,330,Dairy,1,kosher
+51,Beef Burger,14.99,20,3,18,480,Gluten,1,vegetarian
+52,Vegetable Stir-Fry,16.99,10,8,6,390,Soy,1,halal
+53,Chocolate Cake,7.99,4,30,15,580,Dairy,1,vegetarian
+54,Spicy Tuna Roll,9.99,12,5,6,340,Fish,1,kosher
+55,Shrimp Scampi,19.99,22,3,16,550,Shellfish,1,vegetarian
+56,French Onion Soup,8.49,6,8,9,320,Dairy,1,halal
+57,Chicken Caesar Wrap,11.99,18,4,14,420,Dairy,1,vegetarian
+58,Key Lime Pie,6.99,3,20,12,380,Gluten,1,kosher
+59,Lobster Bisque,14.99,10,5,10,420,Shellfish,1,vegetarian
+60,Grilled Vegetable Platter,15.99,5,10,9,330,None,1,halal
+61,Chicken Parmesan,17.99,25,4,12,510,Dairy,1,vegetarian
+62,Mushroom Risotto,12.99,7,3,10,370,None,1,kosher
+63,Cannoli,5.99,2,18,8,300,Dairy,1,vegetarian
+64,BBQ Ribs,21.99,30,8,18,650,None,1,halal
+65,Garden Pesto,7.49,2,25,10,400,Dairy,1,vegetarian
+66,Stuffed Bell Peppers,16.49,15,7,10,460,None,1,kosher
+67,Pumpkin Soup,9.99,5,10,6,290,Dairy,1,vegetarian
+68,Shrimp and Grits,19.99,20,4,14,530,Shellfish,1,halal
+69,Grilled Portobello Mushroom,11.99,6,5,7,360,None,1,vegetarian
+70,Tofu Stir-Fry,13.99,15,7,8,410,Soy,1,kosher
+71,Breaded Fish Fillet,14.49,18,2,14,420,Fish,1,vegetarian
+72,Mixed Berry Parfait,6.99,4,20,6,350,Dairy,1,halal
+73,Eggplant Parmesan,16.99,8,6,14,480,Dairy,1,vegetarian
+74,Ribeye Steak,24.99,30,0,20,590,None,1,kosher
+75,Baked Potato,8.99,2,3,0,250,None,1,vegetarian
+76,Grilled Chicken,14.99,25,1,8,360,None,1,halal
+77,Chicken Caesar Salad,10.49,6,4,12,310,Dairy,1,vegetarian
+78,Apple Pie,7.99,2,20,10,380,Gluten,1,kosher
+79,Creamy Clam Chowder,11.99,8,3,5,340,Shellfish,1,vegetarian
+80,Roasted Garlic Shrimp,17.49,20,2,12,490,Shellfish,1,halal
+81,Crab Cakes,18.99,15,1,10,440,Shellfish,1,vegetarian
+82,Grilled Swordfish,21.99,30,0,12,530,None,1,kosher
+83,Key Lime Pie,8.99,3,25,12,400,Gluten,1,vegetarian
+84,Margarita Pizza,14.99,12,2,10,380,Gluten,1,halal
+85,Pepperoni Pizza,16.49,15,3,14,450,Gluten,1,vegetarian
+86,Garlic Knots,6.99,3,2,6,260,Gluten,1,kosher
+87,Caprese Salad,11.99,8,5,12,330,Dairy,1,vegetarian
+88,Tiramisu,7.99,5,15,10,380,Dairy,1,halal
+89,Pad Thai,12.99,15,10,8,460,Peanuts,1,vegetarian
+90,Green Curry,14.49,10,6,12,420,Coconut,1,kosher
+91,Tom Yum Soup,8.99,5,3,3,290,Shrimp,1,vegetarian
+92,Mango Sticky Rice,7.99,2,20,4,360,Dairy,1,halal
+93,Spring Rolls,9.99,4,5,10,320,Shrimp,1,vegetarian
+94,Quinoa Salad,10.99,8,4,6,370,None,1,kosher
+95,Avocado Toast,9.49,5,2,15,330,Gluten,1,vegetarian
+96,Spinach Salad,8.99,6,4,7,280,None,1,halal
+97,Lentil Soup,7.99,10,2,4,320,None,1,vegetarian
+98,Vegan Brownie,5.99,3,12,10,280,None,1,kosher
+99,Sashimi Platter,22.99,30,0,8,390,Fish,3,vegetarian
+100,California Roll,12.99,15,7,5,320,Imitation Crab,3,halal
+101,Miso Soup,4.99,3,2,1,45,Soy,3,vegetarian
+102,Tempura Shrimp,16.99,15,4,14,330,Shellfish,3,kosher
+103,Green Tea Ice Cream,5.99,2,15,8,180,Dairy,3,vegetarian
+104,Sushi Sashimi Combo,23.99,28,3,9,420,Fish,3,halal
+105,Seaweed Salad,8.49,2,3,5,90,Soy,3,vegetarian
+106,Spicy Tuna Roll,14.99,12,5,6,310,Fish,3,kosher
+107,Shrimp Tempura Roll,13.49,16,7,8,350,Shellfish,3,vegetarian
+108,Teriyaki Chicken,17.99,22,8,12,400,Soy,3,halal
+109,Edamame,4.99,8,2,2,120,Soy,3,vegetarian
+110,Unagi Nigiri,7.99,10,5,6,190,Fish,3,kosher
+111,Salmon Nigiri,6.49,11,2,4,150,Fish,3,vegetarian
+112,Yellowtail Nigiri,8.99,13,3,5,170,Fish,3,halal
+113,Tofu Miso Ramen,15.99,12,7,10,340,Soy,3,vegetarian
+114,Dragon Roll,18.99,19,8,15,400,Imitation Crab,3,kosher
+115,Soft Shell Crab Roll,16.49,22,4,12,360,Shellfish,3,vegetarian
+116,Avocado Cucumber Roll,9.99,2,3,6,160,None,3,halal
+117,Eel Avocado Roll,11.99,4,12,8,210,Fish,3,vegetarian
+118,Wasabi,2.99,0,0,0,10,None,3,kosher
+119,Sake Nigiri,7.49,14,1,3,140,Fish,3,vegetarian
+120,Soy Sauce,1.49,2,0,0,15,Soy,3,halal
+121,Scallop Nigiri,8.49,10,2,5,170,Shellfish,3,vegetarian
+122,Spicy Salmon Roll,12.99,13,8,10,280,Fish,3,kosher
+123,Octopus Nigiri,9.99,15,3,6,220,None,3,vegetarian
+124,Cucumber Salad,5.99,1,5,3,70,None,3,halal
+125,Tuna Tartare,18.49,20,2,8,330,Fish,3,vegetarian
+126,Sesame Seared Tuna,19.99,26,2,10,370,Fish,3,kosher
+127,Soy-Ginger Glazed Salmon,17.99,28,8,14,400,Fish,3,vegetarian
+128,Veggie Tempura,13.99,4,5,12,280,Gluten,3,halal
+129,Udon Noodles,10.99,8,4,2,220,Gluten,3,vegetarian
+130,Sushi Rice,3.99,2,0,0,50,None,3,kosher
+131,Rainbow Roll,20.99,23,9,16,420,Fish,3,vegetarian
+132,Wasabi Mayo,4.49,1,2,4,60,Gluten,3,halal
+133,Inari Sushi,6.99,5,10,2,140,None,3,vegetarian
+134,Hibachi Chicken,16.99,24,8,10,360,Soy,3,kosher
+135,Seared Yellowtail Nigiri,9.49,16,4,5,200,Fish,3,vegetarian
+136,Avocado Roll,8.99,3,2,5,170,None,3,halal
+137,Chirashi Bowl,15.49,18,6,14,330,Fish,3,vegetarian
+138,Sesame Seared Salmon,18.99,24,6,12,370,Fish,3,kosher
+139,Spicy Edamame,6.49,6,2,4,90,Soy,3,vegetarian
+140,Veggie Spring Rolls,7.99,2,3,4,110,None,3,kosher
+141,Sushi Sashimi Boat,29.99,36,5,15,510,Fish,3,vegetarian
+142,Soy Wasabi Glaze,5.49,0,2,0,30,Soy,3,halal
+143,Spicy Yellowtail Roll,13.99,15,7,9,290,Fish,3,vegetarian
+144,Avocado Sushi,6.99,2,2,5,120,None,3,kosher
+145,Tofu Teriyaki,14.49,20,9,8,320,Soy,3,vegetarian
+146,Miso-Glazed Cod,21.99,32,4,16,420,Fish,3,halal
+147,Shrimp Nigiri,8.99,12,3,6,220,Shellfish,3,vegetarian
+148,Scallop Nigiri,8.49,10,2,5,170,Shellfish,3,kosher
+149,Octopus Nigiri,9.99,15,3,6,220,None,3,vegetarian
+150,Eel Nigiri,10.99,20,5,10,280,Fish,3,halal
+151,Mango Sticky Rice,7.99,2,20,4,300,Dairy,3,vegetarian
+152,Miso-Glazed Eggplant,10.49,2,7,6,140,Soy,3,kosher
+153,Green Tea,2.99,1,0,0,0,None,3,vegetarian
+154,Soy Sauce,1.49,2,0,0,15,Soy,3,halal
+155,Yuzu Sorbet,5.99,0,22,0,120,None,3,vegetarian
+156,Tacos (Beef),10.99,15,2,12,280,Gluten,4,kosher
+157,Quesadilla,13.49,10,4,18,340,Dairy,4,vegetarian
+158,Guacamole,7.99,2,5,10,180,None,4,halal
+159,Enchiladas,14.99,12,6,14,310,Dairy,4,vegetarian
+160,Churros,5.99,3,20,8,240,Egg,4,kosher
+161,Salsa Verde,3.49,0,3,0,15,None,4,vegetarian
+162,Chili Rellenos,16.99,8,10,12,330,Gluten,4,halal
+163,Chicken Fajitas,15.99,20,5,12,290,None,4,vegetarian
+164,Tres Leches Cake,6.99,4,30,15,280,Dairy,4,kosher
+165,Sopapillas,8.49,2,6,10,190,None,4,vegetarian
+166,Ceviche,12.99,14,6,6,250,Fish,4,halal
+167,Tamales,11.99,10,4,8,220,Gluten,4,vegetarian
+168,Refried Beans,4.99,5,1,4,110,Gluten,4,kosher
+169,Mexican Rice,4.99,2,3,1,90,Gluten,4,vegetarian
+170,Fried Ice Cream,7.99,4,15,10,260,Dairy,4,halal
+171,Fish Tacos,14.99,20,3,12,320,Gluten,4,vegetarian
+172,Pozole,9.49,12,3,10,240,Gluten,4,kosher
+173,Margarita,7.49,0,10,0,200,None,4,vegetarian
+174,Burrito (Chicken),12.99,18,6,10,300,Dairy,4,halal
+175,Burrito (Vegetarian),11.99,8,7,8,270,None,4,vegetarian
+176,Horchata,3.99,2,20,4,170,Dairy,4,kosher
+177,Chimichanga,13.99,15,5,16,340,Gluten,4,vegetarian
+178,Salsa Roja,3.49,0,2,0,15,None,4,halal
+179,Carne Asada,16.99,25,2,18,370,Gluten,4,vegetarian
+180,Taco Salad,10.99,12,4,8,250,Dairy,4,kosher
+181,Taco (Al Pastor),9.99,10,2,6,220,None,4,vegetarian
+182,Mole Poblano,14.49,8,7,12,300,Dairy,4,halal
+183,Sopes,8.99,6,4,10,210,Gluten,4,vegetarian
+184,Mexican Street Corn,6.99,3,6,10,180,Dairy,4,kosher
+185,Agua Fresca,3.99,1,18,0,110,None,4,vegetarian
+186,Nachos,12.99,10,5,14,280,Dairy,4,halal
+187,Flan,6.49,5,24,10,270,Dairy,4,vegetarian
+188,Taco (Carnitas),9.99,12,3,8,230,None,4,kosher
+189,Chiles Rellenos,14.99,10,8,12,310,Gluten,4,vegetarian
+190,Salsa Pico de Gallo,3.49,1,2,0,15,None,4,halal
+191,Taco (Barbacoa),11.99,15,2,10,260,None,4,vegetarian
+192,Fajita Burrito,13.99,20,6,14,330,Dairy,4,kosher
+193,Mexican Wedding Cookies,5.99,2,10,8,190,Nuts,4,vegetarian
+194,Birria,12.99,15,5,10,290,Gluten,4,halal
+195,Salsa Ranchera,3.49,0,1,0,10,None,4,vegetarian
+196,Chimichurri,6.99,0,2,8,130,None,4,kosher
+197,Taco (Lengua),9.99,18,2,6,220,None,4,vegetarian
+198,Mole Verde,14.49,6,8,12,290,Gluten,4,halal
+199,Chile Verde,13.99,10,6,14,310,Gluten,4,vegetarian
+200,Salsa Habanero,3.49,0,5,0,20,None,4,kosher
+201,Chile Colorado,16.99,20,5,16,340,Gluten,4,vegetarian
+202,Mangonada,5.99,1,30,0,200,None,4,halal
+203,Taco (Chorizo),11.99,12,2,10,260,None,4,vegetarian
+204,Salsa Chipotle,3.49,0,4,0,20,None,4,kosher
+205,Chorizo con Papas,12.99,15,4,12,280,None,4,vegetarian
+206,Salsa Taquera,3.49,0,3,0,15,None,4,halal
+207,Molletes,8.99,10,3,8,230,Gluten,4,vegetarian
+208,Huevos Rancheros,9.99,12,3,10,240,Gluten,4,kosher
+209,Cochinita Pibil,14.49,18,5,14,320,Gluten,4,vegetarian
+210,Salsa Guacamole,4.49,0,3,6,50,None,4,halal
+211,Chorizo Tacos,10.99,12,3,10,260,None,4,vegetarian
+212,Salsa Tamarindo,4.49,1,20,0,160,None,4,kosher
+213,Chiles en Nogada,16.99,10,12,14,350,Dairy,4,vegetarian
+214,Salsa Molcajete,4.49,1,4,6,70,None,4,halal
+215,Salsa Chile Morita,4.49,0,2,4,40,None,4,vegetarian
+216,Chile Relleno Tacos,12.99,8,6,12,290,Gluten,4,kosher
+217,Bistec a la Mexicana,14.49,18,3,14,320,Gluten,4,vegetarian
+218,Salsa Ranchera,3.49,1,2,2,40,None,4,halal
+219,Salsa de Torear,3.49,0,5,0,20,None,4,vegetarian
+220,Kung Pao Chicken,12.99,25,5,15,340,Peanuts,5,kosher
+221,Hot and Sour Soup,4.99,5,3,3,120,Egg,5,vegetarian
+222,General Tso's Chicken,13.49,22,10,18,360,Egg,5,halal
+223,Egg Fried Rice,8.99,10,2,10,250,Egg,5,vegetarian
+224,Dumplings,9.99,15,2,10,280,Soy,5,kosher
+225,Peking Duck,19.99,30,3,20,450,None,5,vegetarian
+226,Sweet and Sour Pork,11.99,18,20,12,320,None,5,halal
+227,Spring Rolls,6.99,5,3,8,180,Shrimp,5,vegetarian
+228,Lo Mein,10.49,12,8,14,300,Egg,5,kosher
+229,Dim Sum Platter,14.99,20,10,16,380,None,5,vegetarian
+230,Mongolian Beef,12.99,26,4,14,350,Gluten,5,halal
+231,Chow Mein,8.49,8,3,10,220,None,5,vegetarian
+232,Hot Pot,16.99,25,5,18,400,Shellfish,5,kosher
+233,Ma Po Tofu,10.99,15,3,10,280,Soy,5,vegetarian
+234,Scallion Pancakes,7.49,4,2,6,160,Egg,5,halal
+235,Fried Wontons,9.99,6,5,12,240,Shrimp,5,vegetarian
+236,Black Bean Sauce Noodles,11.99,10,4,14,320,None,5,kosher
+237,Szechuan Shrimp,14.49,20,6,12,350,Shellfish,5,vegetarian
+238,General Tso's Tofu,12.99,15,10,16,330,Gluten,5,halal
+239,Beef and Broccoli,13.99,24,8,12,340,None,5,vegetarian
+240,Sesame Chicken,12.99,20,15,16,350,None,5,kosher
+241,Cantonese Congee,7.99,5,1,4,150,None,5,vegetarian
+242,Honey Walnut Shrimp,15.99,18,20,18,380,Tree Nuts,5,halal
+243,Soy Sauce Chicken,13.49,22,3,14,360,Soy,5,vegetarian
+244,Mapo Eggplant,10.99,8,5,10,260,Soy,5,kosher
+245,Jiaozi (Potstickers),9.99,15,3,10,280,Soy,5,vegetarian
+246,Xiaolongbao (Soup Dumplings),11.49,10,3,10,290,Soy,5,halal
+247,Chow Fun,12.99,18,8,14,340,Soy,5,vegetarian
+248,Salt and Pepper Shrimp,16.49,22,4,20,400,Shellfish,5,kosher
+249,Sweet and Sour Chicken,11.99,15,18,12,310,None,5,vegetarian
+250,Kung Pao Tofu,12.49,20,6,14,330,Peanuts,5,halal
+251,Sichuan Noodles,11.99,12,10,16,320,Peanuts,5,vegetarian
+252,Wonton Soup,6.99,6,3,2,140,Shrimp,5,kosher
+253,Crispy Pork Belly,14.99,22,0,28,450,None,5,vegetarian
+254,Scallion Beef Rolls,13.49,18,3,20,360,Gluten,5,halal
+255,Char Siu Bao (BBQ Pork Buns),8.99,8,15,6,230,Tree Nuts,5,vegetarian
+256,Kung Pao Shrimp,14.99,20,10,18,380,Peanuts,5,kosher
+257,Sticky Rice Dumplings,11.49,12,5,10,300,Tree Nuts,5,vegetarian
+258,Black Bean Tofu,9.99,15,4,12,270,Soy,5,halal
+259,Five-Spice Spare Ribs,15.99,25,8,22,420,None,5,vegetarian
+260,Cumin Lamb,14.49,28,5,18,370,None,5,kosher
+261,Vegetable Spring Rolls,7.99,3,5,6,170,None,5,vegetarian
+262,Hunan Chicken,12.99,22,6,16,340,None,5,halal
+263,Fried Rice with Shrimp,13.49,15,4,14,350,Shrimp,5,vegetarian
+264,Ginger Scallion Lobster,16.99,30,5,22,400,None,5,kosher
+265,Twice-Cooked Pork,11.99,18,4,12,310,None,5,vegetarian
+266,Dan Dan Noodles,10.99,12,6,10,290,Peanuts,5,halal
+267,Zongzi (Sticky Rice Dumplings),8.49,6,5,8,200,None,5,vegetarian
+268,Lion's Head Meatballs,14.99,20,4,18,380,Gluten,5,kosher
+269,Szechuan Eggplant,12.99,10,6,14,330,Soy,5,vegetarian
+270,Cantonese Egg Tart,6.99,3,15,6,180,Dairy,5,halal
+271,Garlic Pork,13.99,20,4,16,350,None,5,vegetarian
+272,Stir-Fried Snow Peas,8.99,4,6,2,120,None,5,kosher
+273,Szechuan Fish,15.49,26,6,20,400,Shellfish,5,vegetarian
+274,Shrimp Toast,11.49,10,5,14,320,Shrimp,5,halal
+275,Chinese Broccoli with Oyster Sauce,10.99,4,4,12,270,None,5,vegetarian
+276,Sesame Balls,6.99,3,15,10,240,None,5,kosher
+277,Sizzling Rice Soup,9.99,5,5,8,180,None,5,vegetarian
+278,Shrimp Dumplings (Har Gow),7.99,8,4,6,160,Shrimp,5,kosher
+279,Fried Tofu with Spicy Salt,12.99,10,3,16,330,Gluten,5,vegetarian
+280,Szechuan Tofu,11.99,12,8,14,320,Soy,5,halal
+281,Chinese BBQ Ribs,13.49,20,6,16,350,None,5,vegetarian
+282,Pan-Fried Noodles,14.99,16,8,20,380,Gluten,5,kosher
+283,Peking Pork Chops,12.99,20,4,14,330,None,5,vegetarian
+284,Egg Drop Soup,6.99,3,1,2,120,Egg,5,halal
+285,Chinese Lemon Chicken,11.99,18,12,10,310,None,5,vegetarian
+286,Bitter Melon Stir-Fry,10.99,8,4,12,270,None,5,kosher
+287,Buddha's Delight,9.99,6,6,10,250,Gluten,5,vegetarian
+288,Salt and Pepper Tofu,13.99,12,4,18,350,Gluten,5,halal
+289,Sichuan String Beans,11.99,4,6,12,290,None,5,vegetarian
+290,Chao Mian (Stir-Fried Noodles),12.49,10,6,14,320,Gluten,5,kosher
+291,Hummus with Pita,8.99,5,1,8,180,Sesame,6,vegetarian
+292,Falafel Platter,12.99,10,2,14,250,None,6,halal
+293,Tzatziki Sauce,4.99,3,2,6,120,Dairy,6,vegetarian
+294,Greek Salad,10.99,6,6,8,200,Dairy,6,kosher
+295,Lamb Gyros,14.99,20,3,12,280,None,6,vegetarian
+296,Tabbouleh,7.99,2,4,5,150,Wheat,6,halal
+297,Baba Ghanoush,9.49,3,2,9,170,Sesame,6,vegetarian
+298,Chicken Shawarma,13.99,18,5,10,260,None,6,kosher
+299,Stuffed Grape Leaves,8.99,4,2,5,140,None,6,vegetarian
+300,Feta Cheese,5.99,6,1,8,160,Dairy,6,halal
+301,Lentil Soup,6.99,5,3,4,130,None,6,vegetarian
+302,Kebab Platter,15.99,24,4,16,300,None,6,kosher
+303,Couscous,9.99,4,1,6,140,Wheat,6,vegetarian
+304,Labneh,8.49,7,3,10,180,Dairy,6,halal
+305,Fattoush Salad,10.49,4,5,7,160,Wheat,6,vegetarian
+306,Beef Shawarma,14.99,22,4,14,270,None,6,kosher
+307,Rice Pilaf,6.99,3,1,6,120,None,6,vegetarian
+308,Moussaka,12.99,14,6,10,240,Dairy,6,halal
+309,Spanakopita,8.99,6,2,8,160,Dairy,6,vegetarian
+310,Kibbeh,10.99,12,2,10,200,Wheat,6,kosher
+311,Grilled Octopus,15.99,20,2,18,290,None,6,vegetarian
+312,Cacık,7.99,5,2,5,140,Dairy,6,halal
+313,Couscous Salad,9.49,6,4,7,160,Wheat,6,vegetarian
+314,Turkish Delight,5.99,1,18,1,80,Nuts,6,kosher
+315,Shish Taouk,13.99,18,4,12,260,None,6,vegetarian
+316,Taramosalata,8.49,3,1,7,150,Fish,6,halal
+317,Moussaka,12.99,14,6,10,240,Dairy,6,vegetarian
+318,Baklava,9.99,3,20,10,220,Nuts,6,kosher
+319,Pita Bread,6.99,3,1,4,110,Wheat,6,vegetarian
+320,Lamb Kofta,14.99,20,3,16,280,Wheat,6,halal
+321,Labneh,8.49,7,3,10,180,Dairy,6,vegetarian
+322,Baba Ghanoush,9.49,3,2,9,170,Sesame,6,kosher
+323,Lentil Soup,6.99,5,3,4,130,None,6,vegetarian
+324,Kebab Platter,15.99,24,4,16,300,None,6,halal
+325,Chicken Shawarma,13.99,18,5,10,260,None,6,vegetarian
+326,Tzatziki Sauce,4.99,3,2,6,120,Dairy,6,kosher
+327,Stuffed Grape Leaves,8.99,4,2,5,140,None,6,vegetarian
+328,Falafel Platter,12.99,10,2,14,250,None,6,halal
+329,Hummus with Pita,8.99,5,1,8,180,Sesame,6,vegetarian
+330,Spanakopita,8.99,6,2,8,160,Dairy,6,kosher
+331,Moussaka,12.99,14,6,10,240,Dairy,6,vegetarian
+332,Tabbouleh,7.99,2,4,5,150,Wheat,6,halal
+333,Lamb Gyros,14.99,20,3,12,280,None,6,vegetarian
+334,Feta Cheese,5.99,6,1,8,160,Dairy,6,kosher
+335,Couscous,9.99,4,1,6,140,Wheat,6,vegetarian
+336,Chicken Shawarma,13.99,18,5,10,260,None,6,halal
+337,Stuffed Grape Leaves,8.99,4,2,5,140,None,6,vegetarian
+338,Tzatziki Sauce,4.99,3,2,6,120,Dairy,6,kosher
+339,Kebab Platter,15.99,24,4,16,300,None,6,vegetarian
+340,Kibbeh,10.99,12,2,10,200,Wheat,6,halal
+341,Taramosalata,8.49,3,1,7,150,Fish,6,vegetarian
+342,Fattoush Salad,10.49,4,5,7,160,Wheat,6,kosher
+343,Labneh,8.49,7,3,10,180,Dairy,6,vegetarian
+344,Lentil Soup,6.99,5,3,4,130,None,6,halal
+345,Baba Ghanoush,9.49,3,2,9,170,Sesame,6,vegetarian
+346,Turkish Delight,5.99,1,18,1,80,Nuts,6,kosher
+347,Shish Taouk,13.99,18,4,12,260,None,6,vegetarian
+348,Kibbeh,10.99,12,2,10,200,Wheat,6,halal
+349,Rice Pilaf,6.99,3,1,6,120,None,6,vegetarian
+350,Moussaka,12.99,14,6,10,240,Dairy,6,kosher
+351,Baklava,9.99,3,20,10,220,Nuts,6,vegetarian
+352,Pita Bread,6.99,3,1,4,110,Wheat,6,halal
+353,Cacık,7.99,5,2,5,140,Dairy,6,vegetarian
+354,Couscous Salad,9.49,6,4,7,160,Wheat,6,kosher
+355,Turkish Delight,5.99,1,18,1,80,Nuts,6,vegetarian
+356,Shish Taouk,13.99,18,4,12,260,None,6,halal
+357,Taramosalata,8.49,3,1,7,150,Fish,6,vegetarian
+358,Moussaka,12.99,14,6,10,240,Dairy,6,kosher
+359,Baklava,9.99,3,20,10,220,Nuts,6,vegetarian
+360,Pita Bread,6.99,3,1,4,110,Wheat,6,halal
+361,Lamb Kofta,14.99,20,3,16,280,Wheat,6,vegetarian
+362,Bruschetta,7.99,3,3,6,150,Gluten,7,kosher
+363,Caesar Salad,9.49,4,2,8,180,Egg,7,vegetarian
+364,Caprese Salad,8.99,5,3,9,160,Dairy,7,halal
+365,Quiche Lorraine,10.99,12,2,14,220,Gluten,7,vegetarian
+366,Mushroom Risotto,13.99,7,2,10,230,Dairy,7,kosher
+367,Beef Bourguignon,16.99,20,4,18,290,Gluten,7,vegetarian
+368,Coq au Vin,15.99,18,5,16,280,Gluten,7,halal
+369,Ratatouille,11.49,3,7,8,190,None,7,vegetarian
+370,Bouillabaisse,17.99,22,6,20,320,Fish,7,kosher
+371,Cassoulet,14.99,14,3,16,270,Gluten,7,vegetarian
+372,Sole Meunière,19.99,25,2,22,350,Fish,7,halal
+373,Escargot,12.99,8,1,14,240,Dairy,7,vegetarian
+374,Lobster Bisque,10.99,6,2,12,200,Shellfish,7,kosher
+375,Croissant,4.99,3,4,6,120,Gluten,7,vegetarian
+376,Crepes,8.49,6,8,10,180,Dairy,7,halal
+377,Tartiflette,13.99,10,4,14,240,Dairy,7,vegetarian
+378,French Onion Soup,9.99,5,6,8,160,Gluten,7,kosher
+379,Pork Schnitzel,12.99,20,2,12,220,Gluten,7,vegetarian
+380,Goulash,14.99,16,5,14,260,Gluten,7,halal
+381,Pierogi,10.49,7,3,10,190,Gluten,7,vegetarian
+382,Borscht,8.99,4,5,6,140,Gluten,7,kosher
+383,Potato Leek Soup,7.49,2,3,5,110,Gluten,7,vegetarian
+384,Spanakopita,12.99,6,2,14,230,Dairy,7,halal
+385,Moules Marinières,15.99,18,2,20,310,Shellfish,7,vegetarian
+386,Gnocchi,11.99,6,3,14,240,Gluten,7,kosher
+387,Rösti,9.49,4,2,8,160,None,7,vegetarian
+388,Wiener Schnitzel,16.99,22,3,20,330,Gluten,7,halal
+389,Sauerbraten,13.99,18,4,14,280,Gluten,7,vegetarian
+390,Pretzel,5.99,3,2,5,120,Gluten,7,kosher
+391,Strudel,8.49,4,12,10,190,Nuts,7,vegetarian
+392,Kebab,10.99,15,4,12,220,None,7,halal
+393,Baklava,9.99,3,20,10,220,Nuts,7,vegetarian
+394,Stroopwafels,7.49,2,15,6,140,Gluten,7,kosher
+395,Poffertjes,6.99,2,12,5,130,Gluten,7,vegetarian
+396,Scotch Egg,8.49,9,1,12,190,Egg,7,halal
+397,Bangers and Mash,12.99,14,3,16,260,Gluten,7,vegetarian
+398,Shepherd's Pie,11.99,10,4,12,240,Gluten,7,kosher
+399,Black Pudding,7.99,6,1,10,180,Gluten,7,vegetarian
+400,Ploughman's Lunch,9.99,12,8,10,220,Dairy,7,halal
+401,Lancashire Hotpot,13.49,16,4,14,280,Gluten,7,vegetarian
+402,Cullen Skink,10.99,8,4,10,220,Gluten,7,kosher
+403,Haggis,8.99,10,2,10,200,Gluten,7,vegetarian
+404,Cornish Pasty,7.99,6,3,8,160,Gluten,7,halal
+405,Bubble and Squeak,6.99,4,5,6,140,Gluten,7,vegetarian
+406,Scampi and Chips,15.99,18,2,20,320,Shellfish,7,kosher
+407,Pork Pie,9.49,8,2,10,190,Gluten,7,vegetarian
+408,Beef Wellington,17.99,22,4,20,350,Gluten,7,halal
+409,Kedgeree,11.99,12,5,10,240,Fish,7,vegetarian
+410,Ploughman's Lunch,9.99,12,8,10,220,Dairy,7,kosher
+411,Fish and Chips,12.99,20,2,16,270,Gluten,7,vegetarian
+412,Sticky Toffee Pudding,7.99,3,20,8,180,Dairy,7,halal
+413,Bread and Butter Pudding,8.99,5,15,12,200,Dairy,7,vegetarian
+414,Eccles Cake,6.49,2,10,8,150,Gluten,7,kosher
+415,Chelsea Bun,5.99,4,15,6,130,Gluten,7,vegetarian
+416,Lancashire Hotpot,13.49,16,4,14,280,Gluten,7,halal
+417,Cullen Skink,10.99,8,4,10,220,Gluten,7,vegetarian
+418,Haggis,8.99,10,2,10,200,Gluten,7,kosher
+419,Cornish Pasty,7.99,6,3,8,160,Gluten,7,vegetarian
+420,Bubble and Squeak,6.99,4,5,6,140,Gluten,7,halal
+421,Scampi and Chips,15.99,18,2,20,320,Shellfish,7,vegetarian
+422,Chicken Tikka,12.99,25,3,12,280,Dairy,8,kosher
+423,Butter Chicken,14.49,22,5,16,310,Dairy,8,vegetarian
+424,Biryani (Chicken),13.99,20,4,14,300,None,8,halal
+425,Paneer Tikka,11.99,12,3,10,250,Dairy,8,vegetarian
+426,Tandoori Naan,3.49,4,2,6,140,Gluten,8,kosher
+427,Rogan Josh (Lamb),16.99,28,6,18,350,None,8,vegetarian
+428,Chana Masala,9.99,10,4,8,220,None,8,halal
+429,Samosa,5.99,3,3,8,160,Gluten,8,vegetarian
+430,Vindaloo (Pork),15.99,24,4,20,320,None,8,kosher
+431,Aloo Gobi,11.99,6,4,10,240,None,8,vegetarian
+432,Dal Makhani,10.99,8,2,10,230,Dairy,8,halal
+433,Tandoori Chicken,13.99,28,2,14,290,Dairy,8,vegetarian
+434,Malai Kofta,12.49,10,10,16,280,Dairy,8,kosher
+435,Gulab Jamun,6.99,2,20,10,220,Dairy,8,vegetarian
+436,Palak Paneer,11.99,14,5,12,260,Dairy,8,halal
+437,Veg Biryani,11.49,6,4,10,240,None,8,vegetarian
+438,Chaat,7.99,5,8,6,180,None,8,kosher
+439,Tandoori Roti,3.99,3,1,2,120,Gluten,8,vegetarian
+440,Mutton Curry,15.49,26,3,18,340,None,8,halal
+441,Pani Puri,8.99,4,6,4,160,Gluten,8,vegetarian
+442,Aloo Paratha,6.49,4,2,8,170,Dairy,8,kosher
+443,Rice Pilaf,5.99,3,1,6,140,None,8,vegetarian
+444,Raita,4.99,3,4,5,130,Dairy,8,halal
+445,Kheer,7.49,2,15,8,190,Dairy,8,vegetarian
+446,Bhindi Masala,9.99,6,4,8,220,None,8,kosher
+447,Pakoras,6.99,5,6,10,200,Gluten,8,vegetarian
+448,Pulao (Veg),8.99,4,3,6,180,None,8,halal
+449,Mango Lassi,4.49,3,30,3,150,Dairy,8,vegetarian
+450,Baingan Bharta,10.99,8,6,10,240,Dairy,8,kosher
+451,Pesarattu,5.49,4,2,6,140,Gluten,8,vegetarian
+452,Tandoori Fish,14.99,24,3,18,330,None,8,halal
+453,Saffron Rice,7.99,3,2,6,160,Gluten,8,vegetarian
+454,Dosa,9.49,5,1,6,180,Gluten,8,kosher
+455,Papri Chaat,6.99,4,8,6,160,None,8,vegetarian
+456,Tandoori Shrimp,16.99,26,2,20,360,None,8,halal
+457,Methi Malai Murg,12.99,18,4,14,290,Dairy,8,vegetarian
+458,Hyderabadi Biryani (Mutton),16.49,24,4,20,340,None,8,kosher
+459,Rajma Chawal,8.99,6,3,8,220,None,8,vegetarian
+460,Chole Bhature,11.99,10,6,14,270,Gluten,8,halal
+461,Misal Pav,10.99,8,6,12,260,Gluten,8,vegetarian
+462,Nihari,13.99,20,2,16,310,None,8,kosher
+463,Shahi Paneer,12.49,10,6,16,280,Dairy,8,vegetarian
+464,Puri Bhaji,6.99,4,4,10,200,Gluten,8,halal
+465,Mutton Keema,13.99,16,4,14,280,None,8,vegetarian
+466,Chicken Korma,14.99,22,6,18,320,Dairy,8,kosher
+467,Bisi Bele Bath,11.99,8,4,10,240,Gluten,8,vegetarian
+468,Masala Dosa,9.99,5,1,6,180,Gluten,8,halal
+469,Rava Upma,7.49,4,2,6,160,Gluten,8,vegetarian
+470,Tandoori Mushroom,10.99,6,3,10,230,Dairy,8,kosher
+471,Shrikhand,6.99,3,25,8,190,Dairy,8,vegetarian
+472,Pav Bhaji,9.49,6,6,10,220,Dairy,8,halal
+473,Matzo Ball Soup,6.99,5,2,4,130,Gluten,9,vegetarian
+474,Latkes,8.99,4,2,7,160,Egg,9,kosher
+475,Challah Bread,4.99,5,5,2,120,Gluten,9,vegetarian
+476,Brisket,16.99,28,5,20,340,Gluten,9,halal
+477,Kugel,10.49,6,12,8,190,Dairy,9,vegetarian
+478,Borscht,7.99,4,8,5,140,Gluten,9,kosher
+479,Rugelach,6.99,2,8,10,180,Nuts,9,vegetarian
+480,Shakshuka,11.99,12,8,14,250,Egg,9,halal
+481,Kreplach,9.49,10,2,6,180,Gluten,9,vegetarian
+482,Cholent,13.99,14,5,16,290,Gluten,9,kosher
+483,Sufganiyot,8.99,3,18,10,220,Dairy,9,vegetarian
+484,Gefilte Fish,12.99,10,4,14,260,Fish,9,halal
+485,Knish,7.99,5,2,8,160,Gluten,9,vegetarian
+486,Hamantaschen,6.99,2,10,8,180,Nuts,9,kosher
+487,Chopped Liver,10.99,12,4,10,240,None,9,vegetarian
+488,Kasha Varnishkes,9.99,6,3,8,200,Gluten,9,kosher
+489,Babka,11.49,5,12,14,260,Dairy,9,vegetarian
+490,Kasha,7.49,4,2,6,140,Gluten,9,halal
+491,Falafel,8.99,6,3,10,180,Gluten,9,vegetarian
+492,Tzimmes,9.49,4,10,8,200,Gluten,9,kosher
+493,Schnitzel,12.99,20,3,16,270,Gluten,9,vegetarian
+494,Herring,10.99,12,1,8,240,Fish,9,halal
+495,Chopped Herring,6.99,5,2,4,140,Fish,9,vegetarian
+496,Blintzes,8.99,6,5,10,180,Dairy,9,kosher
+497,Sufganiyot,8.99,3,18,10,220,Dairy,9,vegetarian
+498,Chicken Soup with Matzo Balls,11.99,12,5,8,240,Gluten,9,halal
+499,Kugel,10.49,6,12,8,190,Dairy,9,vegetarian
+500,Kreplach,9.49,10,2,6,180,Gluten,9,kosher
+501,Lokshen Kugel,7.99,4,6,8,160,Gluten,9,vegetarian
+502,Gefilte Fish,12.99,10,4,14,260,Fish,9,halal
+503,Potato Kugel,10.99,5,4,8,220,Egg,9,vegetarian
+504,Matzo Brei,8.99,8,3,6,180,Egg,9,kosher
+505,Chopped Liver,10.99,12,4,10,240,None,9,vegetarian
+506,Kasha Varnishkes,9.99,6,3,8,200,Gluten,9,halal
+507,Cholent,13.99,14,5,16,290,Gluten,9,vegetarian
+508,Tzimmes,9.49,4,10,8,200,Gluten,9,kosher
+509,Schnitzel,12.99,20,3,16,270,Gluten,9,vegetarian
+510,Herring,10.99,12,1,8,240,Fish,9,halal
+511,Knish,7.99,5,2,8,160,Gluten,9,vegetarian
+512,Hamantaschen,6.99,2,10,8,180,Nuts,9,kosher
+513,Chopped Herring,6.99,5,2,4,140,Fish,9,vegetarian
+514,Blintzes,8.99,6,5,10,180,Dairy,9,halal
+515,Rugelach,6.99,2,8,10,180,Nuts,9,vegetarian
+516,Babka,11.49,5,12,14,260,Dairy,9,kosher
+517,Challah Bread,4.99,5,5,2,120,Gluten,9,vegetarian
+518,Kasha,7.49,4,2,6,140,Gluten,9,halal
+519,Cholent,13.99,14,5,16,290,Gluten,9,vegetarian
+520,Falafel,8.99,6,3,10,180,Gluten,9,kosher
+521,Shakshuka,11.99,12,8,14,250,Egg,9,vegetarian
+522,Borscht,7.99,4,8,5,140,Gluten,9,halal
+523,Lokshen Kugel,7.99,4,6,8,160,Gluten,9,vegetarian
+524,Potato Kugel,10.99,5,4,8,220,Egg,9,kosher
+525,Chicken Soup with Matzo Balls,11.99,12,5,8,240,Gluten,9,vegetarian
+526,Matzo Brei,8.99,8,3,6,180,Egg,9,halal
+527,Challah Bread,4.99,5,5,2,120,Gluten,9,vegetarian
+528,Pho,9.99,18,4,2,180,Gluten,10,kosher
+529,Banh Mi,7.99,15,5,10,220,Gluten,10,vegetarian
+530,Goi Cuon (Spring Rolls),6.99,6,4,2,120,Shrimp,10,halal
+531,Bun Thit Nuong,8.99,20,8,6,230,None,10,vegetarian
+532,Com Tam,10.49,25,6,8,280,None,10,kosher
+533,Bo Luc Lac,13.99,22,5,14,310,None,10,vegetarian
+534,Ca Kho To,11.99,18,8,12,270,None,10,halal
+535,Bun Rieu,9.49,14,10,6,220,Shrimp,10,vegetarian
+536,Goi Du Du,7.49,3,12,2,110,None,10,kosher
+537,Canh Chua,8.99,8,10,4,160,None,10,vegetarian
+538,Cao Lau,12.99,12,8,10,240,Gluten,10,halal
+539,Bun Bo Hue,10.99,24,6,16,290,Gluten,10,vegetarian
+540,Com Ga Hoi An,14.49,20,2,14,320,Gluten,10,kosher
+541,Nom Hoa Chuoi,6.49,2,10,1,90,None,10,vegetarian
+542,Cha Ca,11.99,16,2,12,260,Gluten,10,halal
+543,Bun Moc,9.99,15,5,10,230,None,10,vegetarian
+544,Bun Oc,8.49,8,8,6,180,Snail,10,kosher
+545,Goi Cuon Tom Thit,7.99,8,6,4,140,Shrimp,10,vegetarian
+546,Banh Canh Cua,10.99,16,4,10,250,Gluten,10,halal
+547,Com Hen,8.49,6,4,4,160,Shellfish,10,vegetarian
+548,Goi Xoai,7.49,4,14,2,120,None,10,kosher
+549,Bun Cha,11.49,22,8,10,260,None,10,vegetarian
+550,Bun Dau Mam Tom,9.99,12,6,8,220,Shrimp,10,halal
+551,Banh Khot,7.99,6,4,6,140,Shrimp,10,vegetarian
+552,Hu Tieu,10.99,16,6,12,270,Gluten,10,kosher
+553,Goi Tom Thit,8.99,10,8,6,200,Shrimp,10,vegetarian
+554,Mi Quang,12.49,10,8,14,290,Gluten,10,halal
+555,Nom Thit Bo Kho,6.99,12,10,4,180,None,10,vegetarian
+556,Ca Tim Nuong Mo Hanh,11.99,8,6,10,240,None,10,kosher
+557,Bun Hen Xuc Banh Trang,9.49,4,10,2,140,Shellfish,10,vegetarian
+558,Bo La Lot,8.99,14,4,12,220,None,10,halal
+559,Bun Thang,7.49,12,10,2,160,Gluten,10,vegetarian
+560,Bun Mang Vit,10.99,14,10,6,240,Gluten,10,kosher
+561,Nom Nom,8.49,6,14,2,140,None,10,vegetarian
+562,Banh It Tran,7.99,4,8,4,120,None,10,halal
+563,Pho Cuon,11.99,16,6,8,260,Gluten,10,vegetarian
+564,Bun Rieu Cua,9.49,16,12,4,200,Shrimp,10,kosher
+565,Bun Suon Nuong,6.99,20,2,10,210,None,10,vegetarian
+566,Goi Ngo Sen,12.49,4,12,10,260,Shrimp,10,halal
+567,Pad Thai,10.49,8,14,8,220,None,10,vegetarian
+568,Bun Thit Heo Nuong,8.99,16,4,6,190,None,10,kosher
+569,Nom Du Du,7.49,2,12,2,110,None,10,vegetarian
+570,Bun Kho,11.99,22,8,12,270,None,10,halal
+571,Bun Dau,9.99,14,2,10,220,None,10,vegetarian
+572,Com Suon Bi,8.49,16,8,4,200,None,10,kosher
+573,Bun Tau,6.99,18,4,6,190,None,10,vegetarian
+574,Ca Tim Xao Nam,10.49,4,10,8,220,None,10,halal
+575,Goi Vit,12.99,14,14,10,260,None,10,vegetarian
+576,Banh Hoi,9.49,6,8,4,160,Shrimp,10,kosher
+577,Bun Dau Mam Tom,7.99,12,10,4,180,Shrimp,10,vegetarian
+578,Mi Xao Don,11.49,8,12,10,240,Gluten,10,halal
+579,Nom Hoa Chuoi,8.99,4,10,2,130,None,10,vegetarian
+580,Com Ga Xoi Mo,6.49,20,4,8,210,Gluten,10,kosher
+581,Nom Thit Bo Kho,10.99,12,10,4,200,None,10,vegetarian
+582,Banh Canh Cua,9.99,16,4,10,250,Gluten,10,halal
+583,Bun Hen Xuc Banh Trang,7.99,4,10,2,140,Shellfish,10,vegetarian
+584,Banh Xeo,11.49,8,8,10,240,Shrimp,10,kosher
+585,Seoul Bowl,8.99,4,14,2,120,None,10,vegetarian
+586,Hu Tieu,10.49,16,6,12,270,Gluten,10,halal
+587,Ca Tim Nuong Mo Hanh,9.49,8,6,10,240,None,10,vegetarian
+588,Goi Tom Thit,7.99,10,8,6,200,Shrimp,10,kosher
+589,Mi Quang,11.99,10,8,14,290,Gluten,10,vegetarian
+590,Nom Nom,8.99,6,14,2,140,None,10,halal
+591,Bun Cha,12.49,22,8,10,260,None,10,vegetarian
+592,Tomato Soup,4.99,3,6,2,100,None,11,kosher
+593,Chicken Noodle Soup,5.99,10,3,6,140,Gluten,11,vegetarian
+594,Minestrone Soup,6.99,7,7,3,120,Gluten,11,halal
+595,Miso Soup,5.49,3,2,2,80,Soy,11,vegetarian
+596,Potato Leek Soup,6.49,3,2,6,130,Dairy,11,kosher
+597,Lentil Soup,5.99,8,2,2,110,None,11,vegetarian
+598,Cream of Mushroom Soup,7.49,5,3,8,160,Dairy,11,halal
+599,Clam Chowder,8.49,12,4,10,200,Shellfish,11,vegetarian
+600,French Onion Soup,7.99,4,6,8,160,Gluten,11,kosher
+601,Beef Stew,9.49,16,4,10,210,Gluten,11,vegetarian
+602,Broccoli Cheddar Soup,7.99,7,4,12,180,Dairy,11,halal
+603,Tom Yum Soup,8.99,10,8,4,150,Shellfish,11,vegetarian
+604,Gazpacho,6.99,2,5,1,90,None,11,kosher
+605,Hot and Sour Soup,8.49,6,5,3,130,Egg,11,vegetarian
+606,Goulash Soup,7.49,8,6,4,140,Gluten,11,halal
+607,Chowder,9.99,14,8,6,190,Shellfish,11,vegetarian
+608,Butternut Squash Soup,8.99,2,10,4,120,Dairy,11,kosher
+609,Pho,10.49,18,4,2,180,Gluten,11,vegetarian
+610,Borscht,9.49,4,8,5,140,Gluten,11,halal
+611,Matzo Ball Soup,7.99,5,2,4,130,Gluten,11,vegetarian
+612,Wonton Soup,8.99,7,2,4,140,Gluten,11,kosher
+613,Gumbo,10.99,18,6,14,240,Shellfish,11,vegetarian
+614,Sancocho,9.49,16,4,12,220,None,11,halal
+615,Tortilla Soup,8.49,8,3,6,160,Gluten,11,vegetarian
+616,Avgolemono Soup,7.49,6,4,4,130,Egg,11,kosher
+617,Ramen,9.99,12,3,6,180,Gluten,11,vegetarian
+618,Vichyssoise,8.99,4,2,10,200,Dairy,11,halal
+619,Cabbage Soup,7.99,6,5,2,120,Gluten,11,vegetarian
+620,Shrimp Bisque,10.49,12,6,14,230,Shellfish,11,kosher
+621,Lobster Bisque,9.49,10,5,12,210,Shellfish,11,vegetarian
+622,Bisque,8.49,8,4,10,190,Shellfish,11,halal
+623,Pumpkin Soup,7.99,2,8,6,150,Gluten,11,vegetarian
+624,Egg Drop Soup,6.99,4,2,2,90,Egg,11,kosher
+625,Laksa,8.99,12,4,8,170,Shellfish,11,vegetarian
+626,Rasam,7.49,2,6,2,100,Gluten,11,kosher
+627,Menudo,9.49,12,3,8,160,None,11,vegetarian
+628,Caldo Verde,8.49,6,4,6,140,Gluten,11,halal
+629,Soto Ayam,7.99,10,5,4,120,Gluten,11,vegetarian
+630,Avgolemono Soup,6.99,6,4,4,130,Egg,11,kosher
+631,Harira,8.99,8,6,4,150,None,11,vegetarian
+632,Khar,9.99,16,4,10,210,None,11,halal
+633,Fasolada,7.49,6,5,2,120,Gluten,11,vegetarian
+634,Kuy Teav,10.49,12,3,6,180,Gluten,11,kosher
+635,Bun Rieu,9.49,14,10,6,220,Shrimp,11,vegetarian
+636,Borscht,7.99,4,8,5,140,Gluten,11,halal
+637,Soljanka,8.99,8,6,4,160,None,11,vegetarian
+638,Sinigang,6.99,6,8,2,110,None,11,kosher
+639,Bun Thit Nuong,9.99,20,8,6,230,None,11,vegetarian
+640,Satsivi,8.49,14,2,10,200,Nuts,11,halal
+641,Caldo Tlalpeño,7.49,8,4,6,150,None,11,vegetarian
+642,Patsás,10.49,12,4,8,170,None,11,kosher
+643,Acquacotta,9.99,4,6,4,140,Gluten,11,vegetarian
+644,Kharcho,8.99,10,4,6,160,None,11,halal
+645,Ribollita,7.99,8,6,4,130,Gluten,11,vegetarian
+646,Tom Kha Gai,6.99,12,8,6,180,Coconut,11,kosher
+647,Menudo,8.49,10,5,4,120,Gluten,11,vegetarian
+648,Caldo Verde,9.49,6,4,6,140,Gluten,11,halal
+649,Jókai Bableves,7.99,10,4,6,160,Gluten,11,vegetarian
+650,Mulligatawny,8.99,12,5,10,190,Gluten,11,kosher
+651,Avgolemono Soup,6.99,6,4,4,130,Egg,11,vegetarian
+652,Harira,9.99,8,6,4,150,None,11,halal
+653,Khar,8.49,16,4,10,210,None,11,vegetarian
+654,Fasolada,7.49,6,5,2,120,Gluten,11,kosher
+655,Kuy Teav,10.49,12,3,6,180,Gluten,11,vegetarian
+656,Bun Rieu,9.49,14,10,6,220,Shrimp,11,halal
+657,Borscht,8.99,4,8,5,140,Gluten,11,vegetarian
+658,Soljanka,7.99,8,6,4,160,None,11,kosher
+659,Sinigang,6.99,6,8,2,110,None,11,vegetarian
+660,Soto Ayam,8.99,10,5,4,120,Gluten,11,halal
+661,Avgolemono Soup,7.49,6,4,4,130,Egg,11,vegetarian
+662,Harira,9.99,8,6,4,150,None,11,kosher
+663,Khar,8.49,16,4,10,210,None,11,vegetarian
+664,Fasolada,7.99,6,5,2,120,Gluten,11,halal
+665,Kuy Teav,10.49,12,3,6,180,Gluten,11,vegetarian
+666,Bun Rieu,9.49,14,10,6,220,Shrimp,11,kosher
+667,Borscht,8.99,4,8,5,140,Gluten,11,vegetarian
+668,Soljanka,7.99,8,6,4,160,None,11,halal
+669,Sinigang,6.99,6,8,2,110,None,11,vegetarian
+670,Soto Ayam,8.99,10,5,4,120,Gluten,11,kosher
+671,Buffalo Wings,9.99,20,2,16,280,Gluten,12,vegetarian
+672,Mozzarella Sticks,7.99,10,4,18,260,Dairy,12,halal
+673,Jalapeno Poppers,8.49,8,2,12,220,Gluten,12,vegetarian
+674,Potato Skins,7.49,6,3,10,200,Dairy,12,kosher
+675,Nachos,10.99,12,4,14,240,Gluten,12,vegetarian
+676,Fried Calamari,11.99,18,2,20,310,Shellfish,12,halal
+677,Onion Rings,6.99,4,6,14,260,Gluten,12,vegetarian
+678,Chicken Tenders,8.99,15,3,12,250,Gluten,12,kosher
+679,Sliders,9.49,16,4,14,270,Gluten,12,vegetarian
+680,Loaded Fries,7.99,6,2,10,220,Gluten,12,halal
+681,Quesadilla,10.99,14,4,16,290,Gluten,12,vegetarian
+682,Bruschetta,8.99,4,2,10,200,Gluten,12,kosher
+683,Pretzel Bites,6.49,4,2,6,160,Gluten,12,vegetarian
+684,Tater Tots,7.49,2,1,10,190,Gluten,12,halal
+685,Chips and Salsa,5.99,2,2,6,150,Gluten,12,vegetarian
+686,Spinach Artichoke Dip,9.99,6,2,12,250,Dairy,12,kosher
+687,Mini Tacos,8.49,10,3,14,260,Gluten,12,vegetarian
+688,Fish and Chips,11.99,20,4,22,320,Gluten,12,halal
+689,Cheese Fries,7.99,8,2,14,240,Dairy,12,vegetarian
+690,Fried Pickles,6.99,2,4,10,180,Gluten,12,kosher
+691,Boneless Wings,8.99,18,2,14,260,Gluten,12,vegetarian
+692,Bacon-Wrapped Shrimp,9.49,14,2,12,250,None,12,halal
+693,Mushroom Swiss Burger,10.99,20,4,18,300,Gluten,12,vegetarian
+694,Loaded Nachos,11.49,16,4,20,320,Gluten,12,kosher
+695,Fried Mozzarella,7.49,8,3,12,230,Dairy,12,vegetarian
+696,Sweet Potato Fries,6.99,2,6,14,240,Gluten,12,halal
+697,Popcorn Shrimp,9.99,12,2,16,280,Gluten,12,vegetarian
+698,Potato Chips,5.99,2,2,8,170,Gluten,12,kosher
+699,Shrimp Cocktail,10.99,20,2,6,260,Shellfish,12,vegetarian
+700,Guacamole,8.99,4,4,10,220,None,12,halal
+701,Hot Dog,7.99,10,3,12,250,Gluten,12,vegetarian
+702,Fried Chicken,11.99,20,2,18,290,Gluten,12,kosher
+703,Pulled Pork Sandwich,9.49,14,6,12,270,Gluten,12,vegetarian
+704,Cheese Curds,8.49,12,4,16,280,Dairy,12,halal
+705,Chili Cheese Fries,10.99,10,6,18,290,Dairy,12,vegetarian
+706,Buffalo Cauliflower Bites,7.99,6,4,10,200,Gluten,12,kosher
+707,Sausage Rolls,9.99,10,2,14,260,Gluten,12,vegetarian
+708,Baked Brie,8.99,6,6,12,230,Dairy,12,halal
+709,Fried Ravioli,11.99,10,4,16,280,Dairy,12,vegetarian
+710,Chips and Guacamole,6.99,4,4,10,220,None,12,kosher
+711,BBQ Ribs,10.99,20,12,16,320,None,12,vegetarian
+712,Spinach Dip,9.49,8,4,14,270,Dairy,12,halal
+713,Stuffed Mushrooms,7.49,6,2,10,210,Gluten,12,vegetarian
+714,Hummus,8.99,4,4,12,250,None,12,kosher
+715,Loaded Potato Skins,10.99,12,4,18,290,Dairy,12,vegetarian
+716,Chicken Quesadilla,11.49,16,6,14,300,Gluten,12,halal
+717,Mango Salsa,6.49,2,8,4,160,None,12,vegetarian
+718,Crispy Brussels Sprouts,9.49,4,2,14,270,Gluten,12,kosher
+719,Cheese and Charcuterie Board,8.99,12,6,10,230,None,12,vegetarian
+720,Corn Dogs,10.99,10,8,16,270,Gluten,12,halal
+721,Sausage and Peppers,11.99,18,4,20,320,Gluten,12,vegetarian
+722,Bacon-Wrapped Jalapenos,7.99,8,4,10,220,None,12,kosher
+723,Mushroom Caps,9.99,6,2,14,250,Gluten,12,vegetarian
+724,Corn Nuggets,8.49,6,4,12,230,Gluten,12,halal
+725,Steak Bites,10.99,20,2,16,280,Gluten,12,vegetarian
+726,Buffalo Chicken Dip,11.49,10,4,14,270,Dairy,12,kosher
+727,Pulled Pork Sliders,6.99,12,8,10,240,Gluten,12,vegetarian
+728,Potato Croquettes,8.99,6,4,14,260,Gluten,12,halal
+729,Crab Rangoon,9.49,8,4,12,250,Dairy,12,vegetarian
+730,Chorizo Tacos,10.99,14,4,16,270,Gluten,12,kosher
+731,Tuna Tartare,11.49,20,4,12,280,Gluten,12,vegetarian
+732,Shrimp Po' Boy,7.99,16,4,14,290,Gluten,12,halal
+733,Beer-Battered Fish Tacos,9.99,18,6,16,310,Gluten,12,vegetarian
+734,Cheeseburger Sliders,8.99,14,6,12,270,Gluten,12,kosher
+735,Fried Green Tomatoes,10.99,4,6,14,260,Gluten,12,vegetarian
+736,Garlic Parmesan Fries,11.49,6,4,12,250,Gluten,12,halal
+737,Beef Sliders,6.99,12,4,10,240,Gluten,12,vegetarian
+738,Chicken Nachos,8.49,14,6,12,270,Gluten,12,kosher
+739,Truffle Fries,9.99,4,2,16,280,Gluten,12,vegetarian
+740,Bratwurst,7.49,14,2,14,250,Gluten,12,halal
+741,Baked Pretzel,8.99,6,4,12,260,Gluten,12,vegetarian
+742,Pepperoni Pizza,10.99,16,4,18,300,Gluten,12,kosher
+743,Chicken Tacos,11.49,12,4,14,270,Gluten,12,vegetarian
+744,Chili Cheese Dogs,6.99,14,6,16,290,Gluten,12,halal
+745,Egg Rolls,8.49,8,2,12,230,Gluten,12,vegetarian
+746,Potato Salad,9.99,4,6,8,200,Egg,12,kosher
+747,Mozzarella Sticks,7.99,10,4,18,260,Dairy,12,vegetarian
+748,Jalapeno Poppers,8.49,8,2,12,220,Gluten,12,halal
+749,Potato Skins,7.49,6,3,10,200,Dairy,12,vegetarian
+750,Nachos,10.99,12,4,14,240,Gluten,12,kosher
+751,Fried Calamari,11.99,18,2,20,310,Shellfish,12,vegetarian
+752,Onion Rings,6.99,4,6,14,260,Gluten,12,halal
+753,Chicken Tenders,8.99,15,3,12,250,Gluten,12,vegetarian
+754,Sliders,9.49,16,4,14,270,Gluten,12,kosher
+755,Loaded Fries,7.99,6,2,10,220,Gluten,12,vegetarian
+756,Quesadilla,10.99,14,4,16,290,Gluten,12,halal
+757,Bruschetta,8.99,4,2,10,200,Gluten,12,vegetarian
+758,Pretzel Bites,6.49,4,2,6,160,Gluten,12,kosher
+759,Tater Tots,7.49,2,1,10,190,Gluten,12,vegetarian
+760,Chips and Salsa,5.99,2,2,6,150,Gluten,12,halal
+761,Spinach Artichoke Dip,9.99,6,2,12,250,Dairy,12,vegetarian
+762,Mini Tacos,8.49,10,3,14,260,Gluten,12,kosher
+763,Fish and Chips,11.99,20,4,22,320,Gluten,12,vegetarian
+764,Cheese Fries,7.99,8,2,14,240,Dairy,12,halal
+765,Fried Pickles,6.99,2,4,10,180,Gluten,12,vegetarian
+766,Boneless Wings,8.99,18,2,14,260,Gluten,12,kosher
+767,Bacon-Wrapped Shrimp,9.49,14,2,12,250,None,12,vegetarian
+768,Mushroom Swiss Burger,10.99,20,4,18,300,Gluten,12,halal
+769,Loaded Nachos,11.49,16,4,20,320,Gluten,12,vegetarian
+770,Fried Mozzarella,7.49,8,3,12,230,Dairy,12,kosher
+771,Sweet Potato Fries,6.99,2,6,14,240,Gluten,12,vegetarian
+772,Popcorn Shrimp,9.99,12,2,16,280,Gluten,12,halal
+773,Potato Chips,5.99,2,2,8,170,Gluten,12,vegetarian
+774,Shrimp Cocktail,10.99,20,2,6,260,Shellfish,12,kosher
+775,Guacamole,8.99,4,4,10,220,None,12,vegetarian
+776,Hot Dog,7.99,10,3,12,250,Gluten,12,halal
+777,Fried Chicken,11.99,20,2,18,290,Gluten,12,vegetarian
+778,Pulled Pork Sandwich,9.49,14,6,12,270,Gluten,12,kosher
+779,Cheese Curds,8.49,12,4,16,280,Dairy,12,vegetarian
+780,Chili Cheese Fries,10.99,10,6,18,290,Dairy,12,halal
+781,Buffalo Cauliflower Bites,7.99,6,4,10,200,Gluten,12,vegetarian
+782,Sausage Rolls,9.99,10,2,14,260,Gluten,12,kosher
+783,Baked Brie,8.99,6,6,12,230,Dairy,12,vegetarian
+784,Fried Ravioli,11.99,10,4,16,280,Dairy,12,halal
+785,Chips and Guacamole,6.99,4,4,10,220,None,12,vegetarian
+786,BBQ Ribs,10.99,20,12,16,320,None,12,kosher
+787,Spinach Dip,9.49,8,4,14,270,Dairy,12,vegetarian
+788,Stuffed Mushrooms,7.49,6,2,10,210,Gluten,12,halal
+789,Hummus,8.99,4,4,12,250,None,12,vegetarian
+790,Loaded Potato Skins,10.99,12,4,18,290,Dairy,12,kosher
+791,Chicken Quesadilla,11.49,16,6,14,300,Gluten,12,vegetarian
+792,Mango Salsa,6.49,2,8,4,160,None,12,halal
+793,Crispy Brussels Sprouts,9.49,4,2,14,270,Gluten,12,vegetarian
+794,Cheese and Charcuterie Board,8.99,12,6,10,230,None,12,kosher
+795,Corn Dogs,10.99,10,8,16,270,Gluten,12,vegetarian
+796,Sausage and Peppers,11.99,18,4,20,320,Gluten,12,halal
+797,Bacon-Wrapped Jalapenos,7.99,8,4,10,220,None,12,vegetarian
+798,Mushroom Caps,9.99,6,2,14,250,Gluten,12,kosher
+799,Corn Nuggets,8.49,6,4,12,230,Gluten,12,vegetarian
+800,Steak Bites,10.99,20,2,16,280,Gluten,12,halal
+801,Buffalo Chicken Dip,11.49,10,4,14,270,Dairy,12,vegetarian
+802,Pulled Pork Sliders,6.99,12,8,10,240,Gluten,12,kosher
+803,Potato Croquettes,8.99,6,4,14,260,Gluten,12,vegetarian
+804,Crab Rangoon,9.49,8,4,12,250,Dairy,12,halal
+805,Chorizo Tacos,10.99,14,4,16,270,Gluten,12,vegetarian
+806,Tuna Tartare,11.49,20,4,12,280,Gluten,12,kosher
+807,Shrimp Po' Boy,7.99,16,4,14,290,Gluten,12,vegetarian
+808,Beer-Battered Fish Tacos,9.99,18,6,16,310,Gluten,12,halal
+809,Cheeseburger Sliders,8.99,14,6,12,270,Gluten,12,vegetarian
+810,Corn Nuggets,8.49,6,4,12,230,Gluten,13,vegetarian
+811,Steak Bites,10.99,20,2,16,280,Gluten,13,halal
+812,Buffalo Chicken Dip,11.49,10,4,14,270,Dairy,13,vegetarian
+813,Pulled Pork Sliders,6.99,12,8,10,240,Gluten,13,kosher
+814,Potato Croquettes,8.99,6,4,14,260,Gluten,13,vegetarian
+815,Crab Rangoon,9.49,8,4,12,250,Dairy,13,halal
+816,Chorizo Tacos,10.99,14,4,16,270,Gluten,13,vegetarian
+817,Tuna Tartare,11.49,20,4,12,280,Gluten,13,kosher
+818,Shrimp Po' Boy,7.99,16,4,14,290,Gluten,13,vegetarian
+819,Beer-Battered Fish Tacos,9.99,18,6,16,310,Gluten,13,halal
+820,Cheeseburger Sliders,8.99,14,6,12,270,Gluten,13,vegetarian

@@ -2,51 +2,161 @@
 
 {% block content %}
 
-<br><br>
+{% if not current_user.is_authenticated %}
+<p><a href="{{ url_for('users.login') }}">Log in</a> to see your account activity, post about Duke food, and more!</p>
+{% endif %}
 
-<h2>Products for sale:</h2>
-<table class='table table-hover table-bordered container'>
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Product ID</th>
-      <th scope="col">Product Name</th>
-      <th scope="col">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for product in avail_products%}
-      <tr>
-        <th scope="row">{{product.id}}</th>
-        <td>{{product.name}}</td>
-        <td>{{product.price}}</td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<p>Navigate with the tabs along the top, or...</p>
+
+<style>
+
+  .tiles-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tile {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #001f3f;
+    transition: background-color 0.3s ease;
+  }
+
+  .tile:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+  }
+</style>
+<div class="tiles-container">
+  <a href="{{ url_for('restaurants.restaurants') }}" class="tile">
+    Click here to explore WU Restaurants!
+  </a>
+  <a href="{{ url_for('fooditems.fooditems') }}" class="tile">
+    Click here to see the menu items!
+  </a>
+  <a href="{{ url_for('reviews.reviews') }}" class="tile">
+    Click here to read restaurant reviews!
+  </a>
+</div>
+<div class="tiles-container">
+  <a href="{{ url_for('recommendations.recommendations') }}" class="tile">
+    Click here to see unique meal recommendations!
+  </a>
+  <a href="{{ url_for('crosscomparisons.cross_comparisons') }}" class="tile">
+    Click here to compare foods at Duke!
+  </a>
+</div>
 
 <br><br>
 {% if current_user.is_authenticated %}
-<h2>Your recent purchases:</h2>
-<table class='table table-hover table-bordered container'>
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Purchase ID</th>
-      <th scope="col">Product Name</th>
-      <th scope="col">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for purchase in purchase_history%}
-      <tr>
-        <th scope="row">{{purchase.id}}</th>
-        <td>{{purchase.pid}}</td>
-        <td>{{purchase.time_purchased}}</td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-{% else %}
-<p><a href="{{ url_for('users.login') }}">Log in</a> to see your purchase history!</p>
+<h2>Edit User Account Information:</h2>
+<form action ="{{ url_for('index.Edit') }}" method="POST">
+  <input type = "submit" value= "Edit Account Information">
+  </form>
+  {% endif %}
+{% if current_user.is_authenticated %}
+  {% if current_user.isOwner %}
+  <h2>Update Menu:</h2>
+  <form action ="{{ url_for('fooditems.fooditems_add') }}" method="POST">
+    <input type = "submit" value= "Add Menu Item">
+    </form>
+
+  <form action ="{{ url_for('fooditems.fooditems_delete') }}" method="POST">
+    <input type = "submit" value= "Delete Menu Item">
+    </form>
+  {% endif %}
+
+  {% if current_user.is_authenticated %}
+  {% if current_user.isOwner %}
+  <h2>Edit Restaurant Information:</h2>
+  <form action ="{{ url_for('restaurants.Rest_Edit') }}" method="POST">
+    <input type = "submit" value= "Edit Restaurant Information">
+    </form>
+  {% endif %}
+  {% endif %}
+
+  <br><br>
+  <h2>Published Recommendations:</h2>
+
+  {% if Recommendation_history|length > 0 %}
+    <table class='table table-hover table-bordered container'>
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Recommendation Title</th>
+          <th scope="col">Recommendation Description</th>
+          <th scope="col">Recommendation Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for rec in Recommendation_history%}
+          <tr>
+            <th scope="row">{{rec.title}}</th>
+            <td>{{rec.description}}</td>
+            <td>{{rec.popularity}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  {% else %}
+    You have not published any recommendations.
+  {% endif %}
+
+  <br><br>
+
+  <h2>Published Reviews:</h2>
+
+  {% if Review_history|length > 0 %}
+
+    <table class='table table-hover table-bordered container'>
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Restaurant</th>
+          <th scope="col">Rating</th>
+          <th scope="col">My Review</th>
+          <th scope="col">Delete</th>
+          <th scope="col">Update</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for review in Review_history%}
+          <tr>
+            <td>{{humanize_time(review.date)}}</td>
+            <td>{{review.restaurant}}</td>
+            <td>{{review.rating}} / 5</td>
+            <td>{{review.description}}</td>
+            <td>
+              <form action="{{ url_for('reviews.review_delete') }}" method="POST">
+                <input type="hidden" name="review_id" value="{{ review.id }}">
+                <input type="submit" value="Delete" />
+              </form>
+            </td>
+            <td>
+              <form action="{{ url_for('reviews.review_update', id=review.id)}}" method="GET">
+                <input type ="submit" value="Update">
+              </form>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  {% else %}
+    You have not published any reviews.
+  {% endif %}
 {% endif %}
-<p><a href="{{ url_for('recommendations.recommendations') }}">Go to recommendations</a></p>
+<br><br>
+<br><br>
 {% endblock %}

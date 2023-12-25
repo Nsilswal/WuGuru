@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+ 
+<h2>WU Restaurants</h2>
+Click on the restaurant's name to navigate to its homepage!
+<!-- Extra Space -->
+<div style="height: 30px;"></div>
+
+<div class="button-group">
+  <form action="{{ url_for('restaurants.restaurants', attribute=1, ordering=0)}}" method="GET">
+      <input type="submit" value="Name A-Z">
+  </form>
+  <form action="{{ url_for('restaurants.restaurants_filter', attribute=2, ordering=1)}}" method="GET">
+      <input type="submit" value="Highest Rated">
+  </form>
+  <form action="{{ url_for('restaurants.restaurants_filter', attribute=3, ordering=0)}}" method="GET">
+      <input type="submit" value="Floor Level">
+  </form>
+  <form action="{{ url_for('restaurants.restaurants_filter', attribute=4, ordering=1)}}" method="GET">
+      <input type="submit" value="Mobile Order Available">
+  </form>
+</div>
+
+<!-- Table of all restaurants -->
+<table class='table table-hover table-bordered container'>
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Floor</th>
+      <th scope="col">Opens</th>
+      <th scope="col">Closes</th>
+      <th scope="col">Mobile Order</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for rest in avail_rests%}
+      <tr>
+        <th scope="row"><a href="{{ url_for('restaurants.restaurants_view', rid=rest.id) }}">
+          {{rest.name}}
+        </a>
+        </th>
+        <td>
+            {{ "{:.1f}/5.0".format(rest.rating) }}
+          </a>
+        </td>
+        <td>{{rest.floor}}</td>
+        <td>{{rest.OpeningTime}}</td>
+        <td>{{rest.ClosingTime}}</td>
+        <td>
+          {% if rest.MobileOrder %}
+            Available
+          {% else %}
+            Unavailable
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+<style>
+  .button-group {
+    display: flex; /* Display buttons horizontally */
+  }
+  
+  /* Define a CSS rule to change the hyperlink color to red */
+  a {
+  color: black; /* Change color to red */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: blue; /* Change color on hover */
+}
+</style>
+
+{% endblock %}

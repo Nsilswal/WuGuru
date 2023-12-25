@@ -3,25 +3,101 @@
 {% block content %}
 
 <br><br>
+<style>
+  #banner {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: slide 20s linear infinite;
+  }
 
-<h2>Existing Recommendations:</h2>
+  #text {
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+  }
 
-<form action="{{ url_for('recommendations.recommendations_filter', attribute=0, ordering=1)}}" method="GET">
-  <input type ="submit" value="Filter By Title">
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+<div id="banner">
+  <div id="text"><b>{{banner_message}}</b></div>
+</div>
+<h2>Existing Recommendations</h2>
+
+{% if logged_in %}
+  <div class="button-group">
+    <p>Account Actions:</p>
+    <form action="{{ url_for('recommendations.recommendations_get_mine') }}" method="GET">
+      <input type ="submit" value="See Mine">
+    </form>
+    <form action="{{ url_for('recommendations.recommendation_add')}}" method="POST">
+      <input type ="submit" value="Add New">
+    </form>
+  </div>
+{% endif %}
+
+<form action="{{ url_for('recommendations.recommendations_search') }}" method="GET">
+  <label for="search">Search:</label>
+  <input type="text" id="search" name="query" placeholder="Enter your search term">
+  <input type="submit" value="Search">
 </form>
-<form action="{{ url_for('recommendations.recommendations_filter', attribute=2, ordering=0)}}" method="GET">
-  <input type ="submit" value="Filter By Popularity">
+<form action="{{ url_for('recommendations.recommendations_filter')}}" method="POST">
+  <label for="Attribute">Sort by:</label>
+  <select name="Attribute" id="Attribute1">
+    <option value="Attribute...">Attribute...</option>
+    <option value="Title">Title</option>
+    <option value="Date Posted">Date Posted</option>
+    <option value="Popularity">Popularity</option>
+  </select>
+  <label for="Ordering"></label>
+  <select name="Ordering" id="Ordering1">
+    <option value="Ordering...">Ordering...</option>
+    <option value="Ascending">Ascending</option>
+    <option value="Descending">Descending</option>
+  </select>
+  <input type="submit" value="Sort">
 </form>
-<form action="{{ url_for('recommendations.recommendations_filter', attribute=1, ordering=0)}}" method="GET">
-  <input type ="submit" value="Filter By Recency">
-</form>
+
+<div class="button-group">
+  <p>Tags:</p>
+  <form action="{{ url_for('recommendations.recommendations_tag_search', tagname='Breakfast')}}" method="GET">
+    <input type="submit" value="Breakfast">
+  </form>
+  <form action="{{ url_for('recommendations.recommendations_tag_search', tagname='Lunch')}}" method="GET">
+    <input type="submit" value="Lunch">
+  </form>
+  <form action="{{ url_for('recommendations.recommendations_tag_search', tagname='Dinner')}}" method="GET">
+    <input type="submit" value="Dinner">
+  </form>
+  <form action="{{ url_for('recommendations.recommendations_tag_search', tagname='Snack')}}" method="GET">
+    <input type="submit" value="Snack">
+  </form>
+</div>
+<style>
+  .button-group {
+    display: flex;
+    align-items: center; /* Vertically center-align items within the container */
+  }
+
+  .button-group p {
+    margin-right: 10px; /* Add some spacing between the word and buttons */
+  }
+</style>
+
 
 <table class='table table-hover table-bordered container'>
   <thead class="thead-dark">
     <tr>
       <th scope="col">Title</th>
       <th scope="col">Time</th>
-      <th scope="col">Popularity</th>
+      <th scope="col">Upvotes</th>
     </tr>
   </thead>
   <tbody>
@@ -34,8 +110,5 @@
     {% endfor %}
   </tbody>
 </table>
-<form action="{{ url_for('recommendations.recommendation_add')}}" method="POST">
-  <input type ="submit" value="Add New">
-</form>
 
 {% endblock %}
